@@ -97,4 +97,4 @@ In all honesty, as a hobbyist developer with no prior experience working of a co
 
 
 ## What's next?
-I am excited by the prospects of this blog. It has been long overdue. We are eager to use Zerodha as a case study to illustrate that it is possible to build not just good software, but large enterprises ("Unicorns"), with small teams of hackers, even in the unlikeliest of industries. Hopefully, members of the tech team will start finding time to make semi-regular appearances on this blog with their own experirences and technical insights.
+I am excited by the prospects of this blog. It has been long overdue. We are eager to use Zerodha as a case study to illustrate that it is possible to build not just good software, but large enterprises ("Unicorns"), with small teams of hackers, even in the unlikeliest of industries. Hopefully, members of the tech team will start finding time to make semi-regular appearances on this blog with their own experiences and technical insights.
