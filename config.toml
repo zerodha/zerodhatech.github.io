@@ -1,6 +1,6 @@
 baseURL = "https://zerodha.tech"
 languageCode = "en-us"
-title = "zerodha.tech"
+title = "Zerodha Tech Blog"
 paginate = 10
 
 [params]
