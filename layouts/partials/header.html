@@ -13,18 +13,16 @@
 	<meta name="title" content="{{.Site.Title}}">
 	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://zerodha.tech/">
-	<meta property="og:title" content="{{.Site.Title}}">
+	<!-- Open Graph -->
+	{{- if .IsHome -}}
+	<meta property="og:title" content="{{ $siteTitle }} {{ if .Site.Params.subtitle }}- {{ .Site.Params.Subtitle }}{{ end }}" />
+	{{- else -}}
+	<meta property="og:title" content="{{ $title }} - {{ $siteTitle }}" />
+	{{- end -}}
+
 	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}" />
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://zerodha.tech/">
-	<meta property="twitter:title" content="{{.Site.Title}}">
-	<meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}" />
-
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ .Permalink }}" />
 	
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}/static/images/favicon.png" />
 	
@@ -34,10 +32,8 @@
 	
 	{{ with .Params.image }}
 		<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
-		<meta property="twitter:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
 	{{ else }}
 		<meta property="og:image" content="https://zerodha.com/static/images/landing.png">
-		<meta property="twitter:image" content="https://zerodha.com/static/images/landing.png">
 	{{ end }}
 
     <script type="application/ld+json">
