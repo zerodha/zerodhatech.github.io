@@ -29,7 +29,7 @@ The tech team, has two mobile developers, two designers, two frontend developers
 
 Nobody in the team has any background in finance, and apart from a handful of developers, most have no prior work experience either. Everyone has been a hacker or a hobbyist straight out of college. What colleges, neither do we ask, nor do we keep a track of.
 
-That a 30 member tech team has built and scaled a complex financial + stock broking stack from the ground up, built a whole suite of financial software for end users that people actually appreciate, with zero prior industry knowledge, is quite a feat. More of an anomaly than a feat. I, however, find it natural and poignant that a group of hackers in the right environment guided by the right philosophies can be incredibly creative and productive, even in a place as unfashionable and uncool as the Indian stock broking industry. What used to be the norm—small groups of hackers building good software—has now transmogrified into being the exception.
+That a 30 member tech team has built and scaled a complex financial + stock broking stack from the ground up, built a whole suite of financial software for end users that people actually appreciate in an extremely complex, constraining, and rapidly changing regulatory environment, with zero prior industry knowledge, is quite a feat. More of an anomaly than a feat. I, however, find it natural and poignant that a group of hackers in the right environment guided by the right philosophies can be incredibly creative and productive, even in a place as unfashionable and uncool as the Indian stock broking industry. What used to be the norm—small groups of hackers building good software—has now transmogrified into being the exception.
 
 ## Scale
 Zerodha became the largest stock broker in India in January 2019, trumping stock brokerages operated by mega-banks. We achieved this slowly and organically. We have never raised external funding, have zero debt, and have been profitable YoY. We do not have a marketing team, have not advertised anywhere, and have let our services and products speak for themselves, building our userbase, brand, and trust over the years.
@@ -60,7 +60,6 @@ Here is a quick, broad, overview of our stack, before we start getting into deep
 - Sentry, Grafana, and Prometheus for infra-wide systems and app metrics and monitoring.
 - ELK stack for logs, where storing terabytes of searchable logs for several years is a regulatory requirement.
 - Hybrid infra. Physical racks where numerous exchange leased lines terminate + AWS. Sometimes, these leased lines go down when the civic body in Mumbai digs up roads.
-- Extremely complex and rapidly changing regulatory environment with multiple regulators (three exchanges, one depository, one capital markets regulator). Want to add a new view to an app? Get the app re-approved.
 
 ## Guiding principles and philosophies
 These are some of the broad guiding principles that have happened to worked for us.
