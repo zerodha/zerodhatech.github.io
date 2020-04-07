@@ -1,0 +1,47 @@
+body {
+	color: #ddd;
+	background-color: #222;
+}
+
+::-moz-selection {
+	background: #609df9;
+	color: #fff;
+    text-shadow: none
+}
+
+::selection {
+	background: #609df9;
+	color: #fff;
+    text-shadow: none
+}
+
+hr {
+	border-color: #aaa;
+}
+a {
+	color: #609df9;
+}
+	a:hover {
+		color: #609df9;
+		text-decoration-color: #609df9;
+	}
+
+.wrap {
+	background: #333;
+}
+.header .nav a, .post .content a {
+	color: #609df9;
+}
+.logo img {
+	filter: invert(1);
+}
+.intro .highlight {
+	border-color: #609df9;
+}
+.post .content {
+	border-color: #888;
+}
+.tags a {
+	color: #888;
+	border-color: #888;
+}

@@ -1,0 +1,21 @@
+<div class="author">
+    {{ if .Params.author }}
+        {{ $author := .Params.author }}
+        {{ with index .Site.Data.authors $author }}
+            <span class="avatar"><img src="{{ .avatar }}" alt="{{ .name }}" /></span>
+            <div class="meta">
+                <a href="{{ $.Site.BaseURL }}authors/{{ $author }}" class="name">{{ .name }}</a>
+                <span class="desig">({{ .title }})</span>
+
+                {{ if ne .Date.Year 1 }}<br />
+                    <div class="date">{{ dateFormat "02 Jan 2006" $.Date }}</div>
+                {{ end }}
+
+                <div class="urls">
+                    {{ if ne .homepage }}<a href="{{ .homepage }}">Homepage</a>{{ end }}
+                    {{ if ne .github }}<a href="{{ .github }}">GitHub</a>{{ end }}
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
+</div>

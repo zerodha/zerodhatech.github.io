@@ -1,0 +1,13 @@
+<ul class="projects">
+    {{ range sort .Page.Site.Data.projects ".stars" "desc" }}
+        <li class="item">
+            <div class="name">
+                <h3><a href="{{ .url }}">{{ .name }}</a></h3>
+                <p class="stars">★ {{ .stars }}</p>
+            </div>
+            <div class="description">
+                <p>{{ .description }}</p>
+            </div>
+        </li>
+    {{ end }}
+</ul>

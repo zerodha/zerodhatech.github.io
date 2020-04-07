@@ -1,0 +1,30 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "zerodha.tech"
+paginate = 10
+
+[params]
+subtitle = "Technology blog of India's largest stock broker"
+
+[taxonomies]
+   tag = "tags"
+   author = "authors"
+
+[menu]
+   [[menu.header]]
+      identifier = "home"
+      name = "Home"
+      url = "/"
+      weight = 1
+
+   [[menu.header]]
+      identifier = "blog"
+      name = "Blog"
+      url = "/blog"
+      weight = 2
+
+   [[menu.header]]
+      identifier = "projects"
+      name = "Projects"
+      url = "/projects"
+      weight = 3
