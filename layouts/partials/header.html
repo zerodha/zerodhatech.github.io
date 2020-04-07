@@ -21,7 +21,32 @@
 	
 	{{ with .Params.image }}
 		<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
+	{{ else }}
+		<meta property="og:image" content="https://zerodha.com/static/images/landing.png">
 	{{ end }}
+
+    <script type="application/ld+json">
+		{
+			"@context" : "https://schema.org",
+			"@type" : "Organization",
+			"name" : "{{ $.Site.Title }}",
+			"logo": "https://zerodha.tech/static/images/logo.svg",
+			"description": "{{ $.Site.Params.subtitle }}"
+			"contactPoint" : [{
+				"@type" : "ContactPoint",
+				"telephone" : "+91 80 4040 2020",
+				"contactType" : "customer service"
+			}],
+			"url" : "https://zerodha.tech",
+			"sameAs" : [
+				"https://facebook.com/zerodha.social",
+				"https://twitter.com/zerodhaonline",
+				"https://youtube.com/user/zerodhaonline",
+				"https://linkedin.com/company/zerodha",
+				"https://instagram.com/zerodhaonline"
+			]
+		}
+	   </script>
 
 	<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}static/style.css" />	
