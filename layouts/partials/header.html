@@ -19,16 +19,20 @@
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 	
+	{{ with .Params.image }}
+		<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
+	{{ end }}
+
 	<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}static/style.css" />	
-	<link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="{{ .Site.BaseURL }}static/dark.css" />	
+	<!-- <link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="{{ .Site.BaseURL }}static/dark.css" />	 -->
 </head>
 <body>
 	{{ .Site.Params.paginate }}
 	<section class="container wrap">
 		<div class="header">
 			<div class="logo">
-				<a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}static/images/logo.svg" /></a>
+				<a href="{{ .Site.BaseURL }}"><img alt="Zerodha technology blog" src="{{ .Site.BaseURL }}static/images/logo.svg" /></a>
 			</div>
 			<nav class="nav">
 				{{ $cur := . }}

@@ -224,10 +224,10 @@ ul.flat li {
 }
 
 .posts {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
+    /* display: grid; */
+    /* flex-wrap: wrap; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-gap: 60px; */
 }
 
 .post.blurb .post-header {
