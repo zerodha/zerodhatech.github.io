@@ -7,7 +7,9 @@ import sys
 import yaml
 import json
 import requests
+from os import getenv
 from requests.auth import HTTPBasicAuth
+
 
 def fetch_project(url):
     pass
@@ -17,19 +19,23 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("provide path to projects.yml")
 
+    api_token = getenv("GITHUB_TOKEN", "")
+
     # Source: https://stackoverflow.com/a/1774043
-    with open(sys.argv[1], 'r') as stream:
+    with open(sys.argv[1], "r") as stream:
         try:
-            projects = (yaml.safe_load(stream))
+            projects = yaml.safe_load(stream)
         except yaml.YAMLError as exc:
             sys.exit(exc)
-    
+
     for i, p in enumerate(projects):
         if "github_uri" not in p:
             continue
-
         print(p["github_uri"])
-        r = requests.get("https://api.github.com/repos/{}".format(p["github_uri"]))
+
+        headers = {"Authorization": "token %s" % api_token}
+        url = "https://api.github.com/repos/{}".format(p["github_uri"])
+        r = requests.get(url, headers)
         # auth=HTTPBasicAuth("", ""))
         data = json.loads(r.content)
 
