@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zerodha.tech</title><link>/</link><description>Recent content on zerodha.tech</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello, World!</title><link>/blog/hello-world/</link><pubDate>Mon, 06 Apr 2020 00:00:00 +0530</pubDate><guid>/blog/hello-world/</guid><description>Zerodha, now India&amp;rsquo;s largest stock broker, bootstrapped and profitable, turns ten years old this year. The Zerodha tech team turns seven years old. The tech team has remained largely elusive over the course of our existence. While we have pondered starting a tech blog for more than half a decade, we have often found ourselves too busy building the fundamental blocks underlying a stock brokerage. We have also been stalled by a sense of unpreparedness to talk to the world about our very unconventional setup.</description></item><item><title>Projects</title><link>/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/</guid><description>FOSS projects out of Zerodha.
-listmonk ★ 3370
+listmonk ★ 3461
 High performance, self-hosted newsletter and mailing list manager with a modern dashboard. Go &amp;#43; React.
-csvtotable ★ 793
+csvtotable ★ 798
 Simple command-line utility to convert CSV files to searchable and sortable HTML table.
-koanf ★ 158
+koanf ★ 179
 Light weight extensible library for reading config (file, S3 etc.) in Go applications. Built in support for JSON, TOML, YAML, env, command line.</description></item></channel></rss>
