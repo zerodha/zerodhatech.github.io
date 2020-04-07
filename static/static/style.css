@@ -305,9 +305,6 @@ ul.flat li {
         display: flex;
         margin-bottom: 30px;
     }
-    .projects .item:hover {
-        background-color: #fafafa;
-    }
     .projects .name {
         flex: 40%;
     }
