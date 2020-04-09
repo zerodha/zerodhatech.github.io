@@ -127,8 +127,23 @@
   url: https://github.com/ajinasokan/store_keeper
   description: StoreKeeper is an easy and flexible state management system for Flutter
     apps
-  stars: 4
-  updated_at: '2019-10-30T07:16:40Z'
+  stars: 5
+  updated_at: '2020-04-07T19:41:13Z'
+
+- github_uri: ajinasokan/autopilot
+  name: autopilot
+  url: https://github.com/ajinasokan/autopilot
+  description: A test driver for Flutter to do QA testing without sharing app source
+    code.
+  stars: 3
+  updated_at: '2020-04-05T11:08:49Z'
+  
+- github_uri: ajinasokan/recharge
+  name: recharge
+  url: https://github.com/ajinasokan/recharge
+  description: Recharge is a simple library to hot reload your Dart code on file changes
+  stars: 3
+  updated_at: '2020-02-27T05:37:46Z'
 
 - github_uri: knadh/otpgateway
   name: otpgateway
