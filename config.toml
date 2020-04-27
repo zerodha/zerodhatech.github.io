@@ -2,6 +2,9 @@ baseURL = "https://zerodha.tech"
 languageCode = "en-us"
 title = "Zerodha Tech Blog"
 paginate = 10
+pygmentsstyle = "solarized-dark"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 [params]
 subtitle = "Technology blog of India's largest stock broker"
