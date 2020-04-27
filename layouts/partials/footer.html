@@ -3,5 +3,8 @@
 	<footer class="footer">
 		<a href="https://zerodha.com">Zerodha</a> &copy; 2020. All rights reserved.
 	</footer>
+	{{ if not .Site.IsServer }}
+	{{ template "_internal/google_analytics_async.html" . }}
+	{{ end }}
 </body>
 </html>
