@@ -1,0 +1,29 @@
+<div class="posts">
+	{{ $pages := .Pages }}
+	{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+	{{ range $paginator.Pages }}
+		<div class="post blurb">
+			<div class="post-header">
+				<div class="meta">
+					<div class="date">
+						{{ dateFormat "02 Jan 2006" .Date }}
+					</div>
+				</div>
+				<h3 class="title">
+					<a href="{{ .RelPermalink }}">{{.Title}}{{ if .Draft }}<sup class="draft-label">DRAFT</sup>{{ end }}</a>
+				</h3>
+			</div>
+			<div class="description">
+				{{ if isset .Params "description" }}
+					{{ .Description }}
+				{{ else if gt (len .RawContent) 120 }}
+					{{ slicestr .RawContent 0 120 }}...
+				{{ else }}
+					{{ .RawContent }}
+				{{ end }}
+			</div>
+			{{ partial "author.html" . }}
+		</div>
+	{{ end }}
+	{{ template "partials/paginator.html" . }}
+</div>
