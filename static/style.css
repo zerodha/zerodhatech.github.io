@@ -223,11 +223,8 @@ ul.flat li {
     letter-spacing: 1px;
 }
 
-.posts {
-    /* display: grid; */
-    /* flex-wrap: wrap; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-gap: 60px; */
+.posts .post {
+    margin-bottom: 60px;
 }
 
 .post.blurb .post-header {
