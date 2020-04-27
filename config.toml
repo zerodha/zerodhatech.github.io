@@ -5,6 +5,7 @@ paginate = 10
 pygmentsstyle = "solarized-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+googleAnalytics = "UA-75485182-2"
 
 [params]
 subtitle = "Technology blog of India's largest stock broker"
