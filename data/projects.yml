@@ -211,11 +211,3 @@
   description: Subscription Coupons is a frappe application used to create and manage subscription coupon codes.
   stars: 0
   updated_at: '2020-01-19T21:05:30Z'
-
-- github_uri: zerodhatech/osticket-archive
-  name: osticket-archive
-  url: https://github.com/zerodhatech/osticket-archive
-  description: A utility to archive all closed tickets beyond a certain age to disk (including attachments)
-    and delete them from the database.
-  stars: 0
-  updated_at: '2020-01-19T21:05:30Z'
