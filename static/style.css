@@ -201,6 +201,10 @@ ul.flat li {
         margin-left: 30px;
         color: #0066ff;
     }
+    .header nav .feed img {
+        width: 16px;
+        height: auto;
+    }
 
 .header .site-description nav {
     margin: 0;
