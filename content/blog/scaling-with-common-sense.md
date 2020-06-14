@@ -1,6 +1,6 @@
 ---
 title: "Scaling with common sense"
-description: "A disorderly assortment of common sense ideas for scaling applicaions that we have follow at Zerodha. TLDR: Simple scales. Scale application before infra. Keep networking and IO minimal."
+description: "A disorderly assortment of common sense ideas for scaling applicaions that we follow at Zerodha. TLDR: Simple scales. Scale application before infra. Keep networking and IO minimal."
 date: "2020-06-14T14:00:00+05:30"
 author: knadh
 authors: ["knadh"]
@@ -101,7 +101,7 @@ Every bit of data that is shown on [Kite](https://zerodha.com/products/kite), ou
 
 That an active investment platform generally only has to display data for the particular trading day is the silver lining here. RAM is cheap, Redis is pure magic, and it's trivial to have everything for the day, data for millions of users, kept in memory as a few hundred GBs worth of byte blobs. Every business has some sort of silver lining that can be hacked on.
 
-Really though, how often does the data a user looks at on an application, change? Chances are, not very often, unlike stock prices that tick every second, for example. Even caching for a few seconds seconds can make a big difference. Nothing beats caching in RAM, but not everything can be cached in RAM. What can be, the heaviest queries, or the most frequent responses, probably should be. If possible, cache forever, as long as invalidating the cache does not become overly complex. Generally, it's possible to cache all GET requests until a corresponding POST or PUT request on that resource internally invalidates the cache.
+Really though, how often does the data a user looks at on an application, change? Chances are, not very often, unlike stock prices that tick every second, for example. Even caching for a few seconds can make a big difference. Nothing beats caching in RAM, but not everything can be cached in RAM. What can be, the heaviest queries, or the most frequent responses, probably should be. If possible, cache forever, as long as invalidating the cache does not become overly complex. Generally, it's possible to cache all GET requests until a corresponding POST or PUT request on that resource internally invalidates the cache.
 
 ### 10.1. Dumb caching is best caching.
 When a request looks up data in a cache and dumps it directly in the response, that's a dumb cache. The caching logic has no understanding of the semantics or structure of the data stored and just does bytes-out. Dumb caches are nice as the application logic need not concern with parsing or constructing data, which in turn may become its own bottleneck. While this may not be feasible everywhere, it is a nice way to keep things simple.
