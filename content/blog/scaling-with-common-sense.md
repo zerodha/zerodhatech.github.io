@@ -8,7 +8,7 @@ tags: ["philosophy", "scaling"]
 image: "/static/images/grafana-store.png"
 ---
 
-"Scaling" is not one technique but a spectrum that stretches all the way up from "Google scale" to the K8s cluster [Karan](/authors/karan) runs on a Raspberry Pi plugged into a 12V shaver outlet in his bathroom to encrypt his DNS queries for peak privacy, while he asks Alexa to dim the lights and play his favorite non-mainstream indie music.
+"Scaling" is not a specific technique but an entire spectrum that stretches all the way from "Google scale" to the K8s cluster [Karan](/authors/karan) runs on a Raspberry Pi plugged into a 12V shaver outlet in his bathroom to encrypt his DNS queries for peak privacy, while he asks Alexa to dim the lights and play his favorite non-mainstream indie music.
 
 It is a collection of practices unique and intimate to every organisation, and is the product of an infinite number of variables; the numerous domain-specific problems, the structure of the organisation, the nature of the people involved and their biases, countless engineering decisions and trade-offs, technical debt and history, ad infinitum.
 
