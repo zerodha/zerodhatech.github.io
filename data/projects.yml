@@ -212,7 +212,7 @@
   stars: 0
   updated_at: '2020-01-19T21:05:30Z'
   
-  - github_uri:  mr-karan/terraform-provider-kite
+- github_uri:  mr-karan/terraform-provider-kite
   name: terraform-provider-kite
   url: https://github.com/mr-karan/terraform-provider-kite
   description: Terraform plugin for managing long term portfolio holdings with Zerodha Kite.
