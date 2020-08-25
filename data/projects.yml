@@ -204,3 +204,31 @@
   description: Simple frappe app to setup Single sign-on for discource.
   stars: 1
   updated_at: '2020-08-24T16:05:30Z'
+
+- github_uri:  zerodhatech/rbiparser
+  name: rbiparser
+  url: https://github.com/zerodhatech/rbiparser
+  description: A utility for downloading, parsing and sanitizing bank database (IFSC, MICR, address etc.) Excel sheets from the RBI website.
+  stars: 0
+  updated_at: '2020-01-19T21:05:30Z'
+
+- github_uri:  zerodhatech/subscription_coupons
+  name: subscription_coupons
+  url: https://github.com/zerodhatech/subscription_coupons
+  description: Subscription Coupons is a frappe application used to create and manage subscription coupon codes.
+  stars: 0
+  updated_at: '2020-01-19T21:05:30Z'
+  
+- github_uri:  mr-karan/terraform-provider-kite
+  name: terraform-provider-kite
+  url: https://github.com/mr-karan/terraform-provider-kite
+  description: Terraform plugin for managing long term portfolio holdings with Zerodha Kite.
+  stars: 0
+  updated_at: '2020-01-19T21:05:30Z'
+  
+- github_uri:  zerodhatech/rms-consolidated-scrips-status
+  name: rms-consolidated-scrips-status
+  url: https://github.com/zerodhatech/rms-consolidated-scrips-status
+  description: A utility that parse Zerodha RMS Consolidated spreadsheets and render category-wise scrip details(margins, multiplier, etc)
+  stars: 0
+  updated_at: '2020-01-19T21:05:30Z'
