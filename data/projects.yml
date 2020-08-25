@@ -232,3 +232,10 @@
   description: A utility that parse Zerodha RMS Consolidated spreadsheets and render category-wise scrip details(margins, multiplier, etc)
   stars: 0
   updated_at: '2020-01-19T21:05:30Z'
+
+- github_uri: iamd3vil/shelf
+  name: shelf
+  url: https://github.com/iamd3vil/shelf
+  description: A Good Symlinks/Dotfiles Manager
+  stars: 0
+  updated_at: '2020-01-19T21:05:30Z'
