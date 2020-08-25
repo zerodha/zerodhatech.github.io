@@ -29,11 +29,11 @@
   stars: 36
   updated_at: '2020-02-12T13:32:19Z'
 
-- github_uri: shridarpatil/Frappe-attachments-s3
+- github_uri: zerodhatech/Frappe-attachments-s3
   name: Frappe-attachments-s3
-  url: https://github.com/shridarpatil/Frappe-attachments-s3
+  url: https://github.com/zerodhatech/Frappe-attachments-s3
   description: A frappe app to upload file attachments in doctypes to s3.
-  stars: 0
+  stars: 35
   updated_at: '2018-01-15T07:27:11Z'
 
 - github_uri: vividvilla/simplesessions
@@ -74,11 +74,11 @@
   stars: 12
   updated_at: '2019-11-19T16:14:34Z'
 
-- github_uri: shridarpatil/pdf_text_overlay
+- github_uri: zerodhatech/pdf_text_overlay
   name: pdf_text_overlay
-  url: https://github.com/shridarpatil/pdf_text_overlay
+  url: https://github.com/zerodhatech/pdf_text_overlay
   description: 'pdf_text_overlay is a python library to write text on top of pdf. '
-  stars: 0
+  stars: 11
   updated_at: '2018-12-13T12:20:23Z'
 
 - github_uri: knadh/listmonk
@@ -137,7 +137,7 @@
     code.
   stars: 3
   updated_at: '2020-04-05T11:08:49Z'
-  
+
 - github_uri: ajinasokan/recharge
   name: recharge
   url: https://github.com/ajinasokan/recharge
@@ -164,7 +164,7 @@
 - github_uri: joeirimpan/go-frappe-client
   name: go-frappe-client
   url: https://github.com/joeirimpan/go-frappe-client
-  description: 
+  description:
   stars: 0
   updated_at: '2019-03-27T12:55:59Z'
 
@@ -197,6 +197,13 @@
     AWS Go SDK)
   stars: 36
   updated_at: '2020-01-19T21:05:30Z'
+
+- github_uri: shridarpatil/frappe_discourse
+  name: frappe_discourse
+  url: https://github.com/frappe_discourse
+  description: Simple frappe app to setup Single sign-on for discource.
+  stars: 1
+  updated_at: '2020-08-24T16:05:30Z'
 
 - github_uri:  zerodhatech/rbiparser
   name: rbiparser
