@@ -218,3 +218,10 @@
   description: Terraform plugin for managing long term portfolio holdings with Zerodha Kite.
   stars: 0
   updated_at: '2020-01-19T21:05:30Z'
+  
+- github_uri:  zerodhatech/rms-consolidated-scrips-status
+  name: rms-consolidated-scrips-status
+  url: https://github.com/zerodhatech/rms-consolidated-scrips-status
+  description: A utility that parse Zerodha RMS Consolidated spreadsheets and render category-wise scrip details(margins, multiplier, etc)
+  stars: 0
+  updated_at: '2020-01-19T21:05:30Z'
