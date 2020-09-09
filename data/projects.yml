@@ -145,6 +145,13 @@
   stars: 3
   updated_at: '2020-02-27T05:37:46Z'
 
+- github_uri: ajinasokan/flutter_fgbg
+  name: flutter_fgbg
+  url: https://github.com/ajinasokan/flutter_fgbg
+  description: Flutter plugin to detect when app(not Flutter container) goes to background or foreground
+  stars: 2
+  updated_at: '2020-02-27T05:37:46Z'
+
 - github_uri: knadh/otpgateway
   name: otpgateway
   url: https://github.com/knadh/otpgateway
