@@ -28,7 +28,7 @@ jobs:
         run: |
           python scripts/fetch-github-stars.py data/projects.yml
         env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
         run: hugo --minify
