@@ -239,3 +239,10 @@
   description: A Good Symlinks/Dotfiles Manager
   stars: 0
   updated_at: '2020-01-19T21:05:30Z'
+
+- github_uri: mevinoth/slim-ui
+  name: slim-ui
+  url: https://github.com/mevinoth/slim-ui
+  description:  Simple components library used for building lightweight VueJS projects 
+  stars: 0
+  updated_at: '2020-01-19T21:05:30Z'
