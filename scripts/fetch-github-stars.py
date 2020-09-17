@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
         headers = {"Authorization": "token %s" % api_token}
         url = "https://api.github.com/repos/{}".format(p["github_uri"])
-        r = requests.get(url, headers)
+        r = requests.get(url, headers=headers)
         # auth=HTTPBasicAuth("", ""))
         data = json.loads(r.content)
 
@@ -45,5 +45,6 @@ if __name__ == "__main__":
         projects[i]["description"] = data["description"]
         projects[i]["stars"] = data["stargazers_count"]
         projects[i]["updated_at"] = data["updated_at"]
+
     with open(sys.argv[1], "w") as f:
-        f.write(json.dumps(projects, indent=2))
+        yaml.dump(projects, f)

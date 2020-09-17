@@ -1,240 +1,252 @@
----
-- github_uri: vividvilla/lil
+- description: Simple URL shortener built with Go
+  github_uri: vividvilla/lil
   name: lil
-  url: https://github.com/vividvilla/lil
-  description: Simple URL shortener built with Go
-  stars: 9
-  updated_at: '2020-02-12T12:29:53Z'
-
-- github_uri: knadh/stuffbin
-  name: stuffbin
-  url: https://github.com/knadh/stuffbin
-  description: Compress and embed static files and assets into Go binaries and access
-    them with a virtual file system in production
-  stars: 43
-  updated_at: '2020-02-05T01:33:24Z'
-
-- github_uri: vividvilla/consul-cfg
-  name: consul-cfg
-  url: https://github.com/vividvilla/consul-cfg
-  description: Commandline utility to convert config formats like TOML, JSON, YAML
-    etc to KV Pairs which can be imported via consul cli.
-  stars: 7
-  updated_at: '2020-01-07T08:47:24Z'
-
-- github_uri: mr-karan/kubekutr
-  name: kubekutr
-  url: https://github.com/mr-karan/kubekutr
-  description: Cookie cutter templating tool for scaffolding K8s manifests
-  stars: 36
-  updated_at: '2020-02-12T13:32:19Z'
-
-- github_uri: zerodhatech/Frappe-attachments-s3
-  name: Frappe-attachments-s3
-  url: https://github.com/zerodhatech/Frappe-attachments-s3
-  description: A frappe app to upload file attachments in doctypes to s3.
-  stars: 35
-  updated_at: '2018-01-15T07:27:11Z'
-
-- github_uri: vividvilla/simplesessions
-  name: simplesessions
-  url: https://github.com/vividvilla/simplesessions
-  description: simplesessions is a "pure" Go session library that is completely agnostic
-    of HTTP libraries and frameworks, backend stores, and even cookie jars.
-  stars: 26
-  updated_at: '2019-10-05T17:25:34Z'
-
-- github_uri: knadh/querytostruct
-  name: querytostruct
-  url: https://github.com/knadh/querytostruct
-  description: An extremely tiny utility for unmarshalling and scanning querystrings
-    into structs
-  stars: 2
-  updated_at: '2019-10-02T09:56:07Z'
-
-- github_uri: mr-karan/eks-gitops
-  name: eks-gitops
-  url: https://github.com/mr-karan/eks-gitops
-  description: Set of utilities to do deployments in an EKS cluster
-  stars: 0
-  updated_at: '2020-01-02T07:08:31Z'
-
-- github_uri: mr-karan/cAlert
-  name: calert
-  url: https://github.com/mr-karan/cAlert
-  description: 'Prometheus'' Alertmanager - Google Chat Integration :bell:'
   stars: 18
-  updated_at: '2020-02-07T08:59:08Z'
+  updated_at: '2020-08-22T17:54:14Z'
+  url: https://github.com/vividvilla/lil
 
-- github_uri: mr-karan/store-exporter
-  name: store-exporter
-  url: https://github.com/mr-karan/store-exporter
-  description: Utility to extract metrics from arbitary data stores in Prometheus
+- description: Compress and embed static files and assets into Go binaries and access
+    them with a virtual file system in production
+  github_uri: knadh/stuffbin
+  name: stuffbin
+  stars: 57
+  updated_at: '2020-09-01T19:55:11Z'
+  url: https://github.com/knadh/stuffbin
+
+- description: Commandline utility to convert config formats like TOML, JSON, YAML
+    etc to KV Pairs which can be imported via consul cli.
+  github_uri: vividvilla/consul-cfg
+  name: consul-cfg
+  stars: 9
+  updated_at: '2020-04-03T07:48:10Z'
+  url: https://github.com/vividvilla/consul-cfg
+
+- description: Cookie cutter templating tool for scaffolding K8s manifests
+  github_uri: mr-karan/kubekutr
+  name: kubekutr
+  stars: 104
+  updated_at: '2020-09-01T19:54:45Z'
+  url: https://github.com/mr-karan/kubekutr
+
+- description: A frappe app to upload file attachments in doctypes to s3.
+  github_uri: zerodhatech/Frappe-attachments-s3
+  name: frappe-attachments-s3
+  stars: 38
+  updated_at: '2020-09-08T05:35:58Z'
+  url: https://github.com/zerodhatech/Frappe-attachments-s3
+
+- description: simplesessions is a "pure" Go session library that is completely agnostic
+    of HTTP libraries and frameworks, backend stores, and even cookie jars.
+  github_uri: vividvilla/simplesessions
+  name: simplesessions
+  stars: 29
+  updated_at: '2020-09-04T11:53:48Z'
+  url: https://github.com/vividvilla/simplesessions
+
+- description: An extremely tiny utility for unmarshalling and scanning querystrings
+    into structs
+  github_uri: knadh/querytostruct
+  name: querytostruct
+  stars: 6
+  updated_at: '2020-08-24T20:48:00Z'
+  url: https://github.com/knadh/querytostruct
+
+- description: Set of utilities to do deployments in an EKS cluster
+  github_uri: mr-karan/eks-gitops
+  name: eks-gitops
+  stars: 1
+  updated_at: '2020-08-15T07:38:34Z'
+  url: https://github.com/mr-karan/eks-gitops
+
+- description: 'Prometheus'' Alertmanager - Google Chat Integration :bell:'
+  github_uri: mr-karan/cAlert
+  name: calert
+  stars: 38
+  updated_at: '2020-09-01T16:22:02Z'
+  url: https://github.com/mr-karan/cAlert
+
+- description: Utility to extract metrics from arbitary data stores in Prometheus
     format
-  stars: 12
-  updated_at: '2019-11-19T16:14:34Z'
+  github_uri: mr-karan/store-exporter
+  name: store-exporter
+  stars: 19
+  updated_at: '2020-07-15T20:06:51Z'
+  url: https://github.com/mr-karan/store-exporter
 
-- github_uri: zerodhatech/pdf_text_overlay
+- description: 'pdf_text_overlay is a python library to write text on top of pdf. '
+  github_uri: zerodhatech/pdf_text_overlay
   name: pdf_text_overlay
-  url: https://github.com/zerodhatech/pdf_text_overlay
-  description: 'pdf_text_overlay is a python library to write text on top of pdf. '
   stars: 11
-  updated_at: '2018-12-13T12:20:23Z'
+  updated_at: '2020-08-22T04:57:02Z'
+  url: https://github.com/zerodhatech/pdf_text_overlay
 
-- github_uri: knadh/listmonk
+- description: High performance, self-hosted newsletter and mailing list manager with
+    a modern dashboard. Go + VueJS.
+  github_uri: knadh/listmonk
   name: listmonk
+  stars: 3905
+  updated_at: '2020-09-08T20:03:55Z'
   url: https://github.com/knadh/listmonk
-  description: High performance, self-hosted newsletter and mailing list manager with
-    a modern dashboard. Go + React.
-  stars: 3370
-  updated_at: '2020-02-12T08:53:00Z'
 
-- github_uri: knadh/pfxsigner
-  name: pfxsigner
-  url: https://github.com/knadh/pfxsigner
-  description: A CLI utility and server for digitally signing PDFs with docsign loaded
+- description: A CLI utility and server for digitally signing PDFs with docsign loaded
     from PFX (PKCS#12) files
-  stars: 13
-  updated_at: '2020-01-24T17:50:29Z'
+  github_uri: knadh/pfxsigner
+  name: pfxsigner
+  stars: 22
+  updated_at: '2020-09-06T04:40:51Z'
+  url: https://github.com/knadh/pfxsigner
 
-- github_uri: knadh/koanf
+- description: Light weight, extensible Go package for reading config. Built in support
+    for JSON, TOML, YAML, env, command line, file, S3 etc.
+  github_uri: knadh/koanf
   name: koanf
+  stars: 215
+  updated_at: '2020-09-08T11:07:18Z'
   url: https://github.com/knadh/koanf
-  description: Light weight extensible library for reading config (file, S3 etc.)
-    in Go applications. Built in support for JSON, TOML, YAML, env, command line.
-  stars: 158
-  updated_at: '2020-02-09T19:29:31Z'
 
-- github_uri: vividvilla/csvtotable
-  name: csvtotable
-  url: https://github.com/vividvilla/csvtotable
-  description: Simple command-line utility to convert CSV files to searchable and
+- description: Simple command-line utility to convert CSV files to searchable and
     sortable HTML table.
-  stars: 793
-  updated_at: '2020-02-10T12:35:47Z'
+  github_uri: vividvilla/csvtotable
+  name: csvtotable
+  stars: 848
+  updated_at: '2020-09-05T21:21:15Z'
+  url: https://github.com/vividvilla/csvtotable
 
-- github_uri: knadh/osticket-archive
-  name: osticket-archive
-  url: https://github.com/knadh/osticket-archive
-  description: A utility to archive all closed tickets beyond a certain age to disk
+- description: A utility to archive all closed tickets beyond a certain age to disk
     (including attachments) and delete them from the database. The tickets are archived
     as JSON files.
-  stars: 3
-  updated_at: '2017-12-20T05:42:47Z'
+  github_uri: knadh/osticket-archive
+  name: osticket-archive
+  stars: 4
+  updated_at: '2020-06-15T10:29:54Z'
+  url: https://github.com/knadh/osticket-archive
 
-- github_uri: ajinasokan/store_keeper
-  name: store_keeper
-  url: https://github.com/ajinasokan/store_keeper
-  description: StoreKeeper is an easy and flexible state management system for Flutter
+- description: StoreKeeper is an easy and flexible state management system for Flutter
     apps
-  stars: 5
-  updated_at: '2020-04-07T19:41:13Z'
+  github_uri: ajinasokan/store_keeper
+  name: store_keeper
+  stars: 8
+  updated_at: '2020-06-28T07:50:22Z'
+  url: https://github.com/ajinasokan/store_keeper
 
-- github_uri: ajinasokan/autopilot
-  name: autopilot
-  url: https://github.com/ajinasokan/autopilot
-  description: A test driver for Flutter to do QA testing without sharing app source
+- description: A test driver for Flutter to do QA testing without sharing app source
     code.
-  stars: 3
-  updated_at: '2020-04-05T11:08:49Z'
+  github_uri: ajinasokan/autopilot
+  name: autopilot
+  stars: 13
+  updated_at: '2020-08-28T06:13:51Z'
+  url: https://github.com/ajinasokan/autopilot
 
-- github_uri: ajinasokan/recharge
+- description: Recharge is a simple library to hot reload your Dart code on file changes
+  github_uri: ajinasokan/recharge
   name: recharge
+  stars: 5
+  updated_at: '2020-07-06T05:36:22Z'
   url: https://github.com/ajinasokan/recharge
-  description: Recharge is a simple library to hot reload your Dart code on file changes
-  stars: 3
-  updated_at: '2020-02-27T05:37:46Z'
 
-- github_uri: knadh/otpgateway
-  name: otpgateway
-  url: https://github.com/knadh/otpgateway
-  description: Standalone server for user address and OTP verification flows with
+- description: Flutter plugin to detect when app(not Flutter container) goes to background
+    or foreground
+  github_uri: ajinasokan/flutter_fgbg
+  name: flutter_fgbg
+  stars: 2
+  updated_at: '2020-09-08T13:51:19Z'
+  url: https://github.com/ajinasokan/flutter_fgbg
+
+- description: Standalone server for user address and OTP verification flows with
     pluggable providers (e-mail, phone via SMS, bank penny drops etc.)
-  stars: 57
-  updated_at: '2020-01-07T17:16:52Z'
+  github_uri: knadh/otpgateway
+  name: otpgateway
+  stars: 91
+  updated_at: '2020-09-03T16:04:19Z'
+  url: https://github.com/knadh/otpgateway
 
-- github_uri: vishnus/osticket-autoassign
-  name: osticket-autoassign
-  url: https://github.com/vishnus/osticket-autoassign
-  description: Osticket plugin to assign tickets automatically to random agents based
+- description: Osticket plugin to assign tickets automatically to random agents based
     on teams, department, and activity
-  stars: 6
-  updated_at: '2018-06-15T07:10:28Z'
+  github_uri: vishnus/osticket-autoassign
+  name: osticket-autoassign
+  stars: 8
+  updated_at: '2020-06-15T10:29:57Z'
+  url: https://github.com/vishnus/osticket-autoassign
 
-- github_uri: joeirimpan/go-frappe-client
+- description: null
+  github_uri: joeirimpan/go-frappe-client
   name: go-frappe-client
+  stars: 4
+  updated_at: '2020-04-27T20:10:12Z'
   url: https://github.com/joeirimpan/go-frappe-client
-  description:
-  stars: 0
-  updated_at: '2019-03-27T12:55:59Z'
 
-- github_uri: mr-karan/simplehealth
+- description: Tiny lib for exposing health-check endpoints as Prometheus/JSON format
+  github_uri: mr-karan/simplehealth
   name: simplehealth
-  url: https://github.com/mr-karan/simplehealth
-  description: Tiny lib for exposing health-check endpoints as Prometheus/JSON format
   stars: 4
   updated_at: '2020-02-12T12:26:02Z'
+  url: https://github.com/mr-karan/simplehealth
 
-- github_uri: vividvilla/gotp
+- description: Simple utility to live preview Go templates with custom data
+  github_uri: vividvilla/gotp
   name: gotp
+  stars: 13
+  updated_at: '2020-08-21T07:52:25Z'
   url: https://github.com/vividvilla/gotp
-  description: Simple utility to live preview Go templates with custom data
-  stars: 10
-  updated_at: '2020-01-21T17:26:48Z'
 
-- github_uri: knadh/sql-jobber
-  name: sql-jobber
-  url: https://github.com/knadh/sql-jobber
-  description: A (highly opinionated) distributed job-queue built specifically for
+- description: A highly opinionated, distributed job-queue built specifically for
     defering and executing heavy SQL read jobs asynchronously
-  stars: 35
-  updated_at: '2020-02-05T19:38:08Z'
+  github_uri: knadh/sql-jobber
+  name: sql-jobber
+  stars: 45
+  updated_at: '2020-08-23T13:59:43Z'
+  url: https://github.com/knadh/sql-jobber
 
-- github_uri: rhnvrm/simples3
-  name: simples3
-  url: https://github.com/rhnvrm/simples3
-  description: Simple no frills AWS S3 Golang Library using REST with V4 Signing (without
+- description: Simple no frills AWS S3 Golang Library using REST with V4 Signing (without
     AWS Go SDK)
-  stars: 36
-  updated_at: '2020-01-19T21:05:30Z'
+  github_uri: rhnvrm/simples3
+  name: simples3
+  stars: 44
+  updated_at: '2020-08-17T22:15:27Z'
+  url: https://github.com/rhnvrm/simples3
 
-- github_uri: shridarpatil/frappe_discourse
+- description: Simple frappe app to setup Single sign-on for discourse
+  github_uri: shridarpatil/frappe_discourse
   name: frappe_discourse
-  url: https://github.com/frappe_discourse
-  description: Simple frappe app to setup Single sign-on for discource.
-  stars: 1
-  updated_at: '2020-08-24T16:05:30Z'
+  stars: 3
+  updated_at: '2020-09-08T06:51:14Z'
+  url: https://github.com/shridarpatil/frappe_discourse
 
-- github_uri:  zerodhatech/rbiparser
+- description: A utility for downloading, parsing and sanitizing bank database (IFSC,
+    MICR, address etc.) Excel sheets from the RBI website.
+  github_uri: zerodhatech/rbiparser
   name: rbiparser
+  stars: 25
+  updated_at: '2020-08-27T08:07:20Z'
   url: https://github.com/zerodhatech/rbiparser
-  description: A utility for downloading, parsing and sanitizing bank database (IFSC, MICR, address etc.) Excel sheets from the RBI website.
-  stars: 0
-  updated_at: '2020-01-19T21:05:30Z'
 
-- github_uri:  zerodhatech/subscription_coupons
+- description: Subscription discount coupon code manager
+  github_uri: zerodhatech/subscription_coupons
   name: subscription_coupons
+  stars: 3
+  updated_at: '2020-08-26T11:08:23Z'
   url: https://github.com/zerodhatech/subscription_coupons
-  description: Subscription Coupons is a frappe application used to create and manage subscription coupon codes.
-  stars: 0
-  updated_at: '2020-01-19T21:05:30Z'
-  
-- github_uri:  mr-karan/terraform-provider-kite
-  name: terraform-provider-kite
-  url: https://github.com/mr-karan/terraform-provider-kite
-  description: Terraform plugin for managing long term portfolio holdings with Zerodha Kite.
-  stars: 0
-  updated_at: '2020-01-19T21:05:30Z'
-  
-- github_uri:  zerodhatech/rms-consolidated-scrips-status
-  name: rms-consolidated-scrips-status
-  url: https://github.com/zerodhatech/rms-consolidated-scrips-status
-  description: A utility that parse Zerodha RMS Consolidated spreadsheets and render category-wise scrip details(margins, multiplier, etc)
-  stars: 0
-  updated_at: '2020-01-19T21:05:30Z'
 
-- github_uri: iamd3vil/shelf
+- description: Terraform provider for managing long term portfolio with Zerodha Kite
+  github_uri: mr-karan/terraform-provider-kite
+  name: terraform-provider-kite
+  stars: 14
+  updated_at: '2020-09-01T19:56:28Z'
+  url: https://github.com/mr-karan/terraform-provider-kite
+
+- description: A utility that parse Zerodha Consolidated google spreadsheets and render
+    category-wise scrip details(margins, multiplier, etc)
+  github_uri: zerodhatech/rms-consolidated-scrips-status
+  name: rms-consolidated-scrips-status
+  stars: 2
+  updated_at: '2020-07-22T10:44:19Z'
+  url: https://github.com/zerodhatech/rms-consolidated-scrips-status
+
+- description: A Good Symlinks Manager
+  github_uri: iamd3vil/shelf
   name: shelf
+  stars: 9
+  updated_at: '2020-08-03T13:32:28Z'
   url: https://github.com/iamd3vil/shelf
   description: A Good Symlinks/Dotfiles Manager
   stars: 0
