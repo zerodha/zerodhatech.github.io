@@ -27,7 +27,7 @@ jobs:
       - name: Fetch GitHub stars
         run: |
           python scripts/fetch-github-stars.py data/projects.yml
-        with:
+        env:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
