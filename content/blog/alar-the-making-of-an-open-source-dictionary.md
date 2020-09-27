@@ -62,7 +62,7 @@ Then, in 2001, V. Krishna came across a newspaper article on Nudi, KaGaPa's Kann
 
 I find it fascinating that Datuk and V. Krishna, both unknown to each other and worlds apart, were working on mammoth dictionary digitisation projects of two classical Dravidian languages around the same time. Both, driven by passion.
 
-Since the mid 1990s, V. Krishna has approached numerous universities in Karnataka in hopes of getting his dictionary published and into the hands of people, only to be shown no interest or to be outright turned down. At one point, he secured a grant from the government to get the dictionary published, but it never materialised. In 2015, Karnataka Sahithya Parishath did a small publishing run and came out with three volumes of the dictionary spanning 4700 pages. Even though the distribution was very limited, V. Krishna remains appreciative of the publisher's attempt.
+Since the mid 1990s, V. Krishna has approached numerous universities in Karnataka in hopes of getting his dictionary published and into the hands of people, only to be shown no interest or to be outright turned down. At one point, he secured a grant from the government to get the dictionary published, but it never materialised. In 2015, Karnataka Sahithya Parishath did a small publishing run and came out with three physical volumes of the dictionary spanning 4700 pages. V. Krishna remains appreciative of the publisher's attempt.
 
 **
 
