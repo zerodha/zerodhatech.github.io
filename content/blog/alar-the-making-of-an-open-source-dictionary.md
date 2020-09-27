@@ -47,7 +47,7 @@ V. Krishna and Narasimhamurthy, KaGaPa's proprietor, spoke passionately about Ka
 
 {{< figure src="/static/images/vkrishna-alar.png" alt="V. Krishna's photo" height="150" class="float-right" >}}
 
-V. Krishna was born in 1950 in the Malanayakanahalli village in Mysore district in Karnataka. He studied in a Kannada medium school, followed by a year at a pre-university college that he was forced to drop out of before moving to Bengaluru with his family in 1968.
+V. Krishna was born in 1950 in the Malanayakana Halli village in Mysore district in Karnataka. He studied in a Kannada medium school, followed by a year at a pre-university college that he was forced to drop out of before moving to Bengaluru with his family in 1968.
 
 He found a job at the Indian Agricultural Research Institute (IARI) in 1970. At IARI, around this time, noticing him struggle with the English language, his boss casually suggested that he procure a dictionary to learn English. This conversation would turn out to be pivotal, and would set V. Krishna on a lifelong journey of language research and scholarship, an amazing case of autodidacticism.
 
