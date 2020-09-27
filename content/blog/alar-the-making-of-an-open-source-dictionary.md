@@ -47,7 +47,7 @@ V. Krishna and Narasimhamurthy, KaGaPa's proprietor, spoke passionately about Ka
 
 {{< figure src="/static/images/vkrishna-alar.png" alt="V. Krishna's photo" height="150" class="float-right" >}}
 
-V. Krishna was born in 1950 in the Mallanayakanahalli village in Mysore district in Karnataka. He studied in a Kannada medium school, followed by a year at a pre-university college that he was forced to drop out of before moving to Bengaluru with his family in 1968.
+V. Krishna was born in 1950 in the Malanayakanahalli village in Mysore district in Karnataka. He studied in a Kannada medium school, followed by a year at a pre-university college that he was forced to drop out of before moving to Bengaluru with his family in 1968.
 
 He found a job at the Indian Agricultural Research Institute (IARI) in 1970. At IARI, around this time, noticing him struggle with the English language, his boss casually suggested that he procure a dictionary to learn English. This conversation would turn out to be pivotal, and would set V. Krishna on a lifelong journey of language research and scholarship, an amazing case of autodidacticism.
 
@@ -62,7 +62,7 @@ Then, in 2001, V. Krishna came across a newspaper article on Nudi, KaGaPa's Kann
 
 I find it fascinating that Datuk and V. Krishna, both unknown to each other and worlds apart, were working on mammoth dictionary digitisation projects of two classical Dravidian languages around the same time. Both, driven by passion.
 
-Since the mid 1990s, V. Krishna has approached numerous universities in Karnataka in hopes of getting his dictionary published and into the hands of people, only to be shown no interest or to be outright turned down. At one point, he secured a grant from the government to get the dictionary published, but it never materialised. A commercial publisher who did agree to publish, took five years to come out with 1000 copies in 2015, but took no interest in distributing them. Of the few hundred copies that were sold, over a hundred were bought by V. Krishna's friends and family.
+Since the mid 1990s, V. Krishna has approached numerous universities in Karnataka in hopes of getting his dictionary published and into the hands of people, only to be shown no interest or to be outright turned down. At one point, he secured a grant from the government to get the dictionary published, but it never materialised. A commercial publisher did a small run with a few hundred copies, but that did not take off either.
 
 **
 
