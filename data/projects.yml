@@ -222,3 +222,10 @@
   stars: 33
   updated_at: '2020-08-03T04:04:08Z'
   url: https://github.com/mevinoth/slim-ui
+- description: AWS Cost Explorer and EC2 Instance metrics exporter for Prometheus 
+  github_uri: Thunderbottom/aws-exporter
+  name: aws-exporter
+  stars: 7
+  updated_at: '2020-08-03T04:04:08Z'
+  url: https://github.com/Thunderbottom/aws-exporter
+  
