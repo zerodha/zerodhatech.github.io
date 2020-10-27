@@ -228,4 +228,10 @@
   stars: 7
   updated_at: '2020-08-03T04:04:08Z'
   url: https://github.com/Thunderbottom/aws-exporter
+- description: Simple FAQ generator for Kite connect Forum
+  github_uri: ranjanrak/FaqGenerator
+  name: FaqGenerator
+  stars: 0
+  updated_at: '2020-10-27T10:14:19Z'
+  url: https://github.com/ranjanrak/FaqGenerator
   
