@@ -146,7 +146,7 @@
   stars: 8
   updated_at: '2020-06-15T10:29:57Z'
   url: https://github.com/vishnus/osticket-autoassign
-- description: null
+- description: Golang wrapper for consuming Frappe REST APIs
   github_uri: joeirimpan/go-frappe-client
   name: go-frappe-client
   stars: 6
@@ -222,3 +222,16 @@
   stars: 33
   updated_at: '2020-08-03T04:04:08Z'
   url: https://github.com/mevinoth/slim-ui
+- description: AWS Cost Explorer and EC2 Instance metrics exporter for Prometheus 
+  github_uri: Thunderbottom/aws-exporter
+  name: aws-exporter
+  stars: 7
+  updated_at: '2020-08-03T04:04:08Z'
+  url: https://github.com/Thunderbottom/aws-exporter
+- description: Simple FAQ generator for Kite connect Forum
+  github_uri: ranjanrak/FaqGenerator
+  name: FaqGenerator
+  stars: 0
+  updated_at: '2020-10-27T10:14:19Z'
+  url: https://github.com/ranjanrak/FaqGenerator
+  
