@@ -90,4 +90,14 @@ In September 2019, [https://alar.ink](https://alar.ink) went online. Then, a who
 
 So, that is the story of Alar and V. Krishna, the beauty of open data, and the incredible and infinite ways in which tiny, random events such as an overheard conversation, changes timelines, the Butterfly effect.
 
-**Links —** [Alar dictionary](https://alar.ink), [Alar open data](https://github.com/alar-dict) (licensed under OdBL), [dictmaker](https://github.com/knadh/dictmaker).
+**Links:** [Alar dictionary](https://alar.ink), [Alar open data](https://github.com/alar-dict) (licensed under OdBL), [dictmaker](https://github.com/knadh/dictmaker).
+
+**Updates:**
+
+V. Krishna is finally starting to get some of the recognition he deserves.
+
+- 9th Oct 2020. [Deccan Herald's feature on V. Krishna](https://www.deccanherald.com/metrolife/metrolife-your-bond-with-bengaluru/kannada-english-dictionary-online-after-four-decades-899393.html).
+- 1st Nov 2020. Kannada magazine [Kannada Prabha's feature on V. Krishna](https://twitter.com/raveebhat/status/1322830282211225602).
+- 1st Nov 2020. Kannada magazine [Prajavani's feature on V. Krishna](https://www.prajavani.net/artculture/article-features/alar-kannada-english-dictionary-by-v-krishna-karnataka-rajyostava-digital-era-775312.html).
+- 1st Nov 2020. Kannada news paper [Suvarna News' feature on V. Krishna](https://kannada.asianetnews.com/state-government-jobs/alar-website-to-search-kannda-words-dpl-qj3nc3).
+- 4th Nov 2020. Kannada TV channel [TV5's interview of V. Krishna](https://twitter.com/SwathiShastry/status/1323968510557450241).
