@@ -125,9 +125,7 @@ We considered govaluate to be the baseline for our experiments. In our benchmark
 native plugins outperformed other solutions and brought the power of the entire
 Go runtime into independent plugins. We discarded Hashicorp plugins, as they
 were slower. Yaegi was nice, but not as fast as govaluate. Govaluate and Yaegi
-provide a simpler way to distribute rules, although considering all the caveats
-of Go plugins, we have to give it to Yaegi since native plugins need a bit of
-orchestration.
+provide a simpler way to distribute rules, when compared to native plugins need a bit of orchestration.
 
 ## Veto v2
 
@@ -191,7 +189,7 @@ func Validate(data interface{}) (e.Result, error) {
 
     ...
 
-    // Get the snap for the
+    // Get the market for the incoming order
     s, err := d.Ticker.GetSnapForOrder(d.OrderData.Order)
 	if err != nil {
 		return e.Result{}, err
