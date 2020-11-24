@@ -13,7 +13,7 @@ image: "/static/images/bnf-veto-rejection.png"
 ---
 
 At Zerodha, we process millions of trades in real-time, where each trade comes
-in to the system as concurrent high throughput HTTP requests. Each trade
+into the system as concurrent high throughput HTTP requests. Each trade
 increases the latency for subsequent orders in the queue that are under
 processing at the same time at our OMS (Order Management System). When a single
 order comes through to the OMS, it goes through a bunch of computationally
