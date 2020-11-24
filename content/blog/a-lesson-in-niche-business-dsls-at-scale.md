@@ -121,11 +121,12 @@ rego:
 83476 13796 ns/op
 ```
 
-We considered govaluate to be the baseline for our experiments. In our benchmarks,
-native plugins outperformed other solutions and brought the power of the entire
-Go runtime into independent plugins. We discarded Hashicorp plugins, as they
-were slower. Yaegi was nice, but not as fast as govaluate. Govaluate and Yaegi
-provide a simpler way to distribute rules, when compared to native plugins need a bit of orchestration.
+We considered govaluate to be the baseline for our experiments. In our
+benchmarks, native plugins outperformed other solutions and brought the power of
+the entire Go runtime into independent plugins. We discarded Hashicorp plugins,
+as they were slower. Yaegi was nice, but not as fast as govaluate. Govaluate and
+Yaegi provide a simpler way to distribute rules, when compared to native plugins
+which need a bit of orchestration.
 
 ## Veto v2
 
@@ -134,8 +135,9 @@ are as fast as native code once loaded, and given enough tooling, act just like
 regular Go code, along with all its niceties like type safety and none of the
 baggage of other alternatives.
 
-Veto v2 would be a web server which loads rules from native Go plugins on
-boot and behave like a reverse proxy accepting incoming orders as HTTP requests, either rejecting them in place or proxying them to the upstream OMS.
+Veto v2 would be a web server which loads rules from native Go plugins on boot
+and behave like a reverse proxy accepting incoming orders as HTTP requests,
+either rejecting them in place or proxying them to the upstream OMS.
 
 Since there are
 [problems](#overcoming-go-plugin-caveats) associated with building and
@@ -418,7 +420,8 @@ suffix := `    }
 fmt.Fprintln(descFile, suffix)
 ```
 
-Now, the host can use the following `DecompileRules` function and obtain all the rules contained in the plugin.
+Now, the host can use the following `DecompileRules` function and obtain all the
+rules contained in the plugin.
 
 ```go
 func DecompileRules(rulePluginPath string) (map[string]func(interface{}) (rule.Result, error), error) {
@@ -445,14 +448,16 @@ with the validation and compiler veto servers.
 
 The validation server has a handler which expects the rule source as a post
 param. It adds a constant with the current unix timestamp to the source and
-builds and validates the rule. If it passes, it returns `true` via an HTTP response.
-In case of a failure, it records the stdout and responds with why it failed, including the full Go build log, helping the operators know what happened.
+builds and validates the rule. If it passes, it returns `true` via an HTTP
+response. In case of a failure, it records the stdout and responds with why it
+failed, including the full Go build log, helping the operators know what
+happened.
 
 Our compiler server is responsible for listening on an endpoint for a post
-request which initiates a sync with the admin panel
-and then runs the compile rules routine on the folder and builds the plugin in
-the appropriate mock folder. Then we push this built plugin to our production veto instance
-and issue a hot-reload.
+request which initiates a sync with the admin panel and then runs the compile
+rules routine on the folder and builds the plugin in the appropriate mock
+folder. Then we push this built plugin to our production veto instance and issue
+a hot-reload.
 
 ## Conclusion
 
@@ -463,7 +468,8 @@ pain overnight as the business rules and their complexities start growing out of
 control. A language like Go, which is simple, reliable, and efficient, is easier
 to learn for the operator than a custom DSL, and the sheer extensibility for the
 developer. Trusting non-tech folks to learn Go instead of investing in learning
-a custom DSL is a viable alternative that we have been able to successfully implement at India's largest stock broker. Writing a framework that abstracts the
-annoying caveats of an under-loved feature like Go plugins, to enable dynamic
-loading of Go functions to act as rules, is useful, considering the tangible
-benefits it presents when compared to writing custom DSLs.
+a custom DSL is a viable alternative that we have been able to successfully
+implement at India's largest stock broker. Writing a framework that abstracts
+the annoying caveats of an under-loved feature like Go plugins, to enable
+dynamic loading of Go functions to act as rules, is useful, considering the
+tangible benefits it presents when compared to writing custom DSLs.
