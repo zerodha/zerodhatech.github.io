@@ -65,15 +65,17 @@ yaegi:
 202173 11091 ns/op
 rego:
 83476 13796 ns/op
-</code></pre></div><p>We considered govaluate to be the baseline for our experiments. In our benchmarks,
-native plugins outperformed other solutions and brought the power of the entire
-Go runtime into independent plugins. We discarded Hashicorp plugins, as they
-were slower. Yaegi was nice, but not as fast as govaluate. Govaluate and Yaegi
-provide a simpler way to distribute rules, when compared to native plugins need a bit of orchestration.</p><h2 id=veto-v2>Veto v2</h2><p>Considering all the facts, we decided to go ahead with native Go plugins. They
+</code></pre></div><p>We considered govaluate to be the baseline for our experiments. In our
+benchmarks, native plugins outperformed other solutions and brought the power of
+the entire Go runtime into independent plugins. We discarded Hashicorp plugins,
+as they were slower. Yaegi was nice, but not as fast as govaluate. Govaluate and
+Yaegi provide a simpler way to distribute rules, when compared to native plugins
+which need a bit of orchestration.</p><h2 id=veto-v2>Veto v2</h2><p>Considering all the facts, we decided to go ahead with native Go plugins. They
 are as fast as native code once loaded, and given enough tooling, act just like
 regular Go code, along with all its niceties like type safety and none of the
-baggage of other alternatives.</p><p>Veto v2 would be a web server which loads rules from native Go plugins on
-boot and behave like a reverse proxy accepting incoming orders as HTTP requests, either rejecting them in place or proxying them to the upstream OMS.</p><p>Since there are
+baggage of other alternatives.</p><p>Veto v2 would be a web server which loads rules from native Go plugins on boot
+and behave like a reverse proxy accepting incoming orders as HTTP requests,
+either rejecting them in place or proxying them to the upstream OMS.</p><p>Since there are
 <a href=#overcoming-go-plugin-caveats>problems</a> associated with building and
 distributing plugins due to dependency issues, requiring in-tree building and
 compilation, we decided to first work on writing a framework to abstract the
@@ -288,7 +290,8 @@ suffix <span style=color:#719e07>:=</span> <span style=color:#2aa198>`    }
 </span><span style=color:#2aa198>`</span>
 
 fmt.<span style=color:#268bd2>Fprintln</span>(descFile, suffix)
-</code></pre></div><p>Now, the host can use the following <code>DecompileRules</code> function and obtain all the rules contained in the plugin.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#268bd2>func</span> <span style=color:#268bd2>DecompileRules</span>(rulePluginPath <span style=color:#dc322f>string</span>) (<span style=color:#268bd2>map</span>[<span style=color:#dc322f>string</span>]<span style=color:#268bd2>func</span>(<span style=color:#268bd2>interface</span>{}) (rule.Result, <span style=color:#dc322f>error</span>), <span style=color:#dc322f>error</span>) {
+</code></pre></div><p>Now, the host can use the following <code>DecompileRules</code> function and obtain all the
+rules contained in the plugin.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#268bd2>func</span> <span style=color:#268bd2>DecompileRules</span>(rulePluginPath <span style=color:#dc322f>string</span>) (<span style=color:#268bd2>map</span>[<span style=color:#dc322f>string</span>]<span style=color:#268bd2>func</span>(<span style=color:#268bd2>interface</span>{}) (rule.Result, <span style=color:#dc322f>error</span>), <span style=color:#dc322f>error</span>) {
     <span style=color:#719e07>...</span>
     d, err <span style=color:#719e07>:=</span> p.<span style=color:#268bd2>Lookup</span>(<span style=color:#2aa198>&#34;Description&#34;</span>)
     <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
@@ -302,19 +305,22 @@ the operator can edit the rules, validate it, and if it passes the test cases,
 it is saved to the database.</p><p>These are backed by two small deployments which run in an internal K8s instance
 with the validation and compiler veto servers.</p><p>The validation server has a handler which expects the rule source as a post
 param. It adds a constant with the current unix timestamp to the source and
-builds and validates the rule. If it passes, it returns <code>true</code> via an HTTP response.
-In case of a failure, it records the stdout and responds with why it failed, including the full Go build log, helping the operators know what happened.</p><p>Our compiler server is responsible for listening on an endpoint for a post
-request which initiates a sync with the admin panel
-and then runs the compile rules routine on the folder and builds the plugin in
-the appropriate mock folder. Then we push this built plugin to our production veto instance
-and issue a hot-reload.</p><h2 id=conclusion>Conclusion</h2><p>The major lesson here is that DSLs are complicated and clever choices can become
+builds and validates the rule. If it passes, it returns <code>true</code> via an HTTP
+response. In case of a failure, it records the stdout and responds with why it
+failed, including the full Go build log, helping the operators know what
+happened.</p><p>Our compiler server is responsible for listening on an endpoint for a post
+request which initiates a sync with the admin panel and then runs the compile
+rules routine on the folder and builds the plugin in the appropriate mock
+folder. Then we push this built plugin to our production veto instance and issue
+a hot-reload.</p><h2 id=conclusion>Conclusion</h2><p>The major lesson here is that DSLs are complicated and clever choices can become
 human usability bottlenecks in the long run. Excel like familiarity in the
 expressions might let operators write and manage rules with ease, but becomes a
 pain overnight as the business rules and their complexities start growing out of
 control. A language like Go, which is simple, reliable, and efficient, is easier
 to learn for the operator than a custom DSL, and the sheer extensibility for the
 developer. Trusting non-tech folks to learn Go instead of investing in learning
-a custom DSL is a viable alternative that we have been able to successfully implement at India&rsquo;s largest stock broker. Writing a framework that abstracts the
-annoying caveats of an under-loved feature like Go plugins, to enable dynamic
-loading of Go functions to act as rules, is useful, considering the tangible
-benefits it presents when compared to writing custom DSLs.</p></div><div class=tags><ul class=flat><li><a href=/tags/golang>golang</a></li></ul></div></div></div></section><footer class=footer><a href=https://zerodha.com>Zerodha</a> &copy; 2020. All rights reserved.</footer><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-75485182-2','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
+a custom DSL is a viable alternative that we have been able to successfully
+implement at India&rsquo;s largest stock broker. Writing a framework that abstracts
+the annoying caveats of an under-loved feature like Go plugins, to enable
+dynamic loading of Go functions to act as rules, is useful, considering the
+tangible benefits it presents when compared to writing custom DSLs.</p></div><div class=tags><ul class=flat><li><a href=/tags/golang>golang</a></li></ul></div></div></div></section><footer class=footer><a href=https://zerodha.com>Zerodha</a> &copy; 2020. All rights reserved.</footer><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-75485182-2','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
