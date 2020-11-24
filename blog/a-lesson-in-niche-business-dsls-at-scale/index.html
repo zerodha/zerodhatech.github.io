@@ -69,9 +69,7 @@ rego:
 native plugins outperformed other solutions and brought the power of the entire
 Go runtime into independent plugins. We discarded Hashicorp plugins, as they
 were slower. Yaegi was nice, but not as fast as govaluate. Govaluate and Yaegi
-provide a simpler way to distribute rules, although considering all the caveats
-of Go plugins, we have to give it to Yaegi since native plugins need a bit of
-orchestration.</p><h2 id=veto-v2>Veto v2</h2><p>Considering all the facts, we decided to go ahead with native Go plugins. They
+provide a simpler way to distribute rules, when compared to native plugins need a bit of orchestration.</p><h2 id=veto-v2>Veto v2</h2><p>Considering all the facts, we decided to go ahead with native Go plugins. They
 are as fast as native code once loaded, and given enough tooling, act just like
 regular Go code, along with all its niceties like type safety and none of the
 baggage of other alternatives.</p><p>Veto v2 would be a web server which loads rules from native Go plugins on
@@ -112,7 +110,7 @@ extra documentation for the future.</p><p>The following rule contains a sample c
 
     <span style=color:#719e07>...</span>
 
-    <span style=color:#586e75>// Get the snap for the
+    <span style=color:#586e75>// Get the market for the incoming order
 </span><span style=color:#586e75></span>    s, err <span style=color:#719e07>:=</span> d.Ticker.<span style=color:#268bd2>GetSnapForOrder</span>(d.OrderData.Order)
 	<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
 		<span style=color:#719e07>return</span> e.Result{}, err
