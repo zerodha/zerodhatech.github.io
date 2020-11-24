@@ -4,7 +4,7 @@
 <a href=https://zerodha.tech/index.xml class=feed title="Subscribe to feed"><img src=https://zerodha.tech/static/images/feed.svg alt="Subscribe to feed"></a></nav></div><div class=post><div class=post-header><h1 class=title>A lesson in creating and using niche business DSLs at scale</h1><div class=author><span class=avatar><img src=/static/images/author_rhnvrm.jpg alt="Rohan Verma"></span><div class=meta><a href=https://zerodha.tech/authors/rhnvrm class=name>Rohan Verma</a>
 <span class=desig>(Software Engineer)</span><br><div class=date>24 Nov 2020</div><div class=urls><a href=https://rohanverma.net>Homepage</a>
 <a href=https://github.com/rhnvrm>GitHub</a></div></div></div></div><div class=content><p>At Zerodha, we process millions of trades in real-time, where each trade comes
-in to the system as concurrent high throughput HTTP requests. Each trade
+into the system as concurrent high throughput HTTP requests. Each trade
 increases the latency for subsequent orders in the queue that are under
 processing at the same time at our OMS (Order Management System). When a single
 order comes through to the OMS, it goes through a bunch of computationally
