@@ -132,6 +132,12 @@
   stars: 2
   updated_at: '2020-09-08T13:51:19Z'
   url: https://github.com/ajinasokan/flutter_fgbg
+- description: Flutter plugin to use libcurl for HTTP calls
+  github_uri: ajinasokan/flutter_curl
+  name: flutter_curl
+  stars: 10
+  updated_at: '2021-01-20T10:08:01Z'
+  url: https://github.com/ajinasokan/flutter_curl
 - description: Standalone server for user address and OTP verification flows with
     pluggable providers (e-mail, SMS, bank penny drops etc.)
   github_uri: knadh/otpgateway
