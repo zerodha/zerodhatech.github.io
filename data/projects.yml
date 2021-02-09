@@ -248,3 +248,9 @@
   stars: 22
   updated_at: '2021-01-14T07:39:00Z'
   url: https://github.com/Thunderbottom/grafana-export
+- description: Library to live streaming option chain for equity derivatives using Kite connect Websocket
+  github_uri: ranjanrak/OptionChainStream
+  name: OptionChainStream
+  stars: 0
+  updated_at: '2020-10-30T03:49:35Z'
+  url: https://github.com/ranjanrak/OptionChainStream
