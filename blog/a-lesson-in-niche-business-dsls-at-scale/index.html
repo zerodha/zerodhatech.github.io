@@ -1,0 +1,326 @@
+<!doctype html><html><head><title>A lesson in creating and using niche business DSLs at scale - Zerodha Tech Blog</title><meta charset=utf-8><meta name=title content="Zerodha Tech Blog"><meta name=description content="How we incrementally built a business rule validation engine to keep up with the changing business and regulatory environment, starting with a custom DSL, and ended up writing a framework to manage rules written in Go and distribute them as pure Go plugins."><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="A lesson in creating and using niche business DSLs at scale - Zerodha Tech Blog"><meta property="og:description" content="How we incrementally built a business rule validation engine to keep up with the changing business and regulatory environment, starting with a custom DSL, and ended up writing a framework to manage rules written in Go and distribute them as pure Go plugins."><meta property="og:type" content="website"><meta property="og:url" content="https://zerodha.tech/blog/a-lesson-in-niche-business-dsls-at-scale/"><link rel="shortcut icon" href=https://zerodha.tech/static/images/favicon.png><meta property="og:image" content="https://zerodha.tech/static/images/bnf-veto-rejection.png"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Zerodha Tech Blog","logo":"https://zerodha.tech/static/images/logo.svg","description":"Technology blog of India's largest stock broker","contactPoint":[{"@type":"ContactPoint","telephone":"+91 80 4040 2020","contactType":"customer service"}],"url":"https://zerodha.tech","sameAs":["https://facebook.com/zerodha.social","https://twitter.com/zerodhaonline","https://youtube.com/user/zerodhaonline","https://linkedin.com/company/zerodha","https://instagram.com/zerodhaonline"]}</script><link href="https://fonts.googleapis.com/css?family=Inter:400,500,600" rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://zerodha.tech/static/style.css></head><body><section class="container wrap"><div class=header><div class=logo><a href=https://zerodha.tech/><img alt="Zerodha technology blog" src=https://zerodha.tech/static/images/logo.svg></a></div><nav class=nav><a class=active href=/>Home</a>
+<a class=active href=/blog>Blog</a>
+<a href=/projects>Projects</a>
+<a href=https://zerodha.tech/index.xml class=feed title="Subscribe to feed"><img src=https://zerodha.tech/static/images/feed.svg alt="Subscribe to feed"></a></nav></div><div class=post><div class=post-header><h1 class=title>A lesson in creating and using niche business DSLs at scale</h1><div class=author><span class=avatar><img src=/static/images/author_rhnvrm.jpg alt="Rohan Verma"></span><div class=meta><a href=https://zerodha.tech/authors/rhnvrm class=name>Rohan Verma</a>
+<span class=desig>(Software Engineer)</span><br><div class=date>24 Nov 2020</div><div class=urls><a href=https://rohanverma.net>Homepage</a>
+<a href=https://github.com/rhnvrm>GitHub</a></div></div></div></div><div class=content><p>At Zerodha, we process millions of trades in real-time, where each trade comes
+into the system as concurrent high throughput HTTP requests. Each trade
+increases the latency for subsequent orders in the queue that are under
+processing at the same time at our OMS (Order Management System). When a single
+order comes through to the OMS, it goes through a bunch of computationally
+intensive validations and adds to the latency. To reduce the latency of orders,
+we decided to offload some of these business validations from the OMS into an
+external component called Veto, which pre-validates incoming orders based on
+custom dynamic rules set by our Risk Management team. Rejected orders never go
+through to the OMS thereby reducing significant load on the OMS. This is the
+story of how we incrementally built this engine to keep up with the changing
+business and regulatory environment starting with a custom DSL (Domain Specific
+Language) and ending up with writing a framework to manage rules written in Go
+and embedded inside Go plugins.</p><h2 id=overview>Overview</h2><p>Our goal with Veto was to build a dynamic evaluation engine framework capable of
+hot-reloads. This framework would provide a generic environment to manage, track
+and audit rules and filters on an easily accessible dashboard. The engine should
+have support for custom data-stores related to the orders. Rules in this
+framework are business validations on orders placed by our clients. These
+validations range from simple checks like validating the limit prices to be
+within circuit limits, to complex beasts, which <a href=https://support.zerodha.com/category/trading-and-markets/kite-web-and-mobile/articles/why-did-my-bank-nifty-option-order-get-rejected>validate fresh buy
+orders</a>
+in Nifty/BankNifty strikes due to exchange OI restrictions.</p><p><img src=/static/images/bnf-veto-rejection.png alt=banknifty-rejection-example></p><p>Our first solution utilized our research from the
+<a href=https://sentinel.zerodha.com/>Sentinel</a> project. We combined
+<a href=https://github.com/Knetic/govaluate>knetic/govaluate</a>, which is an expression
+evaluation engine, along with a filter manager and a hot reload mechanism with
+an HTTP server which would either respond with an appropriate rejection to
+the incoming order or proxy to the upstream OMS, thereby acting as a reverse
+proxy with validations. The expression language was similar to Excel formulas,
+which was familiar to our RMS Team that managed and operated it through custom
+management dashboard built using <a href=https://frappe.io/>Frappe/ERPNext</a>.</p><h2 id=problems-with-dsls>Problems with DSLs</h2><p>After taking it live, we realized a bunch of issues that
+cropped up and became pain points for us over time. These were not really technical,
+but more or less, human usability issues.</p><ul><li><p>Since the underlying engine was a simple expression evaluator, the operators
+would end up spending hours trying to write complex rules, and similarly the
+developers, who are supposed to approve the rule to be production ready, spent
+time reviewing it.</p><ul><li><p>This was due to how unreadable the expressions would become beyond a certain
+complexity. Simple rules were indeed faster to write, but anything beyond
+it would be beyond human capability to comprehend, which would cause
+unnecessary and difficult debugging sessions in the office.</p></li><li><p>Unlike a regular language with branching, the operator writing the
+rule would be stuck on writing logic defined with bracket matching
+and <code>AND/OR</code> statements. Also, missing support for variables would not
+allow us to reuse values.</p></li><li><p>To write a single complex rule, operators would depend on writing the rules
+into manageable chunks. For example, a single spread (shown below) the rule would be broken
+into <code>spread_ce_buy</code>, <code>spread_ce_sell</code>, <code>spread_pe_buy</code>, <code>spread_pe_sell</code>
+rules.</p><p><img src=/static/images/veto-govaluate-example.png alt="Veto Govaluate Sample"></p></li></ul></li><li><p>Custom error messages and any non-boolean behaviour were not possible, as the
+expression can only evaluate to a boolean. Switching to a proper language, we
+could use early returns in the rule and return custom messages alongside the
+evaluation result.</p></li><li><p>Implementing new functions and adding new variables was a pain.</p><ul><li>This meant that if you were to add a new function, you would have to bundle
+it within the engine, defeating the purpose of the rules being dynamic.</li><li>This also meant the developer had to always be involved in writing the rules, defying the whole purpose of having a DSL for business folks.</li></ul></li></ul><h2 id=new-beginnings>New beginnings</h2><p>Our learnings from these issues made us reflect if it would be worth it for the
+operators to keep using a simple expression language. The way we were going, we were
+essentially building a DSL (Domain Specific Language) on top of <code>govaluate</code>,
+that would keep getting more complex with time.</p><p>We finally decided that a solution to the problem was to use Go-like language as
+the DSL instead of <code>govalute</code> and distribute the dynamic rules as Go plugins, as
+Veto was written in Go in the first place, just like the rest of the Kite stack.
+It is simple, easy to learn, and has good tooling around it.</p><p>We debated heavily on the best approach to solve the problems that we were
+facing with veto rules and shortlisted a few candidates. We picked a complex rule in production written using govaluate and wrote that in the following to benchmark the performance of the rules in the alternatives.</p><ul><li><a href=https://github.com/Knetic/govaluate>Govaluate</a> - evaluates arbitrary C-like expressions</li><li><a href=https://github.com/containous/yaegi>Yaegi</a> - embedded go interpreter</li><li><a href=https://www.openpolicyagent.org/docs/latest/policy-language/>Rego</a> - open-policy-agent DSL</li><li><a href=https://github.com/hashicorp/go-plugin>Hashicorp Plugins</a> - plugin system over RPC.</li><li><a href=https://golang.org/pkg/plugin/>go-plugins</a> - native go plugins</li></ul><p>Benchmark Results:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>govaluate:
+1319773 907 ns/op
+go-plugins:
+2745398 503 ns/op
+yaegi:
+202173 11091 ns/op
+rego:
+83476 13796 ns/op
+</code></pre></div><p>We considered govaluate to be the baseline for our experiments. In our
+benchmarks, native plugins outperformed other solutions and brought the power of
+the entire Go runtime into independent plugins. We discarded Hashicorp plugins,
+as they were slower. Yaegi was nice, but not as fast as govaluate. Govaluate and
+Yaegi provide a simpler way to distribute rules, when compared to native plugins
+which need a bit of orchestration.</p><h2 id=veto-v2>Veto v2</h2><p>Considering all the facts, we decided to go ahead with native Go plugins. They
+are as fast as native code once loaded, and given enough tooling, act just like
+regular Go code, along with all its niceties like type safety and none of the
+baggage of other alternatives.</p><p>Veto v2 would be a web server which loads rules from native Go plugins on boot
+and behave like a reverse proxy accepting incoming orders as HTTP requests,
+either rejecting them in place or proxying them to the upstream OMS.</p><p>Since there are
+<a href=#overcoming-go-plugin-caveats>problems</a> associated with building and
+distributing plugins due to dependency issues, requiring in-tree building and
+compilation, we decided to first work on writing a framework to abstract the
+caveats associated with go plugins.</p><h3 id=a-framework-for-writing-rules>A framework for writing rules</h3><p>Rules in Veto v2 are now written in plain Go by the operators. A rule looks similar
+to the following sample rule.</p><p>Each rule is expected to provide three functions.</p><p>Rules are contained in the <code>Validate</code> functions that are expected to accept an
+interface and return a <code>rule.Result</code>. The contexts contain the controllers and
+data needed for validating the rule, and are passed by the host to the rule
+manager which iterates over all the rules. The host can then interpret the result
+and do what it needs to, in our case render a response to the user with a custom
+message, or proxy to the upstream.</p><p>Another added benefit of having written a custom go plugin based framework for
+rules, is that we can implement our own testing framework for validation of the
+rules. Every rule is expected to return its own testcases as a
+<code>map[interface{}]e.Result</code> where the interface is the context. This way if a
+rule implements all the testcases, we are sure that any minor refactor will be
+also correct in the future. This reduces the need for constant developer
+oversight and the testing needed for the rules. Also, the testcases provide
+extra documentation for the future.</p><p>The following rule contains a sample circuit limit rule for illustration.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#719e07>package</span> main
+
+<span style=color:#719e07>import</span> (
+    <span style=color:#719e07>...</span>
+)
+
+<span style=color:#586e75>// Slug is the identifier for the rule. Used in statistics and logging.
+</span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>Slug</span>() <span style=color:#dc322f>string</span> {
+    <span style=color:#719e07>return</span> <span style=color:#2aa198>&#34;a_sample_ckt_limit_rule&#34;</span>
+}
+
+<span style=color:#586e75>// Validate, is where the validation logic resides.
+</span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>Validate</span>(data <span style=color:#268bd2>interface</span>{}) (e.Result, <span style=color:#dc322f>error</span>) {
+    d, err <span style=color:#719e07>:=</span> m.<span style=color:#268bd2>SetupOrderData</span>(data)
+	<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+		<span style=color:#719e07>return</span> e.Result{}, err
+	}
+
+    <span style=color:#719e07>...</span>
+
+    <span style=color:#586e75>// Get the market for the incoming order
+</span><span style=color:#586e75></span>    s, err <span style=color:#719e07>:=</span> d.Ticker.<span style=color:#268bd2>GetSnapForOrder</span>(d.OrderData.Order)
+	<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+		<span style=color:#719e07>return</span> e.Result{}, err
+	}
+
+    <span style=color:#719e07>...</span>
+
+	<span style=color:#586e75>// Check limits
+</span><span style=color:#586e75></span>	<span style=color:#719e07>if</span> d.Order.Price &gt; s.UpperCircuitLimit {
+		<span style=color:#719e07>return</span> e.Result{
+			Result: <span style=color:#cb4b16>true</span>,
+			Message: fmt.<span style=color:#268bd2>Sprintf</span>(
+				<span style=color:#2aa198>&#34;Your order price is higher than the current [upper circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of %g. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
+				s.UpperCircuitLimit),
+		}, <span style=color:#cb4b16>nil</span>
+	}
+
+	<span style=color:#719e07>if</span> s.LowerCircuitLimit &gt; d.Order.Price {
+		<span style=color:#719e07>return</span> e.Result{
+			Result: <span style=color:#cb4b16>true</span>,
+			Message: fmt.<span style=color:#268bd2>Sprintf</span>(
+				<span style=color:#2aa198>&#34;Your order price is lower than the current [lower circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of %g. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
+				s.LowerCircuitLimit),
+		}, <span style=color:#cb4b16>nil</span>
+	}
+
+    <span style=color:#719e07>return</span> e.Result{}, <span style=color:#cb4b16>nil</span>
+}
+
+<span style=color:#586e75>// TestData is expected to be provided by the rule,
+</span><span style=color:#586e75>// so it can be validated before it is allowed to be published.
+</span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>TestData</span>() <span style=color:#268bd2>map</span>[<span style=color:#268bd2>interface</span>{}]e.Result {
+	tckr <span style=color:#719e07>:=</span> <span style=color:#719e07>&amp;</span>ticker.Ticker{
+		Data: <span style=color:#268bd2>map</span>[<span style=color:#dc322f>string</span>]<span style=color:#268bd2>interface</span>{}{
+			<span style=color:#2aa198>&#34;NSE:INFY&#34;</span>: snaps.Snap{
+				LastPrice:         <span style=color:#2aa198>12.34</span>,
+				UpperCircuitLimit: <span style=color:#2aa198>15.0</span>,
+				LowerCircuitLimit: <span style=color:#2aa198>10.0</span>,
+			},
+		},
+	}
+
+	<span style=color:#719e07>return</span> <span style=color:#268bd2>map</span>[<span style=color:#268bd2>interface</span>{}]e.Result{
+		<span style=color:#719e07>&amp;</span>m.OrderContext{
+			Controllers: m.Controllers{
+				Ticker:      tckr,
+			},
+			OrderData: m.OrderData{
+				Order: oms.OrderParams{
+					Exchange:      <span style=color:#2aa198>&#34;NSE&#34;</span>,
+					Tradingsymbol: <span style=color:#2aa198>&#34;INFY&#34;</span>,
+					Price:         <span style=color:#2aa198>20.34</span>,
+					OrderType:     <span style=color:#2aa198>&#34;LIMIT&#34;</span>,
+				},
+			},
+		}: e.Result{
+			Result:  <span style=color:#cb4b16>true</span>,
+			Message: <span style=color:#2aa198>&#34;Your order price is higher than the current [upper circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of 15. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
+		},
+    }
+}
+</code></pre></div><h3 id=overcoming-go-plugin-caveats>Overcoming Go Plugin Caveats</h3><p>Using Go plugins in your projects comes with a lot of caveats. As of writing,
+there hasn’t been much development on the feature recently. The <a href=https://github.com/golang/go/commits/master/src/plugin/plugin.go>commit
+history</a> shows
+us that the last major commit happened nearly 2 years ago. On the gopher slack,
+the sentiment, more or less, is that this is not a priority anymore. Along with
+this, there are multiple issues that come up with maintaining projects that use
+it:</p><ul><li>The Go version for both host program and plugin should match exactly.</li><li>External dependencies should match.</li><li>Host and plugin GOPATH needs to exactly match while building.</li><li>Plugins cannot depend on interfaces or structs of the host without in-tree building.</li><li>Plugins can’t be un-loaded after they have been loaded by the host.</li><li>An exactly same plugin cannot be loaded again by the host.</li></ul><p>To learn more you can read <a href=https://github.com/golang/go/issues/20481#issuecomment-326832200>this
+issue</a>
+summarising some of the problems with go plugins.</p><p>Plugins works well if the projects bundles all the plugins in its own source
+tree and both the host and plugins are built together at the same time. But,
+that might limit the scope of a project. Externally maintained plugins are near
+to impossible to build independent of the host program.</p><h4 id=building-rules>Building rules</h4><p>To solve the issues listed above, we can use Docker to build both the host
+program and our custom plugins together. Using Docker, we are able to use
+emulated paths. This image also contains the source code of the host program.
+This image allows us to build and load the plugins separately from different
+machines, such as our CI/CD pipeline or a rule compiler as described further
+down the post.</p><p>In practice, we prepend the following <code>dockerCommands</code>, so that the
+paths to the <code>go build</code> command.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#586e75>// Commands for locally testing with docker. Prepended to buildCommands
+</span><span style=color:#586e75>// if dockerMode is enabled.
+</span><span style=color:#586e75></span>dockerCommands <span style=color:#719e07>:=</span> []<span style=color:#dc322f>string</span>{
+    <span style=color:#2aa198>&#34;docker&#34;</span>, <span style=color:#2aa198>&#34;run&#34;</span>,
+    <span style=color:#2aa198>&#34;-v&#34;</span>, pwd <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;/bin/temp/go:/go&#34;</span>, <span style=color:#586e75>// Reduce the time for building
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-v&#34;</span>, pwd <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;:/usr/src/app&#34;</span>, <span style=color:#586e75>// Mock the paths
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-w&#34;</span>, <span style=color:#2aa198>&#34;/usr/src/app&#34;</span>,
+    <span style=color:#2aa198>&#34;golang:1.14&#34;</span>,
+}
+
+buildCommands <span style=color:#719e07>:=</span> []<span style=color:#dc322f>string</span>{
+    <span style=color:#2aa198>&#34;go&#34;</span>,
+    <span style=color:#2aa198>&#34;build&#34;</span>,
+    <span style=color:#2aa198>&#34;-ldflags&#34;</span>,
+    <span style=color:#2aa198>&#34;-s -w&#34;</span>,
+    <span style=color:#2aa198>&#34;-buildmode=plugin&#34;</span>, <span style=color:#586e75>// Required to build plugins
+</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-o&#34;</span>,
+    outputFilePath,
+    inputFilePath,
+}
+</code></pre></div><h4 id=compiling-rules>Compiling rules</h4><p>To combine multiple rules into a single plugin, we introduce the concept
+internal to our project called <em>Compilation</em>. A compilation step is similar to the
+build step, but combines multiple <code>.go</code> rule files which are stored in a folder
+into a single <code>.so</code> plugin.</p><p>The compilation command expects a folder containing the source code of all the
+rules, and the <code>description.go</code> which contains the meta information about what
+would be available in the <code>rule.so</code> file. It utilizes the build steps described
+in the section above, but adds pre-processing steps that help avoid a few of the
+Go plugin caveats.</p><p>As per our framework, every rule is expected to provide three functions to
+compile. These are in turn used by the validation pre-process to verify the
+rule.</p><p>Plugins can export any kind of data and functions from their source. Since,
+multiple rules need to export the same function, while compiling all the rules
+into the plugin, we traverse through the AST and modify the function names and
+prefix the rule name.</p><p><code>AddPrefixToSource</code> is a function that prefixes the rule name onto the functions
+so they can be uniquely found when we load the plugin. For example, a rule with
+slug as <code>a_sample_rule</code> will be available in the plugin as
+<code>E_a_sample_rule_Validate</code>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#268bd2>func</span> <span style=color:#268bd2>AddPrefixToSource</span>(prefix <span style=color:#dc322f>string</span>, src []<span style=color:#dc322f>byte</span>) ([]<span style=color:#dc322f>byte</span>, <span style=color:#dc322f>error</span>) {
+    fset <span style=color:#719e07>:=</span> token.<span style=color:#268bd2>NewFileSet</span>() <span style=color:#586e75>// positions are relative to fset
+</span><span style=color:#586e75></span>    node, err <span style=color:#719e07>:=</span> parser.<span style=color:#268bd2>ParseFile</span>(fset, <span style=color:#2aa198>&#34;&#34;</span>, src, <span style=color:#2aa198>0</span>)
+    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+        <span style=color:#719e07>return</span> <span style=color:#cb4b16>nil</span>, err
+    }
+
+    <span style=color:#719e07>for</span> _, f <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> node.Decls {
+        fn, ok <span style=color:#719e07>:=</span> f.(<span style=color:#719e07>*</span>ast.FuncDecl)
+        <span style=color:#719e07>if</span> !ok {
+            <span style=color:#719e07>continue</span>
+        }
+        <span style=color:#719e07>if</span> <span style=color:#268bd2>in</span>(fn.Name.Name, allowedFunctionNames) {
+            fn.Name.Name = Export <span style=color:#719e07>+</span> prefix <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;_&#34;</span> <span style=color:#719e07>+</span> fn.Name.Name
+        }
+    }
+
+    <span style=color:#268bd2>var</span> b bytes.Buffer
+    buf <span style=color:#719e07>:=</span> bufio.<span style=color:#268bd2>NewWriter</span>(<span style=color:#719e07>&amp;</span>b)
+    printer.<span style=color:#268bd2>Fprint</span>(buf, fset, node)
+
+    buf.<span style=color:#268bd2>Flush</span>()
+
+    <span style=color:#719e07>return</span> b.<span style=color:#268bd2>Bytes</span>(), <span style=color:#cb4b16>nil</span>
+}
+</code></pre></div><p>Another function called <code>AddTimestampToSource</code> is used in the pre-processing to
+enable realtime reloading of the plugin. Since Go currently can’t unload a
+shared library, we must load unique plugins in long running programs. This
+becomes a problem when we try to reload a plugin. This function makes the
+compiled rule unique, allowing it to be reloaded with the same name and same
+contents as well.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#268bd2>func</span> <span style=color:#268bd2>AddTimestampToSource</span>(src []<span style=color:#dc322f>byte</span>) []<span style=color:#dc322f>byte</span> {
+    ct <span style=color:#719e07>:=</span> time.<span style=color:#268bd2>Now</span>().<span style=color:#268bd2>UnixNano</span>()
+    src = <span style=color:#b58900>append</span>(src, []<span style=color:#b58900>byte</span>(<span style=color:#2aa198>&#34;\n&#34;</span>)<span style=color:#719e07>...</span>)
+    src = <span style=color:#b58900>append</span>(src, []<span style=color:#b58900>byte</span>(
+        fmt.<span style=color:#268bd2>Sprintf</span>(<span style=color:#2aa198>&#34;const timestamp_%d = %d&#34;</span>,
+            ct, ct))<span style=color:#719e07>...</span>)
+    <span style=color:#719e07>return</span> src
+}
+</code></pre></div><p>A rule <code>.so</code> file should be standalone. It should contain all the information
+needed to know the contents of the plugin. Using another step, we create a
+description about the contents of the plugin, and load it among the symbols of
+the exported symbols of the plugin.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go>descFilePath <span style=color:#719e07>:=</span> tmpSrcPath <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;description.go&#34;</span>
+descFile, err <span style=color:#719e07>:=</span> os.<span style=color:#268bd2>Create</span>(descFilePath)
+<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+    <span style=color:#719e07>return</span> fmt.<span style=color:#268bd2>Errorf</span>(<span style=color:#2aa198>&#34;opening description file: %w&#34;</span>, err)
+}
+
+prefix <span style=color:#719e07>:=</span> <span style=color:#2aa198>`package main
+</span><span style=color:#2aa198>
+</span><span style=color:#2aa198>func Description() []string {
+</span><span style=color:#2aa198>    return []string{`</span>
+
+fmt.<span style=color:#268bd2>Fprintln</span>(descFile, prefix)
+<span style=color:#719e07>for</span> _, rname <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> rnames {
+    _, err <span style=color:#719e07>:=</span> fmt.<span style=color:#268bd2>Fprintf</span>(descFile, <span style=color:#2aa198>`&#34;%s&#34;,`</span>, rname)
+    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+        <span style=color:#719e07>return</span> err
+    }
+}
+suffix <span style=color:#719e07>:=</span> <span style=color:#2aa198>`    }
+</span><span style=color:#2aa198>}
+</span><span style=color:#2aa198>`</span>
+
+fmt.<span style=color:#268bd2>Fprintln</span>(descFile, suffix)
+</code></pre></div><p>Now, the host can use the following <code>DecompileRules</code> function and obtain all the
+rules contained in the plugin.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#268bd2>func</span> <span style=color:#268bd2>DecompileRules</span>(rulePluginPath <span style=color:#dc322f>string</span>) (<span style=color:#268bd2>map</span>[<span style=color:#dc322f>string</span>]<span style=color:#268bd2>func</span>(<span style=color:#268bd2>interface</span>{}) (rule.Result, <span style=color:#dc322f>error</span>), <span style=color:#dc322f>error</span>) {
+    <span style=color:#719e07>...</span>
+    d, err <span style=color:#719e07>:=</span> p.<span style=color:#268bd2>Lookup</span>(<span style=color:#2aa198>&#34;Description&#34;</span>)
+    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+        <span style=color:#719e07>return</span> <span style=color:#cb4b16>nil</span>, err
+    }
+    <span style=color:#719e07>...</span>
+}
+</code></pre></div><h3 id=dashboard-for-the-operators>Dashboard for the operators</h3><p><img src=/static//images/frappe-veto.png alt=frappe-veto-dashboard></p><p>We connect two services with our admin dashboard implemented in <a href=https://frappe.io>Frappe</a>
+where the operators can edit the rules. This panel has a built in editor, where
+the operator can edit the rules, validate it, and if it passes the test cases,
+it is saved to the database.</p><p>These are backed by two small deployments which run in an internal K8s instance
+with the validation and compiler veto servers.</p><p>The validation server has a handler which expects the rule source as a post
+param. It adds a constant with the current unix timestamp to the source and
+builds and validates the rule. If it passes, it returns <code>true</code> via an HTTP
+response. In case of a failure, it records the stdout and responds with why it
+failed, including the full Go build log, helping the operators know what
+happened.</p><p>Our compiler server is responsible for listening on an endpoint for a post
+request which initiates a sync with the admin panel and then runs the compile
+rules routine on the folder and builds the plugin in the appropriate mock
+folder. Then we push this built plugin to our production veto instance and issue
+a hot-reload.</p><h2 id=conclusion>Conclusion</h2><p>The major lesson here is that DSLs are complicated and clever choices can become
+human usability bottlenecks in the long run. Excel like familiarity in the
+expressions might let operators write and manage rules with ease, but becomes a
+pain overnight as the business rules and their complexities start growing out of
+control. A language like Go, which is simple, reliable, and efficient, is easier
+to learn for the operator than a custom DSL, and the sheer extensibility for the
+developer. Trusting non-tech folks to learn Go instead of investing in learning
+a custom DSL is a viable alternative that we have been able to successfully
+implement at India&rsquo;s largest stock broker. Writing a framework that abstracts
+the annoying caveats of an under-loved feature like Go plugins, to enable
+dynamic loading of Go functions to act as rules, is useful, considering the
+tangible benefits it presents when compared to writing custom DSLs.</p></div><div class=tags><ul class=flat><li><a href=/tags/golang>golang</a></li></ul></div></div></div></section><footer class=footer><a href=https://zerodha.com>Zerodha</a> &copy; 2020. All rights reserved.</footer><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-75485182-2','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
