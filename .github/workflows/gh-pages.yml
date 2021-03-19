@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - develop
+      - main # Pipeline will only be triggered from `main`.
 
 jobs:
   deploy:
