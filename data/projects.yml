@@ -254,3 +254,9 @@
   stars: 0
   updated_at: '2021-02-09T03:49:35Z'
   url: https://github.com/ranjanrak/OptionChainStream
+- description:  Utility to create a export a service registry Markdown file from Kong's config
+  github_uri: mr-karan/kong-service-exporter
+  name: Kong Service Exporter
+  stars: 0
+  updated_at: '2021-03-30T03:49:35Z'
+  url: https://github.com/mr-karan/kong-service-exporter
