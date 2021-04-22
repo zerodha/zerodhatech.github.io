@@ -5,7 +5,7 @@ date: "2021-04-22T00:00:00+05:30"
 author: satya10x
 authors: ["satya10x"]
 tags: ["databases"]
-image: "/static/images/product-mashup-2020-04.png"
+image: "/static/images/postgres.png"
 ---
 
 This post is in the context of the large, data heavy PostgreSQL instances that store historical transactional data and reports, the databases that power [Console](https://zerodha.com/products/console) and its large scale number crunching and reporting. It talks about how we self-host, tune, and manage all our DB instances on bare EC2 instances. For high availability and backups, we use simple failover replicas and for backups, AWS disk snapshots.
