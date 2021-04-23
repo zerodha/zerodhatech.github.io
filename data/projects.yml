@@ -260,3 +260,9 @@
   stars: 0
   updated_at: '2021-03-30T03:49:35Z'
   url: https://github.com/mr-karan/kong-service-exporter
+- description: FOSS self-hosted alternative to link listing websites such as LinkTree and Campsite
+  github_uri: rhnvrm/linkpage
+  name: LinkPage
+  stars: 0
+  updated_at: '2021-04-23T03:49:35Z'
+  url: https://github.com/rhnvrm/linkpage
