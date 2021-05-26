@@ -27,7 +27,7 @@ Console DBs consist of mostly denormalized data of user trading activity, daily 
 ### JOINs
 We realised early on that complex JOINs across tables holding billions of rows on are very difficult to scale. So, we denormalized most of our data, and data that didn’t make sense to denormalize, we created materialized views out of them to reduce ad-hoc JOIN queries. For instance, instead of a single parent table containing rows that are heavily referenced via foreign keys in many child tables, we denormalized and copied some of the parent data as columns into the child tables to avoid JOINs. So, most of our JOINs only happen over a couple entities, like a table and a view, and very rarely across more than two entities with huge numbers of rows. We also eventually dropped foreign keys in the process for significant performance gains during EOD bulk imports of tens of millions of rows.
 
-### Logical partioning
+### Logical partitioning
 We logically partition most of our tables to group records by months based on their timestamps as pretty much all our data is time-stamped meaningfully. Trades that happened on a particular day, P&L for a day or a week, price of an instrument on a particular day. Dates are first-class citizens in financial databases. We arrived at monthly partitions after a lot of experimentation as it seemed to best suit the kind of data and the kind of queries our users generate. Accessing financial reports by our users generally tends to fall within the range of a month.
 
 ### Auto-increment IDs
