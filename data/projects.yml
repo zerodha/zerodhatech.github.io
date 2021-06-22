@@ -266,3 +266,10 @@
   stars: 0
   updated_at: '2021-04-23T03:49:35Z'
   url: https://github.com/rhnvrm/linkpage
+  url: https://github.com/mr-karan/kong-service-exporter
+- description: Fastglue is a glue wrapper over fasthttp and fasthttprouter.
+  github_uri: zerodha/fastglue
+  name: Fastglue
+  stars: 0
+  updated_at: '2021-06-22T03:49:35Z'
+  url: https://github.com/zerodha/fastglue
