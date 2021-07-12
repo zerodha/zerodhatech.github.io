@@ -273,3 +273,9 @@
   stars: 0
   updated_at: '2021-06-22T03:49:35Z'
   url: https://github.com/zerodha/fastglue
+- description: Easily parse SQL files with named queries and prepare and scan them into structs
+  github_uri: knadh/goyesql
+  name: goyesql
+  stars: 0
+  updated_at: '2021-07-12T03:49:35Z'
+  url: https://github.com/knadh/goyesql
