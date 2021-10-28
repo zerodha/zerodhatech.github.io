@@ -279,3 +279,9 @@
   stars: 0
   updated_at: '2021-07-12T03:49:35Z'
   url: https://github.com/knadh/goyesql
+- description:  Sideload static assets and cache them in the browser's IndexedDB for longer-term storage.
+  github_uri: knadh/indexed-cache
+  name: indexed-cache
+  stars: 0
+  updated_at: '2021-07-12T03:49:35Z'
+  url: https://github.com/knadh/indexed-cache
