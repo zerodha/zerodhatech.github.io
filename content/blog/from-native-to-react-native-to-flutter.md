@@ -8,9 +8,9 @@ tags: ["flutter"]
 image: "/static/images/native-reactnative-flutter.png"
 ---
 
-There are many ways of building a mobile app today, and each one of them comes with its own distinct learning curve. Since it is a long term commitment that involves unpredictable platforms, devices, and vendor changes, one has to be extra careful. A good rule of thumb may be to go native for the major mobile platforms if there are enough developers or if the app heavily depends on platform features. Otherwise, it is okay to pick a cross platform framework that does the job reasonably well and one that the developer team is comfortable with. At Zerodha, our flagship trading platform Kite was first written as a native Android app in 2015. After building a cross-platform version in React Native in 2017, we finally settled for a full rewrite in Flutter in 2018, a choice that has paid off really well for us.
+At Zerodha, the first mobile version our flagship trading platform [Kite](https://zerodha.com/products/kite) was written as a native Android app in 2015. After building a cross-platform version in React Native in 2017, we finally settled for a full rewrite in Flutter in 2018, a choice that has paid off really well for us. There were several factors and trade-offs that prompted these rewrites.
 
-This post talks about our journey and our experiences with each of the frameworks, and why we finally bet on Flutter even when it was bleeding edge alpha technology. This post illustrates how a first-principle based approach allows just two mobile developers to build and maintain multiple financial apps used by millions of people.
+This post covers our journey and experiences with each of the frameworks, and why we finally bet on Flutter even when it was bleeding edge alpha technology. It also illustrates the thought process and our first-principle based approach that enables just two mobile developers to build and maintain multiple financial apps used by millions of people.
 
 ## Native Android, not so native iOS.
 
