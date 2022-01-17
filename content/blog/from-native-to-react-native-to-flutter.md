@@ -1,6 +1,6 @@
 ---
 title: "From Native to React Native to Flutter"
-description: "Our journey and our experiences with native, React Native, and Flutter and why we finally bet on Flutter for building critical financial apps in 2018 even when it was alpha."
+description: "Our journey and experiences with native, React Native, and Flutter and why we finally bet on Flutter for building critical financial apps in 2018 even when it was alpha."
 date: "2022-01-17T16:00:00+05:30"
 author: ajinasokan
 authors: ["ajinasokan"]
@@ -14,7 +14,7 @@ This post covers our journey and experiences with each of the frameworks, and wh
 
 ## Native Android, not so native iOS.
 
-In the beginning, there was only [Kite web](https://zerodha.com/products/kite), which was built as a web frontend to the [Kite Connect](https://kite.trade) APIs. We started working on Kite Android as a native app sometime in 2015. Interestingly, this was a time when trading on mobile was largely uncommon in the Indian capital markets and smartphone penetration was very low compared to what it is today. Since we had no experience building mobile apps, Sujith, our lone mobile developer at the time, built it over several months by trial and error. This was also around the time when he invented the infamous SujithSort™ algorithm. The first public release came out in early 2016. While it was a very basic app compared to what we have today, it still was far better than what was popular in the industry at the time.
+In the beginning, there was only Kite web, which was built as a web frontend to the [Kite Connect](https://kite.trade) APIs. We started working on Kite Android as a native app sometime in 2015. Interestingly, this was a time when trading on mobile was largely uncommon in the Indian capital markets and smartphone penetration was very low compared to what it is today. Since we had no experience building mobile apps, Sujith, our lone mobile developer at the time, built it over several months by trial and error. This was also around the time when he invented the infamous SujithSort™ algorithm. The first public release came out in early 2016. While it was a very basic app compared to what we have today, it still was far better than what was popular in the industry at the time.
 
 We did not immediately plan on developing a native iOS app as we didn't have the expertise and there was very little demand in the market for an iOS app. While this has now changed considerably, the trend still continues, where only about 10% of our users use iOS. However, to maintain a basic presence on the app store, we released an iOS version that wrapped our responsive web app in a webview.
 
