@@ -4,7 +4,7 @@ description: "User disengagement is the product and business development philoso
 date: "2022-05-06"
 author: knadh
 authors: ["knadh"]
-tags: ["flutter"]
+tags: ["philosophy", "dev-culture", "tech-team"]
 image: "/static/images/user-disengagement.png"
 ---
 
