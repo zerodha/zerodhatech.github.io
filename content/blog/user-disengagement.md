@@ -59,7 +59,7 @@ There is no tracking or profiling of user "engagement" across any of our apps. T
 ### No gimmicks
 We do not offer ephemeral discounts or freebies to entice users into signing up on our platform that is meant for serious financial transactions. Signup is just a milestone in a meaningful user-product relationship. Choosing a financial services firm to manage one's personal finances is a critical, long term decision. So, any ephemeral freebie that is designed to entice a user into signing up has no logical basis in our view. If a user signs up, it should be of their own volition to specifically use our software and services for the long term.
 
-In the same vein, we put conscious effort into making sure that we do not end up drinking our own Kool-Aid and build software features that fit our idea of coolness and usefulness, but may be gimmicks in reality. Seeing popular software with massive design teams go through the Nth radical UI paradigm shift always serves as a reminder. See dont.build for a droll version of this approach.
+In the same vein, we put conscious effort into making sure that we do not end up drinking our own Kool-Aid and build software features that fit our idea of coolness and usefulness, but may be gimmicks in reality. Seeing popular software with massive design teams go through the Nth radical UI paradigm shift always serves as a reminder. See [dont.build](https://dont.build/) for a droll version of this approach.
 
 ## Meaningful disengagement
 Some examples of direct, but meaningful disengagement:
