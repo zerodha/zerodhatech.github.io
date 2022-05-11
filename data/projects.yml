@@ -285,3 +285,9 @@
   stars: 0
   updated_at: '2021-07-12T03:49:35Z'
   url: https://github.com/knadh/indexed-cache
+  - description:  Frappe app to replace default text editor with tinyMCE.
+  github_uri: shridarpatil/frappe_tinymce
+  name: indexed-cache
+  stars: 0
+  updated_at: '2022-01-13T03:49:35Z'
+  url: https://github.com/shridarpatil/frappe_tinymce
