@@ -1,5 +1,5 @@
 ---
-title: "Lojjing at Zerodha"
+title: "Logging at Zerodha"
 description: "Our migration story from ELK to using Clickhouse and Vector for our logging pipeline"
 date: "2023-03-23T00:00:00+05:30"
 author: karan
