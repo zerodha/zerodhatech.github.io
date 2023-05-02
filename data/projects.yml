@@ -370,3 +370,10 @@
   stars: 12
   updated_at: '2022-05-12T10:00:00Z'
   url: https://github.com/joeirimpan/listmonk-messenger
+
+- description:  Ansible scripts for setting up Zookeeper, Kafka, kaf cli.
+  github_uri: joeirimpan/kaf-ansible
+  name: kaf-ansible
+  stars: 3
+  updated_at: '2023-05-02T10:00:00Z'
+  url: https://github.com/joeirimpan/kaf-ansible
