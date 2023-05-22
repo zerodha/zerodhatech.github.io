@@ -377,3 +377,10 @@
   stars: 3
   updated_at: '2023-05-02T10:00:00Z'
   url: https://github.com/joeirimpan/kaf-ansible
+
+- description:  Replicate topics from one cluster to another with an option to rename topics.
+  github_uri: joeirimpan/kaf-relay
+  name: kaf-relay
+  stars: 0
+  updated_at: '2023-05-12T10:00:00Z'
+  url: https://github.com/joeirimpan/kaf-relay
