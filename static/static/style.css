@@ -248,6 +248,9 @@ ul.flat li {
     letter-spacing: 1px;
 }
 
+.posts {
+    margin: 80px 0 ;
+}
 .posts .post {
     margin: 32px auto;
 }
@@ -318,6 +321,10 @@ ul.flat li {
     .post .author .urls a {
         margin-right: 5px;
         color: #888;
+        text-decoration:  underline;
+    }
+    .post .author a:hover  {
+        color: #0066ff;
     }
 
 .projects {
@@ -362,6 +369,12 @@ h1.intro {
 
     .intro .bold {
         font-weight: 500;
+    }
+h1.page-title {
+    margin: 10px 0 50px 0;
+}
+    .page-title .highlight {
+        border-bottom: 5px solid #0066ff;
     }
 
 
@@ -645,3 +658,28 @@ code {
     white-space: pre-wrap;
 }
 
+
+.author-profile img {
+    display: block;
+   border-radius: 10px;
+   object-fit: cover;
+   object-position: center top;
+}
+
+.author-profile .name-wrapper {
+    margin-top: 30px;
+}
+.author-profile .urls  {
+    font-size: 0.875em;
+    margin:   20px 0 0 0;
+}
+.author-profile .urls a{
+    padding: 5px  10px 5px 0  ;
+}
+
+.page-title {
+    margin : 0  0 50px 0; 
+}
+.page-title  h1 {
+    margin:   0 0 10px 0 ;
+}

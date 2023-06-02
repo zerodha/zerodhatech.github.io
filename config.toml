@@ -32,3 +32,15 @@ subtitle = "Technology blog of India's largest stock broker"
       name = "Projects"
       url = "/projects"
       weight = 3
+
+   [[menu.header]]
+      identifier = "authors"
+      name = "Authors"
+      url = "/authors"
+      weight = 4
+
+   [[menu.header]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/tags"
+      weight = 5

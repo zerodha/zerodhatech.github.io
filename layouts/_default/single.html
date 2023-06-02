@@ -1,8 +1,13 @@
 {{ partial "header.html" . }}
-		
-			{{ if eq .Params.banner "yes" }}
-			<div class="banner">
-				<img src="{{ .Params.image }}">	
+		<div class="post">
+			<div class="page-title">
+				<h1 class="title">{{ .Title }}</h1>
+			    
+				{{ if ne .Date.Year 1 }}
+					<div class="date"> <small> Posted on </small>{{ dateFormat "02 Jan 2006" $.Date }}</div>
+				{{ end }}
+
+				{{ partial "author.html" .}}
 			</div>
 			{{ end }}
 			

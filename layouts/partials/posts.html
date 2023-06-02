@@ -5,9 +5,14 @@
 	{{ range $paginator.Pages }}
 		<div class="post blurb">
 			<div class="post-header">
-				<h3 class="title">
+				<div class="meta">
+					<div class="date">
+						{{ dateFormat "02 Jan 2006" .Date }}
+					</div>
+				</div>
+				<h2 class="title">
 					<a href="{{ .RelPermalink }}">{{.Title}}{{ if .Draft }}<sup class="draft-label">DRAFT</sup>{{ end }}</a>
-				</h3>
+				</h2>
 			</div>
 			<div class="description">
 				{{ if isset .Params "description" }}
@@ -18,15 +23,7 @@
 					{{ .RawContent }}
 				{{ end }}
 			</div>
-
-			<div class="meta">
-
-				{{ partial "author-tiny.html" . }}
-
-				<p class="date">
-					{{ dateFormat "02 Jan 2006" .Date }}
-				</p>
-			</div>
+			{{ partial "author.html" .}}
 		</div>
 	{{ end }}
 	{{ template "partials/paginator.html" . }}
