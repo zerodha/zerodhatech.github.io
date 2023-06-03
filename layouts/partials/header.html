@@ -23,13 +23,13 @@
 	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ .Permalink }}" />
-	
+
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}/static/images/favicon.png" />
-	
+
 	{{ with .OutputFormats.Get "rss" -}}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
-	
+
 	{{ with .Params.image }}
 		<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
 	{{ else }}
@@ -57,16 +57,16 @@
 				"https://instagram.com/zerodhaonline"
 			]
 		}
-	   </script>
+	</script>
 
 	<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}/static/style.css" />
-	<!-- <link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="{{ .Site.BaseURL }}/static/dark.css" />	 -->
+	<link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="{{ .Site.BaseURL }}/static/dark.css" />
 </head>
 <body>
 	{{ .Site.Params.paginate }}
 	<section class="container wrap">
-		<div class="header">
+		<header class="header">
 			<div class="logo">
 				<a href="{{ .Site.BaseURL }}/"><img alt="Zerodha technology blog" src="{{ .Site.BaseURL }}/static/images/logo.svg" /></a>
 			</div>
@@ -81,4 +81,51 @@
 					<img src="{{ .Site.BaseURL }}/static/images/feed.svg" alt="Subscribe to feed" />
 				</a>
 			</nav>
+		</header>
+
+		<!-- Additional Features -->
+		<div class="additional-features">
+			<!-- Add your additional features here -->
 		</div>
+
+		<!-- Content Section -->
+		<section class="content">
+			<!-- Add your content here -->
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- Add your footer content here -->
+
+
+
+			<!-- <footer>
+				<div class="footer-content">
+				  <div class="footer-section">
+					<h4>About Us</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget mauris at felis fringilla efficitur. Fusce vitae tincidunt urna.</p>
+				  </div>
+				  <div class="footer-section">
+					<h4>Contact Us</h4>
+					<p>Email: info@example.com</p>
+					<p>Phone: 123-456-7890</p>
+				  </div>
+				  <div class="footer-section">
+					<h4>Follow Us</h4>
+					<div class="social-media-links">
+					  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+					  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+					  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+					  <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+					</div>
+				  </div>
+				</div>
+				<div class="footer-bottom">
+				  <p>&copy; 2023 Your Website. All rights reserved.</p>
+				</div>
+			  </footer> -->
+			  
+		</footer>
+	</section>
+</body>
+</html>
