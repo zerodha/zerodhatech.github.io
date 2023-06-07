@@ -47,7 +47,7 @@ Here is a quick, broad, overview of our stack, before we start getting into deep
 - All of our performance-critical, high throughput services are written in Go. We have not received any unsolicited advice asking us to rewrite everything in Rust or Nim (yet).
 - Data-heavy backoffice systems where realtime performance is not a bottleneck, are written in Python. Django and Flask for certain web apps.
 - Bit of C++ and Java for special cases.
-- Countless complex business, financial, account, people processes and backoffice applications are built atop [ERPNext](https://erpnext.org). Thank universe for ERPNext.
+- Countless complex business, financial, account, people processes and backoffice applications are built atop [ERPNext](https://erpnext.com). Thank universe for ERPNext.
 - VueJS for web app applications. Gave up on Angular and rewrote all applications.
 - Flutter for iOS and Android mobile applications. Gave up on native Android/Java, Swift, and React Native and rewrote everything in Flutter. Granted, there is still one React Native app.
 - Self-managed Postgres instances with hundreds of billions of rows. MySQL instances with billions of rows as owing to certain dependencies.
