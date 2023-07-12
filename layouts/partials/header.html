@@ -59,26 +59,63 @@
 		}
 	   </script>
 
-	<link href="https://fonts.googleapis.com/css?family=Inter:400,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}/static/style.css" />
+	
 	<!-- <link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="{{ .Site.BaseURL }}/static/dark.css" />	 -->
 </head>
 <body>
 	{{ .Site.Params.paginate }}
-	<section class="container wrap">
-		<div class="header">
-			<div class="logo">
-				<a href="{{ .Site.BaseURL }}/"><img alt="Zerodha technology blog" src="{{ .Site.BaseURL }}/static/images/logo.svg" /></a>
-			</div>
-			<nav class="nav">
-				{{ $cur := . }}
-				{{ range $.Site.Menus.header }}
+	<section class="page-hero">
+		<div class="container wrap">
+			<div class="header">
+				<div class="logo">
+					<a href="{{ .Site.BaseURL }}/"><img alt="Zerodha technology blog" src="{{ .Site.BaseURL }}/static/images/logo.svg" /></a>
+				</div>
+				<nav class="nav">
+					{{ $cur := . }}
+					{{ range $.Site.Menus.header }}
 					{{ $active := in $cur.RelPermalink .URL }}
 					<a class="{{ if $active }} active {{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-				{{ end }}
+					{{ end }}
 
-				<a href="{{ .Site.BaseURL }}/index.xml" class="feed" title="Subscribe to feed">
-					<img src="{{ .Site.BaseURL }}/static/images/feed.svg" alt="Subscribe to feed" />
-				</a>
-			</nav>
+					<a href="{{ .Site.BaseURL }}/index.xml" class="feed" title="Subscribe to feed">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M4 11a9 9 0 0 1 9 9"/>
+							<path d="M4 4a16 16 0 0 1 16 16"/>
+							<circle cx="5" cy="19" r="1"/>
+						</svg>
+					</a>
+				</nav>
+			</div>
+
+			{{ if .IsPage }}
+			<div class="post single">
+				<div class="post-header">
+					<h1 class="title">{{ .Title }}</h1>
+					{{ if ne .Type "page" }}
+						<p class="date">
+							{{ dateFormat "02 Jan 2006" .Date }}
+						</p>
+					{{ else }}
+						{{ .Params.description }}						
+					{{ end }}
+				</div>
+			</div>
+			{{ else if .IsHome }}
+				<h1 class="intro">
+					We build <span class="bold">technology at
+					Zerodha, </span> <span class="highlight">India's largest stock broker</span>.
+				</h1>
+
+			{{ else if isset .Data "Term" }}
+				<h1 class="post-header">
+					{{ if eq (index .Data "Singular") "author" }}@{{ end }}{{ .Data.Term }}
+				</h1>
+			{{ else }}
+				<h1 class="post-header">{{ .Name }}</h1>
+			{{ end }}
+
 		</div>
+</section>
+			

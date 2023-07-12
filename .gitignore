@@ -1,3 +1,4 @@
 .vscode
 venv/
 public
+.DS_Store

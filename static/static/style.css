@@ -6,10 +6,10 @@ html, body {
     padding: 0;
 }
 body {
-    background: #f8f8f8;
+    background: #F0F0F0;
     font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #333;
+    font-weight: 300;
+    color: #141414;
     line-height: 1.6em;
     font-size: 18px;
 }
@@ -18,11 +18,11 @@ a {
     color: #000;
     text-decoration: none;
     word-break: break-word;
+    transition: color 0.2s ease;
 }
     a:hover {
-        color: #0066ff;
-        text-decoration: underline;
-        text-decoration-color: #0066ff;
+        color: #035AA6;
+        text-decoration-color: #035AA6;
         text-decoration-thickness: 2px;
     }
     code {
@@ -107,8 +107,8 @@ blockquote em {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
-    line-height: 1.3em;
+    font-weight: 400;
+    line-height: 1.6;
     margin: 45px 0 20px 0;
 }
 
@@ -189,9 +189,8 @@ ul.flat li {
 }
 
 .wrap {
-    background: #fff;
     margin: 0 auto;
-    padding: 60px 75px;
+    padding: 30px 75px 60px 75px;
 }
 
 .container {
@@ -203,6 +202,9 @@ ul.flat li {
     margin-bottom: 90px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1080px;
+    min-width: 320px;
+    padding-bottom: 0;
 }
     .header .logo, .header nav {
         flex-grow: 1;
@@ -218,7 +220,7 @@ ul.flat li {
     .header nav a {
         display: inline-block;
         margin-left: 30px;
-        color: #0066ff;
+        vertical-align: middle;
     }
     .header nav .feed img {
         width: 16px;
@@ -247,7 +249,7 @@ ul.flat li {
 }
 
 .posts .post {
-    margin-bottom: 60px;
+    margin: 32px auto;
 }
 
 .post.blurb .post-header {
@@ -265,11 +267,11 @@ ul.flat li {
         padding-bottom: 30px;
         margin-bottom: 30px;
     }
-    .post .content a {
-        color: #0066ff;
+    .content a {
+        color: #035AA6;
         text-decoration: underline;
     }
-        .post .content a:hover {
+        .content a:hover {
             color: #000;
             text-decoration-color: #000;;
         }
@@ -319,15 +321,21 @@ ul.flat li {
     }
 
 .projects {
-    margin-top: 60px;
+    margin-top: 10px;
 }
     .projects .item {
         display: flex;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #C5C5C5;
+        padding: 30px;
     }
     .projects .name {
         flex: 40%;
     }
+        .projects .name a {
+            text-decoration: none;
+        }
+
     .projects .description {
         flex: 60%;
     }
@@ -343,10 +351,17 @@ ul.flat li {
     }
 
 h1.intro {
-    margin: 0 0 120px 0;
+    margin: 120px 0;
+    font-weight: 300;
 }
     .intro .highlight {
-        border-bottom: 5px solid #0066ff;
+        border-bottom: 8px solid;
+        border-image: linear-gradient(to right, #4184F3, #4EAF52) 1;
+        padding-bottom: 12px;
+    }
+
+    .intro .bold {
+        font-weight: 500;
     }
 
 
@@ -360,7 +375,7 @@ h1.intro {
         color: #666;
     }
     .footer a:hover {
-        color: #0066ff;
+        color: #035AA6;
     }
 
 .tag-cloud {
@@ -411,7 +426,120 @@ h1.intro {
     text-align: right;
 }
 
-@media (max-width: 940px) {
+.page-hero {
+    background-color: #E2E2D7;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #C5C5C5;
+    margin: 18px 0 80px;
+    padding-top: 18px;
+}
+
+.meta .author-tiny {
+    margin: 0;
+}
+
+.author-tiny  a {
+    line-height: 1.6;
+}
+
+.author .desig {
+    line-height: 1.6;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.author-tiny .desig {
+    margin-left: 12px;
+    color: #888;
+}
+
+.date {
+    font-size: 0.875em;
+    margin: 0;
+}
+
+.page-hero .post-header {
+    text-align: center;
+}
+
+    .page-hero .post-header h1.title {
+        margin: 0;
+    }
+
+
+.content-wrap {
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.content-wrap .author {
+    min-width: 250px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.banner {
+    background: linear-gradient( to bottom, #E2E2D7 0%, #E2E2D7 50%, #F0F0F0 50%, #F0F0F0 100% );
+    text-align: center;
+    margin-top: -40px;
+}
+
+    .banner img {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 40px;
+    }
+
+.author {
+    position: sticky;
+    top: 40px;
+    padding: 24px 0;
+}
+
+.author .meta {
+    display: block;
+    border: none;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+}
+
+.author .meta .name {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.author .meta .urls a {
+    margin-right: 12px;
+    color: #888;
+}
+
+.author .meta .urls a:hover {
+    color: #035AA6;
+}
+
+.avatar img {
+    display: block;
+    border-radius: 50%;
+    max-width: 44px;
+    margin-right: 16px;
+    margin-top: 4px;
+}
+
+.content {
+    margin: auto;
+}
+
+
+@media (max-width: 940px) {    
+
     .wrap {
         padding: 30px;
     }
@@ -421,27 +549,87 @@ h1.intro {
     .posts .post {
         margin-bottom: 60px;
     }
+
+    .content-wrap {
+        display: block;
+        max-width: 1200px;
+        position: relative;
+        padding-top: 0px;
+    }
+
+    .content-wrap .author {
+        position: static;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 30px;
+    }
+
+        .content-wrap .author .meta {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+            .content-wrap .author .meta .desig {
+                margin: 0;
+            }
+
+    .banner {
+        padding: 0 30px;
+    }
+
+    .banner img {
+        padding: 20px 0px 0;
+    }
+
 }
 @media (max-width: 550px) {
     .header {
         display: block;
+        margin-bottom: 50px;
     }
+
     .header .nav {
-        margin-top: 30px;
+        margin-top: 20px;
         text-align: left;
     }
     .header .nav a {
         margin: 0 30px 0 0;
     }
 
+    h1.intro {
+        margin: 80px 0;
+    }
+    
     .float-right {
         float: none;
     }
         figure.float-right {
             margin: 15px 0;
         }
+
+    .page-hero .post-header {
+        text-align: left;
+    }
+
+    .post-header h1.title {
+        margin-top: 0;
+    }
+
+    .banner {
+        margin-top: -30px;
+    }
+
+    .projects {
+        padding: 0;
+    }
+
+    .projects .item {
+        padding: 30px 0;
+    }
+
 }
 
 code {
     white-space: pre-wrap;
 }
+

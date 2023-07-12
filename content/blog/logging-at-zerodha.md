@@ -6,9 +6,10 @@ author: karan
 authors: ["karan"]
 tags: ["devops", "logging"]
 image: "/static/images/lojjing_banner.jpg"
+banner: "yes"
 ---
 
-![banner](/static/images/lojjing_banner.jpg)
+<!-- ![banner](/static/images/lojjing_banner.jpg) -->
 
 At Zerodha, we run a multitude of internal and public-facing services that generate copious amounts of logs. While developers use these logs to debug or troubleshoot incidents, some services also emit logs that must be persisted for prolonged periods to comply with numerous regulatory requirements. In this post, I will delve into our experiences with the [ELK stack](https://www.elastic.co/what-is/elk-stack), why it didn't fit our needs and our migration to [ClickHouse](https://clickhouse.com/).
 

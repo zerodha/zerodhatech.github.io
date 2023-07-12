@@ -1,11 +1,6 @@
-{{ partial "header.html" . }}
-	{{ if isset .Data "Term" }}
-		<h1 class="big">
-			{{ if eq (index .Data "Singular") "author" }}@{{ end }}{{ .Data.Term }}
-		</h1>
-	{{ else }}
-		<h1 class="big">All posts</h1>
-	{{ end }}
+{{ partial "header.html" . }}	
+	<div class="container wrap">
+		{{ partial "taxonomy_posts.html" . }}
+	</div>
 
-	{{ partial "taxonomy_posts.html" . }}
  {{ partial "footer.html" . }}

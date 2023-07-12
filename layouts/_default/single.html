@@ -1,24 +1,30 @@
 {{ partial "header.html" . }}
-		<div class="post">
-			<div class="post-header">
-				<h1 class="title">{{ .Title }}</h1>
-				{{ partial "author.html" . }}
+		
+			{{ if eq .Params.banner "yes" }}
+			<div class="banner">
+				<img src="{{ .Params.image }}">	
 			</div>
-					
-			<div class="content">
-				{{ .Content }}
-			</div>
-
-			<div class="tags">
-				{{ if ne .Type "page" }}
-					{{ if gt .Params.tags 0 }}
-						<ul class="flat">
-							{{ range .Params.tags }}
-							<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-							{{ end }}
-						</ul>
-					{{ end }}
+			{{ end }}
+			
+			<div class="content-wrap wrap">
+				{{ if isset .Params "author" }}
+					{{ partial "author.html" . }}
 				{{ end }}
+				<div class="content">
+					{{ .Content }}
+				
+					<div class="tags">
+						{{ if ne .Type "page" }}
+							{{ if gt .Params.tags 0 }}
+								<ul class="flat">
+									{{ range .Params.tags }}
+									<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+									{{ end }}
+								</ul>
+							{{ end }}
+						{{ end }}
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,14 +1,10 @@
 <div class="posts">
 	{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 	{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+	
 	{{ range $paginator.Pages }}
 		<div class="post blurb">
 			<div class="post-header">
-				<div class="meta">
-					<div class="date">
-						{{ dateFormat "02 Jan 2006" .Date }}
-					</div>
-				</div>
 				<h3 class="title">
 					<a href="{{ .RelPermalink }}">{{.Title}}{{ if .Draft }}<sup class="draft-label">DRAFT</sup>{{ end }}</a>
 				</h3>
@@ -22,7 +18,15 @@
 					{{ .RawContent }}
 				{{ end }}
 			</div>
-			{{ partial "author.html" . }}
+
+			<div class="meta">
+
+				{{ partial "author-tiny.html" . }}
+
+				<p class="date">
+					{{ dateFormat "02 Jan 2006" .Date }}
+				</p>
+			</div>
 		</div>
 	{{ end }}
 	{{ template "partials/paginator.html" . }}

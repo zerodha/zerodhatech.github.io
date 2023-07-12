@@ -1,0 +1,10 @@
+<div class="author-tiny">
+    {{ if .Params.author }}
+        {{ $author := .Params.author }}
+        {{ with index .Site.Data.authors $author }}
+            <a href="{{ $.Site.BaseURL }}/authors/{{ $author }}" class="name">{{ .name }}</a>
+            <span class="desig">{{ .title }}</span>
+
+        {{ end }}
+    {{ end }}
+</div>
