@@ -442,6 +442,10 @@ h1.intro {
     margin: 0;
 }
 
+.meta .author-tiny * {
+    vertical-align: middle;
+}
+
 .author-tiny  a {
     line-height: 1.6;
 }
@@ -455,6 +459,14 @@ h1.intro {
 .author-tiny .desig {
     margin-left: 12px;
     color: #888;
+}
+
+.author-tiny .avatar {
+    display: inline;
+    border-radius: 50%;
+    max-width: 40px;
+    margin-right: 12px;
+    
 }
 
 .date {
