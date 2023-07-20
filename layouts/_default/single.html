@@ -1,35 +1,27 @@
 {{ partial "header.html" . }}
-		<div class="post">
-			<div class="page-title">
-				<h1 class="title">{{ .Title }}</h1>
-			    
-				{{ if ne .Date.Year 1 }}
-					<div class="date"> <small> Posted on </small>{{ dateFormat "02 Jan 2006" $.Date }}</div>
-				{{ end }}
-
-				{{ partial "author.html" .}}
-			</div>
-			{{ end }}
+	{{ if eq .Params.banner "yes" }}
+		<div class="banner">
+			<img src="{{ .Params.image }}">	
+		</div>
+	{{ end }}
 			
-			<div class="content-wrap wrap">
-				{{ if isset .Params "author" }}
-					{{ partial "author.html" . }}
-				{{ end }}
-				<div class="content">
-					{{ .Content }}
-				
-					<div class="tags">
-						{{ if ne .Type "page" }}
-							{{ if gt .Params.tags 0 }}
-								<ul class="flat">
-									{{ range .Params.tags }}
-									<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-									{{ end }}
-								</ul>
+	<div class="content-wrap wrap">
+		{{ if isset .Params "author" }}
+			{{ partial "author.html" . }}
+		{{ end }}
+		<div class="content">
+			{{ .Content }}
+		
+			<div class="tags">
+				{{ if ne .Type "page" }}
+					{{ if gt .Params.tags 0 }}
+						<ul class="flat">
+							{{ range .Params.tags }}
+							<li><a class="capsule" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
 							{{ end }}
-						{{ end }}
-					</div>
-				</div>
+						</ul>
+					{{ end }}
+				{{ end }}
 			</div>
 		</div>
 	</div>

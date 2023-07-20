@@ -1,16 +1,7 @@
 {{ partial "header.html" . }}
-	<div class="page-title">
-		{{ if isset .Data "Term" }}
-			{{ if eq (index .Data "Singular") "author" }}
-				{{ with ( index .Site.Data.authors  .Data.Term) }}
-					{{ partial "author-profile.html" .}}
-				{{ end }}
-			{{ else }}
-				<h1 class="big title">{{ title  .Data.Term}}</h1>
-			{{ end }}
-		{{ end }}
-	</div>
-	{{ partial "taxonomy_posts.html" . }}
- {{ partial "footer.html" . }}
+
+{{ partial "taxonomy_posts.html" . }}
+
+{{ partial "footer.html" . }}
 
  

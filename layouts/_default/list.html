@@ -1,14 +1,5 @@
 {{ partial "header.html" . }}
-	<div>
-        {{ if isset .Data "Term" }}
-		    <h1 class="big intro" >
-                {{ if eq (index .Data "Singular") "author" }}@{{ end }}{{ .Data.Term }}
-            </h1>
-        {{ else }}
-            <h1 class="big intro">All posts</h1>
-        {{ end }}
-    </div>
 
 <section class="container wrap">
-	{{ partial "posts.html" . }}
- {{ partial "footer.html" . }}
+{{ partial "posts.html" . }}
+{{ partial "footer.html" . }}

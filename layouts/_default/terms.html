@@ -1,27 +1,15 @@
 {{ partial "header.html" . }}
 	{{ $data := .Data }}
-	<main>
-		<section>
-			{{ $name := lower  .Name  }}	
-			   {{ $titles := .Site.Data.category }}
-			   {{ range $titles }}
-			   {{ if eq .term $name }}
-				   <span>{{ upper $name }}</span>
-				   <h1 class="page-title">
-					   {{ .title }}
-				   </h1>
-			   {{ end }}
-			   {{ end }}
-		   </section>
-
-		   <ul>
+	<main class="container wrap">
+		   <ul class="list-wrapper">
 				{{ range $index, $value := .Data.Terms.ByCount }}
 					<li>
-						<a href="{{ $.Site.BaseURL }}/{{ $data.Plural }}/{{ $value.Name | urlize }}/">{{  title $value.Name }}<sup>{{ $value.Count }}</sup></a>
+						<a href="{{ $.Site.BaseURL }}/{{ $data.Plural }}/{{ $value.Name | urlize }}/">
+							{{  title $value.Name }}
+							<sup>{{ $value.Count }}</sup>
+						</a>
 					</li>
 				{{ end }}
 			</ul>
-
 	</main>
-
 {{ partial "footer.html" . }}

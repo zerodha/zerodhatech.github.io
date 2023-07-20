@@ -92,9 +92,9 @@
 			{{ if .IsPage }}
 			<div class="post single">
 				<div class="post-header">
-					<h1 class="title">{{ .Title }}</h1>
+					<h1 class="title">{{ .Title   }}</h1>
 					{{ if ne .Type "page" }}
-						<p class="date">
+						<p class="desc">{{ .Description   }}</p>
 							{{ dateFormat "02 Jan 2006" .Date }}
 						</p>
 					{{ else }}
@@ -109,13 +109,47 @@
 				</h1>
 
 			{{ else if isset .Data "Term" }}
-				<h1 class="post-header">
-					{{ if eq (index .Data "Singular") "author" }}@{{ end }}{{ .Data.Term }}
-				</h1>
+				{{ if eq (index .Data "Singular") "author" }}
+					{{ if isset .Data "Term" }}
+						{{ if eq (index .Data "Singular") "author" }}
+							{{ with ( index .Site.Data.authors  .Data.Term) }}
+								<div class="post single">
+									<div class="post-header">
+										<h1 class="title">{{ .name }} </h1>
+										{{ .title }}
+									</div>
+								</div>
+							{{ end }}
+						{{ end }}
+					{{ end }}
+				{{ else }}
+					<h1 class="post-header">{{ .Data.Term | title }}</h1>
+				{{ end }}
+			{{ else if eq (.RelPermalink | urlize) "/blog/"}}
+				<div class="post-header">
+					<h1 class="title">{{ .Title }}</h1>
+					{{ if ne .Type "page" }}
+					{{ else }} {{ .Params.description }} {{ end }}
+			  	</div>
 			{{ else }}
-				<h1 class="post-header">{{ .Name }}</h1>
+				<section>
+					{{ $name := lower  .Name  }}
+						{{ $titles := .Site.Data.meta }}
+						{{ range $titles }}
+						{{ if eq .term $name }}
+							<div class="post single">
+								<div class="post-header">
+									<h1 class="title">{{ .title }} </h1>
+									{{ .subtitle }}
+								</div>
+							</div>
+						{{ else }}
+					{{ end }}
+					{{ end }}
+				</section>
 			{{ end }}
-
 		</div>
 </section>
 			
+
+
