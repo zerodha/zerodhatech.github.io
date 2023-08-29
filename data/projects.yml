@@ -384,3 +384,9 @@
   stars: 0
   updated_at: '2023-05-12T10:00:00Z'
   url: https://github.com/joeirimpan/kaf-relay
+- description:  A frappe app that has workflows and reports to make payments to vendors by a company and track them 
+  github_uri: zerodha/vendor-payments
+  name: vendor-payments
+  stars: 0
+  updated_at: '2023-07-26T03:49:35Z'
+  url: https://github.com/zerodha/vendor-payments
