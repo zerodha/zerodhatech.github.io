@@ -390,3 +390,10 @@
   stars: 0
   updated_at: '2023-07-26T03:49:35Z'
   url: https://github.com/zerodha/vendor-payments
+
+- description: A Flutter plugin to set display mode in Android for enabling high refresh rates
+  github_uri: ajinasokan/flutter_displaymode
+  name: flutter_displaymode
+  stars: 0
+  updated_at: '2023-09-11T10:00:00Z'
+  url: https://github.com/ajinasokan/flutter_displaymode
