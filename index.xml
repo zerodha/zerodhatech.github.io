@@ -12,6 +12,7 @@ Simple command-line utility to convert CSV files to searchable and sortable HTML
 otpgateway ★ 355</description></item><item><title>Zerodha's FOSS stack</title><link>https://zerodha.tech/foss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zerodha.tech/foss/</guid><description>Language Go
 Python
 Java
+JavaScript
 Dart
 Database Postgres
 ClickHouse
