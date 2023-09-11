@@ -1,7 +1,7 @@
 <section class="container oss">
     {{ $currentCategory := "" }}
 
-    {{ range .Page.Site.Data.oss }}
+    {{ range .Page.Site.Data.foss }}
         {{ if ne $currentCategory .category }}
             {{ if $currentCategory }}
                 </div>

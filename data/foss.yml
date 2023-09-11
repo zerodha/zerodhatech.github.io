@@ -63,8 +63,8 @@
   url: https://kafka.apache.org/
 
 - category: Message Bus
-  name: Redpanda Console
-  url: https://www.vectorized.io/redpanda/
+  name: Redpanda Console UI
+  url: https://github.com/redpanda-data/console
 
 - category: Message Bus
   name: Benthos
@@ -225,6 +225,10 @@
 - category: Developer Tools
   name: CFSSL
   url: https://github.com/cloudflare/cfssl
+
+- category: Developer Tools
+  name: Athens Go Proxy
+  url: https://docs.gomods.io/
 
 - category: Blog
   name: WordPress

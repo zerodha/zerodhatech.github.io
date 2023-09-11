@@ -34,7 +34,7 @@ subtitle = "Technology blog of India's largest stock broker"
       weight = 3
 
    [[menu.header]]
-      identifier = "oss"
-      name = "OSS"
-      url = "/oss"
+      identifier = "foss"
+      name = "FOSS"
+      url = "/foss"
       weight = 4
