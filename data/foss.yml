@@ -11,6 +11,10 @@
   url: https://www.java.com/en/
 
 - category: Language
+  name: JavaScript
+  url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+- category: Language
   name: Dart
   url: https://dart.dev/
 
@@ -198,11 +202,11 @@
   name: Outline
   url: https://www.getoutline.com/
 
-- category: VPN
-  name: Pritunl
-  url: https://www.pritunl.com/
+- category: Developer Tools
+  name: Ubuntu Server
+  url: https://ubuntu.com/download/server
 
-- category: VPN
+- category: Developer Tools
   name: Netbird
   url: https://netbird.io/
 
