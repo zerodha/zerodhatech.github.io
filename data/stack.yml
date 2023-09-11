@@ -1,0 +1,243 @@
+- category: Languages
+  name: Go
+  url: https://go.dev/
+
+- category: Languages
+  name: Python
+  url: https://www.python.org/
+
+- category: Languages
+  name: Java
+  url: https://www.java.com/en/
+
+- category: Languages
+  name: JavaScript
+  url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+- category: Languages
+  name: Dart
+  url: https://dart.dev/
+
+- category: Databases
+  name: Postgres
+  url: https://www.postgresql.org/
+
+- category: Databases
+  name: ClickHouse
+  url: https://clickhouse.com
+
+- category: Databases
+  name: Redis
+  url: https://redis.io/
+
+- category: Databases
+  name: SSDB
+  url: https://github.com/ideawu/ssdb
+
+- category: Databases
+  name: ScyllaDB
+  url: https://www.scylladb.com/
+
+- category: Databases
+  name: DuckDB
+  url: https://duckdb.org/
+
+- category: Databases
+  name: MySQL
+  url: https://www.mysql.com/
+
+- category: Webervers and proxies
+  name: Nginx
+  url: https://www.nginx.com/
+
+- category: Webervers and proxies
+  name: HAProxy
+  url: https://www.haproxy.org/
+
+- category: Webervers and proxies
+  name: Kong
+  url: https://konghq.com/
+
+- category: Streams & Queues
+  name: Nats
+  url: https://nats.io/
+
+- category: Streams & Queues
+  name: Kafka
+  url: https://kafka.apache.org/
+
+- category: Streams & Queues
+  name: Redpanda Console UI
+  url: https://github.com/redpanda-data/console
+
+- category: Streams & Queues
+  name: Benthos
+  url: https://www.benthos.dev/
+
+- category: Observability & Monitoring
+  name: Vector
+  url: https://vector.dev/
+
+- category: Observability & Monitoring
+  name: Grafana
+  url: https://grafana.com/
+
+- category: Observability & Monitoring
+  name: VictoriaMetrics
+  url: https://victoriametrics.com/
+
+- category: Observability & Monitoring
+  name: Alertmanager
+  url: https://prometheus.io/docs/alerting/latest/alertmanager/
+
+- category: Observability & Monitoring
+  name: Sentry
+  url: https://sentry.io/
+
+- category: DevOps & CI/CD
+  name: Rundeck
+  url: https://www.rundeck.com/
+
+- category: DevOps & CI/CD
+  name: GitLab
+  url: https://www.gitlab.com/
+
+- category: DevOps & CI/CD
+  name: Airflow
+  url: https://airflow.apache.org/
+
+- category: DevOps & CI/CD
+  name: Salt Stack
+  url: https://www.saltstack.com/
+
+- category: DevOps & CI/CD
+  name: GLPI
+  url: https://glpi-project.org/
+
+- category: DevOps & CI/CD
+  name: Nomad
+  url: https://www.nomadproject.io/
+
+- category: DevOps & CI/CD
+  name: Fastlane
+  url: https://fastlane.tools/
+
+- category: DevOps & CI/CD
+  name: Gitlab Runner
+  url: https://docs.gitlab.com/runner/
+
+- category: Web & Mobile frameworks
+  name: VueJS
+  url: https://vuejs.org/
+
+- category: Web & Mobile frameworks
+  name: Django
+  url: https://www.djangoproject.com/
+
+- category: Web & Mobile frameworks
+  name: Frappe
+  url: https://frappeframework.com/
+
+- category: Web & Mobile frameworks
+  name: Flask
+  url: https://flask.palletsprojects.com/
+
+- category: Web & Mobile frameworks
+  name: Flutter
+  url: https://flutter.dev/
+
+- category: E-mailing
+  name: Haraka
+  url: https://haraka.github.io/
+
+- category: E-mailing
+  name: Postal
+  url: https://github.com/postalserver/postal
+
+- category: E-mailing
+  name: Maddy
+  url: https://github.com/foxcpp/maddy
+
+- category: E-mailing
+  name: Listmonk
+  url: https://listmonk.app/
+
+- category: Business suite
+  name: OSTicket
+  url: https://osticket.com/
+
+- category: Business suite
+  name: ERPNext
+  url: https://erpnext.com/
+
+- category: Business suite
+  name: NextCloud
+  url: https://nextcloud.com/
+
+- category: Business suite
+  name: Vaultwarden
+  url: https://github.com/dani-garcia/vaultwarden
+
+- category: Business suite
+  name: Metabase
+  url: https://www.metabase.com/
+
+- category: Business suite
+  name: Matomo
+  url: https://matomo.org/
+
+- category: Communication
+  name: Mattermost
+  url: https://mattermost.com/
+
+- category: Communication
+  name: Discourse
+  url: https://www.discourse.org/
+
+- category: Documentation
+  name: Mkdocs
+  url: https://www.mkdocs.org/
+
+- category: Documentation
+  name: Outline
+  url: https://www.getoutline.com/
+
+- category: Developer tooling
+  name: Ubuntu Server
+  url: https://ubuntu.com/download/server
+
+- category: Developer tooling
+  name: Netbird
+  url: https://netbird.io/
+
+- category: Developer tooling
+  name: Cypress
+  url: https://www.cypress.io/
+
+- category: Developer tooling
+  name: pandas
+  url: https://pandas.pydata.org/
+
+- category: Developer tooling
+  name: GraphQL
+  url: https://graphql.org/
+
+- category: Developer tooling
+  name: GitLab
+  url: https://github.com/PaddlePaddle/PaddleOCR
+
+- category: Developer tooling
+  name: CFSSL
+  url: https://github.com/cloudflare/cfssl
+
+- category: Developer tooling
+  name: Athens Go Proxy
+  url: https://docs.gomods.io/
+
+- category: CMS
+  name: WordPress
+  url: https://wordpress.org/
+
+- category: CMS
+  name: Hugo
+  url: https://gohugo.io/

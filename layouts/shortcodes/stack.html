@@ -1,0 +1,19 @@
+<section class="container oss">
+    {{ $currentCategory := "" }}
+
+    {{ range .Page.Site.Data.stack }}
+        {{ if ne $currentCategory .category }}
+            {{ if $currentCategory }}
+                </div>
+            {{ end }}
+            <h3>{{ .category }}</h3>
+            <div class="oss-row">
+            {{ $currentCategory = .category }}
+        {{ end }}
+
+        <div class="item">
+            <p><a href="{{ .url }}">{{ .name }}</a></p>
+        </div>
+    {{ end }}
+    </div>
+</section>
