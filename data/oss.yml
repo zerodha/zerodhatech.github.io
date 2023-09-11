@@ -14,7 +14,6 @@
   name: Dart
   url: https://dart.dev/
 
-
 - category: Database
   name: Postgres
   url: https://www.postgresql.org/
@@ -50,6 +49,10 @@
 - category: Webserver
   name: HAProxy
   url: https://www.haproxy.org/
+
+- category: Webserver
+  name: Kong
+  url: https://konghq.com/
 
 - category: Message Bus
   name: Nats
@@ -87,21 +90,25 @@
   name: Sentry
   url: https://sentry.io/
 
-- category: Ops
+- category: Ops & Deployments
   name: Rundeck
   url: https://www.rundeck.com/
 
-- category: Ops
+- category: Ops & Deployments
   name: Airflow
   url: https://airflow.apache.org/
 
-- category: Ops
+- category: Ops & Deployments
   name: Salt Stack
   url: https://www.saltstack.com/
 
-- category: Ops
+- category: Ops & Deployments
   name: GLPI
   url: https://glpi-project.org/
+
+- category: Ops & Deployments
+  name: Nomad
+  url: https://www.nomadproject.io/
 
 - category: CI/CD
   name: Fastlane
@@ -111,41 +118,57 @@
   name: Gitlab Runner
   url: https://docs.gitlab.com/runner/
 
-- category: Web Framework
+- category: Web & Mobile Framework
   name: Django
   url: https://www.djangoproject.com/
 
-- category: Web Framework
+- category: Web & Mobile Framework
   name: Frappe
   url: https://frappe.io/
 
-- category: Web Framework
+- category: Web & Mobile Framework
   name: Flask
   url: https://flask.palletsprojects.com/
 
-- category: Mobile Framework
+- category: Web & Mobile Framework
   name: Flutter
   url: https://flutter.dev/
 
-- category: SMTP
+- category: Email
   name: Haraka
   url: https://haraka.github.io/
 
-- category: SMTP
+- category: Email
   name: Postal
   url: https://github.com/postalserver/postal
 
-- category: SMTP
+- category: Email
   name: Maddy
   url: https://github.com/foxcpp/maddy
 
-- category: Business Tools
+- category: Email
+  name: Listmonk
+  url: https://listmonk.app/
+
+- category: Business Suite
   name: OSTicket
   url: https://osticket.com/
 
-- category: Business Tools
+- category: Business Suite
   name: ERPNext
   url: https://erpnext.com/
+
+- category: Business Suite
+  name: NextCloud
+  url: https://nextcloud.com/
+
+- category: Business Suite
+  name: Vaultwarden
+  url: https://github.com/dani-garcia/vaultwarden
+
+- category: Business Suite
+  name: Metabase
+  url: https://www.metabase.com/
 
 - category: Communication
   name: Mattermost
@@ -155,11 +178,11 @@
   name: Discourse
   url: https://www.discourse.org/
 
-- category: Wiki
+- category: Documentation
   name: Mkdocs
   url: https://www.mkdocs.org/
 
-- category: Wiki
+- category: Documentation
   name: Outline
   url: https://www.getoutline.com/
 
@@ -171,37 +194,17 @@
   name: Netbird
   url: https://netbird.io/
 
-- category: Testing
+- category: Developer Tools
   name: Cypress
   url: https://www.cypress.io/
 
-- category: Data Processing
+- category: Developer Tools
   name: pandas
   url: https://pandas.pydata.org/
 
-- category: Deployments
-  name: Nomad
-  url: https://www.nomadproject.io/
-
-- category: Repository
+- category: Developer Tools
   name: GitLab
   url: https://www.gitlab.com/
-
-- category: Business Analytics
-  name: Metabase
-  url: https://www.metabase.com/
-
-- category: Newsletter
-  name: Listmonk
-  url: https://listmonk.app/
-
-- category: Document Sharing
-  name: NextCloud
-  url: https://nextcloud.com/
-
-- category: Password Management
-  name: Vaultwarden
-  url: https://github.com/dani-garcia/vaultwarden
 
 - category: Blog
   name: WordPress
@@ -210,7 +213,3 @@
 - category: Blog
   name: Hugo
   url: https://gohugo.io/
-
-- category: API Gateway
-  name: Kong
-  url: https://konghq.com/
