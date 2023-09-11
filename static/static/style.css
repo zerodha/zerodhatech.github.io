@@ -350,6 +350,37 @@ ul.flat li {
         color: #999;
     }
 
+.oss .oss-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.oss .oss-row:last-child {
+    border-bottom: none;
+}
+
+.oss .item {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.oss .item h3 a {
+    color: #141414;
+    transition: color 0.3s ease;
+}
+
+.oss .item h3 a:hover {
+    color: #035AA6;
+    text-decoration: none;
+}
+
 h1.intro {
     margin: 120px 0;
     font-weight: 300;
@@ -637,6 +668,10 @@ h1.intro {
 
     .projects .item {
         padding: 30px 0;
+    }
+
+    .oss .item {
+        margin-bottom: 0;
     }
 
 }

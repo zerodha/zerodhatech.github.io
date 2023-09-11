@@ -32,3 +32,9 @@ subtitle = "Technology blog of India's largest stock broker"
       name = "Projects"
       url = "/projects"
       weight = 3
+
+   [[menu.header]]
+      identifier = "foss"
+      name = "FOSS"
+      url = "/foss"
+      weight = 4
