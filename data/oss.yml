@@ -95,6 +95,10 @@
   url: https://www.rundeck.com/
 
 - category: Ops & Deployments
+  name: GitLab
+  url: https://www.gitlab.com/
+
+- category: Ops & Deployments
   name: Airflow
   url: https://airflow.apache.org/
 
@@ -117,6 +121,10 @@
 - category: CI/CD
   name: Gitlab Runner
   url: https://docs.gitlab.com/runner/
+
+- category: Web & Mobile Framework
+  name: VueJS
+  url: https://vuejs.org/
 
 - category: Web & Mobile Framework
   name: Django
@@ -170,6 +178,10 @@
   name: Metabase
   url: https://www.metabase.com/
 
+- category: Business Suite
+  name: Matomo
+  url: https://matomo.org/
+
 - category: Communication
   name: Mattermost
   url: https://mattermost.com/
@@ -203,8 +215,16 @@
   url: https://pandas.pydata.org/
 
 - category: Developer Tools
+  name: GraphQL
+  url: https://graphql.org/
+
+- category: Developer Tools
   name: GitLab
-  url: https://www.gitlab.com/
+  url: https://github.com/PaddlePaddle/PaddleOCR
+
+- category: Developer Tools
+  name: CFSSL
+  url: https://github.com/cloudflare/cfssl
 
 - category: Blog
   name: WordPress
