@@ -19,7 +19,7 @@
   url: https://dart.dev/
 
 - category: Databases
-  name: Postgres
+  name: PostgreSQL
   url: https://www.postgresql.org/
 
 - category: Databases
@@ -59,7 +59,7 @@
   url: https://konghq.com/
 
 - category: Streams & Queues
-  name: Nats
+  name: NATS
   url: https://nats.io/
 
 - category: Streams & Queues
@@ -241,3 +241,7 @@
 - category: CMS
   name: Hugo
   url: https://gohugo.io/
+
+- category: CMS
+  name: Zola
+  url: https://www.getzola.org/
