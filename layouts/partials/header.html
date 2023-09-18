@@ -36,7 +36,22 @@
 		<meta property="og:image" content="https://zerodha.com/static/images/landing.png">
 	{{ end }}
 
-    <script type="application/ld+json">
+	<script>
+	var _paq = window._paq = window._paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u="//m.zerodha.com/";
+		_paq.push(['setTrackerUrl', u+'js/']);
+		_paq.push(['setSiteId', '16']);
+		_paq.push(['setAPIUrl', u]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
+	})();
+	</script>
+
+	<script type="application/ld+json">
 		{
 			"@context" : "https://schema.org",
 			"@type" : "Organization",
@@ -57,7 +72,7 @@
 				"https://instagram.com/zerodhaonline"
 			]
 		}
-	   </script>
+	</script>
 
 	<link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}/static/style.css" />
