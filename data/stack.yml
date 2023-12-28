@@ -245,3 +245,7 @@
 - category: CMS
   name: Zola
   url: https://www.getzola.org/
+
+- category: SIEM
+  name: Wazuh
+  url: https://wazuh.com/
