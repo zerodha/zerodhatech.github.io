@@ -1,15 +1,18 @@
 <div class="author-tiny">
-    {{ if .Params.author }}
-        {{ $author := .Params.author }}
-        {{ with index .Site.Data.authors $author }}
-
-        
-        <img src="{{ .avatar }}" class="avatar" alt="{{ .name }}" />
-        
-        
-        <a href="{{ $.Site.BaseURL }}/authors/{{ $author }}" class="name">{{ .name }}</a>
-            <span class="desig">{{ .title }}</span>
-
-        {{ end }}
+    {{ if .Params.authors }} <!-- Use the new authors array -->
+    {{ range .Params.authors }} <!-- Iterate over each author in the array -->
+    {{ $author := . }} <!-- Assign the current author to a variable -->
+    {{ with index $.Site.Data.authors $author }} <!-- Access author details from the data directory -->
+    <div class="author-tiny-individual">
+        <span class="avatar"><img src="{{ .avatar }}" alt="{{ .name }}" /></span>
+        <div class="author-tiny-meta">
+            <div class="author-tiny-details">
+                <a href="{{ $.Site.BaseURL }}/authors/{{ $author }}" class="name">{{ .name }}</a>
+                <div class="desig">{{ .title }}</div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
     {{ end }}
 </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
@@ -15,40 +16,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!-- Open Graph -->
 	{{- if .IsHome -}}
-	<meta property="og:title" content="{{ $siteTitle }} {{ if .Site.Params.subtitle }}- {{ .Site.Params.Subtitle }}{{ end }}" />
+	<meta property="og:title"
+		content="{{ $siteTitle }} {{ if .Site.Params.subtitle }}- {{ .Site.Params.Subtitle }}{{ end }}" />
 	{{- else -}}
 	<meta property="og:title" content="{{ $title }} - {{ $siteTitle }}" />
 	{{- end -}}
 
-	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}" />
+	<meta property="og:description"
+		content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ .Permalink }}" />
-	
+
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}/static/images/favicon.png" />
-	
+
 	{{ with .OutputFormats.Get "rss" -}}
-	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ printf `
+	<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
-	
+
 	{{ with .Params.image }}
-		<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
+	<meta property="og:image" content="{{ if in . " http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
 	{{ else }}
-		<meta property="og:image" content="https://zerodha.com/static/images/landing.png">
+	<meta property="og:image" content="https://zerodha.com/static/images/landing.png">
 	{{ end }}
 
 	<script>
-	var _paq = window._paq = window._paq || [];
-	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-	_paq.push(['trackPageView']);
-	_paq.push(['enableLinkTracking']);
-	(function() {
-		var u="//m.zerodha.com/";
-		_paq.push(['setTrackerUrl', u+'js/']);
-		_paq.push(['setSiteId', '16']);
-		_paq.push(['setAPIUrl', u]);
-		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-		g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
-	})();
+		var _paq = window._paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function () {
+			var u = "//m.zerodha.com/";
+			_paq.push(['setTrackerUrl', u + 'js/']);
+			_paq.push(['setSiteId', '16']);
+			_paq.push(['setAPIUrl', u]);
+			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+			g.async = true; g.src = u + 'js/'; s.parentNode.insertBefore(g, s);
+		})();
 	</script>
 
 	<script type="application/ld+json">
@@ -76,16 +80,18 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}/static/style.css" />
-	
+
 	<!-- <link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="{{ .Site.BaseURL }}/static/dark.css" />	 -->
 </head>
+
 <body>
 	{{ .Site.Params.paginate }}
 	<section class="page-hero">
 		<div class="container wrap">
 			<div class="header">
 				<div class="logo">
-					<a href="{{ .Site.BaseURL }}/"><img alt="Zerodha technology blog" src="{{ .Site.BaseURL }}/static/images/logo.svg" /></a>
+					<a href="{{ .Site.BaseURL }}/"><img alt="Zerodha technology blog"
+							src="{{ .Site.BaseURL }}/static/images/logo.svg" /></a>
 				</div>
 				<nav class="nav">
 					{{ $cur := . }}
@@ -95,10 +101,11 @@
 					{{ end }}
 
 					<a href="{{ .Site.BaseURL }}/index.xml" class="feed" title="Subscribe to feed">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M4 11a9 9 0 0 1 9 9"/>
-							<path d="M4 4a16 16 0 0 1 16 16"/>
-							<circle cx="5" cy="19" r="1"/>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M4 11a9 9 0 0 1 9 9" />
+							<path d="M4 4a16 16 0 0 1 16 16" />
+							<circle cx="5" cy="19" r="1" />
 						</svg>
 					</a>
 				</nav>
@@ -109,28 +116,27 @@
 				<div class="post-header">
 					<h1 class="title">{{ .Title }}</h1>
 					{{ if ne .Type "page" }}
-						<p class="date">
-							{{ dateFormat "02 Jan 2006" .Date }}
-						</p>
+					<p class="date">
+						{{ dateFormat "02 Jan 2006" .Date }}
+					</p>
 					{{ else }}
-						{{ .Params.description }}						
+					{{ .Params.description }}
 					{{ end }}
 				</div>
 			</div>
 			{{ else if .IsHome }}
-				<h1 class="intro">
-					We build <span class="bold">technology at
+			<h1 class="intro">
+				We build <span class="bold">technology at
 					Zerodha, </span> <span class="highlight">India's largest stock broker</span>.
-				</h1>
+			</h1>
 
 			{{ else if isset .Data "Term" }}
-				<h1 class="post-header">
-					{{ if eq (index .Data "Singular") "author" }}@{{ end }}{{ .Data.Term }}
-				</h1>
+			<h1 class="post-header">
+				{{ if eq (index .Data "Singular") "author" }}@{{ end }}{{ .Data.Term }}
+			</h1>
 			{{ else }}
-				<h1 class="post-header">{{ .Name }}</h1>
+			<h1 class="post-header">{{ .Name }}</h1>
 			{{ end }}
 
 		</div>
-</section>
-			
+	</section>

@@ -1,31 +1,31 @@
 {{ partial "header.html" . }}
-		
-			{{ if eq .Params.banner "yes" }}
-			<div class="banner">
-				<img src="{{ .Params.image }}">	
-			</div>
-			{{ end }}
-			
-			<div class="content-wrap wrap">
-				{{ if isset .Params "author" }}
-					{{ partial "author.html" . }}
+
+{{ if eq .Params.banner "yes" }}
+<div class="banner">
+	<img src="{{ .Params.image }}">
+</div>
+{{ end }}
+
+<div class="content-wrap wrap">
+	{{ if isset .Params "authors" }}
+	{{ partial "author.html" . }}
+	{{ end }}
+	<div class="content">
+		{{ .Content }}
+
+		<div class="tags">
+			{{ if ne .Type "page" }}
+			{{ if gt .Params.tags 0 }}
+			<ul class="flat">
+				{{ range .Params.tags }}
+				<li><a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
 				{{ end }}
-				<div class="content">
-					{{ .Content }}
-				
-					<div class="tags">
-						{{ if ne .Type "page" }}
-							{{ if gt .Params.tags 0 }}
-								<ul class="flat">
-									{{ range .Params.tags }}
-									<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-									{{ end }}
-								</ul>
-							{{ end }}
-						{{ end }}
-					</div>
-				</div>
-			</div>
+			</ul>
+			{{ end }}
+			{{ end }}
 		</div>
 	</div>
+</div>
+</div>
+</div>
 {{ partial "footer.html" . }}
