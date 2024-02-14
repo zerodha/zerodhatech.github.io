@@ -68,7 +68,7 @@ The global job states are stored in a Redis instance. It serves a dual role in t
 
 Initially, PDFs were generated from HTML using Puppeteer, which involved spawning headless instances of Chrome. This of course grew to be slow and quite resource-intensive as our volume grew.
 
-After several experiments, we had a breakthrough using LaTeX instead of HTML and generating PDFs using `pdflatex`. By converting our HTML templates into TEX formats and utilizing `pdflatex` for PDF generation, we observed a 10X increase in speed compared to the original Puppeteer way of generating. Moreover, pdflatex required significantly fewer resources, making it a much leaner solution for our PDF generation needs.
+After several experiments including benchmarking PDF generation with complex layouts using native libraries in different programming languages, we had a breakthrough using LaTeX instead of HTML and generating PDFs using `pdflatex`. By converting our HTML templates into TEX formats and utilizing `pdflatex` for PDF generation, we observed a 10X increase in speed compared to the original Puppeteer way of generating. Moreover, pdflatex required significantly fewer resources, making it a much leaner solution for our PDF generation needs.
 
 ### Problems with LaTeX
 
