@@ -14,7 +14,7 @@ At Zerodha, many million users login and use our financial platforms every day. 
 
 Needless to say, this is a complex task to orchestrate at scale. Our legacy system which we had been continually improving over the years, had grown to taking some 8 hours daily, at which point a complete overhaul was required. We typically watch technical debt closely and allow it to grow to a certain acceptable level before addressing it. For this trade-off, we pause development of new features when necessary for the sake of the overall health of our stack.
 
-In this blog post, we describe our journey of rethinking the architecture and building an architecture from scratch which now enables us to process, generate, digitally sign, and e-mail out 1.5+ million PDF contract notes in about 25 minutes, incurring only negligible costs. We self-host all elements of this architecture relying on raw EC2 instances for compute and S3 for ephemeral storage. In addition, the concepts used for orchestration of this particular workflow can now be used for orchestrating many different kinds of distributed jobs within our infrastructure.
+**TL;DR**: In this blog post, we describe our journey of rethinking the architecture and building an architecture from scratch which now enables us to process, generate, digitally sign, and e-mail out 1.5+ million PDF contract notes in about 25 minutes, incurring only negligible costs. We self-host all elements of this architecture relying on raw EC2 instances for compute and S3 for ephemeral storage. In addition, the concepts used for orchestration of this particular workflow can now be used for orchestrating many different kinds of distributed jobs within our infrastructure.
 
 ## Old stack
 
