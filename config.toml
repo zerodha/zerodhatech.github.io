@@ -1,7 +1,7 @@
 baseURL = "https://zerodha.tech"
 languageCode = "en-us"
 title = "Zerodha Tech Blog"
-paginate = 10
+paginate = 50
 pygmentsstyle = "solarized-dark"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
