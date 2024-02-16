@@ -18,7 +18,7 @@
 			{{ if gt .Params.tags 0 }}
 			<ul class="flat">
 				{{ range .Params.tags }}
-				<li><a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+				<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
 				{{ end }}
 			</ul>
 			{{ end }}
