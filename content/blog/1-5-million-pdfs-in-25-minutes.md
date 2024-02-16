@@ -107,7 +107,7 @@ Given the large number of small files, EFS seemed wholly unsuitable for our purp
 
 We revised our benchmark setup and experimented with storing the files on S3, which took around 4-5 seconds for a similar number of files. Additionally, we considered the cost differences between EFS and S3. With 1TB of storage and 512Mb/s provisioned throughput, S3's pricing was significantly lower. Consequently, we opted to store our files on S3 rather than EFS, given its cost-effectiveness and the operational limitations of EFS.
 
-We also consulted with the AWS Storage team, who recommended exploring FSx as an alternative. FSx offers various file storage solutions, particularly [FSx for Lustre](https://aws.amazon.com/fsx/lustre/), which is commonly used in HPC environments. However, since FSx was not available in the ap-south-1 region at the time of our experimentation—and our operations are regulated to occur within this region—we proceeded with S3 for its ease of management.
+We also consulted with the AWS Storage team, who recommended exploring FSx as an alternative. FSx offers various file storage solutions, particularly [FSx for Lustre](https://aws.amazon.com/fsx/lustre/), which is commonly used in HPC environments. However, since FSx was complicated to set up and unavailable in the ap-south-1 region during our experimentation—coupled with our operations being restricted to this region—we opted for S3 for its ease of management.
 
 We rewrote our storage interface to use S3 (using the zero-dependency lightweight [simples3](https://github.com/rhnvrm/simples3) library which we developed in the past), but hit another challenge this time: S3 Rate Limits. S3's distributed architecture imposes request rate limits to ensure fair resource distribution among users.
 
