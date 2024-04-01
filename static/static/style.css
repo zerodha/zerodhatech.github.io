@@ -30,6 +30,10 @@ a:hover {
     text-decoration-thickness: 2px;
 }
 
+strong {
+    font-weight: 600;
+}
+
 code {
     display: inline-block;
     background: #f4f4f4;
@@ -294,24 +298,26 @@ ul.flat li {
     margin-bottom: 30px;
 }
 
-.content a {
+.post .content a {
     color: #035AA6;
     text-decoration: underline;
 }
 
-.content a:hover {
+.post .content a:hover {
     color: #000;
     text-decoration-color: #000;
-    ;
 }
 
-.post .post-header {
-    margin-bottom: 30px;
+.post ul li {
+    margin-bottom: 10px;
+}
+.post ul li p {
+    margin: 0;
 }
 
 .post .draft-label {
     color: #000;
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 2px 4px;
     border-radius: 4px;
     margin-left: 6px;
