@@ -38,3 +38,7 @@ subtitle = "Technology blog of India's largest stock broker"
       name = "Stack"
       url = "/stack"
       weight = 4
+
+[markup]
+   [markup.goldmark.renderer]
+      unsafe = true

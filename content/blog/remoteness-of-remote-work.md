@@ -3,7 +3,8 @@ title: "The remoteness of remote work"
 date: 2024-03-28
 description: "Reflections on COVID-induced remote work at Zerodha. Big failures, small wins."
 tags: [philosophy]
-image: /static/images/blog-ai-this-time-different.jpg
+image: /static/images/remote-work.png
+banner: "yes"
 authors: ["knadh"]
 ---
 
@@ -54,7 +55,9 @@ I have seen that software developers are particularly susceptible to not underst
 ### Text chats in the Indian context
 In our small tech team alone, there are about ten different native tongues, and English, for most of us, is our third or even fourth language. This is a killer feature of diverse Indian teams where the many valuable ethnolinguistic and cultural perspectives are easily transpiled and understood thanks to the shared underlying Indian-ness. English acts as a handy, neutral glue language. At Zerodha, in-person in the office, communication happens in a mix of English and native languages with people naturally deciphering subtle, unspoken cues and information from facial expressions and body language---you know, natural human communication, not rocket science.
 
-Also, we have never hired anyone based on their ability to quickly articulate and type out their thoughts in English with the specific knack of being able to engage in rapid back-and-forth text chats---a prerequisite for effective remote communication in the highly diverse Indian context. In our chat rooms, people who have this particular ability inadvertently ended up overshadowing people who were not adept at rapid text chats. Those voices eventually started fading from the chat rooms. Their communications became transactional and reduced to only what was required for their specific tasks at hand, a perilous outcome for an org whose foundation is built on conversations and collaboration. I watched as the majority of voices faded despite encouragement and prodding.
+Also, we have never hired anyone based on their ability to quickly articulate and type out their thoughts in English with the specific knack of being able to engage in rapid back-and-forth text chats---a prerequisite for effective remote communication in the highly diverse Indian context. In our chat rooms, people who have this particular ability inadvertently ended up overshadowing people who were not adept at rapid text chats. There were even instances where misinterpreted emojis changed the trajectory of certain tasks---yep.
+
+Those voices eventually started fading from the chat rooms. Their communications became transactional and reduced to only what was required for their specific tasks at hand, a perilous outcome for an org whose foundation is built on conversations and collaboration. I watched as the majority of voices faded despite encouragement and prodding.
 
 ### Tools
 Good remote communication is already really hard to pull off. If the tools that are meant to facilitate it do not provide a near-spotless user experience (UX), it can drive the participants mad. Poor threading on chat apps, laggy JS-bloated UIs that grind the system, delayed or missed notifications, potato quality videos, disconnections and reconnections, audio issues, buffering spinners, `Ctrl + Shift + R`, *"Hold on. Let me try reconnecting"* ...
@@ -65,7 +68,7 @@ We went through $n number of chat and video tools looking for ones that would gi
 
 We have had an org-wide Discourse forum open to all 1000+ employees was in place pre-COVID. Its usage skyrocketed during the COVID years and it became a thriving repository of information and async threads with participations from people from all departments. A lot of collective decision making happened there. Then, at a point, it just got overwhelming. Despite heavy categorisation, there were just way too many threads for people to keep track of. A forum fatigue set in.
 
-In the daily deluge of e-mails, forums, chat rooms, multiple messaging apps, all day, every day, how does an average human being maintain context across so many communication channels, especially in very complex orgs? Especially communication channels that are completely devoid of the rich cues and nuances of face-to-face communication? No wonder that *Zoom call fatigue* <sup>[[1]](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=%22zoom+fatigue%22&btnG=)</sup> now seems to be a phenomenon that is getting academic attention. I can only imagine the plight of people who are forced to use terrible communication tools picked by management who do not understand or care for UX<sup>[[2]](https://zerodha.tech/blog/being-future-ready-with-common-sense/#8-the-tyranny-of-non-technical-tech-leaders)</sup>.
+In the daily deluge of e-mails, forums, chat rooms, multiple messaging apps, all day, every day---personal and professional---how does an average human being maintain context across so many communication channels, especially in very complex orgs? Especially communication channels that are completely devoid of the rich cues and nuances of face-to-face communication. No wonder that *Zoom call fatigue* <sup>[[1]](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=%22zoom+fatigue%22&btnG=)</sup> now seems to be a phenomenon that is getting academic attention. I can only imagine the plight of people who are forced to use terrible communication tools picked by management who do not understand or care for UX<sup>[[2]](https://zerodha.tech/blog/being-future-ready-with-common-sense/#8-the-tyranny-of-non-technical-tech-leaders)</sup>.
 
 
 ### Productivity
