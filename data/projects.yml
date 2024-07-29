@@ -357,3 +357,9 @@
   stars: 154
   updated_at: '2023-09-08T18:05:26Z'
   url: https://github.com/ajinasokan/flutter_displaymode
+- description: A Go module proxy with caching and rewrite capabilities
+  github_uri: mr-karan/toru
+  name: toru
+  stars: 7
+  updated_at: '2024-07-29T00:34:37Z'
+  url: https://github.com/mr-karan/toru
