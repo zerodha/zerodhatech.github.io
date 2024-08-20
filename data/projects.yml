@@ -363,3 +363,9 @@
   stars: 7
   updated_at: '2024-07-29T00:34:37Z'
   url: https://github.com/mr-karan/toru
+- description: A flutter package that takes html string as input and parses and converts that to Flutter widgets based on the provided configuration.
+  github_uri: devaryakjha/html_to_flutter
+  name: html_to_flutter
+  stars: 0
+  updated_at: '2024-08-18T08:37:16Z'
+  url: https://github.com/devaryakjha/html_to_flutter
