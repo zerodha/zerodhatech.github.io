@@ -46,15 +46,15 @@
   name: MySQL
   url: https://www.mysql.com/
 
-- category: Webervers and proxies
+- category: Webservers and proxies
   name: Nginx
   url: https://www.nginx.com/
 
-- category: Webervers and proxies
+- category: Webservers and proxies
   name: HAProxy
   url: https://www.haproxy.org/
 
-- category: Webervers and proxies
+- category: Webservers and proxies
   name: Kong
   url: https://konghq.com/
 
