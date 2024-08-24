@@ -337,13 +337,12 @@
   stars: 6
   updated_at: '2023-09-05T18:41:01Z'
   url: https://github.com/joeirimpan/kaf-ansible
-- description: Replicate kafka topics from one cluster to another with an option to
-    rename topics
-  github_uri: joeirimpan/kaf-relay
+- description: Replicate and sync Kafka topics between clusters in realtime. Supports topic re-mapping, healthchecks, and hot failovers for high availability.
+  github_uri: zerodha/kaf-relay
   name: kaf-relay
   stars: 13
-  updated_at: '2023-09-03T12:07:46Z'
-  url: https://github.com/joeirimpan/kaf-relay
+  updated_at: '2024-08-24T12:07:46Z'
+  url: https://github.com/zerodha/kaf-relay
 - description: A frappe app that has workflows and reports to make payments to vendors
     by a company and track them
   github_uri: zerodha/vendor-payments
