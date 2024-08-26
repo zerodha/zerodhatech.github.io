@@ -368,3 +368,9 @@
   stars: 0
   updated_at: '2024-08-18T08:37:16Z'
   url: https://github.com/devaryakjha/html_to_flutter
+- description: Duckdb extension to calculate fnv hash, fnv partition bucket for a given hash.
+  github_uri: joeirimpan/duckdb-fnv
+  name: duckdb-fnv
+  stars: 0
+  updated_at: '2024-08-26T13:20:00Z'
+  url: https://github.com/joeirimpan/duckdb-fnv
