@@ -374,3 +374,9 @@
   stars: 0
   updated_at: '2024-08-26T13:20:00Z'
   url: https://github.com/joeirimpan/duckdb-fnv
+- description: Fully open source, self-hosted customer support desk. Single binary app.
+  github_uri: abhinavxd/libredesk
+  name: libredesk
+  stars: 16
+  updated_at: '2025-02-20T15:03:00Z'
+  url: https://github.com/abhinavxd/libredesk
