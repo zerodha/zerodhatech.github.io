@@ -367,37 +367,51 @@ ul.flat li {
     margin-top: 10px;
 }
 
-.projects .item {
-    display: flex;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #C5C5C5;
-    padding: 30px;
-}
+    .projects .item {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #C5C5C5;
+        padding: 30px;
+    }
+    .projects .item:last-child {
+        border: 0;
+        padding-bottom: 0;
+    }
 
-.projects .name {
-    flex: 40%;
-}
+    .projects .name {
+        flex: 40%;
+    }
 
-.projects .name a {
-    text-decoration: none;
-}
+    .projects .name a {
+        text-decoration: none;
+    }
 
-.projects .description {
-    flex: 60%;
-}
+    .projects .description {
+        flex: 60%;
+    }
 
-.projects h3 {
-    margin: 0;
-}
+    .projects h3 {
+        margin: 0;
+    }
 
-.projects p {
-    margin: 0 0 10px 0;
-}
+    .projects p {
+        margin: 0 0 10px 0;
+    }
 
-.projects .date {
-    font-size: 0.875em;
-    color: #999;
-}
+    .projects .date {
+        font-size: 0.875em;
+        color: #999;
+    }
+    .projects .project-meta {
+        margin-top: 30px;
+        font-size: 0.875rem;
+        line-height: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .projects .project-meta span {
+        display: block;
+    }
 
 .oss .oss-row {
     display: flex;

@@ -1,382 +1,723 @@
 - description: Simple URL shortener built with Go
   github_uri: vividvilla/lil
+  language: Go
   name: lil
-  stars: 43
-  updated_at: '2023-09-03T15:54:23Z'
+  stars: 45
+  topics: []
+  updated_at: '2020-04-24T05:52:18Z'
   url: https://github.com/vividvilla/lil
 - description: Compress and embed static files and assets into Go binaries and access
     them with a virtual file system in production
   github_uri: knadh/stuffbin
+  language: Go
+  license: Other
   name: stuffbin
-  stars: 142
-  updated_at: '2023-09-07T09:28:16Z'
+  stars: 182
+  topics: []
+  updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
 - description: Commandline utility to convert config formats like TOML, JSON, YAML
     etc to KV Pairs which can be imported via consul cli.
   github_uri: vividvilla/consul-cfg
+  language: Go
+  license: MIT License
   name: consul-cfg
-  stars: 13
-  updated_at: '2023-04-11T04:15:49Z'
+  stars: 14
+  topics: []
+  updated_at: '2018-11-09T07:47:10Z'
   url: https://github.com/vividvilla/consul-cfg
 - description: Cookie cutter templating tool for scaffolding K8s manifests
   github_uri: mr-karan/kubekutr
+  language: Go
+  license: MIT License
   name: kubekutr
-  stars: 155
-  updated_at: '2023-08-04T12:41:45Z'
+  stars: 159
+  topics:
+  - gitops
+  - kubernetes
+  - kustomize
+  updated_at: '2021-07-19T13:42:33Z'
   url: https://github.com/mr-karan/kubekutr
 - description: A frappe app to upload file attachments in doctypes to s3.
   github_uri: zerodhatech/Frappe-attachments-s3
+  language: Python
+  license: Other
   name: frappe-attachments-s3
-  stars: 95
-  updated_at: '2023-08-08T09:33:21Z'
+  stars: 129
+  topics: []
+  updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
-- description: simplesessions is a "pure" Go session library that is completely agnostic
-    of HTTP libraries and frameworks, backend stores, and even cookie jars.
+- description: simplesessions is a Go session management library that is completely
+    agnostic of HTTP libraries and frameworks, backend stores, and even cookie jars.
   github_uri: vividvilla/simplesessions
+  language: Go
+  license: MIT License
   name: simplesessions
-  stars: 52
-  updated_at: '2023-08-18T15:57:03Z'
+  stars: 64
+  topics:
+  - session
+  - session-cookie
+  - session-handler
+  - session-management
+  - session-manager
+  - session-store
+  - sessions
+  updated_at: '2025-03-20T18:51:58Z'
   url: https://github.com/vividvilla/simplesessions
 - description: An extremely tiny utility for unmarshalling and scanning querystrings
     into structs
   github_uri: knadh/querytostruct
+  language: Go
+  license: MIT License
   name: querytostruct
-  stars: 12
-  updated_at: '2023-05-23T23:47:07Z'
+  stars: 14
+  topics: []
+  updated_at: '2022-06-09T18:04:52Z'
   url: https://github.com/knadh/querytostruct
 - description: Set of utilities to do deployments in an EKS cluster
   github_uri: mr-karan/eks-gitops
+  language: Dockerfile
+  license: MIT License
   name: eks-gitops
-  stars: 5
-  updated_at: '2022-01-25T14:11:33Z'
+  stars: 6
+  topics: []
+  updated_at: '2022-01-27T14:53:13Z'
   url: https://github.com/mr-karan/eks-gitops
 - description: "\U0001F514 Send alert notifications to Google Chat via Prometheus\
     \ Alertmanager"
   github_uri: mr-karan/cAlert
+  language: Go
+  license: MIT License
   name: calert
-  stars: 114
-  updated_at: '2023-09-03T06:39:58Z'
+  stars: 171
+  topics:
+  - alerting
+  - alertmanager
+  - alertmanager-webhook
+  - google-chat
+  - monitoring
+  - prometheus
+  updated_at: '2024-10-08T09:22:20Z'
   url: https://github.com/mr-karan/cAlert
 - description: Utility to extract metrics from arbitary data stores in Prometheus
     format
   github_uri: mr-karan/store-exporter
+  language: Go
+  license: MIT License
   name: store-exporter
-  stars: 25
-  updated_at: '2023-02-08T10:50:48Z'
+  stars: 32
+  topics:
+  - devops
+  - exporter
+  - monitoring
+  - mysql
+  - postgres
+  - prometheus
+  - sidecar
+  updated_at: '2020-09-22T09:15:56Z'
   url: https://github.com/mr-karan/store-exporter
 - description: 'pdf_text_overlay is a python library to write text on top of pdf. '
   github_uri: zerodhatech/pdf_text_overlay
+  language: Python
+  license: MIT License
   name: pdf_text_overlay
-  stars: 22
-  updated_at: '2023-07-01T09:18:13Z'
+  stars: 30
+  topics: []
+  updated_at: '2023-06-30T22:19:59Z'
   url: https://github.com/zerodhatech/pdf_text_overlay
 - description: High performance, self-hosted, newsletter and mailing list manager
     with a modern dashboard. Single binary app.
   github_uri: knadh/listmonk
+  language: Go
+  license: GNU Affero General Public License v3.0
   name: listmonk
-  stars: 11651
-  updated_at: '2023-09-10T11:49:50Z'
+  stars: 16551
+  topics:
+  - campaign
+  - campaign-management
+  - email-marketing
+  - email-subscription
+  - listmonk
+  - mailing-list
+  - newsletter
+  - newsletter-management
+  - newsletter-software
+  - self-hosted
+  - sms-gateway
+  - smtp
+  - transactional-emails
+  updated_at: '2025-04-25T02:45:25Z'
   url: https://github.com/knadh/listmonk
 - description: A CLI utility and web server for digitally signing PDFs with docsign
     loaded from PFX (PKCS#12) files
   github_uri: knadh/pfxsigner
+  language: Go
+  license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 55
-  updated_at: '2023-08-08T06:00:04Z'
+  stars: 75
+  topics:
+  - digital-signature
+  - pdf
+  - pdf-sign
+  - pdf-signature
+  updated_at: '2021-12-24T12:59:50Z'
   url: https://github.com/knadh/pfxsigner
 - description: Simple, extremely lightweight, extensible, configuration management
-    library for Go. Support for JSON, TOML, YAML, env, command line, file, S3 etc.
-    Alternative to viper.
+    library for Go. Supports JSON, TOML, YAML, env, command line, file, S3 etc. Alternative
+    to viper.
   github_uri: knadh/koanf
+  language: Go
+  license: MIT License
   name: koanf
-  stars: 1993
-  updated_at: '2023-09-10T15:11:29Z'
+  stars: 3116
+  topics:
+  - config
+  - config-loader
+  - configuration
+  - configuration-file
+  - configuration-management
+  - etcd-client
+  - go
+  - golang
+  - golang-package
+  - s3-bucket
+  - toml
+  - viper
+  - yaml
+  updated_at: '2025-04-21T05:08:16Z'
   url: https://github.com/knadh/koanf
 - description: Simple command-line utility to convert CSV files to searchable and
     sortable HTML table.
   github_uri: vividvilla/csvtotable
+  language: Python
+  license: MIT License
   name: csvtotable
-  stars: 1061
-  updated_at: '2023-09-08T17:27:08Z'
+  stars: 1136
+  topics: []
+  updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
 - description: A utility to archive all closed tickets beyond a certain age to disk
     (including attachments) and delete them from the database. The tickets are archived
     as JSON files.
   github_uri: knadh/osticket-archive
+  language: PHP
   name: osticket-archive
-  stars: 5
-  updated_at: '2021-06-23T06:10:27Z'
+  stars: 8
+  topics: []
+  updated_at: '2015-06-27T11:48:05Z'
   url: https://github.com/knadh/osticket-archive
 - description: StoreKeeper is an easy and flexible state management system for Flutter
     apps
   github_uri: ajinasokan/store_keeper
+  language: Dart
+  license: MIT License
   name: store_keeper
-  stars: 28
-  updated_at: '2023-06-28T04:11:34Z'
+  stars: 35
+  topics:
+  - flutter
+  - state-management
+  updated_at: '2024-11-13T08:52:02Z'
   url: https://github.com/ajinasokan/store_keeper
 - description: A test driver for Flutter to do QA testing without sharing app source
     code.
   github_uri: ajinasokan/autopilot
+  language: Dart
+  license: MIT License
   name: autopilot
-  stars: 87
-  updated_at: '2023-09-07T10:53:46Z'
+  stars: 111
+  topics: []
+  updated_at: '2025-02-27T09:55:41Z'
   url: https://github.com/ajinasokan/autopilot
 - description: Recharge is a simple library to hot reload your Dart code on file changes
   github_uri: ajinasokan/recharge
+  language: Dart
+  license: MIT License
   name: recharge
-  stars: 41
-  updated_at: '2023-09-05T18:19:15Z'
+  stars: 49
+  topics: []
+  updated_at: '2023-06-04T18:59:21Z'
   url: https://github.com/ajinasokan/recharge
 - description: Flutter plugin to detect when app(not Flutter container) goes to background
     or foreground
   github_uri: ajinasokan/flutter_fgbg
+  language: Dart
+  license: MIT License
   name: flutter_fgbg
-  stars: 64
-  updated_at: '2023-08-05T14:14:46Z'
+  stars: 87
+  topics: []
+  updated_at: '2025-02-13T10:09:57Z'
   url: https://github.com/ajinasokan/flutter_fgbg
 - description: Flutter plugin to use libcurl for HTTP calls
   github_uri: ajinasokan/flutter_curl
+  language: Dart
+  license: MIT License
   name: flutter_curl
-  stars: 48
-  updated_at: '2023-07-12T06:54:47Z'
+  stars: 56
+  topics:
+  - curl
+  - flutter
+  - http
+  - libcurl
+  - quic
+  updated_at: '2025-02-12T10:10:33Z'
   url: https://github.com/ajinasokan/flutter_curl
 - description: Standalone server for user address and OTP verification flows with
     pluggable providers (e-mail, SMS, bank penny drops etc.)
   github_uri: knadh/otpgateway
+  language: Go
+  license: MIT License
   name: otpgateway
-  stars: 355
-  updated_at: '2023-09-02T20:26:07Z'
+  stars: 444
+  topics:
+  - email-verification
+  - mobile-number-verification
+  - otp-applications
+  - otp-generator
+  - otp-verification
+  - sms-verification
+  - verification-code
+  updated_at: '2024-07-04T09:26:24Z'
   url: https://github.com/knadh/otpgateway
 - description: Osticket plugin to assign tickets automatically to random agents based
     on teams, department, and activity
   github_uri: vishnus/osticket-autoassign
+  language: PHP
+  license: MIT License
   name: osticket-autoassign
-  stars: 8
-  updated_at: '2020-06-15T10:29:57Z'
+  stars: 11
+  topics: []
+  updated_at: '2017-12-01T10:50:48Z'
   url: https://github.com/vishnus/osticket-autoassign
 - description: Frappe client written in Go
   github_uri: joeirimpan/go-frappe-client
+  language: Go
+  license: MIT License
   name: go-frappe-client
-  stars: 8
-  updated_at: '2023-08-20T04:30:41Z'
+  stars: 9
+  topics: []
+  updated_at: '2020-09-24T05:40:47Z'
   url: https://github.com/joeirimpan/go-frappe-client
 - description: Tiny lib for exposing health-check endpoints as Prometheus/JSON format
   github_uri: mr-karan/simplehealth
+  language: Go
+  license: MIT License
   name: simplehealth
-  stars: 10
-  updated_at: '2023-03-01T03:25:32Z'
+  stars: 11
+  topics: []
+  updated_at: '2020-09-22T09:15:47Z'
   url: https://github.com/mr-karan/simplehealth
 - description: Simple utility to live preview Go templates with custom data
   github_uri: vividvilla/gotp
+  language: HTML
+  license: MIT License
   name: gotp
-  stars: 25
-  updated_at: '2023-04-05T17:00:36Z'
+  stars: 32
+  topics: []
+  updated_at: '2024-06-15T20:19:27Z'
   url: https://github.com/vividvilla/gotp
-- description: A highly opinionated, distributed job-queue built specifically for
-    queuing and executing heavy SQL read jobs asynchronously. Supports MySQL, Postgres,
-    ClickHouse.
+- description: A distributed job server built specifically for queuing and executing
+    heavy SQL read jobs asynchronously. Separate out reporting layer from apps. MySQL,
+    Postgres, ClickHouse.
   github_uri: knadh/sql-jobber
-  name: sql-jobber
-  stars: 289
-  updated_at: '2023-09-04T20:01:09Z'
+  language: Go
+  license: MIT License
+  name: dungbeetle
+  stars: 970
+  topics:
+  - broker-backend
+  - database
+  - job-queue
+  - job-scheduler
+  - mysql
+  - postgres
+  - postgresql
+  - reporting
+  - sql
+  - sql-query
+  - workers
+  updated_at: '2025-04-16T23:15:20Z'
   url: https://github.com/knadh/sql-jobber
 - description: Simple no frills AWS S3 Golang Library using REST with V4 Signing (without
     AWS Go SDK)
   github_uri: rhnvrm/simples3
+  language: Go
+  license: Other
   name: simples3
-  stars: 115
-  updated_at: '2023-06-01T15:43:08Z'
+  stars: 161
+  topics:
+  - aws
+  - aws-s3
+  - aws-signature-v4
+  - golang
+  updated_at: '2025-04-23T17:57:44Z'
   url: https://github.com/rhnvrm/simples3
 - description: Simple frappe app to setup Single sign-on for discourse
   github_uri: shridarpatil/frappe_discourse
+  language: Python
+  license: Other
   name: frappe_discourse
-  stars: 13
-  updated_at: '2023-08-27T05:21:59Z'
+  stars: 14
+  topics:
+  - discourse
+  - discourse-sso
+  - frappe
+  - frappe-discource-sso
+  updated_at: '2020-09-22T03:46:19Z'
   url: https://github.com/shridarpatil/frappe_discourse
 - description: A utility for downloading, parsing and sanitizing bank database (IFSC,
     MICR, address etc.) Excel sheets from the RBI website.
   github_uri: zerodhatech/rbiparser
+  language: Python
   name: rbiparser
-  stars: 46
-  updated_at: '2023-08-22T01:08:19Z'
+  stars: 55
+  topics: []
+  updated_at: '2023-11-30T08:20:55Z'
   url: https://github.com/zerodhatech/rbiparser
 - description: Subscription discount coupon code manager
   github_uri: zerodhatech/subscription_coupons
+  language: Python
+  license: Other
   name: subscription_coupons
-  stars: 9
-  updated_at: '2023-01-07T15:52:36Z'
+  stars: 12
+  topics: []
+  updated_at: '2020-09-22T05:13:33Z'
   url: https://github.com/zerodhatech/subscription_coupons
 - description: Terraform provider for managing long term portfolio with Zerodha Kite
   github_uri: mr-karan/terraform-provider-kite
+  language: Go
+  license: MIT License
   name: terraform-provider-kite
-  stars: 21
-  updated_at: '2022-09-05T21:45:33Z'
+  stars: 24
+  topics:
+  - kite
+  - terraform
+  - terraform-provider
+  - zerodha
+  updated_at: '2020-09-22T09:15:52Z'
   url: https://github.com/mr-karan/terraform-provider-kite
 - description: A utility that parse Zerodha Consolidated google spreadsheets and render
     category-wise scrip details(margins, multiplier, etc)
   github_uri: zerodhatech/rms-consolidated-scrips-status
+  language: Python
+  license: MIT License
   name: rms-consolidated-scrips-status
-  stars: 17
-  updated_at: '2023-05-30T07:10:36Z'
+  stars: 19
+  topics: []
+  updated_at: '2020-07-22T10:44:16Z'
   url: https://github.com/zerodhatech/rms-consolidated-scrips-status
 - description: A Good Symlinks Manager
   github_uri: iamd3vil/shelf
+  language: Go
+  license: MIT License
   name: shelf
-  stars: 25
-  updated_at: '2023-04-20T21:57:27Z'
+  stars: 32
+  topics:
+  - dotfile-manager
+  - dotfiles
+  - symlinks
+  - symlinks-manager
+  updated_at: '2021-06-25T18:08:51Z'
   url: https://github.com/iamd3vil/shelf
 - description: Simple components library used for building lightweight vuejs projects
   github_uri: mevinoth/slim-ui
+  language: Vue
   name: slim-ui
-  stars: 56
-  updated_at: '2023-08-08T12:45:21Z'
+  stars: 62
+  topics:
+  - vue
+  - vue2
+  - vuejs
+  - vuejs-components
+  updated_at: '2024-05-22T08:39:15Z'
   url: https://github.com/mevinoth/slim-ui
 - description: AWS Cost Explorer and EC2 Instance metrics exporter for Prometheus
   github_uri: Thunderbottom/aws-exporter
+  language: Go
+  license: MIT License
   name: aws-exporter
-  stars: 16
-  updated_at: '2023-08-28T12:22:41Z'
+  stars: 20
+  topics: []
+  updated_at: '2020-09-30T08:11:01Z'
   url: https://github.com/Thunderbottom/aws-exporter
 - description: Simple FAQ generator for Zerodha Kite connect Forum
   github_uri: ranjanrak/FaqGenerator
-  name: FaqGenerator
-  stars: 5
-  updated_at: '2023-01-07T15:53:46Z'
+  language: Python
+  license: MIT License
+  name: faqgenerator
+  stars: 6
+  topics: []
+  updated_at: '2020-10-30T03:49:33Z'
   url: https://github.com/ranjanrak/FaqGenerator
 - description: A small utility to download all dashboards from Grafana and backup
     to S3
   github_uri: Thunderbottom/grafana-export
+  language: Go
+  license: BSD Zero Clause License
   name: grafana-export
-  stars: 28
-  updated_at: '2023-08-14T09:37:57Z'
+  stars: 32
+  topics: []
+  updated_at: '2020-11-09T23:06:51Z'
   url: https://github.com/Thunderbottom/grafana-export
 - description: Live streaming option chain for equity derivatives using Kite connect
     Websocket based on redis.
   github_uri: ranjanrak/OptionChainStream
-  name: OptionChainStream
-  stars: 111
-  updated_at: '2023-09-02T21:08:39Z'
+  language: Python
+  license: MIT License
+  name: optionchainstream
+  stars: 149
+  topics:
+  - implied-volatility
+  - option-chain-stream
+  - redis
+  updated_at: '2023-05-26T20:46:12Z'
   url: https://github.com/ranjanrak/OptionChainStream
 - description: Utility to create a export a service registry Markdown file from Kong's
     config
   github_uri: mr-karan/kong-service-exporter
+  language: Python
+  license: MIT License
   name: kong-service-exporter
-  stars: 7
-  updated_at: '2023-05-31T20:10:00Z'
+  stars: 8
+  topics:
+  - kong
+  updated_at: '2021-03-30T06:45:29Z'
   url: https://github.com/mr-karan/kong-service-exporter
 - description: LinkPage is a FOSS self-hosted alternative to link listing websites
     such as LinkTree and Campsite.bio
   github_uri: rhnvrm/linkpage
+  language: Go
+  license: BSD 2-Clause "Simplified" License
   name: linkpage
-  stars: 56
-  updated_at: '2023-08-31T15:52:17Z'
+  stars: 66
+  topics: []
+  updated_at: '2024-09-21T17:23:03Z'
   url: https://github.com/rhnvrm/linkpage
 - description: Fastglue is an opinionated, bare bones wrapper that glues together
     fasthttp and fasthttprouter to act as a micro HTTP framework.
   github_uri: zerodha/fastglue
+  language: Go
+  license: MIT License
   name: fastglue
-  stars: 73
-  updated_at: '2023-05-16T07:39:10Z'
+  stars: 82
+  topics:
+  - fastglue
+  - fasthttp
+  - fasthttprouter
+  - golang
+  - http-framework
+  - http-server
+  - microframework
+  - performance
+  - routing
+  updated_at: '2025-01-31T11:47:56Z'
   url: https://github.com/zerodha/fastglue
 - description: Parse SQL files with multiple named queries and automatically prepare
     and scan them into structs.
   github_uri: knadh/goyesql
+  language: Go
+  license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 42
-  updated_at: '2023-08-17T17:09:46Z'
+  stars: 62
+  topics:
+  - mysql
+  - postgresql
+  - prepared-statements
+  - sql
+  - sql-files
+  updated_at: '2022-12-06T10:58:58Z'
   url: https://github.com/knadh/goyesql
 - description: A tiny Javsacript library for sideloading static assets on pages and
     caching them in the browser's IndexedDB for longer-term storage.
   github_uri: knadh/indexed-cache
+  language: JavaScript
+  license: MIT License
   name: indexed-cache
-  stars: 70
-  updated_at: '2023-08-18T02:53:23Z'
+  stars: 81
+  topics:
+  - bandwidth-saver
+  - browser-cache
+  - caching
+  - cdn
+  - css-loader
+  - script-loader
+  updated_at: '2022-07-13T15:29:40Z'
   url: https://github.com/knadh/indexed-cache
 - description: Frappe app to replace default text editor with tinymce
   github_uri: shridarpatil/frappe_tinymce
+  language: Python
+  license: Other
   name: frappe_tinymce
-  stars: 27
-  updated_at: '2023-08-24T14:42:26Z'
+  stars: 40
+  topics:
+  - editor
+  - frappe
+  - frappe-bench
+  - frappe-framework
+  - frappe-text-editor
+  - rich-text-editor
+  - tinymce
+  updated_at: '2024-04-08T12:10:06Z'
   url: https://github.com/shridarpatil/frappe_tinymce
 - description: An events collection agent which processes Nomad Events and dumps to
     external sink providers like HTTP
   github_uri: mr-karan/nomad-events-sink
+  language: Go
+  license: MIT License
   name: nomad-events-sink
-  stars: 40
-  updated_at: '2023-08-27T08:00:47Z'
+  stars: 53
+  topics:
+  - nomad
+  updated_at: '2023-06-21T05:45:50Z'
   url: https://github.com/mr-karan/nomad-events-sink
 - description: 'Faster way to switch between clusters and namespaces in nomad '
   github_uri: mr-karan/nomctx
+  language: Go
+  license: MIT License
   name: nomctx
-  stars: 36
-  updated_at: '2023-09-02T04:34:37Z'
+  stars: 54
+  topics:
+  - nomad
+  updated_at: '2024-10-10T07:33:34Z'
   url: https://github.com/mr-karan/nomctx
 - description: Vagrant based setup for local Nomad/Consul clusters. Helpful for experimenting
     with Nomad job specs in an environment similar to production.
   github_uri: mr-karan/localhashi
+  language: Jinja
+  license: MIT License
   name: localhashi
-  stars: 7
-  updated_at: '2023-05-23T07:25:17Z'
+  stars: 11
+  topics:
+  - consul
+  - nomad
+  updated_at: '2022-05-11T06:42:47Z'
   url: https://github.com/mr-karan/localhashi
-- description: A simple, customisable distributed job/worker in Go
+- description: A background jobs library for Go that allows pluggable brokers/store
+    for distribution.
   github_uri: kalbhor/Tasqueue
+  language: Go
+  license: BSD 2-Clause "Simplified" License
   name: Tasqueue
-  stars: 280
-  updated_at: '2023-09-10T11:37:57Z'
+  stars: 410
+  topics:
+  - background-jobs
+  - distributed-systems
+  - go
+  - golang
+  - jobqueue
+  - queue
+  - tasqueue
+  updated_at: '2025-02-24T05:31:55Z'
   url: https://github.com/kalbhor/Tasqueue
 - description: Lightweight HTTP server to handle webhooks from listmonk and forward
     it to different messengers.
   github_uri: joeirimpan/listmonk-messenger
+  language: Go
+  license: MIT License
   name: listmonk-messenger
-  stars: 41
-  updated_at: '2023-09-03T00:02:08Z'
+  stars: 62
+  topics:
+  - listmonk
+  - messenger
+  - pinpoint
+  updated_at: '2024-07-22T15:09:34Z'
   url: https://github.com/joeirimpan/listmonk-messenger
 - description: Ansible scripts for setting up Zookeeper, Kafka, kaf cli
   github_uri: joeirimpan/kaf-ansible
+  language: Jinja
+  license: MIT License
   name: kaf-ansible
-  stars: 6
-  updated_at: '2023-09-05T18:41:01Z'
+  stars: 7
+  topics: []
+  updated_at: '2023-10-05T13:56:20Z'
   url: https://github.com/joeirimpan/kaf-ansible
-- description: Replicate and sync Kafka topics between clusters in realtime. Supports topic re-mapping, healthchecks, and hot failovers for high availability.
+- description: Replicate and sync Kafka topics between clusters in realtime. Supports
+    topic re-mapping, healthchecks, and hot failovers for high availability.
   github_uri: zerodha/kaf-relay
+  language: Go
+  license: MIT License
   name: kaf-relay
-  stars: 13
-  updated_at: '2024-08-24T12:07:46Z'
+  stars: 72
+  topics:
+  - franz-go
+  - high-availability
+  - kafka
+  - kafka-consumer
+  - kafka-producer
+  - kafka-replicator
+  updated_at: '2025-03-12T05:51:02Z'
   url: https://github.com/zerodha/kaf-relay
 - description: A frappe app that has workflows and reports to make payments to vendors
     by a company and track them
   github_uri: zerodha/vendor-payments
+  language: Python
+  license: MIT License
   name: vendor-payments
-  stars: 17
-  updated_at: '2023-07-13T09:21:56Z'
+  stars: 26
+  topics: []
+  updated_at: '2023-07-25T18:35:58Z'
   url: https://github.com/zerodha/vendor-payments
 - description: A Flutter plugin to set display mode in Android
   github_uri: ajinasokan/flutter_displaymode
+  language: Dart
+  license: MIT License
   name: flutter_displaymode
-  stars: 154
-  updated_at: '2023-09-08T18:05:26Z'
+  stars: 192
+  topics:
+  - android
+  - flutter
+  - flutter-plugin
+  updated_at: '2023-11-17T00:28:03Z'
   url: https://github.com/ajinasokan/flutter_displaymode
-- description: A Go module proxy with caching and rewrite capabilities
+- description: Toru is a Go module proxy with caching and rewrite capabilities
   github_uri: mr-karan/toru
+  language: Go
+  license: MIT License
   name: toru
-  stars: 7
-  updated_at: '2024-07-29T00:34:37Z'
+  stars: 24
+  topics: []
+  updated_at: '2024-09-24T07:39:42Z'
   url: https://github.com/mr-karan/toru
-- description: A flutter package that takes html string as input and parses and converts that to Flutter widgets based on the provided configuration.
+- description: 'A flutter package that takes html string as input and parses and converts
+    that to Flutter widgets based on the provided configuration. '
   github_uri: devaryakjha/html_to_flutter
-  name: html_to_flutter
-  stars: 0
-  updated_at: '2024-08-18T08:37:16Z'
+  language: Dart
+  license: MIT License
+  name: tagflow
+  stars: 9
+  topics:
+  - flutter
+  - html
+  - html-to-flutter
+  - tagflow
+  updated_at: '2025-04-22T08:53:16Z'
   url: https://github.com/devaryakjha/html_to_flutter
-- description: Duckdb extension to calculate fnv hash, fnv partition bucket for a given hash.
+- description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
+    given hash.
   github_uri: joeirimpan/duckdb-fnv
+  language: Python
+  license: MIT License
   name: duckdb-fnv
-  stars: 0
-  updated_at: '2024-08-26T13:20:00Z'
+  stars: 4
+  topics: []
+  updated_at: '2024-08-26T08:05:44Z'
   url: https://github.com/joeirimpan/duckdb-fnv
-- description: Fully open source, self-hosted customer support desk. Single binary app.
+- description: Open source, self-hosted customer support desk. Single binary app.
   github_uri: abhinavxd/libredesk
+  language: Vue
+  license: GNU Affero General Public License v3.0
   name: libredesk
-  stars: 16
-  updated_at: '2025-02-20T15:03:00Z'
+  stars: 1121
+  topics:
+  - customer-care
+  - customer-support
+  - customer-support-automation
+  - golang
+  - helpdesk
+  - support
+  - ticket-management
+  - ticketing
+  - ticketing-system
+  - vue
+  - vuejs
+  updated_at: '2025-04-27T17:43:40Z'
   url: https://github.com/abhinavxd/libredesk

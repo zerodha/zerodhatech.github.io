@@ -1,14 +1,18 @@
-
 <section class="container">
     <ul class="projects">
-        {{ range sort .Page.Site.Data.projects ".stars" "desc" }}
+        {{ range sort .Page.Site.Data.projects ".updated_at" "desc" }}
             <li class="item">
                 <div class="name">
                     <h3><a href="{{ .url }}">{{ .name }}</a></h3>
                     <p class="stars">★ {{ .stars }}</p>
+                    <small aria-label="Language">{{ .language }}</small>
                 </div>
                 <div class="description">
                     <p>{{ .description }}</p>
+                    <div class="project-meta">
+                        <span aria-label="License">{{ .license }}</span>
+                        <span>Last updated on {{ time.Format "January 2, 2006" .updated_at }}</span>
+                    </div>
                 </div>
             </li>
         {{ end }}
