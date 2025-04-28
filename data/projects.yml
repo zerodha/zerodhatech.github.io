@@ -721,3 +721,15 @@
   - vuejs
   updated_at: '2025-04-27T17:43:40Z'
   url: https://github.com/abhinavxd/libredesk
+- description: Lightweight, single-binary log analytics interface for ClickHouse, focused on high-performance querying and visualization
+  github_uri: mr-karan/logchef
+  language: Go
+  license: GNU Affero General Public License v3.0
+  name: logchef
+  stars: 130
+  topics:
+  - logging
+  - clickhouse
+  - log-analytics
+  updated_at: '2025-04-28T17:43:40Z'
+  url: https://github.com/mr-karan/logchef
