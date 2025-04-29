@@ -733,3 +733,13 @@
   - log-analytics
   updated_at: '2025-04-28T17:43:40Z'
   url: https://github.com/mr-karan/logchef
+- description: Terraform provider for WarpGate
+  github_uri: warp-tech/terraform-provider-warpgate
+  name: terraform-provider-warpgate
+  stars: 5
+  updated_at: '2025-03-25T15:03:00Z'
+  url: https://github.com/warp-tech/terraform-provider-warpgate
+  topics:
+  - terraform
+  - golang
+  - proxy
