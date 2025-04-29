@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	{{ $seed := now.Unix }}
+	{{ $rand := mod (add (mul 13 $seed) 97) 400000}}
+
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
 	{{- if .IsHome -}}
@@ -60,7 +63,7 @@
 	   </script>
 
 	<link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}/static/style.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}/static/style.css?v={{ $rand }}" />
 </head>
 <body>
 	{{ .Site.Params.paginate }}
