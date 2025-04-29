@@ -1,0 +1,24 @@
+{{ if eq .item.category .category }}
+<li class="item">
+    <div class="description">
+        <h4 class="name"><a href="{{ .item.url }}">{{ .item.name }}</a></h4>
+        <p class="stars">
+            <img class="github" width="16" src="/static/images/github.svg" alt="GitHub stars" />
+            <span aria-label="Stars">
+                <span>★ <small>{{ .item.stars }}</small></span>
+            </span>
+            <span aria-label="Language">{{ .item.language }}</span>
+        </p>
+        <p>{{ .item.description }}</p>
+        <div class="project-meta">
+            <span aria-label="License">{{ .item.license }}</span>
+            <span>Last updated on {{ time.Format "January 2, 2006" .item.updated_at }}</span>
+        </div>
+    </div>
+    <div class="logo">
+        {{ if .item.logo }}
+            <a href="{{ .item.url }}"><img src="/static/images/projects/{{ .item.logo }}" alt="{{ .item.name }} logo" /></a>
+        {{ end }}                    
+    </div>
+</li>
+{{ end }}

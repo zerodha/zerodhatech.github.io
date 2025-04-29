@@ -33,7 +33,7 @@
 	{{ with .Params.image }}
 		<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
 	{{ else }}
-		<meta property="og:image" content="https://zerodha.com/static/images/landing.png">
+		<meta property="og:image" content="{{ .Site.BaseURL }}/static/images/thumb.png">
 	{{ end }}
 
     <script type="application/ld+json">

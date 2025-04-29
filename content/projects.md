@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 type: "page"
-description: "FOSS projects out of Zerodha."
+description: "FOSS projects built and dog-fooded at Zerodha"
 ---
 
 {{< projects >}}

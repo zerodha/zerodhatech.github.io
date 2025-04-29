@@ -1,20 +1,59 @@
 <section class="container">
-    <ul class="projects">
+    <section class="category">
+        <h2>Apps</h2>
+        <ul class="projects">
+            {{ range sort .Page.Site.Data.projects ".updated_at" "desc" }}
+                {{ partial "project.html" (dict "item" . "category" "apps") }}
+            {{ end }}
+        </ul>
+    </section>
+
+    <section class="category">
+        <h2>Services</h2>
+        <ul class="projects">
+            {{ range sort .Page.Site.Data.projects ".updated_at" "desc" }}
+                {{ partial "project.html" (dict "item" . "category" "services") }}
+            {{ end }}
+        </ul>
+    </section>
+
+    <section class="category">
+        <h2>Utils</h2>
+        <ul class="projects">
+            {{ range sort .Page.Site.Data.projects ".updated_at" "desc" }}
+                {{ partial "project.html" (dict "item" . "category" "utils") }}
+            {{ end }}
+        </ul>
+    </section>
+
+
+    <section class="category">
+        <h2>Libraries</h2>
+        <ul class="projects">
+            {{ range sort .Page.Site.Data.projects ".updated_at" "desc" }}
+                {{ partial "project.html" (dict "item" . "category" "libs") }}
+            {{ end }}
+        </ul>
+    </section>
+    
+    <section class="category">
+        <h1>Dev projects</h1>
+        <p>Check out the personal FOSS projects from the dev team.</p>
+
+        {{ $users := newScratch }}
+
         {{ range sort .Page.Site.Data.projects ".updated_at" "desc" }}
-            <li class="item">
-                <div class="name">
-                    <h3><a href="{{ .url }}">{{ .name }}</a></h3>
-                    <p class="stars">★ {{ .stars }}</p>
-                    <small aria-label="Language">{{ .language }}</small>
-                </div>
-                <div class="description">
-                    <p>{{ .description }}</p>
-                    <div class="project-meta">
-                        <span aria-label="License">{{ .license }}</span>
-                        <span>Last updated on {{ time.Format "January 2, 2006" .updated_at }}</span>
-                    </div>
-                </div>
-            </li>
+            {{ $parts := split .github_uri "/" }}
+            {{ $username := index $parts 0 }}
+            {{ if and (ne $username "zerodha") (ne $username "zerodhatech") (ne $username "@warp-tech") }}
+                {{ $users.Set $username true }}
+            {{ end }}
         {{ end }}
-    </ul>
+
+        <ul class="github-users">
+        {{ range $username, $_ := $users.Values }}
+            <li><a href="https://github.com/{{ $username }}">@{{ $username }}</a></li>
+        {{ end }}
+        </ul>
+    </section>
 </section>

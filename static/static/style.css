@@ -363,23 +363,38 @@ ul.flat li {
     color: #888;
 }
 
-.projects {
-    margin-top: 10px;
-}
-
     .projects .item {
+        background: #fafafa;
         display: flex;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #C5C5C5;
-        padding: 30px;
+        padding: 20px 30px;
+        border-radius: 3px;
+        box-shadow: 0 2px 2px #e2e2d7;
+        margin: 0 0 15px 0;
     }
-    .projects .item:last-child {
-        border: 0;
-        padding-bottom: 0;
+    .projects .stars {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
     }
-
+    .projects .stars .github {
+        margin-right: 5px;
+    }
+    .projects .stars span {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    .projects .logo {
+        flex: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 45px;
+    }
+    .projects .logo img {
+        max-height: 48px;
+    }
     .projects .name {
-        flex: 40%;
+        margin: 0;
     }
 
     .projects .name a {
@@ -749,6 +764,9 @@ h1.intro {
 }
 
 @media (max-width: 550px) {
+    .wrap {
+        padding: 15px;
+    }
     .header {
         display: block;
         margin-bottom: 50px;
@@ -760,7 +778,7 @@ h1.intro {
     }
 
     .header .nav a {
-        margin: 0 30px 0 0;
+        margin: 0 15px 0 0;
     }
 
     h1.intro {
@@ -789,10 +807,16 @@ h1.intro {
 
     .projects {
         padding: 0;
+        margin: 0 0 10px 0;
     }
-
     .projects .item {
-        padding: 30px 0;
+        display: block;
+    }
+    .projects .logo {
+        display: block;
+        padding: 0;
+        margin-top: 30px;
+        text-align: center;
     }
 
     .oss .item {
