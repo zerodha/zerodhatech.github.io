@@ -1,6 +1,10 @@
-name: github pages
+name: build-site
 
 on:
+  workflow_run:
+    workflows: ["update-projects"]
+    types:
+      - completed
   push:
     branches:
       - main # Pipeline will only be triggered from `main`.

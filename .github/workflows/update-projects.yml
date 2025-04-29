@@ -1,4 +1,4 @@
-name: Update Github project details
+name: update-projects
 
 on:
   schedule:
