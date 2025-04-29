@@ -823,12 +823,13 @@
   - nomad
   updated_at: '2025-04-21T19:23:26Z'
   url: https://github.com/Thunderbottom/damon
-- category: hedwig.svg
+- category: services
   description: High performance and minimalist SMTP server
   github_uri: iamd3vil/hedwig
   language: Rust
   license: GNU Affero General Public License v3.0
   name: hedwig
+  logo: hedwig.svg
   stars: 4
   topics: []
   updated_at: '2025-04-25T10:01:54Z'
