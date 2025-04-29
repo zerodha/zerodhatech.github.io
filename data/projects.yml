@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 16563
+  stars: 16565
   topics:
   - campaign
   - campaign-management
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3119
+  stars: 3120
   topics:
   - config
   - config-loader
@@ -243,7 +243,7 @@
   language: Dart
   license: MIT License
   name: autopilot
-  stars: 111
+  stars: 110
   topics: []
   updated_at: '2025-02-27T09:55:41Z'
   url: https://github.com/ajinasokan/autopilot
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 67
+  stars: 68
   topics: []
   updated_at: '2024-09-21T17:23:03Z'
   url: https://github.com/rhnvrm/linkpage
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 254
+  stars: 257
   topics:
   - clickhouse
   - log-analytics
@@ -816,7 +816,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: damon
-  stars: 4
+  stars: 6
   topics:
   - golang
   - hashicorp
