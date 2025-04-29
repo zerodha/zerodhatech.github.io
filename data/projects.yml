@@ -743,3 +743,13 @@
   - terraform
   - golang
   - proxy
+- description: Nomad Operator to automate mundane tasks
+  github_uri: Thunderbottom/damon
+  name: damon
+  stars: 0
+  updated_at: '2025-04-29T13:23:00Z'
+  url: https://github.com/Thunderbottom/damon
+  topics:
+  - nomad
+  - golang
+  - operator
