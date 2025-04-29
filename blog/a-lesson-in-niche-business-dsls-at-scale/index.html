@@ -1,8 +1,8 @@
-<!doctype html><html><head><title>A lesson in creating and using niche business DSLs at scale - Zerodha Tech Blog</title><meta charset=utf-8><meta name=title content="Zerodha Tech Blog"><meta name=description content="How we incrementally built a business rule validation engine to keep up with the changing business and regulatory environment, starting with a custom DSL, and ended up writing a framework to manage rules written in Go and distribute them as pure Go plugins."><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="A lesson in creating and using niche business DSLs at scale - Zerodha Tech Blog"><meta property="og:description" content="How we incrementally built a business rule validation engine to keep up with the changing business and regulatory environment, starting with a custom DSL, and ended up writing a framework to manage rules written in Go and distribute them as pure Go plugins."><meta property="og:type" content="website"><meta property="og:url" content="https://zerodha.tech/blog/a-lesson-in-niche-business-dsls-at-scale/"><link rel="shortcut icon" href=https://zerodha.tech/static/images/favicon.png><meta property="og:image" content="https://zerodha.tech/static/images/bnf-veto-rejection.png"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Zerodha Tech Blog","logo":"https://zerodha.tech/static/images/logo.svg","description":"Technology blog of India's largest stock broker","contactPoint":[{"@type":"ContactPoint","telephone":"+91 80 4040 2020","contactType":"customer service"}],"url":"https://zerodha.tech","sameAs":["https://facebook.com/zerodha.social","https://twitter.com/zerodhaonline","https://youtube.com/user/zerodhaonline","https://linkedin.com/company/zerodha","https://instagram.com/zerodhaonline"]}</script><link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://zerodha.tech/static/style.css></head><body><section class=page-hero><div class="container wrap"><div class=header><div class=logo><a href=https://zerodha.tech/><img alt="Zerodha technology blog" src=https://zerodha.tech/static/images/logo.svg></a></div><nav class=nav><a class=active href=/>Home</a>
-<a class=active href=/blog>Blog</a>
-<a href=/projects>Projects</a>
-<a href=/stack>Stack</a>
-<a href=https://zerodha.tech/index.xml class=feed title="Subscribe to feed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></nav></div><div class="post single"><div class=post-header><h1 class=title>A lesson in creating and using niche business DSLs at scale</h1><p class=date>24 Nov 2020</p></div></div></div></section><div class=post><div class="content-wrap wrap"><div class=author><div class=author-individual><span class=avatar><img src=/static/images/author_rhnvrm.jpg alt="Rohan Verma"></span><div class=meta><div class=author-details><a href=https://zerodha.tech/authors/rhnvrm class=name>Rohan Verma</a><div class=desig>Software Engineer</div></div><div class=urls><a href=https://rohanverma.net class=social-link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" x2="22" y1="12" y2="12" /><path d="M12 2a15.3 15.3.0 014 10 15.3 15.3.0 01-4 10A15.3 15.3.0 018 12a15.3 15.3.0 014-10z" /></svg></a><a href=https://github.com/rhnvrm class=social-link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8.0 00-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35.0-3.5.0.0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35.0 3.5A5.403 5.403.0 004 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></svg></a></div></div></div></div><div class=content><p>At Zerodha, we process millions of trades in real-time, where each trade comes
+<!doctype html><html><head><title>A lesson in creating and using niche business DSLs at scale - Zerodha Tech Blog</title><meta charset=utf-8><meta name=title content="Zerodha Tech Blog"><meta name=description content="How we incrementally built a business rule validation engine to keep up with the changing business and regulatory environment, starting with a custom DSL, and ended up writing a framework to manage rules written in Go and distribute them as pure Go plugins."><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:title" content="A lesson in creating and using niche business DSLs at scale - Zerodha Tech Blog"><meta property="og:description" content="How we incrementally built a business rule validation engine to keep up with the changing business and regulatory environment, starting with a custom DSL, and ended up writing a framework to manage rules written in Go and distribute them as pure Go plugins."><meta property="og:type" content="website"><meta property="og:url" content="https://zerodha.tech/blog/a-lesson-in-niche-business-dsls-at-scale/"><link rel="shortcut icon" href=https://zerodha.tech/static/images/favicon.png><meta property="og:image" content="https://zerodha.tech/static/images/bnf-veto-rejection.png"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Zerodha Tech Blog","logo":"https://zerodha.tech/static/images/logo.svg","description":"Technology blog of India's largest stock broker","contactPoint":[{"@type":"ContactPoint","telephone":"+91 80 4040 2020","contactType":"customer service"}],"url":"https://zerodha.tech","sameAs":["https://facebook.com/zerodha.social","https://twitter.com/zerodhaonline","https://youtube.com/user/zerodhaonline","https://linkedin.com/company/zerodha","https://instagram.com/zerodhaonline"]}</script><link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://zerodha.tech/static/style.css></head><body><section class=page-hero><div class="container wrap"><div class=header><div class=logo><a href=https://zerodha.tech/><img alt="Zerodha technology blog" src=https://zerodha.tech/static/images/logo.svg></a></div><nav class=nav><a class=active href=/ title>Home</a>
+<a class=active href=/blog title>Blog</a>
+<a href=/projects title>Projects</a>
+<a href=/stack title>Stack</a>
+<a href=https://zerodha.tech/index.xml class=feed title="Subscribe to feed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></nav></div><div class="post single"><div class=post-header><h1 class=title>A lesson in creating and using niche business DSLs at scale</h1><p class=date>24 Nov 2020</p></div></div></div></section><div class=post><div class="content-wrap wrap"><div class=author><div class=author-individual><span class=avatar><img src=/static/images/author_rhnvrm.jpg alt="Rohan Verma"></span><div class=meta><div class=author-details><a href=https://zerodha.tech/authors/rhnvrm class=name>Rohan Verma</a><div class=desig>Software Engineer</div></div><div class=urls><a href=https://rohanverma.net class=social-link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3.0 014 10 15.3 15.3.0 01-4 10A15.3 15.3.0 018 12a15.3 15.3.0 014-10z"/></svg></a><a href=https://github.com/rhnvrm class=social-link><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8.0 00-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35.0-3.5.0.0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35.0 3.5A5.403 5.403.0 004 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a></div></div></div></div><div class=content><p>At Zerodha, we process millions of trades in real-time, where each trade comes
 into the system as concurrent high throughput HTTP requests. Each trade
 increases the latency for subsequent orders in the queue that are under
 processing at the same time at our OMS (Order Management System). When a single
@@ -56,15 +56,15 @@ that would keep getting more complex with time.</p><p>We finally decided that a 
 the DSL instead of <code>govalute</code> and distribute the dynamic rules as Go plugins, as
 Veto was written in Go in the first place, just like the rest of the Kite stack.
 It is simple, easy to learn, and has good tooling around it.</p><p>We debated heavily on the best approach to solve the problems that we were
-facing with veto rules and shortlisted a few candidates. We picked a complex rule in production written using govaluate and wrote that in the following to benchmark the performance of the rules in the alternatives.</p><ul><li><a href=https://github.com/Knetic/govaluate>Govaluate</a> - evaluates arbitrary C-like expressions</li><li><a href=https://github.com/containous/yaegi>Yaegi</a> - embedded go interpreter</li><li><a href=https://www.openpolicyagent.org/docs/latest/policy-language/>Rego</a> - open-policy-agent DSL</li><li><a href=https://github.com/hashicorp/go-plugin>Hashicorp Plugins</a> - plugin system over RPC.</li><li><a href=https://golang.org/pkg/plugin/>go-plugins</a> - native go plugins</li></ul><p>Benchmark Results:</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>govaluate:
-1319773 907 ns/op
-go-plugins:
-2745398 503 ns/op
-yaegi:
-202173 11091 ns/op
-rego:
-83476 13796 ns/op
-</code></pre></div><p>We considered govaluate to be the baseline for our experiments. In our
+facing with veto rules and shortlisted a few candidates. We picked a complex rule in production written using govaluate and wrote that in the following to benchmark the performance of the rules in the alternatives.</p><ul><li><a href=https://github.com/Knetic/govaluate>Govaluate</a> - evaluates arbitrary C-like expressions</li><li><a href=https://github.com/containous/yaegi>Yaegi</a> - embedded go interpreter</li><li><a href=https://www.openpolicyagent.org/docs/latest/policy-language/>Rego</a> - open-policy-agent DSL</li><li><a href=https://github.com/hashicorp/go-plugin>Hashicorp Plugins</a> - plugin system over RPC.</li><li><a href=https://golang.org/pkg/plugin/>go-plugins</a> - native go plugins</li></ul><p>Benchmark Results:</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>govaluate:
+</span></span><span style=display:flex><span>1319773 907 ns/op
+</span></span><span style=display:flex><span>go-plugins:
+</span></span><span style=display:flex><span>2745398 503 ns/op
+</span></span><span style=display:flex><span>yaegi:
+</span></span><span style=display:flex><span>202173 11091 ns/op
+</span></span><span style=display:flex><span>rego:
+</span></span><span style=display:flex><span>83476 13796 ns/op
+</span></span></code></pre></div><p>We considered govaluate to be the baseline for our experiments. In our
 benchmarks, native plugins outperformed other solutions and brought the power of
 the entire Go runtime into independent plugins. We discarded Hashicorp plugins,
 as they were slower. Yaegi was nice, but not as fast as govaluate. Govaluate and
@@ -91,89 +91,89 @@ rules. Every rule is expected to return its own testcases as a
 rule implements all the testcases, we are sure that any minor refactor will be
 also correct in the future. This reduces the need for constant developer
 oversight and the testing needed for the rules. Also, the testcases provide
-extra documentation for the future.</p><p>The following rule contains a sample circuit limit rule for illustration.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#719e07>package</span> main
-
-<span style=color:#719e07>import</span> (
-    <span style=color:#719e07>...</span>
-)
-
-<span style=color:#586e75>// Slug is the identifier for the rule. Used in statistics and logging.
-</span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>Slug</span>() <span style=color:#dc322f>string</span> {
-    <span style=color:#719e07>return</span> <span style=color:#2aa198>&#34;a_sample_ckt_limit_rule&#34;</span>
-}
-
-<span style=color:#586e75>// Validate, is where the validation logic resides.
-</span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>Validate</span>(data <span style=color:#268bd2>interface</span>{}) (e.Result, <span style=color:#dc322f>error</span>) {
-    d, err <span style=color:#719e07>:=</span> m.<span style=color:#268bd2>SetupOrderData</span>(data)
-	<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
-		<span style=color:#719e07>return</span> e.Result{}, err
-	}
-
-    <span style=color:#719e07>...</span>
-
-    <span style=color:#586e75>// Get the market for the incoming order
-</span><span style=color:#586e75></span>    s, err <span style=color:#719e07>:=</span> d.Ticker.<span style=color:#268bd2>GetSnapForOrder</span>(d.OrderData.Order)
-	<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
-		<span style=color:#719e07>return</span> e.Result{}, err
-	}
-
-    <span style=color:#719e07>...</span>
-
-	<span style=color:#586e75>// Check limits
-</span><span style=color:#586e75></span>	<span style=color:#719e07>if</span> d.Order.Price &gt; s.UpperCircuitLimit {
-		<span style=color:#719e07>return</span> e.Result{
-			Result: <span style=color:#cb4b16>true</span>,
-			Message: fmt.<span style=color:#268bd2>Sprintf</span>(
-				<span style=color:#2aa198>&#34;Your order price is higher than the current [upper circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of %g. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
-				s.UpperCircuitLimit),
-		}, <span style=color:#cb4b16>nil</span>
-	}
-
-	<span style=color:#719e07>if</span> s.LowerCircuitLimit &gt; d.Order.Price {
-		<span style=color:#719e07>return</span> e.Result{
-			Result: <span style=color:#cb4b16>true</span>,
-			Message: fmt.<span style=color:#268bd2>Sprintf</span>(
-				<span style=color:#2aa198>&#34;Your order price is lower than the current [lower circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of %g. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
-				s.LowerCircuitLimit),
-		}, <span style=color:#cb4b16>nil</span>
-	}
-
-    <span style=color:#719e07>return</span> e.Result{}, <span style=color:#cb4b16>nil</span>
-}
-
-<span style=color:#586e75>// TestData is expected to be provided by the rule,
-</span><span style=color:#586e75>// so it can be validated before it is allowed to be published.
-</span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>TestData</span>() <span style=color:#268bd2>map</span>[<span style=color:#268bd2>interface</span>{}]e.Result {
-	tckr <span style=color:#719e07>:=</span> <span style=color:#719e07>&amp;</span>ticker.Ticker{
-		Data: <span style=color:#268bd2>map</span>[<span style=color:#dc322f>string</span>]<span style=color:#268bd2>interface</span>{}{
-			<span style=color:#2aa198>&#34;NSE:INFY&#34;</span>: snaps.Snap{
-				LastPrice:         <span style=color:#2aa198>12.34</span>,
-				UpperCircuitLimit: <span style=color:#2aa198>15.0</span>,
-				LowerCircuitLimit: <span style=color:#2aa198>10.0</span>,
-			},
-		},
-	}
-
-	<span style=color:#719e07>return</span> <span style=color:#268bd2>map</span>[<span style=color:#268bd2>interface</span>{}]e.Result{
-		<span style=color:#719e07>&amp;</span>m.OrderContext{
-			Controllers: m.Controllers{
-				Ticker:      tckr,
-			},
-			OrderData: m.OrderData{
-				Order: oms.OrderParams{
-					Exchange:      <span style=color:#2aa198>&#34;NSE&#34;</span>,
-					Tradingsymbol: <span style=color:#2aa198>&#34;INFY&#34;</span>,
-					Price:         <span style=color:#2aa198>20.34</span>,
-					OrderType:     <span style=color:#2aa198>&#34;LIMIT&#34;</span>,
-				},
-			},
-		}: e.Result{
-			Result:  <span style=color:#cb4b16>true</span>,
-			Message: <span style=color:#2aa198>&#34;Your order price is higher than the current [upper circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of 15. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
-		},
-    }
-}
-</code></pre></div><h3 id=overcoming-go-plugin-caveats>Overcoming Go Plugin Caveats</h3><p>Using Go plugins in your projects comes with a lot of caveats. As of writing,
+extra documentation for the future.</p><p>The following rule contains a sample circuit limit rule for illustration.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#719e07>package</span> main
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#719e07>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#719e07>...</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#586e75>// Slug is the identifier for the rule. Used in statistics and logging.
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>Slug</span>() <span style=color:#dc322f>string</span> {
+</span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> <span style=color:#2aa198>&#34;a_sample_ckt_limit_rule&#34;</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#586e75>// Validate, is where the validation logic resides.
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>Validate</span>(data <span style=color:#268bd2>interface</span>{}) (e.Result, <span style=color:#dc322f>error</span>) {
+</span></span><span style=display:flex><span>    d, err <span style=color:#719e07>:=</span> m.<span style=color:#268bd2>SetupOrderData</span>(data)
+</span></span><span style=display:flex><span>	<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+</span></span><span style=display:flex><span>		<span style=color:#719e07>return</span> e.Result{}, err
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#719e07>...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#586e75>// Get the market for the incoming order
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    s, err <span style=color:#719e07>:=</span> d.Ticker.<span style=color:#268bd2>GetSnapForOrder</span>(d.OrderData.Order)
+</span></span><span style=display:flex><span>	<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+</span></span><span style=display:flex><span>		<span style=color:#719e07>return</span> e.Result{}, err
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#719e07>...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#586e75>// Check limits
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>	<span style=color:#719e07>if</span> d.Order.Price &gt; s.UpperCircuitLimit {
+</span></span><span style=display:flex><span>		<span style=color:#719e07>return</span> e.Result{
+</span></span><span style=display:flex><span>			Result: <span style=color:#cb4b16>true</span>,
+</span></span><span style=display:flex><span>			Message: fmt.<span style=color:#268bd2>Sprintf</span>(
+</span></span><span style=display:flex><span>				<span style=color:#2aa198>&#34;Your order price is higher than the current [upper circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of %g. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
+</span></span><span style=display:flex><span>				s.UpperCircuitLimit),
+</span></span><span style=display:flex><span>		}, <span style=color:#cb4b16>nil</span>
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>if</span> s.LowerCircuitLimit &gt; d.Order.Price {
+</span></span><span style=display:flex><span>		<span style=color:#719e07>return</span> e.Result{
+</span></span><span style=display:flex><span>			Result: <span style=color:#cb4b16>true</span>,
+</span></span><span style=display:flex><span>			Message: fmt.<span style=color:#268bd2>Sprintf</span>(
+</span></span><span style=display:flex><span>				<span style=color:#2aa198>&#34;Your order price is lower than the current [lower circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of %g. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
+</span></span><span style=display:flex><span>				s.LowerCircuitLimit),
+</span></span><span style=display:flex><span>		}, <span style=color:#cb4b16>nil</span>
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> e.Result{}, <span style=color:#cb4b16>nil</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#586e75>// TestData is expected to be provided by the rule,
+</span></span></span><span style=display:flex><span><span style=color:#586e75>// so it can be validated before it is allowed to be published.
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span><span style=color:#268bd2>func</span> <span style=color:#268bd2>TestData</span>() <span style=color:#268bd2>map</span>[<span style=color:#268bd2>interface</span>{}]e.Result {
+</span></span><span style=display:flex><span>	tckr <span style=color:#719e07>:=</span> <span style=color:#719e07>&amp;</span>ticker.Ticker{
+</span></span><span style=display:flex><span>		Data: <span style=color:#268bd2>map</span>[<span style=color:#dc322f>string</span>]<span style=color:#268bd2>interface</span>{}{
+</span></span><span style=display:flex><span>			<span style=color:#2aa198>&#34;NSE:INFY&#34;</span>: snaps.Snap{
+</span></span><span style=display:flex><span>				LastPrice:         <span style=color:#2aa198>12.34</span>,
+</span></span><span style=display:flex><span>				UpperCircuitLimit: <span style=color:#2aa198>15.0</span>,
+</span></span><span style=display:flex><span>				LowerCircuitLimit: <span style=color:#2aa198>10.0</span>,
+</span></span><span style=display:flex><span>			},
+</span></span><span style=display:flex><span>		},
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	<span style=color:#719e07>return</span> <span style=color:#268bd2>map</span>[<span style=color:#268bd2>interface</span>{}]e.Result{
+</span></span><span style=display:flex><span>		<span style=color:#719e07>&amp;</span>m.OrderContext{
+</span></span><span style=display:flex><span>			Controllers: m.Controllers{
+</span></span><span style=display:flex><span>				Ticker:      tckr,
+</span></span><span style=display:flex><span>			},
+</span></span><span style=display:flex><span>			OrderData: m.OrderData{
+</span></span><span style=display:flex><span>				Order: oms.OrderParams{
+</span></span><span style=display:flex><span>					Exchange:      <span style=color:#2aa198>&#34;NSE&#34;</span>,
+</span></span><span style=display:flex><span>					Tradingsymbol: <span style=color:#2aa198>&#34;INFY&#34;</span>,
+</span></span><span style=display:flex><span>					Price:         <span style=color:#2aa198>20.34</span>,
+</span></span><span style=display:flex><span>					OrderType:     <span style=color:#2aa198>&#34;LIMIT&#34;</span>,
+</span></span><span style=display:flex><span>				},
+</span></span><span style=display:flex><span>			},
+</span></span><span style=display:flex><span>		}: e.Result{
+</span></span><span style=display:flex><span>			Result:  <span style=color:#cb4b16>true</span>,
+</span></span><span style=display:flex><span>			Message: <span style=color:#2aa198>&#34;Your order price is higher than the current [upper circuit limit](https://support.zerodha.com/category/trading-and-markets/trading-faqs/articles/what-does-circuit-limits-i-e-price-bands-mean) of 15. You can place an order within the range or [use GTT](https://support.zerodha.com/category/trading-and-markets/gtt/articles/what-is-the-good-till-triggered-gtt-feature) for long-standing orders.&#34;</span>,
+</span></span><span style=display:flex><span>		},
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=overcoming-go-plugin-caveats>Overcoming Go Plugin Caveats</h3><p>Using Go plugins in your projects comes with a lot of caveats. As of writing,
 there hasn’t been much development on the feature recently. The <a href=https://github.com/golang/go/commits/master/src/plugin/plugin.go>commit
 history</a> shows
 us that the last major commit happened nearly 2 years ago. On the gopher slack,
@@ -190,27 +190,27 @@ emulated paths. This image also contains the source code of the host program.
 This image allows us to build and load the plugins separately from different
 machines, such as our CI/CD pipeline or a rule compiler as described further
 down the post.</p><p>In practice, we prepend the following <code>dockerCommands</code>, so that the
-paths to the <code>go build</code> command.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#586e75>// Commands for locally testing with docker. Prepended to buildCommands
-</span><span style=color:#586e75>// if dockerMode is enabled.
-</span><span style=color:#586e75></span>dockerCommands <span style=color:#719e07>:=</span> []<span style=color:#dc322f>string</span>{
-    <span style=color:#2aa198>&#34;docker&#34;</span>, <span style=color:#2aa198>&#34;run&#34;</span>,
-    <span style=color:#2aa198>&#34;-v&#34;</span>, pwd <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;/bin/temp/go:/go&#34;</span>, <span style=color:#586e75>// Reduce the time for building
-</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-v&#34;</span>, pwd <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;:/usr/src/app&#34;</span>, <span style=color:#586e75>// Mock the paths
-</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-w&#34;</span>, <span style=color:#2aa198>&#34;/usr/src/app&#34;</span>,
-    <span style=color:#2aa198>&#34;golang:1.14&#34;</span>,
-}
-
-buildCommands <span style=color:#719e07>:=</span> []<span style=color:#dc322f>string</span>{
-    <span style=color:#2aa198>&#34;go&#34;</span>,
-    <span style=color:#2aa198>&#34;build&#34;</span>,
-    <span style=color:#2aa198>&#34;-ldflags&#34;</span>,
-    <span style=color:#2aa198>&#34;-s -w&#34;</span>,
-    <span style=color:#2aa198>&#34;-buildmode=plugin&#34;</span>, <span style=color:#586e75>// Required to build plugins
-</span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-o&#34;</span>,
-    outputFilePath,
-    inputFilePath,
-}
-</code></pre></div><h4 id=compiling-rules>Compiling rules</h4><p>To combine multiple rules into a single plugin, we introduce the concept
+paths to the <code>go build</code> command.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#586e75>// Commands for locally testing with docker. Prepended to buildCommands
+</span></span></span><span style=display:flex><span><span style=color:#586e75>// if dockerMode is enabled.
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>dockerCommands <span style=color:#719e07>:=</span> []<span style=color:#dc322f>string</span>{
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;docker&#34;</span>, <span style=color:#2aa198>&#34;run&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;-v&#34;</span>, pwd <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;/bin/temp/go:/go&#34;</span>, <span style=color:#586e75>// Reduce the time for building
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-v&#34;</span>, pwd <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;:/usr/src/app&#34;</span>, <span style=color:#586e75>// Mock the paths
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-w&#34;</span>, <span style=color:#2aa198>&#34;/usr/src/app&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;golang:1.14&#34;</span>,
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>buildCommands <span style=color:#719e07>:=</span> []<span style=color:#dc322f>string</span>{
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;go&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;build&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;-ldflags&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;-s -w&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#2aa198>&#34;-buildmode=plugin&#34;</span>, <span style=color:#586e75>// Required to build plugins
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    <span style=color:#2aa198>&#34;-o&#34;</span>,
+</span></span><span style=display:flex><span>    outputFilePath,
+</span></span><span style=display:flex><span>    inputFilePath,
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h4 id=compiling-rules>Compiling rules</h4><p>To combine multiple rules into a single plugin, we introduce the concept
 internal to our project called <em>Compilation</em>. A compilation step is similar to the
 build step, but combines multiple <code>.go</code> rule files which are stored in a folder
 into a single <code>.so</code> plugin.</p><p>The compilation command expects a folder containing the source code of all the
@@ -225,80 +225,80 @@ into the plugin, we traverse through the AST and modify the function names and
 prefix the rule name.</p><p><code>AddPrefixToSource</code> is a function that prefixes the rule name onto the functions
 so they can be uniquely found when we load the plugin. For example, a rule with
 slug as <code>a_sample_rule</code> will be available in the plugin as
-<code>E_a_sample_rule_Validate</code>.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#268bd2>func</span> <span style=color:#268bd2>AddPrefixToSource</span>(prefix <span style=color:#dc322f>string</span>, src []<span style=color:#dc322f>byte</span>) ([]<span style=color:#dc322f>byte</span>, <span style=color:#dc322f>error</span>) {
-    fset <span style=color:#719e07>:=</span> token.<span style=color:#268bd2>NewFileSet</span>() <span style=color:#586e75>// positions are relative to fset
-</span><span style=color:#586e75></span>    node, err <span style=color:#719e07>:=</span> parser.<span style=color:#268bd2>ParseFile</span>(fset, <span style=color:#2aa198>&#34;&#34;</span>, src, <span style=color:#2aa198>0</span>)
-    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
-        <span style=color:#719e07>return</span> <span style=color:#cb4b16>nil</span>, err
-    }
-
-    <span style=color:#719e07>for</span> _, f <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> node.Decls {
-        fn, ok <span style=color:#719e07>:=</span> f.(<span style=color:#719e07>*</span>ast.FuncDecl)
-        <span style=color:#719e07>if</span> !ok {
-            <span style=color:#719e07>continue</span>
-        }
-        <span style=color:#719e07>if</span> <span style=color:#268bd2>in</span>(fn.Name.Name, allowedFunctionNames) {
-            fn.Name.Name = Export <span style=color:#719e07>+</span> prefix <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;_&#34;</span> <span style=color:#719e07>+</span> fn.Name.Name
-        }
-    }
-
-    <span style=color:#268bd2>var</span> b bytes.Buffer
-    buf <span style=color:#719e07>:=</span> bufio.<span style=color:#268bd2>NewWriter</span>(<span style=color:#719e07>&amp;</span>b)
-    printer.<span style=color:#268bd2>Fprint</span>(buf, fset, node)
-
-    buf.<span style=color:#268bd2>Flush</span>()
-
-    <span style=color:#719e07>return</span> b.<span style=color:#268bd2>Bytes</span>(), <span style=color:#cb4b16>nil</span>
-}
-</code></pre></div><p>Another function called <code>AddTimestampToSource</code> is used in the pre-processing to
+<code>E_a_sample_rule_Validate</code>.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>AddPrefixToSource</span>(prefix <span style=color:#dc322f>string</span>, src []<span style=color:#dc322f>byte</span>) ([]<span style=color:#dc322f>byte</span>, <span style=color:#dc322f>error</span>) {
+</span></span><span style=display:flex><span>    fset <span style=color:#719e07>:=</span> token.<span style=color:#268bd2>NewFileSet</span>() <span style=color:#586e75>// positions are relative to fset
+</span></span></span><span style=display:flex><span><span style=color:#586e75></span>    node, err <span style=color:#719e07>:=</span> parser.<span style=color:#268bd2>ParseFile</span>(fset, <span style=color:#2aa198>&#34;&#34;</span>, src, <span style=color:#2aa198>0</span>)
+</span></span><span style=display:flex><span>    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#719e07>return</span> <span style=color:#cb4b16>nil</span>, err
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#719e07>for</span> _, f <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> node.Decls {
+</span></span><span style=display:flex><span>        fn, ok <span style=color:#719e07>:=</span> f.(<span style=color:#719e07>*</span>ast.FuncDecl)
+</span></span><span style=display:flex><span>        <span style=color:#719e07>if</span> !ok {
+</span></span><span style=display:flex><span>            <span style=color:#719e07>continue</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#719e07>if</span> <span style=color:#268bd2>in</span>(fn.Name.Name, allowedFunctionNames) {
+</span></span><span style=display:flex><span>            fn.Name.Name = Export <span style=color:#719e07>+</span> prefix <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;_&#34;</span> <span style=color:#719e07>+</span> fn.Name.Name
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#268bd2>var</span> b bytes.Buffer
+</span></span><span style=display:flex><span>    buf <span style=color:#719e07>:=</span> bufio.<span style=color:#268bd2>NewWriter</span>(<span style=color:#719e07>&amp;</span>b)
+</span></span><span style=display:flex><span>    printer.<span style=color:#268bd2>Fprint</span>(buf, fset, node)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    buf.<span style=color:#268bd2>Flush</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> b.<span style=color:#268bd2>Bytes</span>(), <span style=color:#cb4b16>nil</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Another function called <code>AddTimestampToSource</code> is used in the pre-processing to
 enable realtime reloading of the plugin. Since Go currently can’t unload a
 shared library, we must load unique plugins in long running programs. This
 becomes a problem when we try to reload a plugin. This function makes the
 compiled rule unique, allowing it to be reloaded with the same name and same
-contents as well.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#268bd2>func</span> <span style=color:#268bd2>AddTimestampToSource</span>(src []<span style=color:#dc322f>byte</span>) []<span style=color:#dc322f>byte</span> {
-    ct <span style=color:#719e07>:=</span> time.<span style=color:#268bd2>Now</span>().<span style=color:#268bd2>UnixNano</span>()
-    src = <span style=color:#b58900>append</span>(src, []<span style=color:#b58900>byte</span>(<span style=color:#2aa198>&#34;\n&#34;</span>)<span style=color:#719e07>...</span>)
-    src = <span style=color:#b58900>append</span>(src, []<span style=color:#b58900>byte</span>(
-        fmt.<span style=color:#268bd2>Sprintf</span>(<span style=color:#2aa198>&#34;const timestamp_%d = %d&#34;</span>,
-            ct, ct))<span style=color:#719e07>...</span>)
-    <span style=color:#719e07>return</span> src
-}
-</code></pre></div><p>A rule <code>.so</code> file should be standalone. It should contain all the information
+contents as well.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>AddTimestampToSource</span>(src []<span style=color:#dc322f>byte</span>) []<span style=color:#dc322f>byte</span> {
+</span></span><span style=display:flex><span>    ct <span style=color:#719e07>:=</span> time.<span style=color:#268bd2>Now</span>().<span style=color:#268bd2>UnixNano</span>()
+</span></span><span style=display:flex><span>    src = <span style=color:#b58900>append</span>(src, []<span style=color:#b58900>byte</span>(<span style=color:#2aa198>&#34;\n&#34;</span>)<span style=color:#719e07>...</span>)
+</span></span><span style=display:flex><span>    src = <span style=color:#b58900>append</span>(src, []<span style=color:#b58900>byte</span>(
+</span></span><span style=display:flex><span>        fmt.<span style=color:#268bd2>Sprintf</span>(<span style=color:#2aa198>&#34;const timestamp_%d = %d&#34;</span>,
+</span></span><span style=display:flex><span>            ct, ct))<span style=color:#719e07>...</span>)
+</span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> src
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>A rule <code>.so</code> file should be standalone. It should contain all the information
 needed to know the contents of the plugin. Using another step, we create a
 description about the contents of the plugin, and load it among the symbols of
-the exported symbols of the plugin.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go>descFilePath <span style=color:#719e07>:=</span> tmpSrcPath <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;description.go&#34;</span>
-descFile, err <span style=color:#719e07>:=</span> os.<span style=color:#268bd2>Create</span>(descFilePath)
-<span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
-    <span style=color:#719e07>return</span> fmt.<span style=color:#268bd2>Errorf</span>(<span style=color:#2aa198>&#34;opening description file: %w&#34;</span>, err)
-}
-
-prefix <span style=color:#719e07>:=</span> <span style=color:#2aa198>`package main
-</span><span style=color:#2aa198>
-</span><span style=color:#2aa198>func Description() []string {
-</span><span style=color:#2aa198>    return []string{`</span>
-
-fmt.<span style=color:#268bd2>Fprintln</span>(descFile, prefix)
-<span style=color:#719e07>for</span> _, rname <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> rnames {
-    _, err <span style=color:#719e07>:=</span> fmt.<span style=color:#268bd2>Fprintf</span>(descFile, <span style=color:#2aa198>`&#34;%s&#34;,`</span>, rname)
-    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
-        <span style=color:#719e07>return</span> err
-    }
-}
-suffix <span style=color:#719e07>:=</span> <span style=color:#2aa198>`    }
-</span><span style=color:#2aa198>}
-</span><span style=color:#2aa198>`</span>
-
-fmt.<span style=color:#268bd2>Fprintln</span>(descFile, suffix)
-</code></pre></div><p>Now, the host can use the following <code>DecompileRules</code> function and obtain all the
-rules contained in the plugin.</p><div class=highlight><pre style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#268bd2>func</span> <span style=color:#268bd2>DecompileRules</span>(rulePluginPath <span style=color:#dc322f>string</span>) (<span style=color:#268bd2>map</span>[<span style=color:#dc322f>string</span>]<span style=color:#268bd2>func</span>(<span style=color:#268bd2>interface</span>{}) (rule.Result, <span style=color:#dc322f>error</span>), <span style=color:#dc322f>error</span>) {
-    <span style=color:#719e07>...</span>
-    d, err <span style=color:#719e07>:=</span> p.<span style=color:#268bd2>Lookup</span>(<span style=color:#2aa198>&#34;Description&#34;</span>)
-    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
-        <span style=color:#719e07>return</span> <span style=color:#cb4b16>nil</span>, err
-    }
-    <span style=color:#719e07>...</span>
-}
-</code></pre></div><h3 id=dashboard-for-the-operators>Dashboard for the operators</h3><p><img src=/static//images/frappe-veto.png alt=frappe-veto-dashboard></p><p>We connect two services with our admin dashboard implemented in <a href=https://frappe.io>Frappe</a>
+the exported symbols of the plugin.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span>descFilePath <span style=color:#719e07>:=</span> tmpSrcPath <span style=color:#719e07>+</span> <span style=color:#2aa198>&#34;description.go&#34;</span>
+</span></span><span style=display:flex><span>descFile, err <span style=color:#719e07>:=</span> os.<span style=color:#268bd2>Create</span>(descFilePath)
+</span></span><span style=display:flex><span><span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+</span></span><span style=display:flex><span>    <span style=color:#719e07>return</span> fmt.<span style=color:#268bd2>Errorf</span>(<span style=color:#2aa198>&#34;opening description file: %w&#34;</span>, err)
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>prefix <span style=color:#719e07>:=</span> <span style=color:#2aa198>`package main
+</span></span></span><span style=display:flex><span><span style=color:#2aa198>
+</span></span></span><span style=display:flex><span><span style=color:#2aa198>func Description() []string {
+</span></span></span><span style=display:flex><span><span style=color:#2aa198>    return []string{`</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>fmt.<span style=color:#268bd2>Fprintln</span>(descFile, prefix)
+</span></span><span style=display:flex><span><span style=color:#719e07>for</span> _, rname <span style=color:#719e07>:=</span> <span style=color:#719e07>range</span> rnames {
+</span></span><span style=display:flex><span>    _, err <span style=color:#719e07>:=</span> fmt.<span style=color:#268bd2>Fprintf</span>(descFile, <span style=color:#2aa198>`&#34;%s&#34;,`</span>, rname)
+</span></span><span style=display:flex><span>    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#719e07>return</span> err
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>suffix <span style=color:#719e07>:=</span> <span style=color:#2aa198>`    }
+</span></span></span><span style=display:flex><span><span style=color:#2aa198>}
+</span></span></span><span style=display:flex><span><span style=color:#2aa198>`</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>fmt.<span style=color:#268bd2>Fprintln</span>(descFile, suffix)
+</span></span></code></pre></div><p>Now, the host can use the following <code>DecompileRules</code> function and obtain all the
+rules contained in the plugin.</p><div class=highlight><pre tabindex=0 style=color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#268bd2>func</span> <span style=color:#268bd2>DecompileRules</span>(rulePluginPath <span style=color:#dc322f>string</span>) (<span style=color:#268bd2>map</span>[<span style=color:#dc322f>string</span>]<span style=color:#268bd2>func</span>(<span style=color:#268bd2>interface</span>{}) (rule.Result, <span style=color:#dc322f>error</span>), <span style=color:#dc322f>error</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#719e07>...</span>
+</span></span><span style=display:flex><span>    d, err <span style=color:#719e07>:=</span> p.<span style=color:#268bd2>Lookup</span>(<span style=color:#2aa198>&#34;Description&#34;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#719e07>if</span> err <span style=color:#719e07>!=</span> <span style=color:#cb4b16>nil</span> {
+</span></span><span style=display:flex><span>        <span style=color:#719e07>return</span> <span style=color:#cb4b16>nil</span>, err
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#719e07>...</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=dashboard-for-the-operators>Dashboard for the operators</h3><p><img src=/static//images/frappe-veto.png alt=frappe-veto-dashboard></p><p>We connect two services with our admin dashboard implemented in <a href=https://frappe.io>Frappe</a>
 where the operators can edit the rules. This panel has a built in editor, where
 the operator can edit the rules, validate it, and if it passes the test cases,
 it is saved to the database.</p><p>These are backed by two small deployments which run in an internal K8s instance
