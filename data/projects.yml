@@ -740,7 +740,7 @@
 - category: libs
   description: 'A flutter package that takes html string as input and parses and converts
     that to Flutter widgets based on the provided configuration. '
-  github_uri: devaryakjha/html_to_flutter
+  github_uri: devaryakjha/tagflow
   language: Dart
   license: MIT License
   logo: tagflow.svg
@@ -752,7 +752,7 @@
   - html-to-flutter
   - tagflow
   updated_at: '2025-04-22T08:53:16Z'
-  url: https://github.com/devaryakjha/html_to_flutter
+  url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
     given hash.
