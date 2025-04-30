@@ -1,6 +1,6 @@
 FROM python:3.11 as builder
 
-ENV HUGO_VERSION 0.68.3
+ENV HUGO_VERSION 0.119.0
 ENV HUGO_BINARY hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
 
 # Install Hugo and other deps
