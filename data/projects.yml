@@ -3,7 +3,7 @@
   github_uri: vividvilla/lil
   language: Go
   name: lil
-  stars: 46
+  stars: 47
   topics: []
   updated_at: '2020-04-24T05:52:18Z'
   url: https://github.com/vividvilla/lil
@@ -87,7 +87,7 @@
   language: Dockerfile
   license: MIT License
   name: eks-gitops
-  stars: 6
+  stars: 7
   topics: []
   updated_at: '2022-01-27T14:53:13Z'
   url: https://github.com/mr-karan/eks-gitops
@@ -106,7 +106,7 @@
   - google-chat
   - monitoring
   - prometheus
-  updated_at: '2024-10-08T09:22:20Z'
+  updated_at: '2025-05-06T05:24:43Z'
   url: https://github.com/mr-karan/cAlert
 - category: services
   description: Utility to extract metrics from arbitary data stores in Prometheus
@@ -132,9 +132,9 @@
   language: Python
   license: MIT License
   name: pdf_text_overlay
-  stars: 30
+  stars: 31
   topics: []
-  updated_at: '2023-06-30T22:19:59Z'
+  updated_at: '2025-05-09T05:51:31Z'
   url: https://github.com/zerodhatech/pdf_text_overlay
 - category: apps
   description: High performance, self-hosted, newsletter and mailing list manager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 16666
+  stars: 16786
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-04-30T03:23:20Z'
+  updated_at: '2025-05-07T04:14:11Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3133
+  stars: 3165
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1137
+  stars: 1139
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -230,7 +230,7 @@
   language: Dart
   license: MIT License
   name: store_keeper
-  stars: 35
+  stars: 36
   topics:
   - flutter
   - state-management
@@ -243,7 +243,7 @@
   language: Dart
   license: MIT License
   name: autopilot
-  stars: 111
+  stars: 112
   topics: []
   updated_at: '2025-02-27T09:55:41Z'
   url: https://github.com/ajinasokan/autopilot
@@ -274,7 +274,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 56
+  stars: 57
   topics:
   - curl
   - flutter
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 447
+  stars: 449
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 972
+  stars: 974
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 161
+  stars: 162
   topics:
   - aws
   - aws-s3
@@ -387,7 +387,7 @@
   language: Python
   license: Other
   name: frappe_discourse
-  stars: 14
+  stars: 15
   topics:
   - discourse
   - discourse-sso
@@ -460,7 +460,7 @@
   github_uri: mevinoth/slim-ui
   language: Vue
   name: slim-ui
-  stars: 62
+  stars: 63
   topics:
   - vue
   - vue2
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 80
+  stars: 85
   topics: []
   updated_at: '2024-09-21T17:23:03Z'
   url: https://github.com/rhnvrm/linkpage
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 411
+  stars: 412
   topics:
   - background-jobs
   - distributed-systems
@@ -682,7 +682,7 @@
   language: Jinja
   license: MIT License
   name: kaf-ansible
-  stars: 7
+  stars: 8
   topics: []
   updated_at: '2023-10-05T13:56:20Z'
   url: https://github.com/joeirimpan/kaf-ansible
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 192
+  stars: 197
   topics:
   - android
   - flutter
@@ -751,7 +751,7 @@
   - html
   - html-to-flutter
   - tagflow
-  updated_at: '2025-04-22T08:53:16Z'
+  updated_at: '2025-05-08T10:08:15Z'
   url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
@@ -771,7 +771,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1149
+  stars: 1165
   topics:
   - customer-care
   - customer-support
@@ -784,7 +784,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-05-03T15:39:36Z'
+  updated_at: '2025-05-10T18:16:25Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 314
+  stars: 396
   topics:
   - clickhouse
   - log-analytics
@@ -830,7 +830,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 4
+  stars: 7
   topics: []
-  updated_at: '2025-05-02T19:21:53Z'
+  updated_at: '2025-05-09T10:02:16Z'
   url: https://github.com/iamd3vil/hedwig
