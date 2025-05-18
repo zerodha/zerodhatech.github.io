@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 132
+  stars: 133
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 173
+  stars: 174
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 16786
+  stars: 16871
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-05-07T04:14:11Z'
+  updated_at: '2025-05-17T09:32:13Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3165
+  stars: 3186
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-04-21T05:08:16Z'
+  updated_at: '2025-05-16T05:19:21Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1139
+  stars: 1141
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 449
+  stars: 450
   topics:
   - email-verification
   - mobile-number-verification
@@ -338,7 +338,7 @@
   language: HTML
   license: MIT License
   name: gotp
-  stars: 33
+  stars: 34
   topics: []
   updated_at: '2024-06-15T20:19:27Z'
   url: https://github.com/vividvilla/gotp
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 974
+  stars: 979
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 162
+  stars: 163
   topics:
   - aws
   - aws-s3
@@ -401,7 +401,7 @@
   github_uri: zerodhatech/rbiparser
   language: Python
   name: rbiparser
-  stars: 56
+  stars: 57
   topics: []
   updated_at: '2023-11-30T08:20:55Z'
   url: https://github.com/zerodhatech/rbiparser
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 85
+  stars: 87
   topics: []
   updated_at: '2024-09-21T17:23:03Z'
   url: https://github.com/rhnvrm/linkpage
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 412
+  stars: 414
   topics:
   - background-jobs
   - distributed-systems
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 197
+  stars: 199
   topics:
   - android
   - flutter
@@ -751,7 +751,7 @@
   - html
   - html-to-flutter
   - tagflow
-  updated_at: '2025-05-08T10:08:15Z'
+  updated_at: '2025-05-14T09:54:45Z'
   url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
@@ -771,7 +771,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1165
+  stars: 1172
   topics:
   - customer-care
   - customer-support
@@ -784,7 +784,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-05-10T18:16:25Z'
+  updated_at: '2025-05-17T16:24:45Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -794,12 +794,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 396
+  stars: 410
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-04-30T15:54:59Z'
+  updated_at: '2025-05-17T06:43:51Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
@@ -832,5 +832,5 @@
   name: hedwig
   stars: 7
   topics: []
-  updated_at: '2025-05-09T10:02:16Z'
+  updated_at: '2025-05-16T09:12:04Z'
   url: https://github.com/iamd3vil/hedwig
