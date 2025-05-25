@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 66
+  stars: 65
   topics:
   - session
   - session-cookie
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 174
+  stars: 175
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 16871
+  stars: 16921
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-05-17T09:32:13Z'
+  updated_at: '2025-05-24T17:25:43Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3186
+  stars: 3207
   topics:
   - config
   - config-loader
@@ -230,7 +230,7 @@
   language: Dart
   license: MIT License
   name: store_keeper
-  stars: 36
+  stars: 35
   topics:
   - flutter
   - state-management
@@ -253,7 +253,7 @@
   language: Dart
   license: MIT License
   name: recharge
-  stars: 48
+  stars: 47
   topics: []
   updated_at: '2023-06-04T18:59:21Z'
   url: https://github.com/ajinasokan/recharge
@@ -264,7 +264,7 @@
   language: Dart
   license: MIT License
   name: flutter_fgbg
-  stars: 87
+  stars: 86
   topics: []
   updated_at: '2025-02-13T10:09:57Z'
   url: https://github.com/ajinasokan/flutter_fgbg
@@ -274,7 +274,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 57
+  stars: 56
   topics:
   - curl
   - flutter
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 450
+  stars: 451
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 979
+  stars: 981
   topics:
   - broker-backend
   - database
@@ -580,7 +580,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 82
+  stars: 83
   topics:
   - bandwidth-saver
   - browser-cache
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 414
+  stars: 418
   topics:
   - background-jobs
   - distributed-systems
@@ -693,7 +693,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 72
+  stars: 73
   topics:
   - franz-go
   - high-availability
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 199
+  stars: 198
   topics:
   - android
   - flutter
@@ -771,7 +771,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1172
+  stars: 1183
   topics:
   - customer-care
   - customer-support
@@ -784,7 +784,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-05-17T16:24:45Z'
+  updated_at: '2025-05-24T18:23:09Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -794,12 +794,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 410
+  stars: 422
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-05-17T06:43:51Z'
+  updated_at: '2025-05-20T13:57:26Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
@@ -816,7 +816,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: damon
-  stars: 11
+  stars: 12
   topics:
   - golang
   - hashicorp
