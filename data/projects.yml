@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 182
+  stars: 183
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 133
+  stars: 134
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 16921
+  stars: 16990
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-05-24T17:25:43Z'
+  updated_at: '2025-05-30T07:19:09Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3207
+  stars: 3219
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-05-16T05:19:21Z'
+  updated_at: '2025-05-29T14:39:46Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1141
+  stars: 1143
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -253,7 +253,7 @@
   language: Dart
   license: MIT License
   name: recharge
-  stars: 47
+  stars: 48
   topics: []
   updated_at: '2023-06-04T18:59:21Z'
   url: https://github.com/ajinasokan/recharge
@@ -274,14 +274,14 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 56
+  stars: 57
   topics:
   - curl
   - flutter
   - http
   - libcurl
   - quic
-  updated_at: '2025-02-12T10:10:33Z'
+  updated_at: '2025-05-26T09:26:02Z'
   url: https://github.com/ajinasokan/flutter_curl
 - category: services
   description: Standalone server for user address and OTP verification flows with
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 451
+  stars: 452
   topics:
   - email-verification
   - mobile-number-verification
@@ -340,7 +340,7 @@
   name: gotp
   stars: 34
   topics: []
-  updated_at: '2024-06-15T20:19:27Z'
+  updated_at: '2025-05-27T11:19:13Z'
   url: https://github.com/vividvilla/gotp
 - category: services
   description: A distributed job server built specifically for queuing and executing
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 981
+  stars: 983
   topics:
   - broker-backend
   - database
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 87
+  stars: 88
   topics: []
   updated_at: '2024-09-21T17:23:03Z'
   url: https://github.com/rhnvrm/linkpage
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 418
+  stars: 419
   topics:
   - background-jobs
   - distributed-systems
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 198
+  stars: 199
   topics:
   - android
   - flutter
@@ -771,7 +771,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1183
+  stars: 1192
   topics:
   - customer-care
   - customer-support
@@ -784,7 +784,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-05-24T18:23:09Z'
+  updated_at: '2025-05-31T18:16:13Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 422
+  stars: 430
   topics:
   - clickhouse
   - log-analytics
