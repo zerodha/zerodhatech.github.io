@@ -35,7 +35,7 @@
   language: Go
   license: MIT License
   name: kubekutr
-  stars: 160
+  stars: 159
   topics:
   - gitops
   - kubernetes
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 16990
+  stars: 17063
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-05-30T07:19:09Z'
+  updated_at: '2025-06-06T10:08:02Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3219
+  stars: 3229
   topics:
   - config
   - config-loader
@@ -274,7 +274,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 57
+  stars: 58
   topics:
   - curl
   - flutter
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 452
+  stars: 453
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 983
+  stars: 986
   topics:
   - broker-backend
   - database
@@ -373,13 +373,13 @@
   language: Go
   license: Other
   name: simples3
-  stars: 163
+  stars: 164
   topics:
   - aws
   - aws-s3
   - aws-signature-v4
   - golang
-  updated_at: '2025-04-23T17:57:44Z'
+  updated_at: '2025-06-04T09:50:58Z'
   url: https://github.com/rhnvrm/simples3
 - category: libs
   description: Simple frappe app to setup Single sign-on for discourse
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 419
+  stars: 420
   topics:
   - background-jobs
   - distributed-systems
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 199
+  stars: 200
   topics:
   - android
   - flutter
@@ -771,7 +771,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1192
+  stars: 1197
   topics:
   - customer-care
   - customer-support
@@ -784,7 +784,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-05-31T18:16:13Z'
+  updated_at: '2025-06-07T20:52:41Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -794,12 +794,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 430
+  stars: 435
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-05-20T13:57:26Z'
+  updated_at: '2025-06-05T07:19:52Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
@@ -832,5 +832,5 @@
   name: hedwig
   stars: 7
   topics: []
-  updated_at: '2025-05-16T09:12:04Z'
+  updated_at: '2025-06-07T08:09:04Z'
   url: https://github.com/iamd3vil/hedwig
