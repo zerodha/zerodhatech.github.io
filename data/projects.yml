@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 134
+  stars: 135
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 65
+  stars: 68
   topics:
   - session
   - session-cookie
@@ -68,7 +68,7 @@
   - session-manager
   - session-store
   - sessions
-  updated_at: '2025-03-20T18:51:58Z'
+  updated_at: '2025-06-17T05:23:36Z'
   url: https://github.com/vividvilla/simplesessions
 - category: libs
   description: An extremely tiny utility for unmarshalling and scanning querystrings
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17115
+  stars: 17171
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-06-09T17:11:43Z'
+  updated_at: '2025-06-18T18:15:16Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3240
+  stars: 3254
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1143
+  stars: 1145
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 453
+  stars: 454
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 988
+  stars: 990
   topics:
   - broker-backend
   - database
@@ -364,7 +364,7 @@
   - sql
   - sql-query
   - workers
-  updated_at: '2025-04-16T23:15:20Z'
+  updated_at: '2025-06-20T16:40:17Z'
   url: https://github.com/knadh/sql-jobber
 - category: libs
   description: Simple no frills AWS S3 Golang Library using REST with V4 Signing (without
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 199
+  stars: 200
   topics:
   - android
   - flutter
@@ -771,7 +771,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1204
+  stars: 1211
   topics:
   - customer-care
   - customer-support
@@ -784,7 +784,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-06-14T16:58:51Z'
+  updated_at: '2025-06-21T16:41:45Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 438
+  stars: 442
   topics:
   - clickhouse
   - log-analytics
@@ -806,9 +806,9 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 6
+  stars: 7
   topics: []
-  updated_at: '2025-03-27T07:09:20Z'
+  updated_at: '2025-06-20T14:57:14Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -832,5 +832,5 @@
   name: hedwig
   stars: 7
   topics: []
-  updated_at: '2025-06-14T17:29:02Z'
+  updated_at: '2025-06-16T06:35:00Z'
   url: https://github.com/iamd3vil/hedwig
