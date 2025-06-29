@@ -132,7 +132,7 @@
   language: Python
   license: MIT License
   name: pdf_text_overlay
-  stars: 31
+  stars: 32
   topics: []
   updated_at: '2025-05-09T05:51:31Z'
   url: https://github.com/zerodhatech/pdf_text_overlay
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17171
+  stars: 17229
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-06-18T18:15:16Z'
+  updated_at: '2025-06-27T16:51:16Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3254
+  stars: 3261
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-06-09T16:46:54Z'
+  updated_at: '2025-06-27T16:49:32Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -264,7 +264,7 @@
   language: Dart
   license: MIT License
   name: flutter_fgbg
-  stars: 86
+  stars: 87
   topics: []
   updated_at: '2025-02-13T10:09:57Z'
   url: https://github.com/ajinasokan/flutter_fgbg
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 990
+  stars: 992
   topics:
   - broker-backend
   - database
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 420
+  stars: 422
   topics:
   - background-jobs
   - distributed-systems
@@ -771,7 +771,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1211
+  stars: 1219
   topics:
   - customer-care
   - customer-support
@@ -784,7 +784,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-06-21T16:41:45Z'
+  updated_at: '2025-06-28T23:30:11Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 442
+  stars: 444
   topics:
   - clickhouse
   - log-analytics
@@ -830,7 +830,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 7
+  stars: 8
   topics: []
   updated_at: '2025-06-16T06:35:00Z'
   url: https://github.com/iamd3vil/hedwig
