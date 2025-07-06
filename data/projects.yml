@@ -68,7 +68,7 @@
   - session-manager
   - session-store
   - sessions
-  updated_at: '2025-06-17T05:23:36Z'
+  updated_at: '2025-07-01T07:35:48Z'
   url: https://github.com/vividvilla/simplesessions
 - category: libs
   description: An extremely tiny utility for unmarshalling and scanning querystrings
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17229
+  stars: 17264
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-06-27T16:51:16Z'
+  updated_at: '2025-07-05T13:20:25Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3261
+  stars: 3282
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-06-27T16:49:32Z'
+  updated_at: '2025-06-30T05:54:26Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 454
+  stars: 453
   topics:
   - email-verification
   - mobile-number-verification
@@ -299,7 +299,7 @@
   - otp-verification
   - sms-verification
   - verification-code
-  updated_at: '2024-07-04T09:26:24Z'
+  updated_at: '2025-07-02T08:09:17Z'
   url: https://github.com/knadh/otpgateway
 - category: libs
   description: Osticket plugin to assign tickets automatically to random agents based
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 992
+  stars: 993
   topics:
   - broker-backend
   - database
@@ -580,7 +580,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 83
+  stars: 82
   topics:
   - bandwidth-saver
   - browser-cache
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 422
+  stars: 423
   topics:
   - background-jobs
   - distributed-systems
@@ -660,7 +660,7 @@
   - jobqueue
   - queue
   - tasqueue
-  updated_at: '2025-02-24T05:31:55Z'
+  updated_at: '2025-07-01T06:30:38Z'
   url: https://github.com/kalbhor/Tasqueue
 - category: services
   description: Lightweight HTTP server to handle webhooks from listmonk and forward
@@ -693,7 +693,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 73
+  stars: 74
   topics:
   - franz-go
   - high-availability
@@ -751,7 +751,7 @@
   - html
   - html-to-flutter
   - tagflow
-  updated_at: '2025-05-14T09:54:45Z'
+  updated_at: '2025-06-30T17:14:24Z'
   url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
@@ -765,13 +765,14 @@
   updated_at: '2024-08-26T08:05:44Z'
   url: https://github.com/joeirimpan/duckdb-fnv
 - category: apps
-  description: Open source, self-hosted customer support desk. Single binary app.
+  description: Modern, Open source, Self-hosted customer support desk. Single binary
+    app.
   github_uri: abhinavxd/libredesk
   language: Vue
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1219
+  stars: 1225
   topics:
   - customer-care
   - customer-support
