@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17264
+  stars: 17311
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-07-05T13:20:25Z'
+  updated_at: '2025-07-12T17:09:02Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3282
+  stars: 3305
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-06-30T05:54:26Z'
+  updated_at: '2025-07-12T16:46:13Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1145
+  stars: 1147
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 453
+  stars: 456
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 993
+  stars: 997
   topics:
   - broker-backend
   - database
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 423
+  stars: 425
   topics:
   - background-jobs
   - distributed-systems
@@ -735,7 +735,7 @@
   name: toru
   stars: 24
   topics: []
-  updated_at: '2024-09-24T07:39:42Z'
+  updated_at: '2025-07-09T16:08:27Z'
   url: https://github.com/mr-karan/toru
 - category: libs
   description: 'A flutter package that takes html string as input and parses and converts
@@ -765,14 +765,14 @@
   updated_at: '2024-08-26T08:05:44Z'
   url: https://github.com/joeirimpan/duckdb-fnv
 - category: apps
-  description: Modern, Open source, Self-hosted customer support desk. Single binary
+  description: Modern, open source, self-hosted customer support desk. Single binary
     app.
   github_uri: abhinavxd/libredesk
   language: Vue
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1225
+  stars: 1230
   topics:
   - customer-care
   - customer-support
@@ -785,7 +785,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-06-28T23:30:11Z'
+  updated_at: '2025-07-06T19:36:54Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -795,12 +795,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 444
+  stars: 446
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-06-14T14:43:34Z'
+  updated_at: '2025-07-09T10:13:44Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
@@ -831,7 +831,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 8
+  stars: 9
   topics: []
   updated_at: '2025-06-16T06:35:00Z'
   url: https://github.com/iamd3vil/hedwig
