@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17311
+  stars: 17350
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-07-12T17:09:02Z'
+  updated_at: '2025-07-17T13:58:21Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3305
+  stars: 3327
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1147
+  stars: 1146
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 456
+  stars: 457
   topics:
   - email-verification
   - mobile-number-verification
@@ -299,7 +299,7 @@
   - otp-verification
   - sms-verification
   - verification-code
-  updated_at: '2025-07-02T08:09:17Z'
+  updated_at: '2025-07-16T12:23:50Z'
   url: https://github.com/knadh/otpgateway
 - category: libs
   description: Osticket plugin to assign tickets automatically to random agents based
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 997
+  stars: 998
   topics:
   - broker-backend
   - database
@@ -447,7 +447,7 @@
   license: MIT License
   logo: shelf.svg
   name: shelf
-  stars: 32
+  stars: 34
   topics:
   - dotfile-manager
   - dotfiles
@@ -735,7 +735,7 @@
   name: toru
   stars: 24
   topics: []
-  updated_at: '2025-07-09T16:08:27Z'
+  updated_at: '2025-07-16T06:35:36Z'
   url: https://github.com/mr-karan/toru
 - category: libs
   description: 'A flutter package that takes html string as input and parses and converts
@@ -772,20 +772,18 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1230
+  stars: 1235
   topics:
-  - customer-care
   - customer-support
   - customer-support-automation
   - golang
   - helpdesk
   - support
-  - ticket-management
   - ticketing
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-07-06T19:36:54Z'
+  updated_at: '2025-07-16T21:26:37Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -831,7 +829,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 9
+  stars: 10
   topics: []
   updated_at: '2025-06-16T06:35:00Z'
   url: https://github.com/iamd3vil/hedwig
