@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 175
+  stars: 176
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17350
+  stars: 17468
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-07-17T13:58:21Z'
+  updated_at: '2025-07-22T12:07:13Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3327
+  stars: 3336
   topics:
   - config
   - config-loader
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 457
+  stars: 459
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 998
+  stars: 1003
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 165
+  stars: 166
   topics:
   - aws
   - aws-s3
@@ -596,7 +596,7 @@
   language: Python
   license: Other
   name: frappe_tinymce
-  stars: 41
+  stars: 42
   topics:
   - editor
   - frappe
@@ -772,7 +772,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1235
+  stars: 1237
   topics:
   - customer-support
   - customer-support-automation
@@ -783,7 +783,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-07-16T21:26:37Z'
+  updated_at: '2025-07-22T18:48:37Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -793,12 +793,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 446
+  stars: 449
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-07-09T10:13:44Z'
+  updated_at: '2025-07-21T04:13:22Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
@@ -829,7 +829,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 10
+  stars: 12
   topics: []
   updated_at: '2025-06-16T06:35:00Z'
   url: https://github.com/iamd3vil/hedwig
