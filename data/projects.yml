@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 176
+  stars: 177
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17468
+  stars: 17532
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-07-22T12:07:13Z'
+  updated_at: '2025-08-01T18:37:56Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3336
+  stars: 3366
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-07-12T16:46:13Z'
+  updated_at: '2025-08-01T12:24:40Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -245,7 +245,7 @@
   name: autopilot
   stars: 112
   topics: []
-  updated_at: '2025-02-27T09:55:41Z'
+  updated_at: '2025-07-31T10:30:35Z'
   url: https://github.com/ajinasokan/autopilot
 - category: libs
   description: Recharge is a simple library to hot reload your Dart code on file changes
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 459
+  stars: 460
   topics:
   - email-verification
   - mobile-number-verification
@@ -299,7 +299,7 @@
   - otp-verification
   - sms-verification
   - verification-code
-  updated_at: '2025-07-16T12:23:50Z'
+  updated_at: '2025-07-29T13:19:05Z'
   url: https://github.com/knadh/otpgateway
 - category: libs
   description: Osticket plugin to assign tickets automatically to random agents based
@@ -669,7 +669,7 @@
   language: Go
   license: MIT License
   name: listmonk-messenger
-  stars: 64
+  stars: 65
   topics:
   - listmonk
   - messenger
@@ -772,7 +772,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1237
+  stars: 1331
   topics:
   - customer-support
   - customer-support-automation
@@ -783,7 +783,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-07-22T18:48:37Z'
+  updated_at: '2025-07-31T21:43:16Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -793,7 +793,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 449
+  stars: 450
   topics:
   - clickhouse
   - log-analytics
@@ -829,7 +829,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 12
+  stars: 13
   topics: []
   updated_at: '2025-06-16T06:35:00Z'
   url: https://github.com/iamd3vil/hedwig
