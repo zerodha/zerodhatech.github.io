@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 135
+  stars: 137
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 177
+  stars: 179
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17532
+  stars: 17572
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-08-01T18:37:56Z'
+  updated_at: '2025-08-09T09:11:23Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3366
+  stars: 3379
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1146
+  stars: 1147
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -274,7 +274,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 58
+  stars: 59
   topics:
   - curl
   - flutter
@@ -318,7 +318,7 @@
   language: Go
   license: MIT License
   name: go-frappe-client
-  stars: 9
+  stars: 10
   topics: []
   updated_at: '2020-09-24T05:40:47Z'
   url: https://github.com/joeirimpan/go-frappe-client
@@ -340,7 +340,7 @@
   name: gotp
   stars: 34
   topics: []
-  updated_at: '2025-05-27T11:19:13Z'
+  updated_at: '2025-08-07T18:39:09Z'
   url: https://github.com/vividvilla/gotp
 - category: services
   description: A distributed job server built specifically for queuing and executing
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1003
+  stars: 1005
   topics:
   - broker-backend
   - database
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 425
+  stars: 426
   topics:
   - background-jobs
   - distributed-systems
@@ -772,7 +772,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1331
+  stars: 1368
   topics:
   - customer-support
   - customer-support-automation
@@ -783,7 +783,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-07-31T21:43:16Z'
+  updated_at: '2025-08-03T12:06:00Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -793,12 +793,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 450
+  stars: 451
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-07-21T04:13:22Z'
+  updated_at: '2025-08-09T14:18:27Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
