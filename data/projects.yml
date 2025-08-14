@@ -833,3 +833,17 @@
   topics: []
   updated_at: '2025-06-16T06:35:00Z'
   url: https://github.com/iamd3vil/hedwig
+- category: libs
+  description: 'A Flutter plugin for Android device performance classification.'
+  github_uri: devaryakjha/anpec
+  language: Dart
+  license: MIT License
+  name: anpec
+  stars: 2
+  topics:
+  - flutter
+  - flutter-plugin
+  - performance
+  - android
+  updated_at: '2025-08-14T10:00:00Z'
+  url: https://github.com/devaryakjha/anpec
