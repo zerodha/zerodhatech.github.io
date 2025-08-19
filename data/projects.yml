@@ -764,6 +764,21 @@
   topics: []
   updated_at: '2024-08-26T08:05:44Z'
   url: https://github.com/joeirimpan/duckdb-fnv
+- category: libs
+  description: A lightweight, fully customizable financial charting library for global markets.
+  github_uri: srv91/trace-chart
+  language: JavaScript
+  license: Apache License 2.0
+  logo: trace.png
+  name: trace-chart
+  stars: 14
+  topics:
+  - charts
+  - lightweight charting library
+  - charts for global markets
+  - echarts based charting library
+  updated_at: '2025-08-19T13:00:00Z'
+  url: https://github.com/srv91/trace-chart
 - category: apps
   description: Modern, open source, self-hosted customer support desk. Single binary
     app.
