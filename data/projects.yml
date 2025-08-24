@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17615
+  stars: 17654
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-08-16T11:27:38Z'
+  updated_at: '2025-08-21T15:10:56Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3392
+  stars: 3405
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-08-01T12:24:40Z'
+  updated_at: '2025-08-22T06:33:47Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -281,7 +281,7 @@
   - http
   - libcurl
   - quic
-  updated_at: '2025-05-26T09:26:02Z'
+  updated_at: '2025-08-22T11:55:18Z'
   url: https://github.com/ajinasokan/flutter_curl
 - category: services
   description: Standalone server for user address and OTP verification flows with
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1010
+  stars: 1011
   topics:
   - broker-backend
   - database
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 427
+  stars: 428
   topics:
   - background-jobs
   - distributed-systems
@@ -765,19 +765,16 @@
   updated_at: '2024-08-26T08:05:44Z'
   url: https://github.com/joeirimpan/duckdb-fnv
 - category: libs
-  description: A lightweight, fully customizable financial charting library for global markets.
+  description: A lightweight, fully customizable financial charting library for global
+    markets
   github_uri: srv91/trace-chart
   language: JavaScript
   license: Apache License 2.0
   logo: trace.png
   name: trace-chart
   stars: 14
-  topics:
-  - charts
-  - lightweight charting library
-  - charts for global markets
-  - echarts based charting library
-  updated_at: '2025-08-19T13:00:00Z'
+  topics: []
+  updated_at: '2025-07-29T06:42:07Z'
   url: https://github.com/srv91/trace-chart
 - category: apps
   description: Modern, open source, self-hosted customer support desk. Single binary
@@ -787,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1380
+  stars: 1385
   topics:
   - customer-support
   - customer-support-automation
@@ -798,7 +795,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-08-14T10:43:27Z'
+  updated_at: '2025-08-23T20:57:53Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -808,7 +805,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 452
+  stars: 453
   topics:
   - clickhouse
   - log-analytics
@@ -820,7 +817,7 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 7
+  stars: 8
   topics: []
   updated_at: '2025-06-20T14:57:14Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -854,7 +851,7 @@
   language: Kotlin
   license: MIT License
   name: anpec
-  stars: 2
+  stars: 3
   topics:
   - dart
   - fluuter
