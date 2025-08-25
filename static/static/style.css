@@ -375,6 +375,15 @@ ul.flat li {
         margin-bottom: 15px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .projects .stars img {
+        height: 20px;
+        vertical-align: middle;
+    }
+    .projects .stars iframe {
+        vertical-align: middle;
     }
     .projects .stars .github {
         margin-right: 5px;
@@ -422,7 +431,13 @@ ul.flat li {
         font-size: 0.875rem;
         line-height: 1.2rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    .projects .project-meta img {
+        height: 20px;
+        vertical-align: middle;
     }
     .projects .project-meta span {
         display: block;
