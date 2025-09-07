@@ -106,7 +106,7 @@
   - google-chat
   - monitoring
   - prometheus
-  updated_at: '2025-08-12T06:51:12Z'
+  updated_at: '2025-09-03T07:01:52Z'
   url: https://github.com/mr-karan/cAlert
 - category: services
   description: Utility to extract metrics from arbitary data stores in Prometheus
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17715
+  stars: 17736
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-08-21T15:10:56Z'
+  updated_at: '2025-09-03T06:25:05Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3418
+  stars: 3431
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-08-26T07:15:52Z'
+  updated_at: '2025-09-04T08:03:41Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1148
+  stars: 1149
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -264,7 +264,7 @@
   language: Dart
   license: MIT License
   name: flutter_fgbg
-  stars: 87
+  stars: 88
   topics: []
   updated_at: '2025-02-13T10:09:57Z'
   url: https://github.com/ajinasokan/flutter_fgbg
@@ -274,14 +274,14 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 60
+  stars: 61
   topics:
   - curl
   - flutter
   - http
   - libcurl
   - quic
-  updated_at: '2025-08-22T11:55:18Z'
+  updated_at: '2025-09-03T09:42:01Z'
   url: https://github.com/ajinasokan/flutter_curl
 - category: services
   description: Standalone server for user address and OTP verification flows with
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1013
+  stars: 1015
   topics:
   - broker-backend
   - database
@@ -506,7 +506,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 149
+  stars: 150
   topics:
   - implied-volatility
   - option-chain-stream
@@ -783,7 +783,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1389
+  stars: 1395
   topics:
   - customer-service
   - customer-success
@@ -796,7 +796,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-08-30T16:57:52Z'
+  updated_at: '2025-09-01T21:40:12Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -806,7 +806,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 457
+  stars: 456
   topics:
   - clickhouse
   - log-analytics
