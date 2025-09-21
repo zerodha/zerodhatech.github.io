@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 137
+  stars: 138
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 68
+  stars: 69
   topics:
   - session
   - session-cookie
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 180
+  stars: 181
   topics:
   - alerting
   - alertmanager
@@ -106,7 +106,7 @@
   - google-chat
   - monitoring
   - prometheus
-  updated_at: '2025-09-09T11:26:42Z'
+  updated_at: '2025-09-16T09:17:41Z'
   url: https://github.com/mr-karan/cAlert
 - category: services
   description: Utility to extract metrics from arbitary data stores in Prometheus
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17801
+  stars: 17852
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-09-13T11:40:40Z'
+  updated_at: '2025-09-15T05:47:17Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 76
+  stars: 77
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3441
+  stars: 3491
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-09-04T08:03:41Z'
+  updated_at: '2025-09-15T05:59:34Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1017
+  stars: 1021
   topics:
   - broker-backend
   - database
@@ -373,13 +373,13 @@
   language: Go
   license: Other
   name: simples3
-  stars: 168
+  stars: 169
   topics:
   - aws
   - aws-s3
   - aws-signature-v4
   - golang
-  updated_at: '2025-06-04T09:50:58Z'
+  updated_at: '2025-09-18T11:07:34Z'
   url: https://github.com/rhnvrm/simples3
 - category: libs
   description: Simple frappe app to setup Single sign-on for discourse
@@ -506,7 +506,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 150
+  stars: 152
   topics:
   - implied-volatility
   - option-chain-stream
@@ -596,7 +596,7 @@
   language: Python
   license: Other
   name: frappe_tinymce
-  stars: 43
+  stars: 44
   topics:
   - editor
   - frappe
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 203
+  stars: 204
   topics:
   - android
   - flutter
@@ -772,7 +772,7 @@
   license: Apache License 2.0
   logo: trace.png
   name: trace-chart
-  stars: 14
+  stars: 15
   topics: []
   updated_at: '2025-07-29T06:42:07Z'
   url: https://github.com/srv91/trace-chart
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1482
+  stars: 1651
   topics:
   - customer-service
   - customer-success
@@ -797,7 +797,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-09-13T16:57:21Z'
+  updated_at: '2025-09-20T19:21:28Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -807,12 +807,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 459
+  stars: 462
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-09-10T06:01:24Z'
+  updated_at: '2025-09-18T10:45:56Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
