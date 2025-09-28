@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 185
+  stars: 186
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 138
+  stars: 139
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -77,7 +77,7 @@
   language: Go
   license: MIT License
   name: querytostruct
-  stars: 14
+  stars: 15
   topics: []
   updated_at: '2022-06-09T18:04:52Z'
   url: https://github.com/knadh/querytostruct
@@ -106,7 +106,7 @@
   - google-chat
   - monitoring
   - prometheus
-  updated_at: '2025-09-16T09:17:41Z'
+  updated_at: '2025-09-24T11:08:07Z'
   url: https://github.com/mr-karan/cAlert
 - category: services
   description: Utility to extract metrics from arbitary data stores in Prometheus
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17852
+  stars: 17895
   topics:
   - campaign
   - campaign-management
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 77
+  stars: 78
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3491
+  stars: 3521
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1150
+  stars: 1149
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 464
+  stars: 467
   topics:
   - email-verification
   - mobile-number-verification
@@ -299,7 +299,7 @@
   - otp-verification
   - sms-verification
   - verification-code
-  updated_at: '2025-07-29T13:19:05Z'
+  updated_at: '2025-09-26T07:27:03Z'
   url: https://github.com/knadh/otpgateway
 - category: libs
   description: Osticket plugin to assign tickets automatically to random agents based
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1021
+  stars: 1023
   topics:
   - broker-backend
   - database
@@ -379,7 +379,7 @@
   - aws-s3
   - aws-signature-v4
   - golang
-  updated_at: '2025-09-18T11:07:34Z'
+  updated_at: '2025-09-23T05:10:08Z'
   url: https://github.com/rhnvrm/simples3
 - category: libs
   description: Simple frappe app to setup Single sign-on for discourse
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 430
+  stars: 432
   topics:
   - background-jobs
   - distributed-systems
@@ -693,7 +693,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 76
+  stars: 77
   topics:
   - franz-go
   - high-availability
@@ -772,7 +772,7 @@
   license: Apache License 2.0
   logo: trace.png
   name: trace-chart
-  stars: 15
+  stars: 16
   topics: []
   updated_at: '2025-07-29T06:42:07Z'
   url: https://github.com/srv91/trace-chart
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1651
+  stars: 1673
   topics:
   - customer-service
   - customer-success
@@ -797,7 +797,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-09-20T19:21:28Z'
+  updated_at: '2025-09-26T11:31:35Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -807,19 +807,19 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 462
+  stars: 470
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-09-18T10:45:56Z'
+  updated_at: '2025-09-25T09:41:45Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 8
+  stars: 9
   topics: []
   updated_at: '2025-06-20T14:57:14Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
