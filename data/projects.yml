@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 139
+  stars: 140
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17895
+  stars: 17934
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-09-15T05:47:17Z'
+  updated_at: '2025-10-02T17:38:20Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 78
+  stars: 77
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3521
+  stars: 3535
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-09-15T05:59:34Z'
+  updated_at: '2025-09-29T15:10:02Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 467
+  stars: 469
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1023
+  stars: 1025
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 169
+  stars: 173
   topics:
   - aws
   - aws-s3
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 92
+  stars: 93
   topics: []
   updated_at: '2024-09-21T17:23:03Z'
   url: https://github.com/rhnvrm/linkpage
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 432
+  stars: 433
   topics:
   - background-jobs
   - distributed-systems
@@ -720,12 +720,12 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 204
+  stars: 207
   topics:
   - android
   - flutter
   - flutter-plugin
-  updated_at: '2023-11-17T00:28:03Z'
+  updated_at: '2025-09-30T05:36:29Z'
   url: https://github.com/ajinasokan/flutter_displaymode
 - category: services
   description: Toru is a Go module proxy with caching and rewrite capabilities
@@ -751,7 +751,7 @@
   - html
   - html-to-flutter
   - tagflow
-  updated_at: '2025-06-30T17:14:24Z'
+  updated_at: '2025-10-04T12:12:27Z'
   url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1673
+  stars: 1698
   topics:
   - customer-service
   - customer-success
@@ -797,7 +797,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-09-26T11:31:35Z'
+  updated_at: '2025-10-04T13:00:58Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -807,12 +807,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 470
+  stars: 474
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-09-25T09:41:45Z'
+  updated_at: '2025-10-03T04:59:54Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
@@ -821,7 +821,7 @@
   name: terraform-provider-warpgate
   stars: 9
   topics: []
-  updated_at: '2025-06-20T14:57:14Z'
+  updated_at: '2025-10-04T14:57:00Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
