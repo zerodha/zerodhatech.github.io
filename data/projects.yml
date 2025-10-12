@@ -106,7 +106,7 @@
   - google-chat
   - monitoring
   - prometheus
-  updated_at: '2025-09-24T11:08:07Z'
+  updated_at: '2025-10-06T04:47:19Z'
   url: https://github.com/mr-karan/cAlert
 - category: services
   description: Utility to extract metrics from arbitary data stores in Prometheus
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17934
+  stars: 17979
   topics:
   - campaign
   - campaign-management
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 77
+  stars: 78
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3535
+  stars: 3542
   topics:
   - config
   - config-loader
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1025
+  stars: 1026
   topics:
   - broker-backend
   - database
@@ -745,7 +745,7 @@
   license: MIT License
   logo: tagflow.svg
   name: tagflow
-  stars: 9
+  stars: 10
   topics:
   - flutter
   - html
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1698
+  stars: 1736
   topics:
   - customer-service
   - customer-success
@@ -797,7 +797,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-10-04T13:00:58Z'
+  updated_at: '2025-10-05T09:58:12Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -807,7 +807,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 474
+  stars: 478
   topics:
   - clickhouse
   - log-analytics
@@ -821,7 +821,7 @@
   name: terraform-provider-warpgate
   stars: 9
   topics: []
-  updated_at: '2025-10-04T14:57:00Z'
+  updated_at: '2025-10-08T16:04:41Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -843,9 +843,9 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 15
+  stars: 16
   topics: []
-  updated_at: '2025-08-13T15:02:11Z'
+  updated_at: '2025-10-11T19:24:20Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
