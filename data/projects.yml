@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 181
+  stars: 182
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 17979
+  stars: 18020
   topics:
   - campaign
   - campaign-management
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3542
+  stars: 3550
   topics:
   - config
   - config-loader
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 469
+  stars: 471
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1026
+  stars: 1027
   topics:
   - broker-backend
   - database
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1736
+  stars: 1760
   topics:
   - customer-service
   - customer-success
@@ -807,12 +807,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 478
+  stars: 479
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-10-03T04:59:54Z'
+  updated_at: '2025-10-17T12:05:01Z'
   url: https://github.com/mr-karan/logchef
 - category: services
   description: Terraform Provider for WarpGate
@@ -845,7 +845,7 @@
   name: hedwig
   stars: 16
   topics: []
-  updated_at: '2025-10-11T19:24:20Z'
+  updated_at: '2025-10-16T11:17:55Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
