@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 140
+  stars: 141
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 69
+  stars: 70
   topics:
   - session
   - session-cookie
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18020
+  stars: 18061
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-10-02T17:38:20Z'
+  updated_at: '2025-10-25T12:22:10Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3550
+  stars: 3566
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1149
+  stars: 1150
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1027
+  stars: 1028
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 173
+  stars: 176
   topics:
   - aws
   - aws-s3
@@ -447,7 +447,7 @@
   license: MIT License
   logo: shelf.svg
   name: shelf
-  stars: 35
+  stars: 36
   topics:
   - dotfile-manager
   - dotfiles
@@ -460,7 +460,7 @@
   github_uri: mevinoth/slim-ui
   language: Vue
   name: slim-ui
-  stars: 63
+  stars: 64
   topics:
   - vue
   - vue2
@@ -495,7 +495,7 @@
   language: Go
   license: BSD Zero Clause License
   name: grafana-export
-  stars: 32
+  stars: 33
   topics: []
   updated_at: '2020-11-09T23:06:51Z'
   url: https://github.com/Thunderbottom/grafana-export
@@ -506,7 +506,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 152
+  stars: 153
   topics:
   - implied-volatility
   - option-chain-stream
@@ -596,7 +596,7 @@
   language: Python
   license: Other
   name: frappe_tinymce
-  stars: 44
+  stars: 43
   topics:
   - editor
   - frappe
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 433
+  stars: 434
   topics:
   - background-jobs
   - distributed-systems
@@ -660,7 +660,7 @@
   - jobqueue
   - queue
   - tasqueue
-  updated_at: '2025-07-01T06:30:38Z'
+  updated_at: '2025-10-19T20:24:39Z'
   url: https://github.com/kalbhor/Tasqueue
 - category: services
   description: Lightweight HTTP server to handle webhooks from listmonk and forward
@@ -745,7 +745,7 @@
   license: MIT License
   logo: tagflow.svg
   name: tagflow
-  stars: 10
+  stars: 11
   topics:
   - flutter
   - html
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1760
+  stars: 1781
   topics:
   - customer-service
   - customer-success
@@ -819,9 +819,9 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 9
+  stars: 10
   topics: []
-  updated_at: '2025-10-08T16:04:41Z'
+  updated_at: '2025-10-23T08:37:15Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -845,7 +845,7 @@
   name: hedwig
   stars: 16
   topics: []
-  updated_at: '2025-10-16T11:17:55Z'
+  updated_at: '2025-10-19T17:16:42Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
