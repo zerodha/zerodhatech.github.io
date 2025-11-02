@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 70
+  stars: 71
   topics:
   - session
   - session-cookie
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 182
+  stars: 183
   topics:
   - alerting
   - alertmanager
@@ -106,7 +106,7 @@
   - google-chat
   - monitoring
   - prometheus
-  updated_at: '2025-10-06T04:47:19Z'
+  updated_at: '2025-11-01T13:05:01Z'
   url: https://github.com/mr-karan/cAlert
 - category: services
   description: Utility to extract metrics from arbitary data stores in Prometheus
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18061
+  stars: 18112
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-10-25T12:22:10Z'
+  updated_at: '2025-10-30T14:52:21Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 78
+  stars: 79
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3566
+  stars: 3580
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-09-29T15:10:02Z'
+  updated_at: '2025-10-29T17:34:59Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -243,7 +243,7 @@
   language: Dart
   license: MIT License
   name: autopilot
-  stars: 112
+  stars: 113
   topics: []
   updated_at: '2025-07-31T10:30:35Z'
   url: https://github.com/ajinasokan/autopilot
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 471
+  stars: 472
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1028
+  stars: 1032
   topics:
   - broker-backend
   - database
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 93
+  stars: 94
   topics: []
   updated_at: '2024-09-21T17:23:03Z'
   url: https://github.com/rhnvrm/linkpage
@@ -580,7 +580,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 82
+  stars: 83
   topics:
   - bandwidth-saver
   - browser-cache
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1781
+  stars: 1792
   topics:
   - customer-service
   - customer-success
@@ -807,7 +807,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 479
+  stars: 480
   topics:
   - clickhouse
   - log-analytics
