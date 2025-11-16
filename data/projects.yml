@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 186
+  stars: 187
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 185
+  stars: 186
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18167
+  stars: 18203
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-10-30T14:52:21Z'
+  updated_at: '2025-11-15T10:48:03Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 79
+  stars: 80
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3600
+  stars: 3611
   topics:
   - config
   - config-loader
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1033
+  stars: 1034
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 176
+  stars: 177
   topics:
   - aws
   - aws-s3
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 436
+  stars: 437
   topics:
   - background-jobs
   - distributed-systems
@@ -693,7 +693,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 77
+  stars: 78
   topics:
   - franz-go
   - high-availability
@@ -751,7 +751,7 @@
   - html
   - html-to-flutter
   - tagflow
-  updated_at: '2025-10-04T12:12:27Z'
+  updated_at: '2025-11-14T10:16:17Z'
   url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1800
+  stars: 1805
   topics:
   - customer-service
   - customer-success
@@ -797,7 +797,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-11-03T10:26:43Z'
+  updated_at: '2025-11-11T10:07:11Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -807,7 +807,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 481
+  stars: 480
   topics:
   - clickhouse
   - log-analytics
@@ -821,7 +821,7 @@
   name: terraform-provider-warpgate
   stars: 10
   topics: []
-  updated_at: '2025-10-23T08:37:15Z'
+  updated_at: '2025-11-13T17:25:00Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
