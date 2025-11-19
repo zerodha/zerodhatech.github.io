@@ -814,6 +814,22 @@
   - logging
   updated_at: '2025-10-17T12:05:01Z'
   url: https://github.com/mr-karan/logchef
+- category: apps
+  description: An open source self-service workflow execution platform
+  github_uri: cvhariharan/flowctl
+  language: Go
+  license: Apache License v2.0
+  logo: flowctl.svg
+  name: flowctl
+  stars: 21
+  topics:
+  - workflow
+  - self-service
+  - devops
+  - automation
+  - orchestration
+  updated_at: '2025-11-19T16:08:18Z'
+  url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
   github_uri: warp-tech/terraform-provider-warpgate
