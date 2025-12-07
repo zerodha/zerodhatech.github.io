@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 194
+  stars: 193
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 142
+  stars: 143
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -77,7 +77,7 @@
   language: Go
   license: MIT License
   name: querytostruct
-  stars: 22
+  stars: 21
   topics: []
   updated_at: '2022-06-09T18:04:52Z'
   url: https://github.com/knadh/querytostruct
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 188
+  stars: 190
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18344
+  stars: 18377
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-11-28T11:07:56Z'
+  updated_at: '2025-11-30T19:03:43Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 87
+  stars: 86
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3644
+  stars: 3656
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-11-21T08:40:33Z'
+  updated_at: '2025-12-01T18:54:01Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -338,7 +338,7 @@
   language: HTML
   license: MIT License
   name: gotp
-  stars: 35
+  stars: 36
   topics: []
   updated_at: '2025-09-09T12:23:50Z'
   url: https://github.com/vividvilla/gotp
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1040
+  stars: 1044
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 178
+  stars: 179
   topics:
   - aws
   - aws-s3
@@ -495,7 +495,7 @@
   language: Go
   license: BSD Zero Clause License
   name: grafana-export
-  stars: 33
+  stars: 34
   topics: []
   updated_at: '2020-11-09T23:06:51Z'
   url: https://github.com/Thunderbottom/grafana-export
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 96
+  stars: 98
   topics: []
   updated_at: '2024-09-21T17:23:03Z'
   url: https://github.com/rhnvrm/linkpage
@@ -544,7 +544,7 @@
   language: Go
   license: MIT License
   name: fastglue
-  stars: 82
+  stars: 83
   topics:
   - fastglue
   - fasthttp
@@ -564,7 +564,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 70
+  stars: 69
   topics:
   - mysql
   - postgresql
@@ -580,7 +580,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 91
+  stars: 90
   topics:
   - bandwidth-saver
   - browser-cache
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 437
+  stars: 438
   topics:
   - background-jobs
   - distributed-systems
@@ -710,7 +710,7 @@
   language: Python
   license: MIT License
   name: vendor-payments
-  stars: 26
+  stars: 27
   topics: []
   updated_at: '2023-07-25T18:35:58Z'
   url: https://github.com/zerodha/vendor-payments
@@ -733,7 +733,7 @@
   language: Go
   license: MIT License
   name: toru
-  stars: 25
+  stars: 26
   topics: []
   updated_at: '2025-07-16T06:35:36Z'
   url: https://github.com/mr-karan/toru
@@ -780,11 +780,11 @@
   description: Modern, open source, self-hosted customer support desk. Single binary
     app.
   github_uri: abhinavxd/libredesk
-  language: Vue
+  language: Go
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1827
+  stars: 1841
   topics:
   - customer-service
   - customer-success
@@ -797,7 +797,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-11-26T10:13:51Z'
+  updated_at: '2025-11-30T20:26:36Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -807,12 +807,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 483
+  stars: 484
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-10-17T12:05:01Z'
+  updated_at: '2025-12-04T06:00:24Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -821,7 +821,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 39
+  stars: 62
   topics:
   - automation
   - devops
@@ -831,7 +831,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2025-11-29T15:47:26Z'
+  updated_at: '2025-12-06T16:41:59Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
