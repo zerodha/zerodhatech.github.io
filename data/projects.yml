@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18377
+  stars: 18415
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-11-30T19:03:43Z'
+  updated_at: '2025-12-12T14:07:14Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3656
+  stars: 3666
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1151
+  stars: 1152
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1044
+  stars: 1048
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 179
+  stars: 182
   topics:
   - aws
   - aws-s3
@@ -387,7 +387,7 @@
   language: Python
   license: Other
   name: frappe_discourse
-  stars: 15
+  stars: 16
   topics:
   - discourse
   - discourse-sso
@@ -506,7 +506,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 153
+  stars: 154
   topics:
   - implied-volatility
   - option-chain-stream
@@ -533,9 +533,9 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 98
+  stars: 100
   topics: []
-  updated_at: '2024-09-21T17:23:03Z'
+  updated_at: '2025-12-09T07:32:05Z'
   url: https://github.com/rhnvrm/linkpage
 - category: libs
   description: Fastglue is an opinionated, bare bones wrapper that glues together
@@ -660,7 +660,7 @@
   - jobqueue
   - queue
   - tasqueue
-  updated_at: '2025-10-19T20:24:39Z'
+  updated_at: '2025-12-13T14:05:45Z'
   url: https://github.com/kalbhor/Tasqueue
 - category: services
   description: Lightweight HTTP server to handle webhooks from listmonk and forward
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 211
+  stars: 212
   topics:
   - android
   - flutter
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1841
+  stars: 1849
   topics:
   - customer-service
   - customer-success
@@ -797,7 +797,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-11-30T20:26:36Z'
+  updated_at: '2025-12-12T20:03:32Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -812,7 +812,7 @@
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-12-04T06:00:24Z'
+  updated_at: '2025-12-12T06:14:54Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -821,7 +821,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 62
+  stars: 78
   topics:
   - automation
   - devops
@@ -831,7 +831,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2025-12-06T16:41:59Z'
+  updated_at: '2025-12-13T14:22:37Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
