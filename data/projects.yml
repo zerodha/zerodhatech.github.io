@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 190
+  stars: 191
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18415
+  stars: 18469
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-12-12T14:07:14Z'
+  updated_at: '2025-12-20T15:52:38Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3666
+  stars: 3682
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-12-01T18:54:01Z'
+  updated_at: '2025-12-19T07:46:08Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 480
+  stars: 482
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1048
+  stars: 1051
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 182
+  stars: 184
   topics:
   - aws
   - aws-s3
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 100
+  stars: 102
   topics: []
   updated_at: '2025-12-09T07:32:05Z'
   url: https://github.com/rhnvrm/linkpage
@@ -596,7 +596,7 @@
   language: Python
   license: Other
   name: frappe_tinymce
-  stars: 43
+  stars: 44
   topics:
   - editor
   - frappe
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 438
+  stars: 440
   topics:
   - background-jobs
   - distributed-systems
@@ -693,7 +693,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 79
+  stars: 80
   topics:
   - franz-go
   - high-availability
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 212
+  stars: 213
   topics:
   - android
   - flutter
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1849
+  stars: 1854
   topics:
   - customer-service
   - customer-success
@@ -797,7 +797,7 @@
   - ticketing-system
   - vue
   - vuejs
-  updated_at: '2025-12-12T20:03:32Z'
+  updated_at: '2025-12-20T13:27:24Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -807,12 +807,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 484
+  stars: 485
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-12-12T06:14:54Z'
+  updated_at: '2025-12-20T14:21:26Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -821,7 +821,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 78
+  stars: 80
   topics:
   - automation
   - devops
@@ -831,7 +831,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2025-12-13T14:22:37Z'
+  updated_at: '2025-12-20T16:50:33Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
