@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 193
+  stars: 194
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18469
+  stars: 18509
   topics:
   - campaign
   - campaign-management
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3682
+  stars: 3706
   topics:
   - config
   - config-loader
@@ -243,7 +243,7 @@
   language: Dart
   license: MIT License
   name: autopilot
-  stars: 114
+  stars: 115
   topics: []
   updated_at: '2025-07-31T10:30:35Z'
   url: https://github.com/ajinasokan/autopilot
@@ -264,7 +264,7 @@
   language: Dart
   license: MIT License
   name: flutter_fgbg
-  stars: 88
+  stars: 89
   topics: []
   updated_at: '2025-02-13T10:09:57Z'
   url: https://github.com/ajinasokan/flutter_fgbg
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1051
+  stars: 1057
   topics:
   - broker-backend
   - database
@@ -506,7 +506,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 154
+  stars: 155
   topics:
   - implied-volatility
   - option-chain-stream
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 102
+  stars: 103
   topics: []
   updated_at: '2025-12-09T07:32:05Z'
   url: https://github.com/rhnvrm/linkpage
@@ -544,7 +544,7 @@
   language: Go
   license: MIT License
   name: fastglue
-  stars: 83
+  stars: 85
   topics:
   - fastglue
   - fasthttp
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 213
+  stars: 216
   topics:
   - android
   - flutter
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1854
+  stars: 1863
   topics:
   - customer-service
   - customer-success
@@ -793,11 +793,9 @@
   - golang
   - helpdesk
   - support
-  - ticketing
   - ticketing-system
   - vue
-  - vuejs
-  updated_at: '2025-12-20T13:27:24Z'
+  updated_at: '2025-12-27T14:55:19Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -807,12 +805,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 485
+  stars: 602
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-12-20T14:21:26Z'
+  updated_at: '2025-12-26T13:09:03Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -821,7 +819,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 80
+  stars: 160
   topics:
   - automation
   - devops
@@ -831,7 +829,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2025-12-20T16:50:33Z'
+  updated_at: '2025-12-26T06:02:04Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
