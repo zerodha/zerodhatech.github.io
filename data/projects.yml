@@ -883,6 +883,7 @@
   github_uri: iamd3vil/blobasaur
   language: Rust
   license: GNU Affero General Public License v3.0
+  logo: blobasaur.svg
   name: blobasaur
   stars: 16
   topics: []
