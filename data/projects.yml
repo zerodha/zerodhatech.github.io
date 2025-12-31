@@ -888,3 +888,23 @@
   topics: []
   updated_at: '2025-12-30T10:25:38Z'
   url: https://github.com/iamd3vil/blobasaur
+- category: apps
+  description: Whatomate is a WhatsApp Business API platform that enables businesses to manage customer conversations, automate responses with chatbots, and run campaigns.
+  github_uri: shridarpatil/whatomate
+  language: Go
+  license: GNU Affero General Public License v3.0
+  logo: whatomate.svg
+  name: whatomate
+  stars: 5
+  topics:
+  - whatsapp
+  - whatsapp-api
+  - whatsapp-business
+  - chatbot
+  - messaging-platform
+  - customer-support
+  - bulk-messaging
+  - ai-chatbot
+  - real-time-chat
+  updated_at: '2025-12-31T15:52:38Z'
+  url: https://github.com/shridarpatil/whatomate
