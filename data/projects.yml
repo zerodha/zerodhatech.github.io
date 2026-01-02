@@ -909,3 +909,23 @@
   - real-time-chat
   updated_at: '2025-12-31T15:52:38Z'
   url: https://github.com/shridarpatil/whatomate
+- category: apps
+  description: ExamPro is a proctored examination system for Frappe Framework that enables secure, video-monitored exams with live proctoring, real-time chat, flexible question types, and automated digital certificate generation.
+  github_uri: lebmatter/exampro
+  language: Python
+  license: MIT License
+  logo: exampro.png
+  name: exampro
+  stars: 9
+  topics:
+    - frappe
+    - proctored-exam
+    - exam-proctoring
+    - online-exams
+    - video-monitoring
+    - education
+    - digital-certificates
+    - live-chat
+    - e-learning
+  updated_at: '2025-01-02T00:00:00Z'
+  url: https://github.com/lebmatter/exampro
