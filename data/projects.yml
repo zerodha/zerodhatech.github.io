@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18509
+  stars: 18581
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2025-12-20T15:52:38Z'
+  updated_at: '2026-01-02T17:40:25Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3706
+  stars: 3724
   topics:
   - config
   - config-loader
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 482
+  stars: 483
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1057
+  stars: 1059
   topics:
   - broker-backend
   - database
@@ -564,7 +564,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 69
+  stars: 70
   topics:
   - mysql
   - postgresql
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 216
+  stars: 217
   topics:
   - android
   - flutter
@@ -784,18 +784,21 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1863
+  stars: 1954
   topics:
+  - conversation
+  - conversations
   - customer-service
   - customer-success
   - customer-support
   - customer-support-automation
   - golang
   - helpdesk
+  - intercom
   - support
   - ticketing-system
   - vue
-  updated_at: '2025-12-27T14:55:19Z'
+  updated_at: '2026-01-02T08:34:53Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -805,12 +808,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 602
+  stars: 614
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-12-26T13:09:03Z'
+  updated_at: '2025-12-30T09:00:39Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -819,7 +822,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 160
+  stars: 165
   topics:
   - automation
   - devops
@@ -829,7 +832,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2025-12-26T06:02:04Z'
+  updated_at: '2026-01-01T05:17:35Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
@@ -838,7 +841,7 @@
   name: terraform-provider-warpgate
   stars: 11
   topics: []
-  updated_at: '2025-11-23T12:59:38Z'
+  updated_at: '2026-01-03T22:46:19Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -860,9 +863,9 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 17
+  stars: 18
   topics: []
-  updated_at: '2025-10-19T17:16:42Z'
+  updated_at: '2025-12-29T17:32:36Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -887,45 +890,27 @@
   name: blobasaur
   stars: 16
   topics: []
-  updated_at: '2025-12-30T10:25:38Z'
+  updated_at: '2025-12-30T10:25:34Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
-  description: Whatomate is a WhatsApp Business API platform that enables businesses to manage customer conversations, automate responses with chatbots, and run campaigns.
+  description: Whatomate is an open-source WhatsApp integration
   github_uri: shridarpatil/whatomate
-  language: Go
-  license: GNU Affero General Public License v3.0
+  language: Vue
+  license: Other
   logo: whatomate.svg
   name: whatomate
   stars: 5
-  topics:
-  - whatsapp
-  - whatsapp-api
-  - whatsapp-business
-  - chatbot
-  - messaging-platform
-  - customer-support
-  - bulk-messaging
-  - ai-chatbot
-  - real-time-chat
-  updated_at: '2025-12-31T15:52:38Z'
+  topics: []
+  updated_at: '2026-01-02T07:56:35Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
-  description: ExamPro is a proctored examination system for Frappe Framework that enables secure, video-monitored exams with live proctoring, real-time chat, flexible question types, and automated digital certificate generation.
+  description: Proctored Exams for Frappe Framework
   github_uri: lebmatter/exampro
   language: Python
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 9
-  topics:
-    - frappe
-    - proctored-exam
-    - exam-proctoring
-    - online-exams
-    - video-monitoring
-    - education
-    - digital-certificates
-    - live-chat
-    - e-learning
-  updated_at: '2025-01-02T00:00:00Z'
+  stars: 10
+  topics: []
+  updated_at: '2025-09-12T06:21:42Z'
   url: https://github.com/lebmatter/exampro
