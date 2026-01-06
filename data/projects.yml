@@ -896,10 +896,10 @@
   description: Whatomate is an open-source WhatsApp integration
   github_uri: shridarpatil/whatomate
   language: Vue
-  license: Other
+  license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 5
+  stars: 80
   topics: []
   updated_at: '2026-01-02T07:56:35Z'
   url: https://github.com/shridarpatil/whatomate
