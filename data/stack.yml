@@ -249,3 +249,7 @@
 - category: SIEM
   name: Wazuh
   url: https://wazuh.com/
+
+- category: SIEM
+  name: DFIR-IRIS
+  url: https://www.dfir-iris.org/
