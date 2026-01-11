@@ -3,7 +3,7 @@
   github_uri: vividvilla/lil
   language: Go
   name: lil
-  stars: 47
+  stars: 52
   topics: []
   updated_at: '2020-04-24T05:52:18Z'
   url: https://github.com/vividvilla/lil
@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 194
+  stars: 196
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -25,7 +25,7 @@
   language: Go
   license: MIT License
   name: consul-cfg
-  stars: 14
+  stars: 15
   topics: []
   updated_at: '2018-11-09T07:47:10Z'
   url: https://github.com/vividvilla/consul-cfg
@@ -35,7 +35,7 @@
   language: Go
   license: MIT License
   name: kubekutr
-  stars: 159
+  stars: 160
   topics:
   - gitops
   - kubernetes
@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 143
+  stars: 145
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -87,7 +87,7 @@
   language: Dockerfile
   license: MIT License
   name: eks-gitops
-  stars: 7
+  stars: 9
   topics: []
   updated_at: '2022-01-27T14:53:13Z'
   url: https://github.com/mr-karan/eks-gitops
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 191
+  stars: 194
   topics:
   - alerting
   - alertmanager
@@ -106,7 +106,7 @@
   - google-chat
   - monitoring
   - prometheus
-  updated_at: '2025-11-01T13:05:01Z'
+  updated_at: '2026-01-08T11:31:42Z'
   url: https://github.com/mr-karan/cAlert
 - category: services
   description: Utility to extract metrics from arbitary data stores in Prometheus
@@ -115,7 +115,7 @@
   language: Go
   license: MIT License
   name: store-exporter
-  stars: 32
+  stars: 33
   topics:
   - devops
   - exporter
@@ -132,7 +132,7 @@
   language: Python
   license: MIT License
   name: pdf_text_overlay
-  stars: 32
+  stars: 37
   topics: []
   updated_at: '2025-05-09T05:51:31Z'
   url: https://github.com/zerodhatech/pdf_text_overlay
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18581
+  stars: 18701
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-01-02T17:40:25Z'
+  updated_at: '2026-01-10T08:08:50Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 86
+  stars: 89
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3724
+  stars: 3738
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2025-12-19T07:46:08Z'
+  updated_at: '2026-01-04T07:30:59Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1152
+  stars: 1163
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -230,7 +230,7 @@
   language: Dart
   license: MIT License
   name: store_keeper
-  stars: 35
+  stars: 36
   topics:
   - flutter
   - state-management
@@ -243,7 +243,7 @@
   language: Dart
   license: MIT License
   name: autopilot
-  stars: 115
+  stars: 120
   topics: []
   updated_at: '2025-07-31T10:30:35Z'
   url: https://github.com/ajinasokan/autopilot
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 483
+  stars: 502
   topics:
   - email-verification
   - mobile-number-verification
@@ -328,7 +328,7 @@
   language: Go
   license: MIT License
   name: simplehealth
-  stars: 11
+  stars: 12
   topics: []
   updated_at: '2020-09-22T09:15:47Z'
   url: https://github.com/mr-karan/simplehealth
@@ -338,7 +338,7 @@
   language: HTML
   license: MIT License
   name: gotp
-  stars: 36
+  stars: 38
   topics: []
   updated_at: '2025-09-09T12:23:50Z'
   url: https://github.com/vividvilla/gotp
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1059
+  stars: 1074
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 184
+  stars: 186
   topics:
   - aws
   - aws-s3
@@ -387,7 +387,7 @@
   language: Python
   license: Other
   name: frappe_discourse
-  stars: 16
+  stars: 17
   topics:
   - discourse
   - discourse-sso
@@ -401,7 +401,7 @@
   github_uri: zerodhatech/rbiparser
   language: Python
   name: rbiparser
-  stars: 57
+  stars: 60
   topics: []
   updated_at: '2023-11-30T08:20:55Z'
   url: https://github.com/zerodhatech/rbiparser
@@ -411,7 +411,7 @@
   language: Python
   license: Other
   name: subscription_coupons
-  stars: 12
+  stars: 15
   topics: []
   updated_at: '2020-09-22T05:13:33Z'
   url: https://github.com/zerodhatech/subscription_coupons
@@ -436,7 +436,7 @@
   language: Python
   license: MIT License
   name: rms-consolidated-scrips-status
-  stars: 19
+  stars: 20
   topics: []
   updated_at: '2020-07-22T10:44:16Z'
   url: https://github.com/zerodhatech/rms-consolidated-scrips-status
@@ -447,7 +447,7 @@
   license: MIT License
   logo: shelf.svg
   name: shelf
-  stars: 36
+  stars: 38
   topics:
   - dotfile-manager
   - dotfiles
@@ -460,7 +460,7 @@
   github_uri: mevinoth/slim-ui
   language: Vue
   name: slim-ui
-  stars: 64
+  stars: 65
   topics:
   - vue
   - vue2
@@ -474,7 +474,7 @@
   language: Go
   license: MIT License
   name: aws-exporter
-  stars: 22
+  stars: 24
   topics: []
   updated_at: '2020-09-30T08:11:01Z'
   url: https://github.com/Thunderbottom/aws-exporter
@@ -484,7 +484,7 @@
   language: Python
   license: MIT License
   name: faqgenerator
-  stars: 6
+  stars: 7
   topics: []
   updated_at: '2020-10-30T03:49:33Z'
   url: https://github.com/ranjanrak/FaqGenerator
@@ -495,7 +495,7 @@
   language: Go
   license: BSD Zero Clause License
   name: grafana-export
-  stars: 34
+  stars: 36
   topics: []
   updated_at: '2020-11-09T23:06:51Z'
   url: https://github.com/Thunderbottom/grafana-export
@@ -520,7 +520,7 @@
   language: Python
   license: MIT License
   name: kong-service-exporter
-  stars: 8
+  stars: 9
   topics:
   - kong
   updated_at: '2021-03-30T06:45:29Z'
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 103
+  stars: 124
   topics: []
   updated_at: '2025-12-09T07:32:05Z'
   url: https://github.com/rhnvrm/linkpage
@@ -580,7 +580,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 90
+  stars: 91
   topics:
   - bandwidth-saver
   - browser-cache
@@ -614,7 +614,7 @@
   language: Go
   license: MIT License
   name: nomad-events-sink
-  stars: 53
+  stars: 54
   topics:
   - nomad
   updated_at: '2023-06-21T05:45:50Z'
@@ -625,7 +625,7 @@
   language: Go
   license: MIT License
   name: nomctx
-  stars: 54
+  stars: 55
   topics:
   - nomad
   updated_at: '2024-10-10T07:33:34Z'
@@ -637,7 +637,7 @@
   language: Jinja
   license: MIT License
   name: localhashi
-  stars: 11
+  stars: 12
   topics:
   - consul
   - nomad
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 440
+  stars: 451
   topics:
   - background-jobs
   - distributed-systems
@@ -669,7 +669,7 @@
   language: Go
   license: MIT License
   name: listmonk-messenger
-  stars: 68
+  stars: 70
   topics:
   - listmonk
   - messenger
@@ -682,7 +682,7 @@
   language: Jinja
   license: MIT License
   name: kaf-ansible
-  stars: 8
+  stars: 9
   topics: []
   updated_at: '2023-10-05T13:56:20Z'
   url: https://github.com/joeirimpan/kaf-ansible
@@ -693,7 +693,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 80
+  stars: 83
   topics:
   - franz-go
   - high-availability
@@ -710,7 +710,7 @@
   language: Python
   license: MIT License
   name: vendor-payments
-  stars: 27
+  stars: 30
   topics: []
   updated_at: '2023-07-25T18:35:58Z'
   url: https://github.com/zerodha/vendor-payments
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 217
+  stars: 218
   topics:
   - android
   - flutter
@@ -733,7 +733,7 @@
   language: Go
   license: MIT License
   name: toru
-  stars: 26
+  stars: 28
   topics: []
   updated_at: '2025-07-16T06:35:36Z'
   url: https://github.com/mr-karan/toru
@@ -745,7 +745,7 @@
   license: MIT License
   logo: tagflow.svg
   name: tagflow
-  stars: 11
+  stars: 19
   topics:
   - flutter
   - html
@@ -772,7 +772,7 @@
   license: Apache License 2.0
   logo: trace.png
   name: trace-chart
-  stars: 16
+  stars: 22
   topics: []
   updated_at: '2025-07-29T06:42:07Z'
   url: https://github.com/srv91/trace-chart
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 1954
+  stars: 2062
   topics:
   - conversation
   - conversations
@@ -798,7 +798,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-01-02T08:34:53Z'
+  updated_at: '2026-01-08T22:07:48Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -808,12 +808,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 614
+  stars: 643
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2025-12-30T09:00:39Z'
+  updated_at: '2026-01-06T11:27:48Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -822,7 +822,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 165
+  stars: 209
   topics:
   - automation
   - devops
@@ -832,14 +832,14 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-01-01T05:17:35Z'
+  updated_at: '2026-01-10T09:42:12Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 11
+  stars: 13
   topics: []
   updated_at: '2026-01-03T22:46:19Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -849,7 +849,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: damon
-  stars: 14
+  stars: 15
   topics:
   - golang
   - hashicorp
@@ -863,9 +863,9 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 18
+  stars: 37
   topics: []
-  updated_at: '2025-12-29T17:32:36Z'
+  updated_at: '2026-01-07T07:20:06Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -888,20 +888,20 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 16
+  stars: 36
   topics: []
   updated_at: '2025-12-30T10:25:34Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
   github_uri: shridarpatil/whatomate
-  language: Vue
+  language: Go
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 80
+  stars: 245
   topics: []
-  updated_at: '2026-01-02T07:56:35Z'
+  updated_at: '2026-01-10T16:38:48Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -910,7 +910,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 10
+  stars: 38
   topics: []
-  updated_at: '2025-09-12T06:21:42Z'
+  updated_at: '2026-01-08T07:44:07Z'
   url: https://github.com/lebmatter/exampro
