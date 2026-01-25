@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 71
+  stars: 72
   topics:
   - session
   - session-cookie
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18752
+  stars: 18826
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-01-15T08:34:21Z'
+  updated_at: '2026-01-24T10:39:10Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 90
+  stars: 91
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3758
+  stars: 3763
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-01-04T07:30:59Z'
+  updated_at: '2026-01-24T06:22:16Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 505
+  stars: 504
   topics:
   - email-verification
   - mobile-number-verification
@@ -318,7 +318,7 @@
   language: Go
   license: MIT License
   name: go-frappe-client
-  stars: 11
+  stars: 12
   topics: []
   updated_at: '2020-09-24T05:40:47Z'
   url: https://github.com/joeirimpan/go-frappe-client
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1076
+  stars: 1083
   topics:
   - broker-backend
   - database
@@ -373,13 +373,13 @@
   language: Go
   license: Other
   name: simples3
-  stars: 186
+  stars: 188
   topics:
   - aws
   - aws-s3
   - aws-signature-v4
   - golang
-  updated_at: '2025-11-27T12:10:29Z'
+  updated_at: '2026-01-23T07:01:21Z'
   url: https://github.com/rhnvrm/simples3
 - category: libs
   description: Simple frappe app to setup Single sign-on for discourse
@@ -544,7 +544,7 @@
   language: Go
   license: MIT License
   name: fastglue
-  stars: 87
+  stars: 88
   topics:
   - fastglue
   - fasthttp
@@ -710,7 +710,7 @@
   language: Python
   license: MIT License
   name: vendor-payments
-  stars: 32
+  stars: 33
   topics: []
   updated_at: '2023-07-25T18:35:58Z'
   url: https://github.com/zerodha/vendor-payments
@@ -772,7 +772,7 @@
   license: Apache License 2.0
   logo: trace.png
   name: trace-chart
-  stars: 23
+  stars: 24
   topics: []
   updated_at: '2025-07-29T06:42:07Z'
   url: https://github.com/srv91/trace-chart
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2083
+  stars: 2101
   topics:
   - conversation
   - conversations
@@ -798,7 +798,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-01-17T12:52:48Z'
+  updated_at: '2026-01-24T22:00:41Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -808,12 +808,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 648
+  stars: 654
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-01-16T11:16:06Z'
+  updated_at: '2026-01-22T10:46:26Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -822,7 +822,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 211
+  stars: 218
   topics:
   - automation
   - devops
@@ -832,16 +832,16 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-01-16T04:56:41Z'
+  updated_at: '2026-01-23T13:20:35Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 13
+  stars: 14
   topics: []
-  updated_at: '2026-01-03T22:46:19Z'
+  updated_at: '2026-01-22T13:48:41Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -888,7 +888,7 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 37
+  stars: 38
   topics: []
   updated_at: '2025-12-30T10:25:34Z'
   url: https://github.com/iamd3vil/blobasaur
@@ -899,9 +899,9 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 715
+  stars: 825
   topics: []
-  updated_at: '2026-01-17T17:16:22Z'
+  updated_at: '2026-01-24T11:50:24Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -910,7 +910,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 42
+  stars: 48
   topics: []
   updated_at: '2026-01-08T07:44:07Z'
   url: https://github.com/lebmatter/exampro
