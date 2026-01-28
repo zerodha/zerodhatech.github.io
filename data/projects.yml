@@ -457,7 +457,7 @@
   url: https://github.com/iamd3vil/shelf
 - category: libs
   description: Simple components library used for building lightweight vuejs projects
-  github_uri: mevinoth/slim-ui
+  github_uri: itzvinoth/slim-ui
   language: Vue
   name: slim-ui
   stars: 65
@@ -467,7 +467,7 @@
   - vuejs
   - vuejs-components
   updated_at: '2024-05-22T08:39:15Z'
-  url: https://github.com/mevinoth/slim-ui
+  url: https://github.com/itzvinoth/slim-ui
 - category: utils
   description: AWS Cost Explorer and EC2 Instance metrics exporter for Prometheus
   github_uri: Thunderbottom/aws-exporter
