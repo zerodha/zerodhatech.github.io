@@ -3,7 +3,7 @@
   github_uri: vividvilla/lil
   language: Go
   name: lil
-  stars: 55
+  stars: 57
   topics: []
   updated_at: '2020-04-24T05:52:18Z'
   url: https://github.com/vividvilla/lil
@@ -35,7 +35,7 @@
   language: Go
   license: MIT License
   name: kubekutr
-  stars: 161
+  stars: 162
   topics:
   - gitops
   - kubernetes
@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 148
+  stars: 149
   topics: []
   updated_at: '2025-04-28T05:43:13Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 73
+  stars: 74
   topics:
   - session
   - session-cookie
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 196
+  stars: 197
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 18919
+  stars: 18978
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-01-30T03:07:14Z'
+  updated_at: '2026-02-05T03:10:30Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3826
+  stars: 3842
   topics:
   - config
   - config-loader
@@ -243,7 +243,7 @@
   language: Dart
   license: MIT License
   name: autopilot
-  stars: 123
+  stars: 125
   topics: []
   updated_at: '2025-07-31T10:30:35Z'
   url: https://github.com/ajinasokan/autopilot
@@ -264,7 +264,7 @@
   language: Dart
   license: MIT License
   name: flutter_fgbg
-  stars: 90
+  stars: 91
   topics: []
   updated_at: '2025-02-13T10:09:57Z'
   url: https://github.com/ajinasokan/flutter_fgbg
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 508
+  stars: 509
   topics:
   - email-verification
   - mobile-number-verification
@@ -299,7 +299,7 @@
   - otp-verification
   - sms-verification
   - verification-code
-  updated_at: '2025-09-26T07:27:03Z'
+  updated_at: '2026-02-06T05:30:18Z'
   url: https://github.com/knadh/otpgateway
 - category: libs
   description: Osticket plugin to assign tickets automatically to random agents based
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1114
+  stars: 1140
   topics:
   - broker-backend
   - database
@@ -373,7 +373,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 192
+  stars: 194
   topics:
   - aws
   - aws-s3
@@ -495,7 +495,7 @@
   language: Go
   license: BSD Zero Clause License
   name: grafana-export
-  stars: 39
+  stars: 41
   topics: []
   updated_at: '2020-11-09T23:06:51Z'
   url: https://github.com/Thunderbottom/grafana-export
@@ -520,7 +520,7 @@
   language: Python
   license: MIT License
   name: kong-service-exporter
-  stars: 12
+  stars: 13
   topics:
   - kong
   updated_at: '2021-03-30T06:45:29Z'
@@ -533,7 +533,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 130
+  stars: 132
   topics: []
   updated_at: '2025-12-09T07:32:05Z'
   url: https://github.com/rhnvrm/linkpage
@@ -625,7 +625,7 @@
   language: Go
   license: MIT License
   name: nomctx
-  stars: 56
+  stars: 57
   topics:
   - nomad
   updated_at: '2024-10-10T07:33:34Z'
@@ -651,7 +651,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 456
+  stars: 459
   topics:
   - background-jobs
   - distributed-systems
@@ -669,7 +669,7 @@
   language: Go
   license: MIT License
   name: listmonk-messenger
-  stars: 72
+  stars: 73
   topics:
   - listmonk
   - messenger
@@ -693,7 +693,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 87
+  stars: 89
   topics:
   - franz-go
   - high-availability
@@ -720,7 +720,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 220
+  stars: 221
   topics:
   - android
   - flutter
@@ -784,7 +784,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2122
+  stars: 2284
   topics:
   - conversation
   - conversations
@@ -808,12 +808,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 660
+  stars: 695
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-01-28T11:22:07Z'
+  updated_at: '2026-02-05T18:11:25Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -822,7 +822,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 223
+  stars: 226
   topics:
   - automation
   - devops
@@ -839,7 +839,7 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 16
+  stars: 17
   topics: []
   updated_at: '2026-01-25T15:43:23Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -864,8 +864,13 @@
   logo: hedwig.svg
   name: hedwig
   stars: 46
-  topics: []
-  updated_at: '2026-01-27T17:39:06Z'
+  topics:
+  - mail-server
+  - rust
+  - rust-smtp
+  - smtp
+  - smtp-server
+  updated_at: '2026-02-03T07:44:33Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -888,7 +893,7 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 40
+  stars: 41
   topics: []
   updated_at: '2025-12-30T10:25:34Z'
   url: https://github.com/iamd3vil/blobasaur
@@ -899,9 +904,9 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 865
+  stars: 879
   topics: []
-  updated_at: '2026-01-31T05:32:50Z'
+  updated_at: '2026-02-07T12:56:14Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -910,7 +915,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 49
+  stars: 50
   topics: []
   updated_at: '2026-01-08T07:44:07Z'
   url: https://github.com/lebmatter/exampro
