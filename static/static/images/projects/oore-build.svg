@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <circle id="cut" cx="16" cy="16" r="7" />
+    <mask id="hole">
+      <rect x="0" y="0" width="32" height="32" fill="white" />
+      <use href="#cut" fill="black" />
+    </mask>
+    <clipPath id="left">
+      <rect x="0" y="0" width="15" height="32" />
+    </clipPath>
+    <clipPath id="right">
+      <rect x="17" y="0" width="15" height="32" />
+    </clipPath>
+  </defs>
+  <rect
+    x="2"
+    y="2"
+    width="28"
+    height="28"
+    rx="6"
+    fill="#dc7702"
+    clip-path="url(#left)"
+    mask="url(#hole)"
+  />
+  <rect
+    x="2"
+    y="2"
+    width="28"
+    height="28"
+    rx="6"
+    fill="#dc7702"
+    clip-path="url(#right)"
+    mask="url(#hole)"
+  />
+</svg>
