@@ -919,3 +919,20 @@
   topics: []
   updated_at: '2026-01-08T07:44:07Z'
   url: https://github.com/lebmatter/exampro
+- category: apps
+  description: Self-hosted, Flutter-first mobile CI and internal app distribution
+    platform.
+  github_uri: devaryakjha/oore.build
+  language: Rust
+  license: MIT License
+  logo: oore-build.svg
+  name: oore.build
+  stars: 0
+  topics:
+  - app-distribution
+  - ci
+  - flutter
+  - mobile-ci
+  - self-hosted
+  updated_at: '2026-02-18T10:07:00Z'
+  url: https://github.com/devaryakjha/oore.build
