@@ -367,6 +367,16 @@
   updated_at: '2025-08-14T12:21:18Z'
   url: https://github.com/knadh/sql-jobber
 - category: libs
+  description: Pure Go LZO1Z compression and decompression library
+  github_uri: rhnvrm/lzo1z
+  language: Go
+  license: MIT License
+  name: lzo1z
+  stars: 3
+  topics: []
+  updated_at: '2026-02-20T06:22:17Z'
+  url: https://github.com/rhnvrm/lzo1z
+- category: libs
   description: Simple no frills AWS S3 Golang Library using REST with V4 Signing (without
     AWS Go SDK)
   github_uri: rhnvrm/simples3
