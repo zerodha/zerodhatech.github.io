@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 197
+  stars: 199
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 75
+  stars: 77
   topics:
   - session
   - session-cookie
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 197
+  stars: 198
   topics:
   - alerting
   - alertmanager
@@ -132,7 +132,7 @@
   language: Python
   license: MIT License
   name: pdf_text_overlay
-  stars: 40
+  stars: 41
   topics: []
   updated_at: '2025-05-09T05:51:31Z'
   url: https://github.com/zerodhatech/pdf_text_overlay
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19044
+  stars: 19098
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-02-14T10:14:01Z'
+  updated_at: '2026-02-19T16:34:56Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3856
+  stars: 3871
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-01-25T06:13:10Z'
+  updated_at: '2026-02-19T19:20:57Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -243,7 +243,7 @@
   language: Dart
   license: MIT License
   name: autopilot
-  stars: 125
+  stars: 126
   topics: []
   updated_at: '2025-07-31T10:30:35Z'
   url: https://github.com/ajinasokan/autopilot
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 512
+  stars: 516
   topics:
   - email-verification
   - mobile-number-verification
@@ -338,7 +338,7 @@
   language: HTML
   license: MIT License
   name: gotp
-  stars: 41
+  stars: 42
   topics: []
   updated_at: '2025-09-09T12:23:50Z'
   url: https://github.com/vividvilla/gotp
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1158
+  stars: 1173
   topics:
   - broker-backend
   - database
@@ -364,7 +364,7 @@
   - sql
   - sql-query
   - workers
-  updated_at: '2025-08-14T12:21:18Z'
+  updated_at: '2026-02-19T19:24:38Z'
   url: https://github.com/knadh/sql-jobber
 - category: libs
   description: Pure Go LZO1Z compression and decompression library
@@ -372,9 +372,9 @@
   language: Go
   license: MIT License
   name: lzo1z
-  stars: 3
+  stars: 5
   topics: []
-  updated_at: '2026-02-20T06:22:17Z'
+  updated_at: '2026-02-20T06:22:30Z'
   url: https://github.com/rhnvrm/lzo1z
 - category: libs
   description: Simple no frills AWS S3 Golang Library using REST with V4 Signing (without
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 194
+  stars: 197
   topics:
   - aws
   - aws-s3
@@ -505,7 +505,7 @@
   language: Go
   license: BSD Zero Clause License
   name: grafana-export
-  stars: 41
+  stars: 42
   topics: []
   updated_at: '2020-11-09T23:06:51Z'
   url: https://github.com/Thunderbottom/grafana-export
@@ -516,7 +516,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 158
+  stars: 159
   topics:
   - implied-volatility
   - option-chain-stream
@@ -590,7 +590,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 99
+  stars: 120
   topics:
   - bandwidth-saver
   - browser-cache
@@ -635,7 +635,7 @@
   language: Go
   license: MIT License
   name: nomctx
-  stars: 57
+  stars: 58
   topics:
   - nomad
   updated_at: '2024-10-10T07:33:34Z'
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2306
+  stars: 2319
   topics:
   - conversation
   - conversations
@@ -808,7 +808,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-02-13T06:56:32Z'
+  updated_at: '2026-02-19T19:37:02Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -818,7 +818,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 712
+  stars: 719
   topics:
   - clickhouse
   - log-analytics
@@ -832,7 +832,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 237
+  stars: 244
   topics:
   - automation
   - devops
@@ -842,7 +842,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-02-09T05:17:57Z'
+  updated_at: '2026-02-20T11:31:18Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
@@ -873,7 +873,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 46
+  stars: 47
   topics:
   - mail-server
   - rust
@@ -903,9 +903,9 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 41
+  stars: 42
   topics: []
-  updated_at: '2026-02-14T15:55:07Z'
+  updated_at: '2026-02-21T17:41:12Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
@@ -914,9 +914,9 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 898
+  stars: 909
   topics: []
-  updated_at: '2026-02-13T11:11:46Z'
+  updated_at: '2026-02-21T07:08:34Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -937,12 +937,13 @@
   license: MIT License
   logo: oore-build.svg
   name: oore.build
-  stars: 0
+  stars: 14
   topics:
-  - app-distribution
   - ci
+  - ci-cd
+  - cicd
+  - dart
   - flutter
-  - mobile-ci
-  - self-hosted
-  updated_at: '2026-02-18T10:07:00Z'
+  - rust
+  updated_at: '2026-02-18T10:07:03Z'
   url: https://github.com/devaryakjha/oore.build
