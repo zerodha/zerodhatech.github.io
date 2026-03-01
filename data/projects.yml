@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 199
+  stars: 200
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -50,7 +50,7 @@
   name: frappe-attachments-s3
   stars: 149
   topics: []
-  updated_at: '2025-04-28T05:43:13Z'
+  updated_at: '2026-02-28T07:25:01Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
 - category: libs
   description: simplesessions is a Go session management library that is completely
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 77
+  stars: 78
   topics:
   - session
   - session-cookie
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 198
+  stars: 199
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19098
+  stars: 19150
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-02-19T16:34:56Z'
+  updated_at: '2026-02-28T02:58:52Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3871
+  stars: 3885
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-02-19T19:20:57Z'
+  updated_at: '2026-02-24T17:23:33Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1168
+  stars: 1169
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 516
+  stars: 517
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1173
+  stars: 1184
   topics:
   - broker-backend
   - database
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 197
+  stars: 196
   topics:
   - aws
   - aws-s3
@@ -543,7 +543,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 132
+  stars: 131
   topics: []
   updated_at: '2025-12-09T07:32:05Z'
   url: https://github.com/rhnvrm/linkpage
@@ -590,7 +590,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 120
+  stars: 123
   topics:
   - bandwidth-saver
   - browser-cache
@@ -606,7 +606,7 @@
   language: Python
   license: Other
   name: frappe_tinymce
-  stars: 46
+  stars: 47
   topics:
   - editor
   - frappe
@@ -703,7 +703,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 89
+  stars: 94
   topics:
   - franz-go
   - high-availability
@@ -711,7 +711,7 @@
   - kafka-consumer
   - kafka-producer
   - kafka-replicator
-  updated_at: '2026-02-09T10:37:09Z'
+  updated_at: '2026-02-26T12:04:02Z'
   url: https://github.com/zerodha/kaf-relay
 - category: utils
   description: A frappe app that has workflows and reports to make payments to vendors
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2319
+  stars: 2333
   topics:
   - conversation
   - conversations
@@ -808,7 +808,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-02-19T19:37:02Z'
+  updated_at: '2026-02-26T10:49:16Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -818,7 +818,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 719
+  stars: 725
   topics:
   - clickhouse
   - log-analytics
@@ -832,7 +832,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 244
+  stars: 287
   topics:
   - automation
   - devops
@@ -842,7 +842,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-02-20T11:31:18Z'
+  updated_at: '2026-02-28T15:58:19Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
@@ -905,7 +905,7 @@
   name: blobasaur
   stars: 42
   topics: []
-  updated_at: '2026-02-21T17:41:12Z'
+  updated_at: '2026-02-28T06:42:12Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
@@ -914,9 +914,9 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 909
+  stars: 918
   topics: []
-  updated_at: '2026-02-21T07:08:34Z'
+  updated_at: '2026-02-28T22:39:13Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -945,5 +945,5 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-02-18T10:07:03Z'
+  updated_at: '2026-02-25T15:00:45Z'
   url: https://github.com/devaryakjha/oore.build
