@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 200
+  stars: 201
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19150
+  stars: 19210
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-02-28T02:58:52Z'
+  updated_at: '2026-03-07T18:41:17Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3885
+  stars: 3899
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-02-24T17:23:33Z'
+  updated_at: '2026-03-04T19:13:31Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1169
+  stars: 1171
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -274,7 +274,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 64
+  stars: 65
   topics:
   - curl
   - flutter
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 517
+  stars: 518
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1184
+  stars: 1194
   topics:
   - broker-backend
   - database
@@ -364,7 +364,7 @@
   - sql
   - sql-query
   - workers
-  updated_at: '2026-02-19T19:24:38Z'
+  updated_at: '2026-03-01T20:47:50Z'
   url: https://github.com/knadh/sql-jobber
 - category: libs
   description: Pure Go LZO1Z compression and decompression library
@@ -574,7 +574,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 72
+  stars: 73
   topics:
   - mysql
   - postgresql
@@ -590,7 +590,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 123
+  stars: 124
   topics:
   - bandwidth-saver
   - browser-cache
@@ -661,7 +661,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 459
+  stars: 460
   topics:
   - background-jobs
   - distributed-systems
@@ -703,7 +703,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 94
+  stars: 95
   topics:
   - franz-go
   - high-availability
@@ -711,7 +711,7 @@
   - kafka-consumer
   - kafka-producer
   - kafka-replicator
-  updated_at: '2026-02-26T12:04:02Z'
+  updated_at: '2026-03-06T11:58:05Z'
   url: https://github.com/zerodha/kaf-relay
 - category: utils
   description: A frappe app that has workflows and reports to make payments to vendors
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2333
+  stars: 2342
   topics:
   - conversation
   - conversations
@@ -808,7 +808,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-02-26T10:49:16Z'
+  updated_at: '2026-03-03T11:23:47Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -818,7 +818,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 725
+  stars: 726
   topics:
   - clickhouse
   - log-analytics
@@ -873,7 +873,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 47
+  stars: 48
   topics:
   - mail-server
   - rust
@@ -914,9 +914,9 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 918
+  stars: 928
   topics: []
-  updated_at: '2026-02-28T22:39:13Z'
+  updated_at: '2026-03-07T11:37:54Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -925,7 +925,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 52
+  stars: 53
   topics: []
   updated_at: '2026-01-08T07:44:07Z'
   url: https://github.com/lebmatter/exampro
