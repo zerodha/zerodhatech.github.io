@@ -947,3 +947,28 @@
   - rust
   updated_at: '2026-02-25T15:00:45Z'
   url: https://github.com/devaryakjha/oore.build
+- category: utils
+  description: Agentic code reviewer for GitHub PRs and GitLab MRs
+  github_uri: mr-karan/hodor
+  language: TypeScript
+  name: hodor
+  stars: 93
+  topics:
+  - agent
+  - ai
+  - code-review
+  - ci-cd
+  updated_at: '2026-03-11T21:47:46Z'
+  url: https://github.com/mr-karan/hodor
+- category: utils
+  description: Pi-native incident investigation workflow with support for private overlays
+  github_uri: mr-karan/pi-sre-mode
+  language: TypeScript
+  license: MIT License
+  name: pi-sre-mode
+  stars: 4
+  topics:
+  - pi
+  - sre
+  updated_at: '2026-03-13T04:28:58Z'
+  url: https://github.com/mr-karan/pi-sre-mode
