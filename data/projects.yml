@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 201
+  stars: 202
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -48,9 +48,9 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 149
+  stars: 151
   topics: []
-  updated_at: '2026-02-28T07:25:01Z'
+  updated_at: '2026-03-11T10:44:29Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
 - category: libs
   description: simplesessions is a Go session management library that is completely
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 78
+  stars: 79
   topics:
   - session
   - session-cookie
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19210
+  stars: 19271
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-03-07T18:41:17Z'
+  updated_at: '2026-03-14T09:50:16Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3899
+  stars: 3914
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-03-04T19:13:31Z'
+  updated_at: '2026-03-14T15:22:15Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1171
+  stars: 1172
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1194
+  stars: 1205
   topics:
   - broker-backend
   - database
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 196
+  stars: 198
   topics:
   - aws
   - aws-s3
@@ -545,7 +545,7 @@
   name: linkpage
   stars: 131
   topics: []
-  updated_at: '2025-12-09T07:32:05Z'
+  updated_at: '2026-03-10T17:01:30Z'
   url: https://github.com/rhnvrm/linkpage
 - category: libs
   description: Fastglue is an opinionated, bare bones wrapper that glues together
@@ -606,7 +606,7 @@
   language: Python
   license: Other
   name: frappe_tinymce
-  stars: 47
+  stars: 48
   topics:
   - editor
   - frappe
@@ -661,7 +661,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 460
+  stars: 461
   topics:
   - background-jobs
   - distributed-systems
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 221
+  stars: 223
   topics:
   - android
   - flutter
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2342
+  stars: 2354
   topics:
   - conversation
   - conversations
@@ -808,7 +808,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-03-03T11:23:47Z'
+  updated_at: '2026-03-11T09:22:27Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -818,7 +818,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 726
+  stars: 729
   topics:
   - clickhouse
   - log-analytics
@@ -828,11 +828,11 @@
 - category: apps
   description: An open source self-service workflow execution platform
   github_uri: cvhariharan/flowctl
-  language: Svelte
+  language: Go
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 287
+  stars: 291
   topics:
   - automation
   - devops
@@ -842,7 +842,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-02-28T15:58:19Z'
+  updated_at: '2026-03-14T17:22:32Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
@@ -851,7 +851,7 @@
   name: terraform-provider-warpgate
   stars: 17
   topics: []
-  updated_at: '2026-01-25T15:43:23Z'
+  updated_at: '2026-03-09T23:35:10Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -905,7 +905,7 @@
   name: blobasaur
   stars: 42
   topics: []
-  updated_at: '2026-02-28T06:42:12Z'
+  updated_at: '2026-03-11T06:43:54Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
@@ -914,9 +914,9 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 928
+  stars: 935
   topics: []
-  updated_at: '2026-03-07T11:37:54Z'
+  updated_at: '2026-03-14T11:52:35Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -948,7 +948,9 @@
   updated_at: '2026-02-25T15:00:45Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
-  description: Agentic code reviewer for GitHub PRs and GitLab MRs
+  description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
+    \ with autonomous tool orchestration \u2014 catches bugs requiring analysis across\
+    \ files."
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
@@ -956,19 +958,25 @@
   topics:
   - agent
   - ai
-  - code-review
   - ci-cd
-  updated_at: '2026-03-11T21:47:46Z'
+  - code-quality
+  - code-review
+  - developer-tools
+  - litellm
+  - openhands
+  updated_at: '2026-03-07T02:57:42Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
-  description: Pi-native incident investigation workflow with support for private overlays
+  description: Pi-native incident investigation workflow with support for private
+    overlays
   github_uri: mr-karan/pi-sre-mode
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 4
+  stars: 5
   topics:
   - pi
+  - pi-agent
   - sre
-  updated_at: '2026-03-13T04:28:58Z'
+  updated_at: '2026-03-13T04:28:55Z'
   url: https://github.com/mr-karan/pi-sre-mode
