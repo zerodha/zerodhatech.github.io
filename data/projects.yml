@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 202
+  stars: 203
   topics: []
   updated_at: '2023-12-05T16:16:38Z'
   url: https://github.com/knadh/stuffbin
@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 151
+  stars: 156
   topics: []
   updated_at: '2026-03-11T10:44:29Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19271
+  stars: 19311
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-03-14T09:50:16Z'
+  updated_at: '2026-03-21T05:24:20Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3914
+  stars: 3931
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-03-14T15:22:15Z'
+  updated_at: '2026-03-20T17:34:28Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -243,7 +243,7 @@
   language: Dart
   license: MIT License
   name: autopilot
-  stars: 126
+  stars: 127
   topics: []
   updated_at: '2025-07-31T10:30:35Z'
   url: https://github.com/ajinasokan/autopilot
@@ -281,7 +281,7 @@
   - http
   - libcurl
   - quic
-  updated_at: '2025-09-03T09:42:01Z'
+  updated_at: '2026-03-18T11:28:27Z'
   url: https://github.com/ajinasokan/flutter_curl
 - category: services
   description: Standalone server for user address and OTP verification flows with
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 518
+  stars: 519
   topics:
   - email-verification
   - mobile-number-verification
@@ -338,7 +338,7 @@
   language: HTML
   license: MIT License
   name: gotp
-  stars: 42
+  stars: 43
   topics: []
   updated_at: '2025-09-09T12:23:50Z'
   url: https://github.com/vividvilla/gotp
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1205
+  stars: 1210
   topics:
   - broker-backend
   - database
@@ -505,7 +505,7 @@
   language: Go
   license: BSD Zero Clause License
   name: grafana-export
-  stars: 42
+  stars: 43
   topics: []
   updated_at: '2020-11-09T23:06:51Z'
   url: https://github.com/Thunderbottom/grafana-export
@@ -720,7 +720,7 @@
   language: Python
   license: MIT License
   name: vendor-payments
-  stars: 34
+  stars: 35
   topics: []
   updated_at: '2023-07-25T18:35:58Z'
   url: https://github.com/zerodha/vendor-payments
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2354
+  stars: 2367
   topics:
   - conversation
   - conversations
@@ -808,7 +808,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-03-11T09:22:27Z'
+  updated_at: '2026-03-18T05:21:10Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -818,7 +818,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 729
+  stars: 732
   topics:
   - clickhouse
   - log-analytics
@@ -832,7 +832,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 291
+  stars: 297
   topics:
   - automation
   - devops
@@ -842,16 +842,16 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-03-14T17:22:32Z'
+  updated_at: '2026-03-21T17:09:19Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 17
+  stars: 18
   topics: []
-  updated_at: '2026-03-09T23:35:10Z'
+  updated_at: '2026-03-20T11:11:27Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -859,7 +859,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: damon
-  stars: 16
+  stars: 17
   topics:
   - golang
   - hashicorp
@@ -873,7 +873,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 48
+  stars: 49
   topics:
   - mail-server
   - rust
@@ -914,9 +914,9 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 935
+  stars: 941
   topics: []
-  updated_at: '2026-03-14T11:52:35Z'
+  updated_at: '2026-03-21T18:31:27Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -925,7 +925,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 53
+  stars: 54
   topics: []
   updated_at: '2026-01-08T07:44:07Z'
   url: https://github.com/lebmatter/exampro
@@ -937,7 +937,7 @@
   license: MIT License
   logo: oore-build.svg
   name: oore.build
-  stars: 14
+  stars: 16
   topics:
   - ci
   - ci-cd
@@ -945,7 +945,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-02-25T15:00:45Z'
+  updated_at: '2026-03-21T11:16:40Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -964,7 +964,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-03-07T02:57:42Z'
+  updated_at: '2026-03-15T07:13:58Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -973,7 +973,7 @@
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 5
+  stars: 6
   topics:
   - pi
   - pi-agent
