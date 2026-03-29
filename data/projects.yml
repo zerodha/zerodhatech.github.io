@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 199
+  stars: 201
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19311
+  stars: 19369
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-03-21T05:24:20Z'
+  updated_at: '2026-03-27T03:14:31Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3931
+  stars: 3942
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-03-20T17:34:28Z'
+  updated_at: '2026-03-24T20:38:13Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 519
+  stars: 520
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1210
+  stars: 1217
   topics:
   - broker-backend
   - database
@@ -554,7 +554,7 @@
   language: Go
   license: MIT License
   name: fastglue
-  stars: 90
+  stars: 91
   topics:
   - fastglue
   - fasthttp
@@ -590,7 +590,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 124
+  stars: 125
   topics:
   - bandwidth-saver
   - browser-cache
@@ -703,7 +703,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 95
+  stars: 96
   topics:
   - franz-go
   - high-availability
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 223
+  stars: 224
   topics:
   - android
   - flutter
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2367
+  stars: 2383
   topics:
   - conversation
   - conversations
@@ -808,7 +808,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-03-18T05:21:10Z'
+  updated_at: '2026-03-28T18:38:16Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -818,12 +818,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 732
+  stars: 733
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-02-05T18:11:25Z'
+  updated_at: '2026-03-24T11:29:27Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -832,7 +832,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 297
+  stars: 298
   topics:
   - automation
   - devops
@@ -842,14 +842,14 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-03-21T17:09:19Z'
+  updated_at: '2026-03-28T15:51:01Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for WarpGate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 18
+  stars: 20
   topics: []
   updated_at: '2026-03-20T11:11:27Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -859,7 +859,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: damon
-  stars: 17
+  stars: 18
   topics:
   - golang
   - hashicorp
@@ -873,14 +873,14 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 49
+  stars: 50
   topics:
   - mail-server
   - rust
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-02-12T18:05:32Z'
+  updated_at: '2026-03-28T19:14:27Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -914,9 +914,13 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 941
-  topics: []
-  updated_at: '2026-03-21T18:31:27Z'
+  stars: 950
+  topics:
+  - whatsapp
+  - whatsapp-automation
+  - whatsapp-bot
+  - whatsapp-chat
+  updated_at: '2026-03-28T11:09:51Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -964,7 +968,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-03-15T07:13:58Z'
+  updated_at: '2026-03-25T10:29:43Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -973,7 +977,7 @@
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 6
+  stars: 9
   topics:
   - pi
   - pi-agent
