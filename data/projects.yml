@@ -984,3 +984,16 @@
   - sre
   updated_at: '2026-03-13T04:28:55Z'
   url: https://github.com/mr-karan/pi-sre-mode
+- category: utils
+  description: A quick CLI to create development sandbox microVMs from container images
+  github_uri: cvhariharan/mvm
+  language: Go
+  license: MIT License
+  name: mvm
+  stars: 7
+  topics:
+  - sandbox
+  - microvm
+  - developer-tools
+  updated_at: '2026-03-30T06:45:00Z'
+  url: https://github.com/cvhariharan/mvm
