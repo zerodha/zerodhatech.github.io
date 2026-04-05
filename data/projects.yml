@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 156
+  stars: 157
   topics: []
   updated_at: '2026-03-11T10:44:29Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 79
+  stars: 80
   topics:
   - session
   - session-cookie
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19369
+  stars: 19447
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-03-27T03:14:31Z'
+  updated_at: '2026-04-04T03:05:00Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3942
+  stars: 3954
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-03-24T20:38:13Z'
+  updated_at: '2026-04-03T04:04:01Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -266,7 +266,7 @@
   name: flutter_fgbg
   stars: 91
   topics: []
-  updated_at: '2025-02-13T10:09:57Z'
+  updated_at: '2026-03-30T08:58:43Z'
   url: https://github.com/ajinasokan/flutter_fgbg
 - category: libs
   description: Flutter plugin to use libcurl for HTTP calls
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 520
+  stars: 523
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1217
+  stars: 1222
   topics:
   - broker-backend
   - database
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 198
+  stars: 197
   topics:
   - aws
   - aws-s3
@@ -545,7 +545,7 @@
   name: linkpage
   stars: 131
   topics: []
-  updated_at: '2026-03-10T17:01:30Z'
+  updated_at: '2026-04-03T08:15:04Z'
   url: https://github.com/rhnvrm/linkpage
 - category: libs
   description: Fastglue is an opinionated, bare bones wrapper that glues together
@@ -574,7 +574,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 73
+  stars: 74
   topics:
   - mysql
   - postgresql
@@ -590,7 +590,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 125
+  stars: 127
   topics:
   - bandwidth-saver
   - browser-cache
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 224
+  stars: 225
   topics:
   - android
   - flutter
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2383
+  stars: 2390
   topics:
   - conversation
   - conversations
@@ -808,7 +808,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-03-28T18:38:16Z'
+  updated_at: '2026-04-04T20:21:52Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -818,12 +818,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 733
+  stars: 737
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-03-24T11:29:27Z'
+  updated_at: '2026-04-02T07:47:02Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -832,7 +832,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 298
+  stars: 299
   topics:
   - automation
   - devops
@@ -842,16 +842,16 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-03-28T15:51:01Z'
+  updated_at: '2026-04-04T07:50:51Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
-  description: Terraform Provider for WarpGate
+  description: Terraform Provider for Warpgate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
   stars: 20
   topics: []
-  updated_at: '2026-03-20T11:11:27Z'
+  updated_at: '2026-04-02T13:29:56Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -859,7 +859,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: damon
-  stars: 18
+  stars: 19
   topics:
   - golang
   - hashicorp
@@ -880,7 +880,7 @@
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-03-28T19:14:27Z'
+  updated_at: '2026-03-29T18:16:30Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -903,7 +903,7 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 42
+  stars: 43
   topics: []
   updated_at: '2026-03-11T06:43:54Z'
   url: https://github.com/iamd3vil/blobasaur
@@ -914,13 +914,13 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 950
+  stars: 966
   topics:
   - whatsapp
   - whatsapp-automation
   - whatsapp-bot
   - whatsapp-chat
-  updated_at: '2026-03-28T11:09:51Z'
+  updated_at: '2026-04-04T14:01:27Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -929,7 +929,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 54
+  stars: 55
   topics: []
   updated_at: '2026-01-08T07:44:07Z'
   url: https://github.com/lebmatter/exampro
@@ -958,7 +958,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 93
+  stars: 94
   topics:
   - agent
   - ai
@@ -977,7 +977,7 @@
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 9
+  stars: 10
   topics:
   - pi
   - pi-agent
@@ -990,10 +990,10 @@
   language: Go
   license: MIT License
   name: mvm
-  stars: 7
+  stars: 14
   topics:
-  - sandbox
+  - docker
   - microvm
-  - developer-tools
-  updated_at: '2026-03-30T06:45:00Z'
+  - sandbox
+  updated_at: '2026-04-01T06:55:34Z'
   url: https://github.com/cvhariharan/mvm
