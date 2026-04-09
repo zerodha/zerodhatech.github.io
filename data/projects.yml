@@ -997,3 +997,19 @@
   - sandbox
   updated_at: '2026-04-01T06:55:34Z'
   url: https://github.com/cvhariharan/mvm
+- category: utils
+  description: A read-only status page for HashiCorp Nomad clusters with job grouping,
+    restart detection, and multi-DC support.
+  github_uri: joeirimpan/nomadboard
+  language: Go
+  license: MIT License
+  name: nomadboard
+  stars: 7
+  topics:
+  - cross-dc
+  - golang
+  - hashicorp
+  - nomad
+  - status-page
+  updated_at: '2026-04-08T11:33:16Z'
+  url: https://github.com/joeirimpan/nomadboard
