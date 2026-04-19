@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19503
+  stars: 19567
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-04-10T03:24:08Z'
+  updated_at: '2026-04-18T04:46:18Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3961
+  stars: 3973
   topics:
   - config
   - config-loader
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1223
+  stars: 1225
   topics:
   - broker-backend
   - database
@@ -383,13 +383,13 @@
   language: Go
   license: Other
   name: simples3
-  stars: 197
+  stars: 198
   topics:
   - aws
   - aws-s3
   - aws-signature-v4
   - golang
-  updated_at: '2026-01-23T07:01:21Z'
+  updated_at: '2026-04-13T18:27:15Z'
   url: https://github.com/rhnvrm/simples3
 - category: libs
   description: Simple frappe app to setup Single sign-on for discourse
@@ -545,7 +545,7 @@
   name: linkpage
   stars: 131
   topics: []
-  updated_at: '2026-04-03T08:15:04Z'
+  updated_at: '2026-04-14T14:45:22Z'
   url: https://github.com/rhnvrm/linkpage
 - category: libs
   description: Fastglue is an opinionated, bare bones wrapper that glues together
@@ -574,7 +574,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 72
+  stars: 73
   topics:
   - mysql
   - postgresql
@@ -745,7 +745,7 @@
   name: toru
   stars: 30
   topics: []
-  updated_at: '2025-07-16T06:35:36Z'
+  updated_at: '2026-04-17T05:46:11Z'
   url: https://github.com/mr-karan/toru
 - category: libs
   description: 'A flutter package that takes html string as input and parses and converts
@@ -787,15 +787,16 @@
   updated_at: '2025-07-29T06:42:07Z'
   url: https://github.com/srv91/trace-chart
 - category: apps
-  description: Modern, open source, self-hosted customer support desk. Single binary
-    app.
+  description: Open source, self-hosted omnichannel customer support desk. Live chat,
+    email, and more in a single binary.
   github_uri: abhinavxd/libredesk
   language: Go
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2401
+  stars: 2413
   topics:
+  - chat-widget
   - conversation
   - conversations
   - customer-service
@@ -805,10 +806,14 @@
   - golang
   - helpdesk
   - intercom
+  - live-chat
+  - livechat
+  - omnichannel
+  - self-hosted
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-04-11T22:05:38Z'
+  updated_at: '2026-04-18T23:08:19Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -818,7 +823,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 743
+  stars: 744
   topics:
   - clickhouse
   - log-analytics
@@ -832,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 299
+  stars: 300
   topics:
   - automation
   - devops
@@ -842,14 +847,14 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-04-11T05:44:27Z'
+  updated_at: '2026-04-18T03:58:25Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for Warpgate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 20
+  stars: 21
   topics: []
   updated_at: '2026-04-02T13:29:56Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -873,7 +878,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 49
+  stars: 50
   topics:
   - mail-server
   - rust
@@ -914,13 +919,13 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 977
+  stars: 984
   topics:
   - whatsapp
   - whatsapp-automation
   - whatsapp-bot
   - whatsapp-chat
-  updated_at: '2026-04-10T13:19:17Z'
+  updated_at: '2026-04-17T11:44:53Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -941,7 +946,7 @@
   license: MIT License
   logo: oore-build.svg
   name: oore.build
-  stars: 15
+  stars: 16
   topics:
   - ci
   - ci-cd
@@ -949,7 +954,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-03-21T11:16:40Z'
+  updated_at: '2026-04-15T10:47:01Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -977,7 +982,7 @@
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 10
+  stars: 15
   topics:
   - pi
   - pi-agent
@@ -990,7 +995,7 @@
   language: Go
   license: MIT License
   name: mvm
-  stars: 14
+  stars: 15
   topics:
   - docker
   - microvm
