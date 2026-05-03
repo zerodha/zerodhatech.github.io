@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19628
+  stars: 19883
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-04-25T12:22:57Z'
+  updated_at: '2026-04-30T03:11:27Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3985
+  stars: 3994
   topics:
   - config
   - config-loader
@@ -219,7 +219,7 @@
   github_uri: knadh/osticket-archive
   language: PHP
   name: osticket-archive
-  stars: 9
+  stars: 10
   topics: []
   updated_at: '2015-06-27T11:48:05Z'
   url: https://github.com/knadh/osticket-archive
@@ -253,7 +253,7 @@
   language: Dart
   license: MIT License
   name: recharge
-  stars: 49
+  stars: 50
   topics: []
   updated_at: '2023-06-04T18:59:21Z'
   url: https://github.com/ajinasokan/recharge
@@ -274,7 +274,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 65
+  stars: 66
   topics:
   - curl
   - flutter
@@ -308,7 +308,7 @@
   language: PHP
   license: MIT License
   name: osticket-autoassign
-  stars: 12
+  stars: 13
   topics: []
   updated_at: '2017-12-01T10:50:48Z'
   url: https://github.com/vishnus/osticket-autoassign
@@ -411,7 +411,7 @@
   github_uri: zerodhatech/rbiparser
   language: Python
   name: rbiparser
-  stars: 63
+  stars: 64
   topics: []
   updated_at: '2023-11-30T08:20:55Z'
   url: https://github.com/zerodhatech/rbiparser
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 225
+  stars: 226
   topics:
   - android
   - flutter
@@ -743,7 +743,7 @@
   language: Go
   license: MIT License
   name: toru
-  stars: 30
+  stars: 31
   topics: []
   updated_at: '2026-04-23T06:02:02Z'
   url: https://github.com/mr-karan/toru
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2454
+  stars: 2471
   topics:
   - chat-widget
   - conversation
@@ -823,12 +823,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 746
+  stars: 747
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-04-23T07:16:53Z'
+  updated_at: '2026-04-30T10:14:58Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 303
+  stars: 305
   topics:
   - automation
   - devops
@@ -847,7 +847,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-04-24T16:50:15Z'
+  updated_at: '2026-04-30T15:40:13Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for Warpgate
@@ -856,7 +856,7 @@
   name: terraform-provider-warpgate
   stars: 21
   topics: []
-  updated_at: '2026-04-21T20:46:06Z'
+  updated_at: '2026-04-29T06:59:55Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -878,7 +878,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 50
+  stars: 51
   topics:
   - mail-server
   - rust
@@ -919,13 +919,17 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1062
+  stars: 1129
   topics:
   - whatsapp
+  - whatsapp-api
   - whatsapp-automation
   - whatsapp-bot
+  - whatsapp-calling
   - whatsapp-chat
-  updated_at: '2026-04-24T10:43:33Z'
+  - whatsapp-voice-call
+  - whatsapp-voip
+  updated_at: '2026-05-01T12:02:57Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -946,7 +950,7 @@
   license: MIT License
   logo: oore-build.svg
   name: oore.build
-  stars: 16
+  stars: 17
   topics:
   - ci
   - ci-cd
@@ -963,7 +967,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 96
+  stars: 99
   topics:
   - agent
   - ai
@@ -973,7 +977,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-03-25T10:29:43Z'
+  updated_at: '2026-04-29T07:50:46Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -982,7 +986,7 @@
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 17
+  stars: 18
   topics:
   - pi
   - pi-agent
@@ -1000,7 +1004,7 @@
   - docker
   - microvm
   - sandbox
-  updated_at: '2026-04-24T20:12:13Z'
+  updated_at: '2026-04-29T08:29:34Z'
   url: https://github.com/cvhariharan/mvm
 - category: utils
   description: A read-only status page for HashiCorp Nomad clusters with job grouping,
