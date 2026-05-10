@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 159
+  stars: 160
   topics: []
   updated_at: '2026-03-11T10:44:29Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 202
+  stars: 204
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 19883
+  stars: 19985
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-04-30T03:11:27Z'
+  updated_at: '2026-05-09T07:57:05Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 3994
+  stars: 4006
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-04-03T04:04:01Z'
+  updated_at: '2026-05-09T07:27:47Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1228
+  stars: 1229
   topics:
   - broker-backend
   - database
@@ -720,7 +720,7 @@
   language: Python
   license: MIT License
   name: vendor-payments
-  stars: 36
+  stars: 37
   topics: []
   updated_at: '2023-07-25T18:35:58Z'
   url: https://github.com/zerodha/vendor-payments
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2471
+  stars: 2490
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-04-25T10:37:41Z'
+  updated_at: '2026-05-08T07:14:41Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,12 +823,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 747
+  stars: 751
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-04-30T10:14:58Z'
+  updated_at: '2026-05-07T09:49:05Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 305
+  stars: 307
   topics:
   - automation
   - devops
@@ -847,7 +847,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-04-30T15:40:13Z'
+  updated_at: '2026-05-07T17:29:09Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for Warpgate
@@ -878,14 +878,14 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 51
+  stars: 52
   topics:
   - mail-server
   - rust
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-03-29T18:16:30Z'
+  updated_at: '2026-05-08T16:55:31Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -919,7 +919,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1129
+  stars: 1147
   topics:
   - whatsapp
   - whatsapp-api
@@ -929,7 +929,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-05-01T12:02:57Z'
+  updated_at: '2026-05-08T07:10:30Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -940,7 +940,7 @@
   name: exampro
   stars: 55
   topics: []
-  updated_at: '2026-01-08T07:44:07Z'
+  updated_at: '2026-05-07T08:35:08Z'
   url: https://github.com/lebmatter/exampro
 - category: apps
   description: Self-hosted, Flutter-first mobile CI and internal app distribution
@@ -958,7 +958,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-04-15T10:47:01Z'
+  updated_at: '2026-05-05T10:05:35Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -967,7 +967,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 99
+  stars: 100
   topics:
   - agent
   - ai
