@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 166
+  stars: 167
   topics: []
   updated_at: '2026-03-11T10:44:29Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 206
+  stars: 207
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 21209
+  stars: 21382
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-05-30T16:38:58Z'
+  updated_at: '2026-06-04T04:39:56Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4047
+  stars: 4060
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1171
+  stars: 1173
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -230,7 +230,7 @@
   language: Dart
   license: MIT License
   name: store_keeper
-  stars: 38
+  stars: 39
   topics:
   - flutter
   - state-management
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 525
+  stars: 526
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1239
+  stars: 1246
   topics:
   - broker-backend
   - database
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 201
+  stars: 203
   topics:
   - aws
   - aws-s3
@@ -543,7 +543,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 134
+  stars: 136
   topics: []
   updated_at: '2026-04-14T14:45:22Z'
   url: https://github.com/rhnvrm/linkpage
@@ -661,7 +661,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 463
+  stars: 464
   topics:
   - background-jobs
   - distributed-systems
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2536
+  stars: 2554
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-05-29T17:54:13Z'
+  updated_at: '2026-06-06T15:46:23Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,7 +823,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 756
+  stars: 757
   topics:
   - clickhouse
   - log-analytics
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 312
+  stars: 316
   topics:
   - automation
   - devops
@@ -847,14 +847,14 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-05-30T05:53:04Z'
+  updated_at: '2026-06-06T04:28:35Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for Warpgate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 21
+  stars: 22
   topics: []
   updated_at: '2026-04-29T06:59:55Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -878,7 +878,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 54
+  stars: 53
   topics:
   - mail-server
   - rust
@@ -919,7 +919,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1218
+  stars: 1257
   topics:
   - whatsapp
   - whatsapp-api
@@ -929,18 +929,18 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-05-30T03:31:50Z'
+  updated_at: '2026-06-05T10:03:48Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
   github_uri: lebmatter/exampro
-  language: Python
+  language: JavaScript
   license: MIT License
   logo: exampro.png
   name: exampro
   stars: 56
   topics: []
-  updated_at: '2026-05-27T09:01:48Z'
+  updated_at: '2026-06-04T06:05:37Z'
   url: https://github.com/lebmatter/exampro
 - category: apps
   description: Self-hosted, Flutter-first mobile CI and internal app distribution
@@ -967,7 +967,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 104
+  stars: 105
   topics:
   - agent
   - ai
@@ -999,7 +999,7 @@
   language: Go
   license: MIT License
   name: mvm
-  stars: 16
+  stars: 17
   topics:
   - docker
   - microvm
