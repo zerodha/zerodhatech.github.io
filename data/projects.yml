@@ -3,7 +3,7 @@
   github_uri: vividvilla/lil
   language: Go
   name: lil
-  stars: 57
+  stars: 56
   topics: []
   updated_at: '2020-04-24T05:52:18Z'
   url: https://github.com/vividvilla/lil
@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 168
+  stars: 167
   topics: []
   updated_at: '2026-03-11T10:44:29Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 81
+  stars: 80
   topics:
   - session
   - session-cookie
@@ -87,7 +87,7 @@
   language: Dockerfile
   license: MIT License
   name: eks-gitops
-  stars: 11
+  stars: 10
   topics: []
   updated_at: '2022-01-27T14:53:13Z'
   url: https://github.com/mr-karan/eks-gitops
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 207
+  stars: 209
   topics:
   - alerting
   - alertmanager
@@ -132,7 +132,7 @@
   language: Python
   license: MIT License
   name: pdf_text_overlay
-  stars: 41
+  stars: 40
   topics: []
   updated_at: '2025-05-09T05:51:31Z'
   url: https://github.com/zerodhatech/pdf_text_overlay
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 21551
+  stars: 21682
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-06-04T04:39:56Z'
+  updated_at: '2026-06-20T18:09:45Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4071
+  stars: 4078
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1173
+  stars: 1172
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 526
+  stars: 527
   topics:
   - email-verification
   - mobile-number-verification
@@ -338,7 +338,7 @@
   language: HTML
   license: MIT License
   name: gotp
-  stars: 44
+  stars: 43
   topics: []
   updated_at: '2025-09-09T12:23:50Z'
   url: https://github.com/vividvilla/gotp
@@ -372,7 +372,7 @@
   language: Go
   license: MIT License
   name: lzo1z
-  stars: 5
+  stars: 6
   topics: []
   updated_at: '2026-02-20T06:22:30Z'
   url: https://github.com/rhnvrm/lzo1z
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 203
+  stars: 204
   topics:
   - aws
   - aws-s3
@@ -397,7 +397,7 @@
   language: Python
   license: Other
   name: frappe_discourse
-  stars: 20
+  stars: 19
   topics:
   - discourse
   - discourse-sso
@@ -411,7 +411,7 @@
   github_uri: zerodhatech/rbiparser
   language: Python
   name: rbiparser
-  stars: 64
+  stars: 63
   topics: []
   updated_at: '2023-11-30T08:20:55Z'
   url: https://github.com/zerodhatech/rbiparser
@@ -446,7 +446,7 @@
   language: Python
   license: MIT License
   name: rms-consolidated-scrips-status
-  stars: 22
+  stars: 21
   topics: []
   updated_at: '2020-07-22T10:44:16Z'
   url: https://github.com/zerodhatech/rms-consolidated-scrips-status
@@ -494,7 +494,7 @@
   language: Python
   license: MIT License
   name: faqgenerator
-  stars: 9
+  stars: 8
   topics: []
   updated_at: '2020-10-30T03:49:33Z'
   url: https://github.com/ranjanrak/FaqGenerator
@@ -516,7 +516,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 159
+  stars: 158
   topics:
   - implied-volatility
   - option-chain-stream
@@ -530,7 +530,7 @@
   language: Python
   license: MIT License
   name: kong-service-exporter
-  stars: 14
+  stars: 13
   topics:
   - kong
   updated_at: '2021-03-30T06:45:29Z'
@@ -590,7 +590,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 129
+  stars: 130
   topics:
   - bandwidth-saver
   - browser-cache
@@ -606,7 +606,7 @@
   language: Python
   license: Other
   name: frappe_tinymce
-  stars: 49
+  stars: 48
   topics:
   - editor
   - frappe
@@ -647,7 +647,7 @@
   language: Jinja
   license: MIT License
   name: localhashi
-  stars: 15
+  stars: 14
   topics:
   - consul
   - nomad
@@ -720,7 +720,7 @@
   language: Python
   license: MIT License
   name: vendor-payments
-  stars: 37
+  stars: 36
   topics: []
   updated_at: '2023-07-25T18:35:58Z'
   url: https://github.com/zerodha/vendor-payments
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 227
+  stars: 226
   topics:
   - android
   - flutter
@@ -761,7 +761,7 @@
   - html
   - html-to-flutter
   - tagflow
-  updated_at: '2026-06-13T17:14:34Z'
+  updated_at: '2026-06-16T06:07:12Z'
   url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
@@ -770,7 +770,7 @@
   language: Python
   license: MIT License
   name: duckdb-fnv
-  stars: 6
+  stars: 5
   topics: []
   updated_at: '2024-08-26T08:05:44Z'
   url: https://github.com/joeirimpan/duckdb-fnv
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2567
+  stars: 2577
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-06-13T17:06:50Z'
+  updated_at: '2026-06-21T00:54:46Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,7 +823,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 758
+  stars: 759
   topics:
   - clickhouse
   - log-analytics
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 315
+  stars: 318
   topics:
   - automation
   - devops
@@ -847,14 +847,14 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-06-13T09:06:40Z'
+  updated_at: '2026-06-16T22:38:01Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for Warpgate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 22
+  stars: 23
   topics: []
   updated_at: '2026-06-09T21:35:07Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -885,7 +885,7 @@
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-05-27T06:07:44Z'
+  updated_at: '2026-06-19T09:10:14Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -919,7 +919,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1272
+  stars: 1290
   topics:
   - whatsapp
   - whatsapp-api
@@ -929,7 +929,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-06-13T15:54:06Z'
+  updated_at: '2026-06-20T06:00:49Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -938,9 +938,9 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 56
+  stars: 55
   topics: []
-  updated_at: '2026-06-12T06:17:52Z'
+  updated_at: '2026-06-19T08:30:47Z'
   url: https://github.com/lebmatter/exampro
 - category: apps
   description: Self-hosted, Flutter-first mobile CI and internal app distribution
@@ -977,7 +977,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-05-19T09:33:46Z'
+  updated_at: '2026-06-16T10:29:52Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -986,7 +986,7 @@
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 19
+  stars: 20
   topics:
   - pi
   - pi-agent
@@ -999,7 +999,7 @@
   language: Go
   license: MIT License
   name: mvm
-  stars: 17
+  stars: 18
   topics:
   - docker
   - microvm
