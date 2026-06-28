@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 167
+  stars: 168
   topics: []
   updated_at: '2026-03-11T10:44:29Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 21682
+  stars: 21809
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-06-20T18:09:45Z'
+  updated_at: '2026-06-27T03:11:01Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4078
+  stars: 4085
   topics:
   - config
   - config-loader
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 527
+  stars: 528
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1248
+  stars: 1249
   topics:
   - broker-backend
   - database
@@ -684,7 +684,7 @@
   - listmonk
   - messenger
   - pinpoint
-  updated_at: '2024-07-22T15:09:34Z'
+  updated_at: '2026-06-23T06:53:36Z'
   url: https://github.com/joeirimpan/listmonk-messenger
 - category: utils
   description: Ansible scripts for setting up Zookeeper, Kafka, kaf cli
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 226
+  stars: 227
   topics:
   - android
   - flutter
@@ -748,8 +748,8 @@
   updated_at: '2026-04-23T06:02:02Z'
   url: https://github.com/mr-karan/toru
 - category: libs
-  description: 'A flutter package that takes html string as input and parses and converts
-    that to Flutter widgets based on the provided configuration. '
+  description: Native rich content runtime for flutter apps, with html rendering,
+    trusted json documents, and live content patches
   github_uri: devaryakjha/tagflow
   language: Dart
   license: MIT License
@@ -761,7 +761,7 @@
   - html
   - html-to-flutter
   - tagflow
-  updated_at: '2026-06-16T06:07:12Z'
+  updated_at: '2026-06-25T12:13:16Z'
   url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2577
+  stars: 2597
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-06-21T00:54:46Z'
+  updated_at: '2026-06-27T15:54:03Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,7 +823,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 759
+  stars: 761
   topics:
   - clickhouse
   - log-analytics
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 318
+  stars: 319
   topics:
   - automation
   - devops
@@ -847,7 +847,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-06-16T22:38:01Z'
+  updated_at: '2026-06-26T03:44:53Z'
   url: https://github.com/cvhariharan/flowctl
 - category: services
   description: Terraform Provider for Warpgate
@@ -885,7 +885,7 @@
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-06-19T09:10:14Z'
+  updated_at: '2026-06-22T06:41:43Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -919,7 +919,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1290
+  stars: 1306
   topics:
   - whatsapp
   - whatsapp-api
@@ -929,7 +929,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-06-20T06:00:49Z'
+  updated_at: '2026-06-22T11:54:52Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -938,9 +938,9 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 55
+  stars: 56
   topics: []
-  updated_at: '2026-06-19T08:30:47Z'
+  updated_at: '2026-06-26T03:51:06Z'
   url: https://github.com/lebmatter/exampro
 - category: apps
   description: Self-hosted, Flutter-first mobile CI and internal app distribution
@@ -967,7 +967,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 105
+  stars: 106
   topics:
   - agent
   - ai
@@ -977,7 +977,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-06-16T10:29:52Z'
+  updated_at: '2026-06-23T09:45:43Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -1013,7 +1013,7 @@
   language: Go
   license: MIT License
   name: nomadboard
-  stars: 7
+  stars: 8
   topics:
   - cross-dc
   - golang
