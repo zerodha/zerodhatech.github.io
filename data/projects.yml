@@ -849,6 +849,21 @@
   - workflow-automation
   updated_at: '2026-06-26T03:44:53Z'
   url: https://github.com/cvhariharan/flowctl
+- category: apps
+  description: An open source osquery manager
+  github_uri: cvhariharan/checkpost
+  language: Go
+  license: Apache License 2.0
+  logo: checkpost.svg
+  name: checkpost
+  stars: 8
+  topics:
+  - security
+  - compliance
+  - logging
+  - golang
+  updated_at: '2026-07-02T16:23:53Z'
+  url: https://github.com/cvhariharan/checkpost
 - category: services
   description: Terraform Provider for Warpgate
   github_uri: warp-tech/terraform-provider-warpgate
