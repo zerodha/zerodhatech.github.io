@@ -1,0 +1,9 @@
+<svg width="286" height="64" viewBox="0 0 286 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>pi-websearch-crawl4ai</title>
+  <!-- pi badge -->
+  <rect x="8" y="12" width="40" height="40" rx="10" fill="#18181B"/>
+  <rect x="16" y="23" width="24" height="4" rx="1.5" fill="#E3A84A"/>
+  <rect x="21" y="25" width="4" height="18" rx="1" fill="#E3A84A"/>
+  <rect x="31" y="25" width="4" height="18" rx="1" fill="#E3A84A"/>
+  <text x="58" y="39" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#09090B">pi-websearch-crawl4ai</text>
+</svg>
