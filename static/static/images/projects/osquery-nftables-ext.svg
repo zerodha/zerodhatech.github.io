@@ -1,0 +1,13 @@
+<svg width="280" height="64" viewBox="0 0 280 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>osquery-nftables-ext</title>
+  <!-- shield plate -->
+  <path d="M28 6 L48 13 V30 C48 43 39 52 28 58 C17 52 8 43 8 30 V13 Z" fill="#ECEAFB"/>
+  <!-- osquery pinwheel -->
+  <g transform="translate(28 30)">
+    <path d="M -9 -5 L 0 -14 L 9 -5 L 9 -1 L 0 -10 L -9 -1 Z" fill="#7C6FF0"/>
+    <path d="M -9 -5 L 0 -14 L 9 -5 L 9 -1 L 0 -10 L -9 -1 Z" fill="#18181B" transform="rotate(90)"/>
+    <path d="M -9 -5 L 0 -14 L 9 -5 L 9 -1 L 0 -10 L -9 -1 Z" fill="#7C6FF0" transform="rotate(180)"/>
+    <path d="M -9 -5 L 0 -14 L 9 -5 L 9 -1 L 0 -10 L -9 -1 Z" fill="#18181B" transform="rotate(270)"/>
+  </g>
+  <text x="60" y="39" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#09090B">osquery-nftables-ext</text>
+</svg>
