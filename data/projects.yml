@@ -1037,3 +1037,90 @@
   - status-page
   updated_at: '2026-05-13T06:29:38Z'
   url: https://github.com/joeirimpan/nomadboard
+- category: apps
+  description: A No-Nonsense Task Manager
+  github_uri: bureaucatorg/bureaucat
+  language: Go
+  license: GNU Affero General Public License v3.0
+  name: bureaucat
+  stars: 14
+  topics:
+  - task
+  - todo
+  - task-management
+  - task-manager
+  logo: bureaucat.svg
+  updated_at: '2026-07-08T00:00:00Z'
+  url: https://github.com/bureaucatorg/bureaucat
+- category: apps
+  description: Identity aware reverse proxy
+  github_uri: toriigateorg/torii
+  language: Go
+  license: GNU Affero General Public License v3.0
+  name: torii
+  stars: 4
+  topics:
+  - reverse-proxy
+  logo: torii.svg
+  updated_at: '2026-07-08T00:00:00Z'
+  url: https://github.com/toriigateorg/torii
+- category: utils
+  description: An osquery extension that adds an nftables table to a vanilla
+    osqueryd on Linux, written in Go
+  github_uri: codingcoffee/osquery-nftables-ext
+  language: Go
+  license: Apache License 2.0
+  logo: osquery-nftables-ext.svg
+  name: osquery-nftables-ext
+  stars: 2
+  topics:
+  - osquery
+  - nftables
+  updated_at: '2026-07-08T00:00:00Z'
+  url: https://github.com/codingcoffee/osquery-nftables-ext
+- category: utils
+  description: a pi extension to make sure PII data is redacted before reaching
+    the LLM
+  github_uri: codingcoffee/pi-privacy-filter
+  language: HTML
+  license: MIT License
+  logo: pi-privacy-filter.svg
+  name: pi-privacy-filter
+  stars: 3
+  topics:
+  - filter
+  - llm
+  - pi
+  - pi-extension
+  - pii
+  - privacy
+  - redaction
+  updated_at: '2026-05-11T15:38:10Z'
+  url: https://github.com/codingcoffee/pi-privacy-filter
+- category: utils
+  description: a pi extension to let your LLM crawl and see the web
+  github_uri: codingcoffee/pi-websearch-crawl4ai
+  language: HTML
+  license: MIT License
+  logo: pi-websearch-crawl4ai.svg
+  name: pi-websearch-crawl4ai
+  stars: 5
+  topics:
+  - crawler
+  - llm
+  - pi
+  - pi-extension
+  - search
+  - web
+  updated_at: '2026-06-30T11:08:40Z'
+  url: https://github.com/codingcoffee/pi-websearch-crawl4ai
+- category: utils
+  description: OpenMetadata ingestion CLI written in Go
+  github_uri: codingcoffee/openmetadata-ingestion-go
+  language: Go
+  logo: openmetadata-ingestion-go.svg
+  name: openmetadata-ingestion-go
+  stars: 1
+  topics: []
+  updated_at: '2026-07-02T16:15:43Z'
+  url: https://github.com/codingcoffee/openmetadata-ingestion-go

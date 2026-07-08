@@ -1,0 +1,12 @@
+<svg width="188" height="64" viewBox="0 0 188 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#c8392c">
+    <title>torii</title>
+    <path d="M2 8 C14 8, 22 16, 32 16 C42 16, 50 8, 62 8 L62 12 C50 12, 42 20, 32 20 C22 20, 14 12, 2 12 Z"/>
+    <rect x="10" y="22" width="44" height="2"/>
+    <rect x="30" y="22" width="4" height="8"/>
+    <rect x="12" y="30" width="40" height="4"/>
+    <path d="M14 58 L21 58 L20 24 L15 24 Z"/>
+    <path d="M43 58 L50 58 L49 24 L44 24 Z"/>
+  </g>
+  <text x="74" y="42" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#09090B">torii</text>
+</svg>

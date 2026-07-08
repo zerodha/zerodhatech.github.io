@@ -35,7 +35,7 @@
             {{ end }}
         </ul>
     </section>
-    
+
     <section class="category">
         <h1>Dev projects</h1>
         <p>Check out the personal FOSS projects from the dev team.</p>
@@ -45,7 +45,7 @@
         {{ range sort .Page.Site.Data.projects ".updated_at" "desc" }}
             {{ $parts := split .github_uri "/" }}
             {{ $username := index $parts 0 }}
-            {{ if and (ne $username "zerodha") (ne $username "zerodhatech") (ne $username "warp-tech") }}
+            {{ if and (ne $username "zerodha") (ne $username "zerodhatech") (ne $username "warp-tech") (ne $username "bureaucatorg") (ne $username "toriigateorg") }}
                 {{ $users.Set $username true }}
             {{ end }}
         {{ end }}
