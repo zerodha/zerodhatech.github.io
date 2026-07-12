@@ -3,7 +3,7 @@
   github_uri: vividvilla/lil
   language: Go
   name: lil
-  stars: 56
+  stars: 55
   topics: []
   updated_at: '2020-04-24T05:52:18Z'
   url: https://github.com/vividvilla/lil
@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 204
+  stars: 203
   topics: []
   updated_at: '2026-06-28T06:35:42Z'
   url: https://github.com/knadh/stuffbin
@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 79
+  stars: 78
   topics:
   - session
   - session-cookie
@@ -77,7 +77,7 @@
   language: Go
   license: MIT License
   name: querytostruct
-  stars: 23
+  stars: 21
   topics: []
   updated_at: '2022-06-09T18:04:52Z'
   url: https://github.com/knadh/querytostruct
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 209
+  stars: 207
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 21919
+  stars: 22051
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-07-04T05:22:25Z'
+  updated_at: '2026-07-09T03:14:19Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 94
+  stars: 92
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4094
+  stars: 4112
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-07-03T10:20:37Z'
+  updated_at: '2026-07-10T16:45:38Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -234,7 +234,7 @@
   topics:
   - flutter
   - state-management
-  updated_at: '2026-05-27T08:59:39Z'
+  updated_at: '2026-07-10T13:42:02Z'
   url: https://github.com/ajinasokan/store_keeper
 - category: utils
   description: A test driver for Flutter to do QA testing without sharing app source
@@ -253,7 +253,7 @@
   language: Dart
   license: MIT License
   name: recharge
-  stars: 51
+  stars: 50
   topics: []
   updated_at: '2023-06-04T18:59:21Z'
   url: https://github.com/ajinasokan/recharge
@@ -274,14 +274,14 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 67
+  stars: 66
   topics:
   - curl
   - flutter
   - http
   - libcurl
   - quic
-  updated_at: '2026-04-08T05:23:15Z'
+  updated_at: '2026-07-08T07:13:17Z'
   url: https://github.com/ajinasokan/flutter_curl
 - category: services
   description: Standalone server for user address and OTP verification flows with
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 529
+  stars: 527
   topics:
   - email-verification
   - mobile-number-verification
@@ -338,7 +338,7 @@
   language: HTML
   license: MIT License
   name: gotp
-  stars: 44
+  stars: 43
   topics: []
   updated_at: '2025-09-09T12:23:50Z'
   url: https://github.com/vividvilla/gotp
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1254
+  stars: 1257
   topics:
   - broker-backend
   - database
@@ -372,7 +372,7 @@
   language: Go
   license: MIT License
   name: lzo1z
-  stars: 6
+  stars: 5
   topics: []
   updated_at: '2026-02-20T06:22:30Z'
   url: https://github.com/rhnvrm/lzo1z
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 204
+  stars: 205
   topics:
   - aws
   - aws-s3
@@ -421,7 +421,7 @@
   language: Python
   license: Other
   name: subscription_coupons
-  stars: 17
+  stars: 16
   topics: []
   updated_at: '2020-09-22T05:13:33Z'
   url: https://github.com/zerodhatech/subscription_coupons
@@ -457,7 +457,7 @@
   license: MIT License
   logo: shelf.svg
   name: shelf
-  stars: 41
+  stars: 40
   topics:
   - dotfile-manager
   - dotfiles
@@ -470,7 +470,7 @@
   github_uri: itzvinoth/slim-ui
   language: Vue
   name: slim-ui
-  stars: 66
+  stars: 67
   topics:
   - vue
   - vue2
@@ -505,7 +505,7 @@
   language: Go
   license: BSD Zero Clause License
   name: grafana-export
-  stars: 44
+  stars: 43
   topics: []
   updated_at: '2020-11-09T23:06:51Z'
   url: https://github.com/Thunderbottom/grafana-export
@@ -530,7 +530,7 @@
   language: Python
   license: MIT License
   name: kong-service-exporter
-  stars: 13
+  stars: 12
   topics:
   - kong
   updated_at: '2021-03-30T06:45:29Z'
@@ -543,7 +543,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 137
+  stars: 136
   topics: []
   updated_at: '2026-04-14T14:45:22Z'
   url: https://github.com/rhnvrm/linkpage
@@ -554,7 +554,7 @@
   language: Go
   license: MIT License
   name: fastglue
-  stars: 92
+  stars: 91
   topics:
   - fastglue
   - fasthttp
@@ -574,7 +574,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 75
+  stars: 74
   topics:
   - mysql
   - postgresql
@@ -590,7 +590,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 130
+  stars: 129
   topics:
   - bandwidth-saver
   - browser-cache
@@ -635,7 +635,7 @@
   language: Go
   license: MIT License
   name: nomctx
-  stars: 59
+  stars: 58
   topics:
   - nomad
   updated_at: '2024-10-10T07:33:34Z'
@@ -647,7 +647,7 @@
   language: Jinja
   license: MIT License
   name: localhashi
-  stars: 14
+  stars: 13
   topics:
   - consul
   - nomad
@@ -679,7 +679,7 @@
   language: Go
   license: MIT License
   name: listmonk-messenger
-  stars: 74
+  stars: 73
   topics:
   - listmonk
   - messenger
@@ -703,7 +703,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 99
+  stars: 97
   topics:
   - franz-go
   - high-availability
@@ -720,7 +720,7 @@
   language: Python
   license: MIT License
   name: vendor-payments
-  stars: 37
+  stars: 36
   topics: []
   updated_at: '2023-07-25T18:35:58Z'
   url: https://github.com/zerodha/vendor-payments
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 227
+  stars: 226
   topics:
   - android
   - flutter
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2617
+  stars: 2628
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-07-03T12:38:49Z'
+  updated_at: '2026-07-11T23:40:47Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,12 +823,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 760
+  stars: 759
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-07-02T14:29:31Z'
+  updated_at: '2026-07-11T08:20:03Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 322
+  stars: 321
   topics:
   - automation
   - devops
@@ -847,7 +847,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-07-03T17:47:51Z'
+  updated_at: '2026-07-10T21:39:17Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -856,13 +856,14 @@
   license: Apache License 2.0
   logo: checkpost.svg
   name: checkpost
-  stars: 8
+  stars: 10
   topics:
-  - security
   - compliance
-  - logging
-  - golang
-  updated_at: '2026-07-02T16:23:53Z'
+  - device-management
+  - observability
+  - osquery
+  - security
+  updated_at: '2026-07-10T04:32:01Z'
   url: https://github.com/cvhariharan/checkpost
 - category: services
   description: Terraform Provider for Warpgate
@@ -871,7 +872,7 @@
   name: terraform-provider-warpgate
   stars: 23
   topics: []
-  updated_at: '2026-07-04T16:26:59Z'
+  updated_at: '2026-07-06T23:46:36Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -879,7 +880,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: damon
-  stars: 19
+  stars: 18
   topics:
   - golang
   - hashicorp
@@ -893,7 +894,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 54
+  stars: 53
   topics:
   - mail-server
   - rust
@@ -923,7 +924,7 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 44
+  stars: 43
   topics: []
   updated_at: '2026-03-11T06:43:54Z'
   url: https://github.com/iamd3vil/blobasaur
@@ -934,7 +935,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1334
+  stars: 1351
   topics:
   - whatsapp
   - whatsapp-api
@@ -944,7 +945,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-07-03T11:19:50Z'
+  updated_at: '2026-07-10T18:33:24Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -955,7 +956,7 @@
   name: exampro
   stars: 57
   topics: []
-  updated_at: '2026-07-02T05:15:05Z'
+  updated_at: '2026-07-07T08:09:46Z'
   url: https://github.com/lebmatter/exampro
 - category: apps
   description: Self-hosted, Flutter-first mobile CI and internal app distribution
@@ -973,7 +974,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-05-24T03:45:31Z'
+  updated_at: '2026-07-12T03:23:43Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -982,7 +983,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 106
+  stars: 105
   topics:
   - agent
   - ai
@@ -1014,12 +1015,12 @@
   language: Go
   license: MIT License
   name: mvm
-  stars: 20
+  stars: 19
   topics:
   - docker
   - microvm
   - sandbox
-  updated_at: '2026-06-28T12:01:58Z'
+  updated_at: '2026-07-10T16:43:27Z'
   url: https://github.com/cvhariharan/mvm
 - category: utils
   description: A read-only status page for HashiCorp Nomad clusters with job grouping,
@@ -1038,49 +1039,47 @@
   updated_at: '2026-05-13T06:29:38Z'
   url: https://github.com/joeirimpan/nomadboard
 - category: apps
-  description: A No-Nonsense Task Manager
+  description: ' A No-Nonsense Task Manager'
   github_uri: bureaucatorg/bureaucat
-  language: Go
+  language: Vue
   license: GNU Affero General Public License v3.0
+  logo: bureaucat.svg
   name: bureaucat
-  stars: 14
+  stars: 15
   topics:
+  - jira
   - task
-  - todo
   - task-management
   - task-manager
-  logo: bureaucat.svg
-  updated_at: '2026-07-08T00:00:00Z'
+  - todo
+  updated_at: '2026-07-10T07:29:15Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
   github_uri: toriigateorg/torii
-  language: Go
+  language: Vue
   license: GNU Affero General Public License v3.0
+  logo: torii.svg
   name: torii
   stars: 4
-  topics:
-  - reverse-proxy
-  logo: torii.svg
-  updated_at: '2026-07-08T00:00:00Z'
+  topics: []
+  updated_at: '2026-07-08T06:23:48Z'
   url: https://github.com/toriigateorg/torii
 - category: utils
-  description: An osquery extension that adds an nftables table to a vanilla
-    osqueryd on Linux, written in Go
+  description: An osquery extension that adds an nftables table to a vanilla osqueryd
+    on Linux, written in Go
   github_uri: codingcoffee/osquery-nftables-ext
   language: Go
   license: Apache License 2.0
   logo: osquery-nftables-ext.svg
   name: osquery-nftables-ext
   stars: 2
-  topics:
-  - osquery
-  - nftables
-  updated_at: '2026-07-08T00:00:00Z'
+  topics: []
+  updated_at: '2026-06-24T11:34:24Z'
   url: https://github.com/codingcoffee/osquery-nftables-ext
 - category: utils
-  description: a pi extension to make sure PII data is redacted before reaching
-    the LLM
+  description: a pi extension to make sure PII data is redacted before reaching the
+    LLM
   github_uri: codingcoffee/pi-privacy-filter
   language: HTML
   license: MIT License
@@ -1095,10 +1094,10 @@
   - pii
   - privacy
   - redaction
-  updated_at: '2026-05-11T15:38:10Z'
+  updated_at: '2026-05-10T08:09:48Z'
   url: https://github.com/codingcoffee/pi-privacy-filter
 - category: utils
-  description: a pi extension to let your LLM crawl and see the web
+  description: a pi extension to let your LLM crawl & see the web
   github_uri: codingcoffee/pi-websearch-crawl4ai
   language: HTML
   license: MIT License
@@ -1112,7 +1111,7 @@
   - pi-extension
   - search
   - web
-  updated_at: '2026-06-30T11:08:40Z'
+  updated_at: '2026-04-26T19:15:04Z'
   url: https://github.com/codingcoffee/pi-websearch-crawl4ai
 - category: utils
   description: OpenMetadata ingestion CLI written in Go
@@ -1122,5 +1121,5 @@
   name: openmetadata-ingestion-go
   stars: 1
   topics: []
-  updated_at: '2026-07-02T16:15:43Z'
+  updated_at: '2026-07-01T11:54:23Z'
   url: https://github.com/codingcoffee/openmetadata-ingestion-go
