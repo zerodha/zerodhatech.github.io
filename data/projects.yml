@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 22235
+  stars: 22431
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-07-18T03:10:17Z'
+  updated_at: '2026-07-24T03:43:45Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4119
+  stars: 4129
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-07-10T16:45:38Z'
+  updated_at: '2026-07-25T01:15:54Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 527
+  stars: 528
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1258
+  stars: 1260
   topics:
   - broker-backend
   - database
@@ -711,7 +711,7 @@
   - kafka-consumer
   - kafka-producer
   - kafka-replicator
-  updated_at: '2026-05-13T08:50:11Z'
+  updated_at: '2026-07-23T07:40:54Z'
   url: https://github.com/zerodha/kaf-relay
 - category: utils
   description: A frappe app that has workflows and reports to make payments to vendors
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2643
+  stars: 2656
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-07-18T14:26:05Z'
+  updated_at: '2026-07-25T16:16:21Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,12 +823,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 762
+  stars: 764
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-07-17T08:15:49Z'
+  updated_at: '2026-07-23T06:57:42Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 325
+  stars: 326
   topics:
   - automation
   - devops
@@ -847,7 +847,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-07-18T10:47:44Z'
+  updated_at: '2026-07-25T16:48:35Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -863,7 +863,7 @@
   - observability
   - osquery
   - security
-  updated_at: '2026-07-17T10:42:09Z'
+  updated_at: '2026-07-22T09:51:07Z'
   url: https://github.com/cvhariharan/checkpost
 - category: services
   description: Terraform Provider for Warpgate
@@ -894,14 +894,14 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 53
+  stars: 54
   topics:
   - mail-server
   - rust
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-07-17T09:19:06Z'
+  updated_at: '2026-07-25T05:45:32Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -935,7 +935,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1365
+  stars: 1374
   topics:
   - whatsapp
   - whatsapp-api
@@ -956,7 +956,7 @@
   name: exampro
   stars: 57
   topics: []
-  updated_at: '2026-07-15T06:17:21Z'
+  updated_at: '2026-07-22T05:38:02Z'
   url: https://github.com/lebmatter/exampro
 - category: apps
   description: Self-hosted, Flutter-first mobile CI and internal app distribution
@@ -966,7 +966,7 @@
   license: MIT License
   logo: oore-build.svg
   name: oore.build
-  stars: 19
+  stars: 22
   topics:
   - ci
   - ci-cd
@@ -974,7 +974,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-07-17T22:45:35Z'
+  updated_at: '2026-07-25T16:44:52Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -983,7 +983,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 105
+  stars: 106
   topics:
   - agent
   - ai
@@ -1052,7 +1052,7 @@
   - task-management
   - task-manager
   - todo
-  updated_at: '2026-07-16T10:40:10Z'
+  updated_at: '2026-07-24T14:34:11Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
@@ -1061,7 +1061,7 @@
   license: GNU Affero General Public License v3.0
   logo: torii.svg
   name: torii
-  stars: 5
+  stars: 6
   topics: []
   updated_at: '2026-07-08T06:23:48Z'
   url: https://github.com/toriigateorg/torii
