@@ -106,7 +106,7 @@
   - google-chat
   - monitoring
   - prometheus
-  updated_at: '2026-01-08T11:31:42Z'
+  updated_at: '2026-07-29T07:57:23Z'
   url: https://github.com/mr-karan/cAlert
 - category: services
   description: Utility to extract metrics from arbitary data stores in Prometheus
@@ -132,7 +132,7 @@
   language: Python
   license: MIT License
   name: pdf_text_overlay
-  stars: 40
+  stars: 41
   topics: []
   updated_at: '2025-05-09T05:51:31Z'
   url: https://github.com/zerodhatech/pdf_text_overlay
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 22431
+  stars: 22581
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-07-24T03:43:45Z'
+  updated_at: '2026-08-02T01:55:50Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4129
+  stars: 4143
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-07-25T01:15:54Z'
+  updated_at: '2026-07-31T12:12:52Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1171
+  stars: 1170
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 528
+  stars: 530
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1260
+  stars: 1261
   topics:
   - broker-backend
   - database
@@ -516,7 +516,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 159
+  stars: 160
   topics:
   - implied-volatility
   - option-chain-stream
@@ -711,7 +711,7 @@
   - kafka-consumer
   - kafka-producer
   - kafka-replicator
-  updated_at: '2026-07-23T07:40:54Z'
+  updated_at: '2026-07-29T11:10:42Z'
   url: https://github.com/zerodha/kaf-relay
 - category: utils
   description: A frappe app that has workflows and reports to make payments to vendors
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 226
+  stars: 228
   topics:
   - android
   - flutter
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2656
+  stars: 2669
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-07-25T16:16:21Z'
+  updated_at: '2026-08-01T17:04:15Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,12 +823,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 764
+  stars: 766
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-07-23T06:57:42Z'
+  updated_at: '2026-07-28T11:11:12Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 326
+  stars: 328
   topics:
   - automation
   - devops
@@ -847,7 +847,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-07-25T16:48:35Z'
+  updated_at: '2026-07-31T11:18:19Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -863,7 +863,7 @@
   - observability
   - osquery
   - security
-  updated_at: '2026-07-22T09:51:07Z'
+  updated_at: '2026-08-01T04:32:51Z'
   url: https://github.com/cvhariharan/checkpost
 - category: services
   description: Terraform Provider for Warpgate
@@ -894,14 +894,14 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 54
+  stars: 57
   topics:
   - mail-server
   - rust
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-07-25T05:45:32Z'
+  updated_at: '2026-07-27T16:06:33Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -926,7 +926,7 @@
   name: blobasaur
   stars: 43
   topics: []
-  updated_at: '2026-03-11T06:43:54Z'
+  updated_at: '2026-07-28T09:05:56Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
@@ -935,7 +935,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1374
+  stars: 1383
   topics:
   - whatsapp
   - whatsapp-api
@@ -945,7 +945,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-07-14T07:01:19Z'
+  updated_at: '2026-08-01T01:43:18Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -956,7 +956,7 @@
   name: exampro
   stars: 57
   topics: []
-  updated_at: '2026-07-22T05:38:02Z'
+  updated_at: '2026-07-30T03:18:14Z'
   url: https://github.com/lebmatter/exampro
 - category: apps
   description: Self-hosted, Flutter-first mobile CI and internal app distribution
@@ -966,7 +966,7 @@
   license: MIT License
   logo: oore-build.svg
   name: oore.build
-  stars: 22
+  stars: 23
   topics:
   - ci
   - ci-cd
@@ -974,7 +974,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-07-25T16:44:52Z'
+  updated_at: '2026-08-01T16:26:00Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -993,7 +993,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-07-16T07:50:37Z'
+  updated_at: '2026-07-29T05:31:41Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -1063,7 +1063,7 @@
   name: torii
   stars: 6
   topics: []
-  updated_at: '2026-07-08T06:23:48Z'
+  updated_at: '2026-07-28T11:39:09Z'
   url: https://github.com/toriigateorg/torii
 - category: utils
   description: An osquery extension that adds an nftables table to a vanilla osqueryd
