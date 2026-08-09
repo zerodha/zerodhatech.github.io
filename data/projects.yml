@@ -3,7 +3,7 @@
   github_uri: vividvilla/lil
   language: Go
   name: lil
-  stars: 55
+  stars: 54
   topics: []
   updated_at: '2020-04-24T05:52:18Z'
   url: https://github.com/vividvilla/lil
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 22581
+  stars: 22676
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-08-02T01:55:50Z'
+  updated_at: '2026-08-07T03:05:49Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4143
+  stars: 4151
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-07-31T12:12:52Z'
+  updated_at: '2026-08-05T11:02:46Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1261
+  stars: 1262
   topics:
   - broker-backend
   - database
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 205
+  stars: 206
   topics:
   - aws
   - aws-s3
@@ -703,7 +703,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 97
+  stars: 99
   topics:
   - franz-go
   - high-availability
@@ -730,7 +730,7 @@
   language: Dart
   license: MIT License
   name: flutter_displaymode
-  stars: 228
+  stars: 230
   topics:
   - android
   - flutter
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2669
+  stars: 2687
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-08-01T17:04:15Z'
+  updated_at: '2026-08-08T17:54:10Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,12 +823,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 766
+  stars: 782
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-07-28T11:11:12Z'
+  updated_at: '2026-08-08T12:05:18Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -847,7 +847,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-07-31T11:18:19Z'
+  updated_at: '2026-08-06T05:24:47Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -863,14 +863,14 @@
   - observability
   - osquery
   - security
-  updated_at: '2026-08-01T04:32:51Z'
+  updated_at: '2026-08-05T07:44:18Z'
   url: https://github.com/cvhariharan/checkpost
 - category: services
   description: Terraform Provider for Warpgate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 23
+  stars: 24
   topics: []
   updated_at: '2026-07-06T23:46:36Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -894,7 +894,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 57
+  stars: 59
   topics:
   - mail-server
   - rust
@@ -935,7 +935,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1383
+  stars: 1419
   topics:
   - whatsapp
   - whatsapp-api
@@ -966,7 +966,7 @@
   license: MIT License
   logo: oore-build.svg
   name: oore.build
-  stars: 23
+  stars: 26
   topics:
   - ci
   - ci-cd
@@ -974,7 +974,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-08-01T16:26:00Z'
+  updated_at: '2026-08-07T15:37:52Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -993,7 +993,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-07-29T05:31:41Z'
+  updated_at: '2026-08-05T11:26:30Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -1052,18 +1052,18 @@
   - task-management
   - task-manager
   - todo
-  updated_at: '2026-07-24T14:34:11Z'
+  updated_at: '2026-08-06T09:41:54Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
   github_uri: toriigateorg/torii
-  language: Vue
+  language: Go
   license: GNU Affero General Public License v3.0
   logo: torii.svg
   name: torii
   stars: 6
   topics: []
-  updated_at: '2026-07-28T11:39:09Z'
+  updated_at: '2026-08-04T18:25:05Z'
   url: https://github.com/toriigateorg/torii
 - category: utils
   description: An osquery extension that adds an nftables table to a vanilla osqueryd
