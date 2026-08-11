@@ -964,7 +964,7 @@
   github_uri: devaryakjha/oore.build
   language: Rust
   license: MIT License
-  logo: oore-build.svg
+  logo: oore.svg
   name: oore.build
   stars: 26
   topics:
