@@ -35,7 +35,7 @@
   language: Go
   license: MIT License
   name: kubekutr
-  stars: 162
+  stars: 161
   topics:
   - gitops
   - kubernetes
@@ -77,7 +77,7 @@
   language: Go
   license: MIT License
   name: querytostruct
-  stars: 21
+  stars: 20
   topics: []
   updated_at: '2022-06-09T18:04:52Z'
   url: https://github.com/knadh/querytostruct
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 22676
+  stars: 22877
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-08-07T03:05:49Z'
+  updated_at: '2026-08-14T17:55:58Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4151
+  stars: 4158
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-08-05T11:02:46Z'
+  updated_at: '2026-08-09T18:08:10Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV files to searchable and
@@ -208,7 +208,7 @@
   language: Python
   license: MIT License
   name: csvtotable
-  stars: 1170
+  stars: 1169
   topics: []
   updated_at: '2021-01-05T11:46:14Z'
   url: https://github.com/vividvilla/csvtotable
@@ -274,7 +274,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 66
+  stars: 67
   topics:
   - curl
   - flutter
@@ -290,7 +290,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 530
+  stars: 532
   topics:
   - email-verification
   - mobile-number-verification
@@ -351,7 +351,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1262
+  stars: 1263
   topics:
   - broker-backend
   - database
@@ -383,7 +383,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 206
+  stars: 207
   topics:
   - aws
   - aws-s3
@@ -411,7 +411,7 @@
   github_uri: zerodhatech/rbiparser
   language: Python
   name: rbiparser
-  stars: 64
+  stars: 65
   topics: []
   updated_at: '2023-11-30T08:20:55Z'
   url: https://github.com/zerodhatech/rbiparser
@@ -516,7 +516,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 160
+  stars: 161
   topics:
   - implied-volatility
   - option-chain-stream
@@ -545,7 +545,7 @@
   name: linkpage
   stars: 136
   topics: []
-  updated_at: '2026-04-14T14:45:22Z'
+  updated_at: '2026-08-10T14:26:06Z'
   url: https://github.com/rhnvrm/linkpage
 - category: libs
   description: Fastglue is an opinionated, bare bones wrapper that glues together
@@ -574,7 +574,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 74
+  stars: 73
   topics:
   - mysql
   - postgresql
@@ -590,7 +590,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 130
+  stars: 131
   topics:
   - bandwidth-saver
   - browser-cache
@@ -794,7 +794,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2687
+  stars: 2703
   topics:
   - chat-widget
   - conversation
@@ -813,7 +813,7 @@
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-08-08T17:54:10Z'
+  updated_at: '2026-08-15T07:26:28Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,12 +823,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 782
+  stars: 834
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-08-08T12:05:18Z'
+  updated_at: '2026-08-12T11:55:02Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -837,7 +837,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 328
+  stars: 329
   topics:
   - automation
   - devops
@@ -847,7 +847,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-08-06T05:24:47Z'
+  updated_at: '2026-08-13T10:54:56Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -872,7 +872,7 @@
   name: terraform-provider-warpgate
   stars: 24
   topics: []
-  updated_at: '2026-07-06T23:46:36Z'
+  updated_at: '2026-08-11T19:09:24Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -935,7 +935,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1419
+  stars: 1436
   topics:
   - whatsapp
   - whatsapp-api
@@ -974,7 +974,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-08-07T15:37:52Z'
+  updated_at: '2026-08-15T20:51:07Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -1015,7 +1015,7 @@
   language: Go
   license: MIT License
   name: mvm
-  stars: 19
+  stars: 22
   topics:
   - docker
   - microvm
@@ -1045,7 +1045,7 @@
   license: GNU Affero General Public License v3.0
   logo: bureaucat.svg
   name: bureaucat
-  stars: 18
+  stars: 32
   topics:
   - jira
   - task
