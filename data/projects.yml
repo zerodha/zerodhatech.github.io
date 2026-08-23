@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 22877
+  stars: 23046
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-08-14T17:55:58Z'
+  updated_at: '2026-08-22T08:24:51Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4158
+  stars: 4172
   topics:
   - config
   - config-loader
@@ -202,15 +202,18 @@
   updated_at: '2026-08-09T18:08:10Z'
   url: https://github.com/knadh/koanf
 - category: utils
-  description: Simple command-line utility to convert CSV files to searchable and
-    sortable HTML table.
+  description: Simple command-line utility to convert CSV, TSV and Excel files into
+    a single self-contained HTML page with search, filters, and sorting
   github_uri: vividvilla/csvtotable
-  language: Python
+  language: Go
   license: MIT License
   name: csvtotable
-  stars: 1169
-  topics: []
-  updated_at: '2021-01-05T11:46:14Z'
+  stars: 1177
+  topics:
+  - cli
+  - data-visualization
+  - golang
+  updated_at: '2026-08-22T07:30:42Z'
   url: https://github.com/vividvilla/csvtotable
 - category: utils
   description: A utility to archive all closed tickets beyond a certain age to disk
@@ -383,7 +386,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 207
+  stars: 208
   topics:
   - aws
   - aws-s3
@@ -606,7 +609,7 @@
   language: Python
   license: Other
   name: frappe_tinymce
-  stars: 48
+  stars: 49
   topics:
   - editor
   - frappe
@@ -638,7 +641,7 @@
   stars: 58
   topics:
   - nomad
-  updated_at: '2024-10-10T07:33:34Z'
+  updated_at: '2026-08-17T11:51:33Z'
   url: https://github.com/mr-karan/nomctx
 - category: utils
   description: Vagrant based setup for local Nomad/Consul clusters. Helpful for experimenting
@@ -787,33 +790,33 @@
   updated_at: '2025-07-29T06:42:07Z'
   url: https://github.com/srv91/trace-chart
 - category: apps
-  description: Open source, self-hosted omnichannel customer support desk. Live chat,
-    email, and more in a single binary.
+  description: Open-source, self-hosted customer support desk in a single binary.
+    Email and live chat. A lightweight alternative to Intercom, Zendesk, Chatwoot.
   github_uri: abhinavxd/libredesk
   language: Go
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2703
+  stars: 2777
   topics:
   - chat-widget
-  - conversation
-  - conversations
   - customer-service
   - customer-success
   - customer-support
   - customer-support-automation
   - golang
+  - helpcenter
   - helpdesk
   - intercom
-  - live-chat
+  - knowledge-base
   - livechat
   - omnichannel
   - self-hosted
   - support
   - ticketing-system
   - vue
-  updated_at: '2026-08-15T07:26:28Z'
+  - zendesk
+  updated_at: '2026-08-22T21:38:30Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -823,12 +826,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 834
+  stars: 863
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-08-12T11:55:02Z'
+  updated_at: '2026-08-19T09:43:43Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -837,7 +840,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 329
+  stars: 330
   topics:
   - automation
   - devops
@@ -847,7 +850,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-08-13T10:54:56Z'
+  updated_at: '2026-08-21T06:28:40Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -870,9 +873,9 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 24
+  stars: 25
   topics: []
-  updated_at: '2026-08-11T19:09:24Z'
+  updated_at: '2026-08-19T12:58:19Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -894,14 +897,14 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 59
+  stars: 60
   topics:
   - mail-server
   - rust
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-07-27T16:06:33Z'
+  updated_at: '2026-08-22T15:44:16Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -924,7 +927,7 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 43
+  stars: 44
   topics: []
   updated_at: '2026-07-28T09:05:56Z'
   url: https://github.com/iamd3vil/blobasaur
@@ -935,7 +938,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1436
+  stars: 1447
   topics:
   - whatsapp
   - whatsapp-api
@@ -945,7 +948,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-08-01T01:43:18Z'
+  updated_at: '2026-08-22T06:39:26Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -954,9 +957,9 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 57
+  stars: 60
   topics: []
-  updated_at: '2026-07-30T03:18:14Z'
+  updated_at: '2026-08-19T07:14:18Z'
   url: https://github.com/lebmatter/exampro
 - category: apps
   description: Self-hosted, Flutter-first mobile CI and internal app distribution
@@ -974,7 +977,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-08-15T20:51:07Z'
+  updated_at: '2026-08-21T08:01:26Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -983,7 +986,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 106
+  stars: 107
   topics:
   - agent
   - ai
@@ -993,7 +996,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-08-05T11:26:30Z'
+  updated_at: '2026-08-20T09:11:52Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -1036,7 +1039,7 @@
   - hashicorp
   - nomad
   - status-page
-  updated_at: '2026-05-13T06:29:38Z'
+  updated_at: '2026-08-17T16:51:45Z'
   url: https://github.com/joeirimpan/nomadboard
 - category: apps
   description: ' A No-Nonsense Task Manager'
@@ -1045,14 +1048,14 @@
   license: GNU Affero General Public License v3.0
   logo: bureaucat.svg
   name: bureaucat
-  stars: 32
+  stars: 43
   topics:
   - jira
   - task
   - task-management
   - task-manager
   - todo
-  updated_at: '2026-08-06T09:41:54Z'
+  updated_at: '2026-08-17T17:54:16Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
