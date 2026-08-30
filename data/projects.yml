@@ -14,7 +14,7 @@
   language: Go
   license: Other
   name: stuffbin
-  stars: 203
+  stars: 204
   topics: []
   updated_at: '2026-06-28T06:35:42Z'
   url: https://github.com/knadh/stuffbin
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 207
+  stars: 208
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 23046
+  stars: 23175
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-08-22T08:24:51Z'
+  updated_at: '2026-08-25T16:40:09Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4172
+  stars: 4184
   topics:
   - config
   - config-loader
@@ -208,12 +208,12 @@
   language: Go
   license: MIT License
   name: csvtotable
-  stars: 1177
+  stars: 1179
   topics:
   - cli
   - data-visualization
   - golang
-  updated_at: '2026-08-22T07:30:42Z'
+  updated_at: '2026-08-24T07:56:24Z'
   url: https://github.com/vividvilla/csvtotable
 - category: utils
   description: A utility to archive all closed tickets beyond a certain age to disk
@@ -277,7 +277,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 67
+  stars: 68
   topics:
   - curl
   - flutter
@@ -336,14 +336,15 @@
   updated_at: '2020-09-22T09:15:47Z'
   url: https://github.com/mr-karan/simplehealth
 - category: utils
-  description: Simple utility to live preview Go templates with custom data
+  description: Live preview and render Go templates with custom data, in the browser
+    or on the command line.
   github_uri: vividvilla/gotp
-  language: HTML
+  language: Go
   license: MIT License
   name: gotp
   stars: 43
   topics: []
-  updated_at: '2025-09-09T12:23:50Z'
+  updated_at: '2026-08-24T08:09:56Z'
   url: https://github.com/vividvilla/gotp
 - category: services
   description: A distributed job server built specifically for queuing and executing
@@ -354,7 +355,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1263
+  stars: 1265
   topics:
   - broker-backend
   - database
@@ -577,7 +578,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 73
+  stars: 75
   topics:
   - mysql
   - postgresql
@@ -593,7 +594,7 @@
   language: JavaScript
   license: MIT License
   name: indexed-cache
-  stars: 131
+  stars: 132
   topics:
   - bandwidth-saver
   - browser-cache
@@ -758,7 +759,7 @@
   license: MIT License
   logo: tagflow.svg
   name: tagflow
-  stars: 20
+  stars: 21
   topics:
   - flutter
   - html
@@ -791,14 +792,15 @@
   url: https://github.com/srv91/trace-chart
 - category: apps
   description: Open-source, self-hosted customer support desk in a single binary.
-    Email and live chat. A lightweight alternative to Intercom, Zendesk, Chatwoot.
+    A lightweight alternative to Intercom, Zendesk, Chatwoot.
   github_uri: abhinavxd/libredesk
   language: Go
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2777
+  stars: 2856
   topics:
+  - ai-agent
   - chat-widget
   - customer-service
   - customer-success
@@ -816,7 +818,7 @@
   - ticketing-system
   - vue
   - zendesk
-  updated_at: '2026-08-22T21:38:30Z'
+  updated_at: '2026-08-28T18:13:13Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -826,7 +828,7 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 863
+  stars: 879
   topics:
   - clickhouse
   - log-analytics
@@ -840,7 +842,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 330
+  stars: 332
   topics:
   - automation
   - devops
@@ -850,7 +852,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-08-21T06:28:40Z'
+  updated_at: '2026-08-26T18:41:16Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -873,9 +875,9 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 25
+  stars: 26
   topics: []
-  updated_at: '2026-08-19T12:58:19Z'
+  updated_at: '2026-08-28T21:03:11Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
 - category: services
   description: Automate routine Nomad tasks by responding to cluster events
@@ -897,14 +899,14 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 60
+  stars: 61
   topics:
   - mail-server
   - rust
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-08-22T15:44:16Z'
+  updated_at: '2026-08-29T06:09:06Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -927,7 +929,7 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 44
+  stars: 45
   topics: []
   updated_at: '2026-07-28T09:05:56Z'
   url: https://github.com/iamd3vil/blobasaur
@@ -938,7 +940,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1447
+  stars: 1485
   topics:
   - whatsapp
   - whatsapp-api
@@ -957,7 +959,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 60
+  stars: 65
   topics: []
   updated_at: '2026-08-19T07:14:18Z'
   url: https://github.com/lebmatter/exampro
@@ -969,7 +971,7 @@
   license: MIT License
   logo: oore.svg
   name: oore.build
-  stars: 26
+  stars: 27
   topics:
   - ci
   - ci-cd
@@ -977,7 +979,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-08-21T08:01:26Z'
+  updated_at: '2026-08-29T20:44:25Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -986,7 +988,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 107
+  stars: 106
   topics:
   - agent
   - ai
@@ -1005,7 +1007,7 @@
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 20
+  stars: 21
   topics:
   - pi
   - pi-agent
@@ -1032,14 +1034,14 @@
   language: Go
   license: MIT License
   name: nomadboard
-  stars: 9
+  stars: 10
   topics:
   - cross-dc
   - golang
   - hashicorp
   - nomad
   - status-page
-  updated_at: '2026-08-17T16:51:45Z'
+  updated_at: '2026-08-24T11:33:08Z'
   url: https://github.com/joeirimpan/nomadboard
 - category: apps
   description: ' A No-Nonsense Task Manager'
@@ -1048,7 +1050,7 @@
   license: GNU Affero General Public License v3.0
   logo: bureaucat.svg
   name: bureaucat
-  stars: 43
+  stars: 45
   topics:
   - jira
   - task
@@ -1120,9 +1122,10 @@
   description: OpenMetadata ingestion CLI written in Go
   github_uri: codingcoffee/openmetadata-ingestion-go
   language: Go
+  license: MIT License
   logo: openmetadata-ingestion-go.svg
   name: openmetadata-ingestion-go
   stars: 1
   topics: []
-  updated_at: '2026-07-01T11:54:23Z'
+  updated_at: '2026-08-25T07:07:18Z'
   url: https://github.com/codingcoffee/openmetadata-ingestion-go
