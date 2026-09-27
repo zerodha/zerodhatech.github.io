@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 79
+  stars: 80
   topics:
   - session
   - session-cookie
@@ -77,7 +77,7 @@
   language: Go
   license: MIT License
   name: querytostruct
-  stars: 22
+  stars: 23
   topics: []
   updated_at: '2022-06-09T18:04:52Z'
   url: https://github.com/knadh/querytostruct
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 23483
+  stars: 23589
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-09-13T21:49:56Z'
+  updated_at: '2026-09-25T02:20:41Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4204
+  stars: 4209
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-09-02T07:23:56Z'
+  updated_at: '2026-09-24T17:15:39Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV, TSV and Excel files into
@@ -208,7 +208,7 @@
   language: Go
   license: MIT License
   name: csvtotable
-  stars: 1183
+  stars: 1184
   topics:
   - cli
   - data-visualization
@@ -355,7 +355,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1275
+  stars: 1277
   topics:
   - broker-backend
   - database
@@ -558,7 +558,7 @@
   language: Go
   license: MIT License
   name: fastglue
-  stars: 93
+  stars: 94
   topics:
   - fastglue
   - fasthttp
@@ -578,7 +578,7 @@
   language: Go
   license: BSD 2-Clause "Simplified" License
   name: goyesql
-  stars: 79
+  stars: 80
   topics:
   - mysql
   - postgresql
@@ -665,7 +665,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 465
+  stars: 466
   topics:
   - background-jobs
   - distributed-systems
@@ -707,7 +707,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 104
+  stars: 105
   topics:
   - franz-go
   - high-availability
@@ -798,7 +798,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2944
+  stars: 2969
   topics:
   - ai-agent
   - chat-widget
@@ -818,7 +818,7 @@
   - ticketing-system
   - vue
   - zendesk
-  updated_at: '2026-09-19T11:57:06Z'
+  updated_at: '2026-09-25T20:23:22Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -828,12 +828,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 899
+  stars: 904
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-09-16T09:11:02Z'
+  updated_at: '2026-09-25T07:30:13Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -868,14 +868,14 @@
   - observability
   - osquery
   - security
-  updated_at: '2026-09-17T16:46:48Z'
+  updated_at: '2026-09-23T11:11:56Z'
   url: https://github.com/cvhariharan/checkpost
 - category: services
   description: Terraform Provider for Warpgate
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 29
+  stars: 30
   topics: []
   updated_at: '2026-09-18T09:11:28Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -940,7 +940,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1702
+  stars: 1714
   topics:
   - whatsapp
   - whatsapp-api
@@ -950,7 +950,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-09-17T06:52:13Z'
+  updated_at: '2026-09-23T10:08:21Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -959,7 +959,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 69
+  stars: 70
   topics: []
   updated_at: '2026-08-19T07:14:18Z'
   url: https://github.com/lebmatter/exampro
@@ -988,7 +988,7 @@
   github_uri: mr-karan/hodor
   language: TypeScript
   name: hodor
-  stars: 108
+  stars: 110
   topics:
   - agent
   - ai
@@ -1057,7 +1057,7 @@
   - task-management
   - task-manager
   - todo
-  updated_at: '2026-08-17T17:54:16Z'
+  updated_at: '2026-09-22T07:45:28Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
@@ -1068,7 +1068,7 @@
   name: torii
   stars: 9
   topics: []
-  updated_at: '2026-08-04T18:25:05Z'
+  updated_at: '2026-09-22T07:35:33Z'
   url: https://github.com/toriigateorg/torii
 - category: utils
   description: An osquery extension that adds an nftables table to a vanilla osqueryd
