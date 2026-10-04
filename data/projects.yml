@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 211
+  stars: 212
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 23589
+  stars: 23686
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-09-25T02:20:41Z'
+  updated_at: '2026-10-04T02:52:34Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4209
+  stars: 4215
   topics:
   - config
   - config-loader
@@ -293,7 +293,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 552
+  stars: 553
   topics:
   - email-verification
   - mobile-number-verification
@@ -368,7 +368,7 @@
   - sql
   - sql-query
   - workers
-  updated_at: '2026-05-14T08:58:31Z'
+  updated_at: '2026-09-29T11:06:13Z'
   url: https://github.com/knadh/sql-jobber
 - category: libs
   description: Pure Go LZO1Z compression and decompression library
@@ -488,7 +488,7 @@
   language: Go
   license: MIT License
   name: aws-exporter
-  stars: 25
+  stars: 26
   topics: []
   updated_at: '2020-09-30T08:11:01Z'
   url: https://github.com/Thunderbottom/aws-exporter
@@ -665,7 +665,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 466
+  stars: 467
   topics:
   - background-jobs
   - distributed-systems
@@ -798,7 +798,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2969
+  stars: 2988
   topics:
   - ai-agent
   - chat-widget
@@ -818,7 +818,7 @@
   - ticketing-system
   - vue
   - zendesk
-  updated_at: '2026-09-25T20:23:22Z'
+  updated_at: '2026-09-28T19:47:26Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -828,12 +828,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 904
+  stars: 911
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-09-25T07:30:13Z'
+  updated_at: '2026-09-29T09:02:56Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -842,7 +842,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 340
+  stars: 341
   topics:
   - automation
   - devops
@@ -906,7 +906,7 @@
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-09-17T13:39:43Z'
+  updated_at: '2026-09-29T15:36:19Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -931,7 +931,7 @@
   name: blobasaur
   stars: 50
   topics: []
-  updated_at: '2026-09-08T18:27:42Z'
+  updated_at: '2026-10-02T19:42:43Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
@@ -940,7 +940,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1714
+  stars: 1724
   topics:
   - whatsapp
   - whatsapp-api
@@ -950,7 +950,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-09-23T10:08:21Z'
+  updated_at: '2026-10-01T11:35:42Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -959,7 +959,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 70
+  stars: 72
   topics: []
   updated_at: '2026-08-19T07:14:18Z'
   url: https://github.com/lebmatter/exampro
@@ -987,8 +987,9 @@
     \ files."
   github_uri: mr-karan/hodor
   language: TypeScript
+  license: MIT License
   name: hodor
-  stars: 110
+  stars: 111
   topics:
   - agent
   - ai
@@ -998,7 +999,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-09-04T06:37:39Z'
+  updated_at: '2026-09-30T11:40:03Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -1044,20 +1045,20 @@
   updated_at: '2026-08-24T11:33:08Z'
   url: https://github.com/joeirimpan/nomadboard
 - category: apps
-  description: ' A No-Nonsense Task Manager'
+  description: ' An Open Source. Self Hosted. No-Nonsense Task Manager'
   github_uri: bureaucatorg/bureaucat
   language: Vue
   license: GNU Affero General Public License v3.0
   logo: bureaucat.svg
   name: bureaucat
-  stars: 54
+  stars: 55
   topics:
   - jira
   - task
   - task-management
   - task-manager
   - todo
-  updated_at: '2026-09-22T07:45:28Z'
+  updated_at: '2026-10-02T17:35:26Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
