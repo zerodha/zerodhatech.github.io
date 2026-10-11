@@ -35,7 +35,7 @@
   language: Go
   license: MIT License
   name: kubekutr
-  stars: 161
+  stars: 160
   topics:
   - gitops
   - kubernetes
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 23686
+  stars: 23741
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-10-04T02:52:34Z'
+  updated_at: '2026-10-11T02:26:43Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4215
+  stars: 4217
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-09-24T17:15:39Z'
+  updated_at: '2026-10-07T09:45:24Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV, TSV and Excel files into
@@ -208,7 +208,7 @@
   language: Go
   license: MIT License
   name: csvtotable
-  stars: 1184
+  stars: 1183
   topics:
   - cli
   - data-visualization
@@ -267,7 +267,7 @@
   language: Dart
   license: MIT License
   name: flutter_fgbg
-  stars: 93
+  stars: 94
   topics: []
   updated_at: '2026-03-30T08:58:43Z'
   url: https://github.com/ajinasokan/flutter_fgbg
@@ -355,7 +355,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1277
+  stars: 1279
   topics:
   - broker-backend
   - database
@@ -387,7 +387,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 209
+  stars: 207
   topics:
   - aws
   - aws-s3
@@ -520,7 +520,7 @@
   language: Python
   license: MIT License
   name: optionchainstream
-  stars: 161
+  stars: 163
   topics:
   - implied-volatility
   - option-chain-stream
@@ -558,7 +558,7 @@
   language: Go
   license: MIT License
   name: fastglue
-  stars: 94
+  stars: 95
   topics:
   - fastglue
   - fasthttp
@@ -798,7 +798,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 2988
+  stars: 3020
   topics:
   - ai-agent
   - chat-widget
@@ -818,7 +818,7 @@
   - ticketing-system
   - vue
   - zendesk
-  updated_at: '2026-09-28T19:47:26Z'
+  updated_at: '2026-10-10T19:20:50Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -828,12 +828,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 911
+  stars: 914
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-09-29T09:02:56Z'
+  updated_at: '2026-10-09T12:02:43Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -852,7 +852,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-09-18T00:39:34Z'
+  updated_at: '2026-10-07T17:14:07Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -929,9 +929,9 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 50
+  stars: 62
   topics: []
-  updated_at: '2026-10-02T19:42:43Z'
+  updated_at: '2026-10-07T17:55:11Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
@@ -940,7 +940,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1724
+  stars: 1736
   topics:
   - whatsapp
   - whatsapp-api
@@ -989,7 +989,7 @@
   language: TypeScript
   license: MIT License
   name: hodor
-  stars: 111
+  stars: 112
   topics:
   - agent
   - ai
@@ -999,7 +999,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-09-30T11:40:03Z'
+  updated_at: '2026-10-07T09:26:09Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -1058,7 +1058,7 @@
   - task-management
   - task-manager
   - todo
-  updated_at: '2026-10-02T17:35:26Z'
+  updated_at: '2026-10-09T10:12:26Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
