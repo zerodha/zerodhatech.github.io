@@ -48,7 +48,7 @@
   language: Python
   license: Other
   name: frappe-attachments-s3
-  stars: 172
+  stars: 171
   topics: []
   updated_at: '2026-03-11T10:44:29Z'
   url: https://github.com/zerodhatech/Frappe-attachments-s3
@@ -98,7 +98,7 @@
   language: Go
   license: MIT License
   name: calert
-  stars: 212
+  stars: 213
   topics:
   - alerting
   - alertmanager
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 23741
+  stars: 23824
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-10-11T02:26:43Z'
+  updated_at: '2026-10-18T02:19:58Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-10-07T09:45:24Z'
+  updated_at: '2026-10-17T04:51:00Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV, TSV and Excel files into
@@ -208,7 +208,7 @@
   language: Go
   license: MIT License
   name: csvtotable
-  stars: 1183
+  stars: 1184
   topics:
   - cli
   - data-visualization
@@ -355,7 +355,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1279
+  stars: 1280
   topics:
   - broker-backend
   - database
@@ -387,7 +387,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 207
+  stars: 208
   topics:
   - aws
   - aws-s3
@@ -798,7 +798,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 3020
+  stars: 3046
   topics:
   - ai-agent
   - chat-widget
@@ -818,7 +818,7 @@
   - ticketing-system
   - vue
   - zendesk
-  updated_at: '2026-10-10T19:20:50Z'
+  updated_at: '2026-10-16T11:45:45Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -828,12 +828,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 914
+  stars: 916
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-10-09T12:02:43Z'
+  updated_at: '2026-10-14T12:53:41Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -875,7 +875,7 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 30
+  stars: 31
   topics: []
   updated_at: '2026-09-18T09:11:28Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -929,9 +929,9 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 62
+  stars: 63
   topics: []
-  updated_at: '2026-10-07T17:55:11Z'
+  updated_at: '2026-10-14T11:29:22Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
@@ -940,7 +940,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1736
+  stars: 1741
   topics:
   - whatsapp
   - whatsapp-api
@@ -950,7 +950,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-10-01T11:35:42Z'
+  updated_at: '2026-10-14T05:20:35Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -959,7 +959,7 @@
   license: MIT License
   logo: exampro.png
   name: exampro
-  stars: 72
+  stars: 71
   topics: []
   updated_at: '2026-08-19T07:14:18Z'
   url: https://github.com/lebmatter/exampro
@@ -1008,7 +1008,7 @@
   language: TypeScript
   license: MIT License
   name: pi-sre-mode
-  stars: 22
+  stars: 23
   topics:
   - pi
   - pi-agent
@@ -1051,14 +1051,14 @@
   license: GNU Affero General Public License v3.0
   logo: bureaucat.svg
   name: bureaucat
-  stars: 55
+  stars: 56
   topics:
   - jira
   - task
   - task-management
   - task-manager
   - todo
-  updated_at: '2026-10-09T10:12:26Z'
+  updated_at: '2026-10-16T15:22:00Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
