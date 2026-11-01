@@ -59,7 +59,7 @@
   language: Go
   license: MIT License
   name: simplesessions
-  stars: 80
+  stars: 81
   topics:
   - session
   - session-cookie
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 23954
+  stars: 24103
   topics:
   - campaign
   - campaign-management
@@ -159,7 +159,7 @@
   - sms-gateway
   - smtp
   - transactional-emails
-  updated_at: '2026-10-24T02:18:43Z'
+  updated_at: '2026-11-01T02:09:21Z'
   url: https://github.com/knadh/listmonk
 - category: utils
   description: A CLI utility and web server for digitally signing PDFs with docsign
@@ -168,7 +168,7 @@
   language: Go
   license: GNU Affero General Public License v3.0
   name: pfxsigner
-  stars: 93
+  stars: 94
   topics:
   - digital-signature
   - pdf
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4223
+  stars: 4227
   topics:
   - config
   - config-loader
@@ -208,7 +208,7 @@
   language: Go
   license: MIT License
   name: csvtotable
-  stars: 1185
+  stars: 1184
   topics:
   - cli
   - data-visualization
@@ -284,7 +284,7 @@
   - http
   - libcurl
   - quic
-  updated_at: '2026-10-22T09:28:03Z'
+  updated_at: '2026-10-28T10:08:08Z'
   url: https://github.com/ajinasokan/flutter_curl
 - category: services
   description: Standalone server for user address and OTP verification flows with
@@ -355,7 +355,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1282
+  stars: 1285
   topics:
   - broker-backend
   - database
@@ -368,7 +368,7 @@
   - sql
   - sql-query
   - workers
-  updated_at: '2026-09-29T11:06:13Z'
+  updated_at: '2026-10-27T08:31:15Z'
   url: https://github.com/knadh/sql-jobber
 - category: libs
   description: Pure Go LZO1Z compression and decompression library
@@ -387,7 +387,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 208
+  stars: 209
   topics:
   - aws
   - aws-s3
@@ -665,7 +665,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 467
+  stars: 468
   topics:
   - background-jobs
   - distributed-systems
@@ -683,7 +683,7 @@
   language: Go
   license: MIT License
   name: listmonk-messenger
-  stars: 76
+  stars: 78
   topics:
   - listmonk
   - messenger
@@ -707,7 +707,7 @@
   language: Go
   license: MIT License
   name: kaf-relay
-  stars: 105
+  stars: 107
   topics:
   - franz-go
   - high-availability
@@ -715,7 +715,7 @@
   - kafka-consumer
   - kafka-producer
   - kafka-replicator
-  updated_at: '2026-07-29T11:10:42Z'
+  updated_at: '2026-10-27T05:58:23Z'
   url: https://github.com/zerodha/kaf-relay
 - category: utils
   description: A frappe app that has workflows and reports to make payments to vendors
@@ -765,7 +765,7 @@
   - html
   - html-to-flutter
   - tagflow
-  updated_at: '2026-10-22T09:01:52Z'
+  updated_at: '2026-10-27T02:49:48Z'
   url: https://github.com/devaryakjha/tagflow
 - category: libs
   description: Duckdb extension to calculate fnv hash, fnv partition bucket for a
@@ -798,7 +798,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 3077
+  stars: 3102
   topics:
   - ai-agent
   - chat-widget
@@ -818,7 +818,7 @@
   - ticketing-system
   - vue
   - zendesk
-  updated_at: '2026-10-25T00:10:27Z'
+  updated_at: '2026-11-01T04:59:51Z'
   url: https://github.com/abhinavxd/libredesk
 - category: apps
   description: Lightweight, single-binary log analytics interface for ClickHouse,
@@ -828,12 +828,12 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 918
+  stars: 921
   topics:
   - clickhouse
   - log-analytics
   - logging
-  updated_at: '2026-10-23T09:32:41Z'
+  updated_at: '2026-10-29T04:50:11Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -842,7 +842,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 342
+  stars: 343
   topics:
   - automation
   - devops
@@ -852,7 +852,7 @@
   - self-service
   - workflow
   - workflow-automation
-  updated_at: '2026-10-21T07:07:27Z'
+  updated_at: '2026-10-29T06:48:03Z'
   url: https://github.com/cvhariharan/flowctl
 - category: apps
   description: An open source osquery manager
@@ -875,7 +875,7 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 32
+  stars: 33
   topics: []
   updated_at: '2026-10-18T20:11:52Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -899,7 +899,7 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 69
+  stars: 70
   topics:
   - mail-server
   - rust
@@ -929,7 +929,7 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 63
+  stars: 65
   topics: []
   updated_at: '2026-10-21T06:12:46Z'
   url: https://github.com/iamd3vil/blobasaur
@@ -940,7 +940,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1747
+  stars: 1755
   topics:
   - whatsapp
   - whatsapp-api
@@ -979,7 +979,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-10-24T11:17:55Z'
+  updated_at: '2026-10-31T08:06:28Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -999,7 +999,7 @@
   - developer-tools
   - litellm
   - openhands
-  updated_at: '2026-10-07T09:26:09Z'
+  updated_at: '2026-10-31T16:27:20Z'
   url: https://github.com/mr-karan/hodor
 - category: utils
   description: Pi-native incident investigation workflow with support for private
@@ -1026,7 +1026,7 @@
   - docker
   - microvm
   - sandbox
-  updated_at: '2026-07-10T16:43:27Z'
+  updated_at: '2026-10-25T06:19:22Z'
   url: https://github.com/cvhariharan/mvm
 - category: utils
   description: A read-only status page for HashiCorp Nomad clusters with job grouping,
@@ -1051,14 +1051,14 @@
   license: GNU Affero General Public License v3.0
   logo: bureaucat.svg
   name: bureaucat
-  stars: 57
+  stars: 59
   topics:
   - jira
   - task
   - task-management
   - task-manager
   - todo
-  updated_at: '2026-10-21T08:19:38Z'
+  updated_at: '2026-10-30T06:40:49Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
@@ -1067,7 +1067,7 @@
   license: GNU Affero General Public License v3.0
   logo: torii.svg
   name: torii
-  stars: 9
+  stars: 10
   topics: []
   updated_at: '2026-09-22T07:35:33Z'
   url: https://github.com/toriigateorg/torii
