@@ -72,7 +72,7 @@
 
 - category: Streams & Queues
   name: Benthos
-  url: https://www.benthos.dev/
+  url: https://github.com/redpanda-data/benthos
 
 - category: Observability & Monitoring
   name: Vector
@@ -108,7 +108,7 @@
 
 - category: DevOps & CI/CD
   name: Salt Stack
-  url: https://www.saltstack.com/
+  url: https://github.com/saltstack/salt
 
 - category: DevOps & CI/CD
   name: GLPI
