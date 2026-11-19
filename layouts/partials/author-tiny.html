@@ -7,7 +7,7 @@
         <span class="avatar"><img src="{{ .avatar }}" alt="{{ .name }}" /></span>
         <div class="author-tiny-meta">
             <div class="author-tiny-details">
-                <a href="{{ $.Site.BaseURL }}/authors/{{ $author }}" class="name">{{ .name }}</a>
+                <a href="{{ printf "authors/%s" $author | absURL }}" class="name">{{ .name }}</a>
                 <div class="desig">{{ .title }}</div>
             </div>
         </div>

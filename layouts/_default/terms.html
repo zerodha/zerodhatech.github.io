@@ -5,7 +5,7 @@
 			<ul>
 				{{ range $key, $value := .Data.Terms.ByCount }}
 					<li>
-						<a href="{{ $.Site.BaseURL }}/{{ $data.Plural }}/{{ $value.Name | urlize }}/">{{ $value.Name }}<sup>{{ $value.Count }}</sup></a>
+						<a href="{{ printf "%s/%s/" $data.Plural ($value.Name | urlize) | absURL }}">{{ $value.Name }}<sup>{{ $value.Count }}</sup></a>
 					</li>
 				{{ end }}
 			</ul>

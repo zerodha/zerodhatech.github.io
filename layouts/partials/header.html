@@ -27,16 +27,16 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ .Permalink }}" />
 	
-	<link rel="shortcut icon" href="{{ .Site.BaseURL }}/static/images/favicon.png" />
+	<link rel="shortcut icon" href="{{ "static/images/favicon.png" | absURL }}" />
 
 	{{ with .OutputFormats.Get "rss" -}}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 
 	{{ with .Params.image }}
-		<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $.Site.BaseURL }}{{ . }}{{ end }}" />
+		<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ strings.TrimPrefix "/" . | absURL }}{{ end }}" />
 	{{ else }}
-		<meta property="og:image" content="{{ .Site.BaseURL }}/static/images/thumb.png">
+		<meta property="og:image" content="{{ "static/images/thumb.png" | absURL }}">
 	{{ end }}
 
     <script type="application/ld+json">
@@ -63,7 +63,7 @@
 	   </script>
 
 	<link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}/static/style.css?v={{ $rand }}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ "static/style.css" | absURL }}?v={{ $rand }}" />
 </head>
 <body>
 	{{ .Site.Params.paginate }}
@@ -71,7 +71,7 @@
 		<div class="container wrap">
 			<div class="header">
 				<div class="logo">
-					<a href="{{ .Site.BaseURL }}/"><img alt="Zerodha technology blog" src="{{ .Site.BaseURL }}/static/images/logo.svg" /></a>
+					<a href="{{ "" | absURL }}"><img alt="Zerodha technology blog" src="{{ "static/images/logo.svg" | absURL }}" /></a>
 				</div>
 				<nav class="nav">
 					{{ $cur := . }}
@@ -80,7 +80,7 @@
 					<a class="{{ if $active }} active {{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
 					{{ end }}
 
-					<a href="{{ .Site.BaseURL }}/index.xml" class="feed" title="Subscribe to feed">
+					<a href="{{ "index.xml" | absURL }}" class="feed" title="Subscribe to feed">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 							<path d="M4 11a9 9 0 0 1 9 9"/>
 							<path d="M4 4a16 16 0 0 1 16 16"/>
