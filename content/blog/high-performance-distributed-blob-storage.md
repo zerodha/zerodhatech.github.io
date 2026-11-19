@@ -1,6 +1,6 @@
 ---
 title: "Distributed, high-performance blob storage on SQLite"
-description: "How built Blobasaur, a sharded, distributed, lightweight blob storage server to solve our high-throughput blob read/write usecase."
+description: "How we built Blobasaur, a sharded, distributed, lightweight blob storage server to solve our high-throughput blob read/write usecase."
 date: "2026-11-19T12:00:00+05:30"
 authors: ["sarat"]
 tags: ["rust", "databases"]
@@ -11,20 +11,22 @@ image: "/static/images/blobasaur-og.png"
 
 -------------
 
-On [Kite](https://zerodha.com/products/kite), our trading platform with ~20 million customers, users are able to customize their investment and trading screens heavily. They save multi-chart layouts, financial indicator templates, vector drawings, and various kinds of arbitrary UI preferences. In addition, we offer a Terminal mode that allows users to design their own workspaces by dragging, dropping, and customing widgets. Under the hood, our backend services store these user preferences and metadata as opaque blobs (mostly JSON) ranging from a few kilobytes to several megabytes.
+On [Kite](https://zerodha.com/products/kite), our trading platform with ~20 million customers, users are able to customize their investment and trading screens heavily. They save multi-chart layouts, financial indicator templates, vector drawings, and various kinds of arbitrary UI preferences. In addition, we offer a Terminal mode that allows users to design their own workspaces by dragging, dropping, and customizing widgets. Under the hood, our backend services store these user preferences and metadata as opaque blobs (mostly JSON) ranging from a few kilobytes to several megabytes.
 
-Many years ago, we stored such blobs in CouchDB, which turned out to be ill-suited for the kind of throughput we were starting to see. We then moved to SSDB ([ssdb](https://github.com/ideawu/ssdb)), a C++ disk-backed store that speaks the Redis protocol. This made is very easy to integrate as well. SSDB solved our immediate performance problems and ran reliably in production for several years.
+Many years ago, we stored such blobs in CouchDB, which turned out to be ill-suited for the kind of throughput we were starting to see. We then moved to SSDB ([ssdb](https://github.com/ideawu/ssdb)), a C++ disk-backed store that speaks the Redis protocol. This made it very easy to integrate as well. SSDB solved our immediate performance problems and ran reliably in production for several years.
 
 Over time, two problems forced us to look for a replacement:
 
 1. SSDB became unmaintained, which was an obvious operational risk. It is written in C++, which is not a part of our stack or expertise, so forking and maintaining was also not viable.
-2. Scaling and size limits. SSDB is not a distributed system and can only run on a single node. This imposes significant future scaling challenges, including at one point forcing us to cap blob sizes at 1 MB because latency degrades on larger payloads. As we added features like the Terminal mode and onboarded more internal services, we needed a robust solution. Our criteria were:
+2. Scaling and size limits. SSDB is not a distributed system and can only run on a single node. This imposes significant future scaling challenges, including at one point forcing us to cap blob sizes at 1 MB because latency degrades on larger payloads.
+
+As we added features like the Terminal mode and onboarded more internal services, we needed a robust solution. Our criteria were:
 
 - A key-value blob store with a simple API.
 - Designed for multi-megabyte blob read/write ops and high throughput. We sustain loads of thousands to tens of thousands of requests per second reading and writing arbitrary blobs. These are unpredictable and bursty thanks to the volatility in stock markets.
 - Horizontally scalable, distributed.
 - Disk-space efficiency / compression.
-- Easily maintenanble and highly economical.
+- Easily maintainable and highly economical.
 
 So we investigated FOSS databases optimized for high-throughput blob storage and looked at the following:
 
@@ -205,7 +207,7 @@ We fixed this in two ways: routing cleanup batches through the shard's existing 
 
 ## In production
 
-Our current Blobasaur deployment runs as a three-node (4 vCPU, 8 GB RAM cluster). Over a full trading session (09:00 to 15:30), p99 latency across all commands stays around 2 ms on every node, and p50 sits between 250 and 550 µs.
+Our current Blobasaur deployment runs as a three-node (4 vCPU, 8 GB RAM) cluster. Over a full trading session (09:00 to 15:30), p99 latency across all commands stays around 2 ms on every node, and p50 sits between 250 and 550 µs.
 
 ![Command latency (p50, p90, p99) per node over a trading session](/static/images/blobasaur-4.png)
 
