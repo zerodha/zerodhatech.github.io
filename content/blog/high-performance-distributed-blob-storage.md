@@ -4,7 +4,7 @@ description: "How built Blobasaur, a sharded, distributed, lightweight blob stor
 date: "2026-11-17T00:00:00+05:30"
 authors: ["sarat"]
 tags: ["rust", "databases"]
-image: "/static/images/blobasaur-1.png"
+image: "/static/images/blobasaur-og.png"
 ---
 
 **TLDR;** We built Blobasaur, a sharded, distributed, lightweight blob storage server on top of SQLite to solve our high-throughput blob read/write usecase. JSON blobs varying from a few KBs to MBs are now written and read thousands of times per second on commodity hardware while maintaining single-digit millisecond latency.
