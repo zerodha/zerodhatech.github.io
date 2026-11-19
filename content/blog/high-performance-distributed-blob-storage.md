@@ -1,27 +1,32 @@
 ---
-title: "Blobasaur: a blob store built on SQLite"
-description: "Why we replaced SSDB with Blobasaur, an open source, sharded, Redis-protocol blob server written in Rust that uses SQLite as its storage engine."
+title: "Distributed, high-performance blob storage on SQLite"
+description: "How built Blobasaur, a sharded, distributed, lightweight blob storage server to solve our high-throughput blob read/write usecase."
 date: "2026-11-17T00:00:00+05:30"
 authors: ["sarat"]
 tags: ["rust", "databases"]
 image: "/static/images/blobasaur-1.png"
 ---
 
-On Kite, our trading platform, users customize their workspaces heavily. They save multi-chart layouts, indicator templates, chart drawings, and marketwatch settings. Under the hood, our backend services store these preferences as opaque blobs (mostly JSON) ranging from a few kilobytes to several megabytes.
+**TLDR;** We built Blobasaur, a sharded, distributed, lightweight blob storage server on top of SQLite to solve our high-throughput blob read/write usecase. JSON blobs varying from a few KBs to MBs are now written and read thousands of times per second on commodity hardware while maintaining single-digit millisecond latency.
 
-Years ago, we stored these blobs in CouchDB, before moving to SSDB ([https://github.com/ideawu/ssdb](https://github.com/ideawu/ssdb)), a C++ disk-backed store that speaks the Redis protocol. SSDB solved our immediate performance problems and ran reliably in production for nearly four years.
+-------------
+
+On [Kite](https://zerodha.com/products/kite), our trading platform with ~20 million customers, users are able to customize their investment and trading screens heavily. They save multi-chart layouts, financial indicator templates, vector drawings, and various kinds of arbitrary UI preferences. In addition, we offer a Terminal mode that allows users to design their own workspaces by dragging, dropping, and customing widgets. Under the hood, our backend services store these user preferences and metadata as opaque blobs (mostly JSON) ranging from a few kilobytes to several megabytes.
+
+Many years ago, we stored such blobs in CouchDB, which turned out to be ill-suited for the kind of throughput we were starting to see. We then moved to SSDB ([ssdb](https://github.com/ideawu/ssdb)), a C++ disk-backed store that speaks the Redis protocol. This made is very easy to integrate as well. SSDB solved our immediate performance problems and ran reliably in production for several years.
 
 Over time, two problems forced us to look for a replacement:
 
-1. SSDB is unmaintained. Running a critical user-facing state on dead software was an operational risk.
-2. Scaling and size limits. We ran a single SSDB instance and capped blob sizes at roughly 1 MB because latency degraded on larger payloads. As we added features like Kite Terminal mode and onboarded more internal services, we needed a robust solution. Our criteria were:
+1. SSDB became unmaintained, which was an obvious operational risk. It is written in C++, which is not a part of our stack or expertise, so forking and maintaining was also not viable.
+2. Scaling and size limits. SSDB is not a distributed system and can only run on a single node. This imposes significant future scaling challenges, including at one point forcing us to cap blob sizes at 1 MB because latency degrades on larger payloads. As we added features like the Terminal mode and onboarded more internal services, we needed a robust solution. Our criteria were:
 
 - A key-value blob store with a simple API.
-- Designed for multi-megabyte blob read/write ops and high throughput. We sustain loads of thousands to tens of thousands of requests per second reading and writing arbitrary blobs.
+- Designed for multi-megabyte blob read/write ops and high throughput. We sustain loads of thousands to tens of thousands of requests per second reading and writing arbitrary blobs. These are unpredictable and bursty thanks to the volatility in stock markets.
 - Horizontally scalable, distributed.
 - Disk-space efficiency / compression.
+- Easily maintenanble and highly economical.
 
-So we went around looking at FOSS databases optimized for high-throughput blob storage.
+So we investigated FOSS databases optimized for high-throughput blob storage and looked at the following:
 
 - **ScyllaDB:** We already run ScyllaDB for high-throughput workloads, but in our tests, it turned out to be suboptimal for large blobs. Significantly lower throughput and higher resource usage. We specifically want multi-megabyte blobs. Tombstones from frequent overwrites and TTL expiries require careful tuning in ScyllaDB.
 - **PostgreSQL:** We already have [considerable experience](https://zerodha.tech/blog/working-with-postgresql/) with Postgres in our stack and experimented with storing blobs as `BYTEA` columns, but it turned out to be severely suboptimal again for the use case in terms of performance and disk-space efficiency.
@@ -34,22 +39,21 @@ So we went around looking at FOSS databases optimized for high-throughput blob s
 
 Around this time, we were toying with SQLite for another project and were marveling at its [*35% Faster Than The Filesystem*](https://www.sqlite.org/fasterthanfs.html) claim. We also happen to have a query cache system that creates [millions of tables](https://nadh.in/files/indiafoss-2024-dungbeetle.pdf) every day in a Postgres instance, which pushes the database to its limits quite successfully. Putting two and two together, we thought, why not build a system on top of SQLite to store millions of blobs and see what happens?
 
-So we ended up building [Blobasaur](https://github.com/iamd3vil/blobasaur), an open source sharded blob server written in Rust that speaks the Redis protocol and uses SQLite as its storage engine. It is a single binary application that is high performance, and super simple to deploy and maintain. It is in production at Zerodha and has successfully replaced SSDB.
+So we ended up building [Blobasaur](https://github.com/iamd3vil/blobasaur), an open source sharded blob server written in Rust that speaks the Redis protocol and uses SQLite as its storage engine. It is a single binary application that is high performance, and super simple to deploy and maintain. It is in production at Zerodha and it has successfully replaced SSDB.
 
-<p class="align-center"><img src="/static/images/blobasaur-logo.svg" alt="Blobasaur logo"></p>
+<p class="align-center"><a href="https://github.com/iamd3vil/blobasaur"><img src="/static/images/blobasaur-logo.svg" alt="Blobasaur logo"></a></p>
 
-Here is how it went.
 
 ## What we needed
 
-We had several Go and Python services already talking to SSDB, with more waiting to onboard. We wanted the replacement to meet these requirements:
+We had several Go and Python services already talking to SSDB via the Redis protocol, with more waiting to onboard. We wanted the new solution to meet these requirements:
 
 - Redis protocol compatibility (if possible at all): Every existing client already used standard Redis libraries (`GET`, `SET`, `HGET`, `HSET`, `DEL`, `EXPIRE`). If we could get a system that could be a drop-in replacement, that would allow us to leave existing services untouched and reduce risk significantly.
 - Low latency across payload sizes: It needed to serve both 2 KB settings blobs and 5 MB chart layouts with single-digit millisecond latency.
-- Built-in compression: Almost all payloads are repetitive JSON, which compresses well.
+- Built-in compression: Almost all our payloads are repetitive JSON, which compresses well.
 - Simple CRUD with TTLs: We didn't need complex data structures, server-side scripting, or secondary queries. We just needed key-value and hash CRUD with key expiry.
 - Multi-node partitioning: We needed to split data across multiple machines so a single node wasn't a bottleneck.
-- Relaxed durability is acceptable: This store holds non-critical UI and workspace preferences, not order books or trade ledgers. If a sudden power loss drops recent writes, a user might lose a recent chart layout tweak, which is annoying, but it never affects trading. This was a good performance trade-off for our use case.
+- Relaxed durability is acceptable: This store holds non-critical UI and workspace preferences, and not critical financial data. If a sudden power loss drops recent writes, a user might lose a recent chart layout tweak, which is annoying, but it never affects trading. This was a good performance trade-off for our use case.
 
 ## Why SQLite (and Rust)
 
@@ -60,7 +64,7 @@ We had a few options for the storage. The obvious one is the raw filesystem, wit
 - Dealing with fd limits.
 - Managing metadata separately from the raw data.
 
-SQLite pretty much gave us everything that the raw filesystem lacked. For small blobs, SQLite is up to 35% faster than raw filesystem I/O ([https://www.sqlite.org/fasterthanfs.html](https://www.sqlite.org/fasterthanfs.html)). While raw files start to beat SQLite above ~100 KiB, we compress blobs before writing them. And thankfully, 99% of our compressed values sit well below 100 KiB.
+SQLite pretty much gave us everything that the raw filesystem lacked. For small blobs, SQLite is up to 35% faster than raw filesystem I/O. While raw files start to beat SQLite above ~100 KiB, we compress blobs before writing them. And thankfully, 99% of our compressed values sit well below 100 KiB.
 
 Using SQLite also meant inheriting a battle-tested storage engine with ACID transactions, crash recovery, and standard tooling. Any shard on disk can be inspected with the standard `sqlite3` CLI or queried with plain SQL for analytics, etc.
 
@@ -201,7 +205,7 @@ We fixed this in two ways: routing cleanup batches through the shard's existing 
 
 ## In production
 
-Blobasaur runs as a three-node cluster. Over a full trading session (09:00 to 15:30), p99 latency across all commands stays around 2 ms on every node, and p50 sits between 250 and 550 µs.
+Our current Blobasaur deployment runs as a three-node (4 vCPU, 8 GB RAM cluster). Over a full trading session (09:00 to 15:30), p99 latency across all commands stays around 2 ms on every node, and p50 sits between 250 and 550 µs.
 
 ![Command latency (p50, p90, p99) per node over a trading session](/static/images/blobasaur-4.png)
 
@@ -211,4 +215,4 @@ Broken down by command, `HSET` p99 sits around 2 ms, `HGET` p99 around 1.4 ms, a
 
 ---
 
-Blobasaur is open source under the AGPLv3 license and available on GitHub: [https://github.com/iamd3vil/blobasaur](https://github.com/iamd3vil/blobasaur).
+Blobasaur is open source under the AGPLv3 license and available on GitHub [@iamd3vil/blobasaur](https://github.com/iamd3vil/blobasaur). Find other projects from the Zerodha.tech hacker collective at [4th Cross Labs](https://fourthcross.tech).
