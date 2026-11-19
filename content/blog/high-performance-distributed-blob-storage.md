@@ -1,7 +1,7 @@
 ---
 title: "Distributed, high-performance blob storage on SQLite"
 description: "How built Blobasaur, a sharded, distributed, lightweight blob storage server to solve our high-throughput blob read/write usecase."
-date: "2026-11-17T00:00:00+05:30"
+date: "2026-11-19T12:00:00+05:30"
 authors: ["sarat"]
 tags: ["rust", "databases"]
 image: "/static/images/blobasaur-og.png"
