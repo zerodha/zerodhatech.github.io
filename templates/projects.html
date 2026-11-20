@@ -1,0 +1,57 @@
+{% component projects() %}
+{% set projects = load_data(path="data/projects.yml") | sort(attribute="updated_at") | reverse %}
+{% set categories = [["apps", "Apps"], ["services", "Services"], ["utils", "Utils"], ["libs", "Libraries"]] %}
+<section class="container">
+    {% for category in categories %}
+    <section class="category">
+        <h2>{{ category[1] }}</h2>
+        <ul class="projects">
+            {% for item in [item for item in projects if item.category == category[0]] %}
+            <li class="item">
+                <div class="description">
+                    <h3 class="name"><a href="{{ item.url }}">{{ item.name }}</a></h3>
+                    <p class="stars">
+                        <img class="github" width="16" src="{{ get_url(path="static/images/github.svg") }}" alt="GitHub stars">
+                        <span aria-label="Stars">
+                            <span>★ <small>{{ item.stars }}</small></span>
+                        </span>
+                        <span aria-label="Language">{{ item.language | default(value="") }}</span>
+                    </p>
+                    <p>{{ item.description }}</p>
+                    <div class="project-meta">
+                        <span aria-label="License">{{ item.license | default(value="") }}</span>
+                        <span>Last updated on {{ item.updated_at | date(format="%B %-d, %Y") }}</span>
+                    </div>
+                </div>
+                <div class="logo">
+                    {% if item.logo %}
+                    <a href="{{ item.url }}"><img src="{{ get_url(path="static/images/projects/" ~ item.logo) }}" alt="{{ item.name }} logo"></a>
+                    {% endif %}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endfor %}
+
+    <section class="category">
+        <h1>Dev projects</h1>
+        <p>Check out the personal FOSS projects from the dev team.</p>
+        {% set excluded = ["zerodha", "zerodhatech", "warp-tech", "bureaucatorg", "toriigateorg"] %}
+        {% set_global users = [] %}
+        {% for item in projects %}
+            {% if item.github_uri %}
+                {% set user = item.github_uri | split(pat="/") | first %}
+                {% if user not in excluded %}
+                    {% set_global users = [...users, user] %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        <ul class="github-users">
+            {% for user in users | unique | sort %}
+            <li><a href="https://github.com/{{ user }}">@{{ user }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</section>
+{% endcomponent projects %}

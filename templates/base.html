@@ -1,0 +1,92 @@
+{% if page %}
+    {% set title = page.title ~ " - " ~ config.title %}
+    {% set description = page.description | default(value=config.description) %}
+    {% set image = page.extra.image | default(value="static/images/thumb.png") %}
+{% else %}
+    {% set description = config.description %}
+    {% set image = "static/images/thumb.png" %}
+    {% if term %}
+        {% set title = term.name | title ~ " - " ~ config.title %}
+        {% set feed_url = term.permalink ~ "index.xml" %}
+    {% elif taxonomy %}
+        {% set title = taxonomy.name | title ~ " - " ~ config.title %}
+        {% set feed_url = get_url(path=taxonomy.name ~ "/index.xml") %}
+    {% elif section and section.path == "/" %}
+        {% set title = config.title ~ " - " ~ config.description %}
+        {% set feed_url = get_url(path="index.xml") %}
+    {% elif section %}
+        {% set title = section.title ~ " - " ~ config.title %}
+        {% set feed_url = section.permalink ~ "index.xml" %}
+    {% else %}
+        {% set title = "Page not found - " ~ config.title %}
+    {% endif %}
+{% endif %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <meta name="title" content="{{ config.title }}">
+    <meta name="description" content="{{ description }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ current_url | default(value=config.base_url) }}">
+    <meta property="og:image" content="{{ get_url(path=image) }}">
+    <link rel="shortcut icon" href="{{ get_url(path="static/images/favicon.png") }}">
+    {% if feed_url %}
+    <link rel="alternate" type="application/rss+xml" href="{{ feed_url }}" title="{{ config.title }}">
+    {% endif %}
+    <script type="application/ld+json">
+        {
+            "@context" : "https://schema.org",
+            "@type" : "Organization",
+            "name" : {{ config.title | json_encode | safe }},
+            "logo": {{ get_url(path="static/images/logo.svg") | json_encode | safe }},
+            "description": {{ config.description | json_encode | safe }},
+            "contactPoint" : [{
+                "@type" : "ContactPoint",
+                "telephone" : "+91 80 4040 2020",
+                "contactType" : "customer service"
+            }],
+            "url" : {{ config.base_url | json_encode | safe }},
+            "sameAs" : [
+                "https://facebook.com/zerodha.social",
+                "https://twitter.com/zerodhaonline",
+                "https://youtube.com/user/zerodhaonline",
+                "https://linkedin.com/company/zerodha",
+                "https://instagram.com/zerodhaonline"
+            ]
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="{{ get_url(path="static/style.css", cachebust=true) }}" media="screen">
+</head>
+<body>
+    <section class="page-hero">
+        <div class="container wrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="{{ get_url(path="/", trailing_slash=true) }}"><img alt="Zerodha technology blog" src="{{ get_url(path="static/images/logo.svg") }}"></a>
+                </div>
+                <nav class="nav">
+                    {% for item in config.extra.menu %}
+                    <a href="{{ get_url(path=item.path, trailing_slash=true) }}"{% if current_path == item.path %} class="active" aria-current="page"{% endif %}>{{ item.name }}</a>
+                    {% endfor %}
+                    <a href="{{ get_url(path="index.xml") }}" class="feed" title="Subscribe to feed" aria-label="Subscribe to feed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 11a9 9 0 0 1 9 9"/>
+                            <path d="M4 4a16 16 0 0 1 16 16"/>
+                            <circle cx="5" cy="19" r="1"/>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+            {% block hero %}{% endblock hero %}
+        </div>
+    </section>
+    {% block content %}{% endblock content %}
+    {% block footer %}{% include "footer.html" %}{% endblock footer %}
+</body>
+</html>

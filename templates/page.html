@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block hero %}
+<div class="post single">
+    <div class="post-header">
+        <h1 class="title">{{ page.title }}</h1>
+        {% if page.date %}
+        <p class="date"><time datetime="{{ page.date }}">{{ page.date | date(format="%d %b %Y") }}</time></p>
+        {% else %}
+        {{ page.description }}
+        {% endif %}
+    </div>
+</div>
+{% endblock hero %}
+
+{% block content %}
+<div class="post">
+    {% if page.extra.banner %}
+    <div class="banner">
+        <img src="{{ get_url(path=page.extra.image) }}" alt="">
+    </div>
+    {% endif %}
+    <div class="content-wrap wrap">
+        {% if page.taxonomies.authors %}
+        {{<byline page={page} compact={false} />}}
+        {% endif %}
+        <div class="content">
+            {% block page_content %}{{ page.content | safe }}{% endblock page_content %}
+            {% if page.taxonomies.tags %}
+            <div class="tags">
+                <ul class="flat">
+                    {% for tag in page.taxonomies.tags %}
+                    <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

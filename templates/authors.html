@@ -1,18 +1,20 @@
-<div class="author">
-    {{ if .Params.authors }} <!-- Use the new authors array -->
-    {{ range .Params.authors }} <!-- Iterate over each author in the array -->
-    {{ $author := . }} <!-- Assign the current author to a variable -->
-    {{ with index $.Site.Data.authors $author }} <!-- Access author details from the data directory -->
-    <div class="author-individual">
-        <span class="avatar"><img src="{{ .avatar }}" alt="{{ .name }}" /></span>
-        <div class="meta">
-            <div class="author-details">
-                <a href="{{ $.Site.BaseURL }}/authors/{{ $author }}" class="name">{{ .name }}</a>
-                <div class="desig">{{ .title }}</div>
+{% component byline(page, compact: bool) %}
+{% set style = "author-tiny" if compact else "author" %}
+<div class="{{ style }}">
+    {% for slug in page.taxonomies.authors | default(value=[]) %}
+    {% set author = load_data(path="data/authors/" ~ slug ~ ".json", required=false) %}
+    {% if author %}
+    <div class="{{ style }}-individual">
+        <span class="avatar"><img src="{{ author.avatar }}" alt="{{ author.name }}"></span>
+        <div class="{{ "author-tiny-meta" if compact else "meta" }}">
+            <div class="{{ style }}-details">
+                <a href="{{ get_taxonomy_url(kind="authors", name=slug) }}" class="name">{{ author.name }}</a>
+                <div class="desig">{{ author.title }}</div>
             </div>
+            {% if not compact %}
             <div class="urls">
-                {{ if .homepage }}
-                <a href="{{ .homepage }}" class="social-link">
+                {% if author.homepage %}
+                <a href="{{ author.homepage }}" class="social-link" aria-label="{{ author.name }}’s homepage">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10" />
@@ -21,9 +23,9 @@
                             d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                     </svg>
                 </a>
-                {{ end }}
-                {{ if .github }}
-                <a href="{{ .github }}" class="social-link">
+                {% endif %}
+                {% if author.github %}
+                <a href="{{ author.github }}" class="social-link" aria-label="{{ author.name }} on GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path
@@ -31,11 +33,12 @@
                         <path d="M9 18c-4.51 2-5-2-7-2" />
                     </svg>
                 </a>
-                {{ end }}
+                {% endif %}
             </div>
+            {% endif %}
         </div>
     </div>
-    {{ end }}
-    {{ end }}
-    {{ end }}
+    {% endif %}
+    {% endfor %}
 </div>
+{% endcomponent byline %}

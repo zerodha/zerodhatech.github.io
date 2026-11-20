@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        {% if term %}
+        <title>{{ term.name | title | escape_xml | safe }} on {{ config.title | escape_xml | safe }}</title>
+        <link>{{ term.permalink | escape_xml | safe }}</link>
+        {% elif section %}
+        <title>{{ section.title | escape_xml | safe }} on {{ config.title | escape_xml | safe }}</title>
+        <link>{{ section.permalink | escape_xml | safe }}</link>
+        {% else %}
+        <title>{{ config.title | escape_xml | safe }}</title>
+        <link>{{ get_url(path="/", trailing_slash=true) | escape_xml | safe }}</link>
+        {% endif %}
+        <description>Recent content on {{ config.title | escape_xml | safe }}</description>
+        <generator>Zola</generator>
+        <language>{{ lang }}</language>
+        <lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
+        <atom:link href="{{ feed_url | escape_xml | safe }}" rel="self" type="application/rss+xml"/>
+        {% for post in pages %}
+        <item>
+            <title>{{ post.title | escape_xml | safe }}</title>
+            <link>{{ post.permalink | escape_xml | safe }}</link>
+            <pubDate>{{ post.date | date(format="%a, %d %b %Y %H:%M:%S %z") }}</pubDate>
+            <guid>{{ post.permalink | escape_xml | safe }}</guid>
+            <description xml:base="{{ post.permalink | escape_xml | safe }}">{{ (post.summary or post.content) | escape_xml | safe }}</description>
+        </item>
+        {% endfor %}
+        {% if not section and not term %}
+        {% for path in ["pages/projects.md", "pages/stack.md"] %}
+        {% set page = get_page(path=path) %}
+        <item>
+            <title>{{ page.title | escape_xml | safe }}</title>
+            <link>{{ page.permalink | escape_xml | safe }}</link>
+            <guid>{{ page.permalink | escape_xml | safe }}</guid>
+            {% set details %}
+            {% if path == "pages/projects.md" %}{{<projects />}}{% else %}{{<stack />}}{% endif %}
+            {% endset %}
+            <description xml:base="{{ page.permalink | escape_xml | safe }}">{{ details | trim | escape_xml | safe }}</description>
+        </item>
+        {% endfor %}
+        {% endif %}
+    </channel>
+</rss>

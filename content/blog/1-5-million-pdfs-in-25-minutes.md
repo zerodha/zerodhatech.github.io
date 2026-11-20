@@ -1,16 +1,22 @@
----
-title: "1.5+ million PDFs in 25 minutes"
-description: "How we generate, digitally sign, and e-mail out 1.5+ million PDFs, as mandated by regulations, in about 25 minutes with a fully self-hosted distributed architecture."
-date: "2024-02-14T00:00:00+05:30"
-authors: ["sarat","karan"]
-tags: ["golang", "devops"]
-image: "/static/images/cnotes_banner.png"
-banner: "yes"
----
++++
+title = "1.5+ million PDFs in 25 minutes"
+description = "How we generate, digitally sign, and e-mail out 1.5+ million PDFs, as mandated by regulations, in about 25 minutes with a fully self-hosted distributed architecture."
+date = 2024-02-14T00:00:00+05:30
+
+[taxonomies]
+authors = ["sarat", "karan"]
+tags = ["golang", "devops"]
+
+[extra]
+image = "/static/images/cnotes_banner.png"
+banner = true
++++
 
 <!-- ![banner](/static/images/cnotes_banner.png) -->
 
 At Zerodha, many million users login and use our financial platforms every day. Over the recent months, on an average day, 1.5+ million users have been executing stock and derivative transactions. On a volatile day, this number could easily double. After a trading session concludes and all the number-crunching, tallying, and “backoffice” operations are completed—with file dumps received from stock exchanges and other market infrastructure institutions—stock brokers e-mail a digitally signed PDF report called the contract note to every user who transacted on that particular day. This PDF report offers a comprehensive breakdown of each trade, detailing the total cost associated with each transaction. Its layout, contents, delivery time, and all other aspects are bound by regulations.
+
+<!-- more -->
 
 Needless to say, this is a complex task to orchestrate at scale. Our legacy system which we had been continually improving over the years, had grown to taking some 8 hours daily, at which point a complete overhaul was required. We typically watch technical debt closely and allow it to grow to a certain acceptable level before addressing it. For this trade-off, we pause development of new features when necessary for the sake of the overall health of our stack.
 
@@ -80,7 +86,7 @@ We rewrote our PDF generation pipeline to use `pdflatex` and ran this in product
 
 In our search for a better solution, we stumbled upon [Typst](https://typst.app/) and began to evaluate it as a potential replacement for LaTeX.
 
-## Typst - a modern typesetting system
+## Typst - a modern typesetting system {#typst---a-modern-typesetting-system}
 
 Typst is a single binary application written in Rust that offers several advantages over LaTeX.
 

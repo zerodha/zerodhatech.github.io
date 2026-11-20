@@ -1,14 +1,19 @@
----
-title: "Alar: The making of an open source dictionary"
-description: "The story of a massive Kannada dictionary created by V. Krishna single handedly over four decades, and its accidental discovery and open sourcing at an unlikely place, a stock brokerage."
-date: "2020-09-22T00:00:00+05:30"
-author: knadh
-authors: ["knadh"]
-tags: ["philosophy", "data", "foss"]
-image: "/static/images/alar.png"
----
++++
+title = "Alar: The making of an open source dictionary"
+description = "The story of a massive Kannada dictionary created by V. Krishna single handedly over four decades, and its accidental discovery and open sourcing at an unlikely place, a stock brokerage."
+date = 2020-09-22T00:00:00+05:30
+
+[taxonomies]
+authors = ["knadh"]
+tags = ["philosophy", "data", "foss"]
+
+[extra]
+image = "/static/images/alar.png"
++++
 
 ನಮಸ್ಕಾರ (Namaskāra)! This is not a post on fintech, or even technology for that matter. This is the story of a product of tenacity, selflessness, and passion; a product that will transcend and outlive most technology we know of. This is the story of a massive dictionary that will become the window to a language spoken by tens of millions of people for generations to come, a resource its author has donated to posterity. This is the story of V. Krishna, [*Alar*](https://alar.ink), his Kannada-English dictionary, and its accidental discovery and open sourcing at an unlikely place, a stock brokerage, Zerodha. This post is also a personal note, something I have not attempted in a long time.
+
+<!-- more -->
 
 ### Prologue
 I have been running [Olam](https://olam.in), an English-Malayalam and Malayalam-Malayalam dictionary, since 2010. It was built out of the frustration of not having an easily accessible online Malayalam dictionary, of the frustration at dictionary websites that insulted the reader's intelligence with poor usability, terrible ad-ridden spamminess, and no respect for language. Olam's website has stayed exactly the same for 10 years. It has an input box that responds to dictionary lookups in under \~50ms, exactly as it did in 2010. It is actively used by millions of Malayalam speakers.
@@ -45,7 +50,7 @@ V. Krishna and Narasimhamurthy, KaGaPa's secretary, spoke passionately about Kan
 
 ### V. Krishna
 
-{{< figure src="/static/images/vkrishna-alar.png" alt="V. Krishna's photo" height="150" class="float-right" >}}
+{{<figure src="/static/images/vkrishna-alar.png" alt="V. Krishna's photo" height="150" class="float-right" />}}
 
 V. Krishna was born in 1950 in the Malanayakana Halli village in Mysore district in Karnataka. He studied in a Kannada medium school, followed by a year at a pre-university college that he was forced to drop out of before moving to Bengaluru with his family in 1968.
 

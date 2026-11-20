@@ -1,38 +1,97 @@
-name: build-site
+name: Build site
 
 on:
-  workflow_run:
-    workflows: ["update-projects"]
-    types:
-      - completed
+  pull_request:
+    branches: [main]
   push:
-    branches:
-      - main # Pipeline will only be triggered from `main`.
-  workflow_dispatch:  # Allow manual triggering
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    inputs:
+      refresh_projects:
+        description: Refresh GitHub project metadata before building
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  refresh-projects:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || inputs.refresh_projects)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Install project refresh dependencies
+        run: python -m pip install -r scripts/requirements.txt
+      - name: Update project details
+        run: python scripts/update-projects.py data/projects.yml
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Commit updated metadata
+        run: |
+          git add data/projects.yml
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' \
+                -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+                commit -m 'Auto-update GitHub project details.'
+            git push origin main
+          fi
+
+  build:
+    needs: refresh-projects
+    if: ${{ !cancelled() && (needs.refresh-projects.result == 'success' || needs.refresh-projects.result == 'skipped') }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          submodules: true  # Fetch Hugo themes
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+          ref: ${{ github.ref }}
+          persist-credentials: false
+      - name: Set up Zola
+        env:
+          ZOLA_VERSION: '0.23.6'
+          ZOLA_SHA256: 8f5132b3522412d04e395e0b25f6d68613ad272a873e54a2b3ebf664873024a4
+        run: |
+          archive="zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+          curl --fail --show-error --silent --location --retry 3 \
+            "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/${archive}" -o "$RUNNER_TEMP/$archive"
+          echo "$ZOLA_SHA256  $RUNNER_TEMP/$archive" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/$archive" -C "$RUNNER_TEMP" zola
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
+      - run: make check build
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          hugo-version: '0.170.1'
-          extended: true
+          name: site
+          path: public/
+          if-no-files-found: error
 
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+  publish:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages  # deploying branch
+          name: site
+          path: public
+      - uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
+        with:
+          github_token: ${{ github.token }}
+          publish_branch: gh-pages
           cname: zerodha.tech
           user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'

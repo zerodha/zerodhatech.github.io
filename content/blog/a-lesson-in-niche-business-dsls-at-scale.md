@@ -1,16 +1,15 @@
----
-title: "A lesson in creating and using niche business DSLs at scale"
-description: "How we incrementally built a business
-rule validation engine to keep up with the changing business and regulatory environment,
-starting with a custom DSL, and ended up writing a framework to manage rules written in Go and
-distribute them as pure Go plugins."
-date: "2020-11-24T17:35:00+05:30"
-author: rhnvrm
-authors: ["rhnvrm"]
-tags: ["golang"]
-image: "/static/images/bnf-veto-rejection.png"
++++
+title = "A lesson in creating and using niche business DSLs at scale"
+description = "How we incrementally built a business rule validation engine to keep up with the changing business and regulatory environment, starting with a custom DSL, and ended up writing a framework to manage rules written in Go and distribute them as pure Go plugins."
+date = 2020-11-24T17:35:00+05:30
 
----
+[taxonomies]
+authors = ["rhnvrm"]
+tags = ["golang"]
+
+[extra]
+image = "/static/images/bnf-veto-rejection.png"
++++
 
 At Zerodha, we process millions of trades in real-time, where each trade comes
 into the system as concurrent high throughput HTTP requests. Each trade
@@ -26,6 +25,8 @@ story of how we incrementally built this engine to keep up with the changing
 business and regulatory environment starting with a custom DSL (Domain Specific
 Language) and ending up with writing a framework to manage rules written in Go
 and embedded inside Go plugins.
+
+<!-- more -->
 
 ## Overview
 
@@ -436,7 +437,7 @@ func DecompileRules(rulePluginPath string) (map[string]func(interface{}) (rule.R
 
 ### Dashboard for the operators
 
-![frappe-veto-dashboard](/static//images/frappe-veto.png)
+![frappe-veto-dashboard](/static/images/frappe-veto.png)
 
 We connect two services with our admin dashboard implemented in [Frappe](https://frappe.io)
 where the operators can edit the rules. This panel has a built in editor, where

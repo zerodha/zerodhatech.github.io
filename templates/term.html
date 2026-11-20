@@ -1,0 +1,5 @@
+{% extends "list.html" %}
+
+{% block hero %}
+<h1 class="post-header">{% if taxonomy.name == "authors" %}@{% endif %}{{ term.name }}</h1>
+{% endblock hero %}

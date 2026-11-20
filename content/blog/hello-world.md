@@ -1,14 +1,19 @@
----
-title: "Hello, World!"
-description: "TLDR: 30 member tech team formed over seven years built India's largest stock broker. Unconventional setup. The long pending tech blog is finally here. Some backstory and context."
-date: "2020-04-06T00:00:00+05:30"
-author: knadh
-authors: ["knadh"]
-tags: ["philosophy", "dev-culture", "tech-team"]
-image: "/static/images/product-mashup-2020-04.png"
----
++++
+title = "Hello, World!"
+description = "TLDR: 30 member tech team formed over seven years built India's largest stock broker. Unconventional setup. The long pending tech blog is finally here. Some backstory and context."
+date = 2020-04-06T00:00:00+05:30
+
+[taxonomies]
+authors = ["knadh"]
+tags = ["philosophy", "dev-culture", "tech-team"]
+
+[extra]
+image = "/static/images/product-mashup-2020-04.png"
++++
 
 [Zerodha](https://zerodha.com), now India's largest stock broker, bootstrapped and profitable, turns ten years old this year. The Zerodha tech team turns seven years old. The tech team has remained largely elusive over the course of our existence. While we have pondered starting a tech blog for more than half a decade, we have often found ourselves too busy building the fundamental blocks underlying a stock brokerage. We have also been stalled by a sense of unpreparedness to talk to the world about our very unconventional setup.
+
+<!-- more -->
 
 But now, equipped with the power of battle-tested hindsight, the blog is finally here, and we hope to share what we have built, how we have built, and what we have learnt over the years.
 
@@ -96,7 +101,7 @@ These are some of the broad guiding principles that have happened to work for us
 In all honesty, as a hobbyist developer with no prior experience working in a corporate structure or managing a team, I did not have anything to go by except for the hacker-first approach, and great luck in finding like-minded hackers who can meme-burn all day long, while continuously learning and producing quality work.
 
 
-## What's next?
+## What's next? {#whats-next}
 I am excited by the prospects of this blog. It has been long overdue. We are eager to use Zerodha as a case study to illustrate that it is possible to build not just good software, but large enterprises ("Unicorns"), with small teams of hackers, even in the unlikeliest of industries. Hopefully, members of the tech team will start finding time to make semi-regular appearances on this blog with their own experiences and technical insights.
 
 *9th April 2020: Minor edits.*

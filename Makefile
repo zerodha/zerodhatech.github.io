@@ -1,24 +1,17 @@
-build-dev-docker:
-	docker build --target builder -t zerodha/zerodhatech:latest .
+ZOLA ?= zola
 
-run-dev-docker:
-	docker run -v "$(shell pwd)":/public \
-			    -w /public \
-			    -p 1313:1313 \
-			    zerodha/zerodhatech:latest \
-			    hugo serve -D --bind 0.0.0.0
+.PHONY: build check serve run-dev build-public-folder
 
-build-public-folder-docker:
-	docker run -v "$(shell pwd)":/public \
-			-w /public \
-			-p 1313:1313 \
-			zerodha/zerodhatech:latest \
-			hugo 
+build:
+	$(ZOLA) build
+	python3 scripts/taxonomy-feeds.py public
 
-run-dev:
-	hugo serve -D --bind 0.0.0.0
+check:
+	$(ZOLA) check --skip-external-links
 
-build-public-folder:
-	hugo
+serve:
+	$(ZOLA) serve --drafts
 
-.PHONY: build-dev-docker run-dev-docker build-public-folder-docker run-dev build-public-folder
+run-dev: serve
+
+build-public-folder: build
