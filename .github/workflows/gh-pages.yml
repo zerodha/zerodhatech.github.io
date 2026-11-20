@@ -88,7 +88,7 @@ jobs:
           if-no-files-found: error
 
   publish:
-    if: github.ref == 'refs/heads/main'
+    if: ${{ !cancelled() && needs.build.result == 'success' && github.ref == 'refs/heads/main' }}
     needs: build
     runs-on: ubuntu-latest
     permissions:
