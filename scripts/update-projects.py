@@ -1,60 +1,59 @@
-#!/usr/bin/env python3
 """Refresh project metadata in data/projects.yml from GitHub."""
+
 import sys
+from argparse import ArgumentParser
 from os import getenv
+from pathlib import Path
 
 import requests
 import yaml
 
 
+def refresh_projects(projects: list[dict[str, object]], token: str) -> None:
+    with requests.Session() as session:
+        session.headers.update({"Authorization": f"Bearer {token}"})
+
+        for project in projects:
+            repo = project.get("github_uri")
+            if not repo:
+                continue
+
+            response = session.get(f"https://api.github.com/repos/{repo}", timeout=15)
+            if response.status_code == 404:
+                print(f"Skipping {repo}: repository not found", file=sys.stderr)
+                continue
+            response.raise_for_status()
+            metadata = response.json()
+
+            project.update(
+                name=metadata["name"],
+                url=f"https://github.com/{repo}",
+                language=metadata["language"],
+                topics=metadata["topics"],
+                stars=metadata["stargazers_count"],
+                updated_at=metadata["pushed_at"],
+            )
+            if description := metadata.get("description"):
+                project["description"] = description
+            if license_info := metadata.get("license"):
+                if name := license_info.get("name"):
+                    project["license"] = name
+
+
+def main() -> None:
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument("projects", type=Path, help="path to projects.yml")
+    path = parser.parse_args().projects
+    if not (token := getenv("GITHUB_TOKEN")):
+        parser.exit(1, "GITHUB_TOKEN is required to refresh project metadata.\n")
+
+    try:
+        projects = yaml.safe_load(path.read_text(encoding="utf-8"))
+        refresh_projects(projects, token)
+        path.write_text(yaml.safe_dump(projects), encoding="utf-8")
+    except (OSError, requests.RequestException, yaml.YAMLError) as error:
+        parser.exit(1, f"Could not refresh {path}: {error}\n")
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        sys.exit("provide path to projects.yml")
-
-    api_token = getenv("GITHUB_TOKEN")
-    if not api_token:
-        sys.exit("GITHUB_TOKEN is missing")
-
-    headers = {"Authorization": f"Bearer {api_token}"}
-
-    with open(sys.argv[1], encoding="utf-8") as stream:
-        try:
-            projects = yaml.safe_load(stream)
-        except yaml.YAMLError as exc:
-            sys.exit(exc)
-
-    for project in projects:
-        repo = project.get("github_uri")
-        if not repo:
-            continue
-        print(repo)
-
-        url = f"https://api.github.com/repos/{repo}"
-        r = requests.get(url, headers=headers, timeout=15)
-
-        if r.status_code in [401, 403, 429]:
-            sys.exit(f"GitHub API denied the request: HTTP {r.status_code}")
-        elif r.status_code != 200:
-            print(f"skipping {repo}: HTTP {r.status_code}")
-            continue
-
-        data = r.json()
-
-        # Update URLs.
-        project["name"] = data["name"]
-        project["url"] = f"https://github.com/{repo}"
-
-        if data["description"]:
-            project["description"] = data["description"]
-
-        project["language"] = data["language"]
-
-        if data["license"] and "name" in data["license"]:
-            project["license"] = data["license"]["name"]
-
-        project["topics"] = data["topics"]
-        project["stars"] = data["stargazers_count"]
-        project["updated_at"] = data["pushed_at"]
-
-    with open(sys.argv[1], "w", encoding="utf-8") as f:
-        yaml.safe_dump(projects, f)
+    main()

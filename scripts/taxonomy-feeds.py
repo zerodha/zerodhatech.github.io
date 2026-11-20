@@ -1,6 +1,6 @@
 """Build RSS indexes of taxonomy terms from Zola's per-term feeds."""
 
-import sys
+from argparse import ArgumentParser
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 ATOM = "http://www.w3.org/2005/Atom"
 
 
-def write_index(directory, root_channel):
+def write_index(directory: Path, root_channel: ET.Element) -> None:
     items = []
     for feed in sorted(directory.glob("*/index.xml")):
         channel = ET.parse(feed).getroot().find("channel")
@@ -47,14 +47,21 @@ def write_index(directory, root_channel):
     ET.ElementTree(rss).write(directory / "index.xml", encoding="utf-8", xml_declaration=True)
 
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        sys.exit("usage: taxonomy-feeds.py SITE_DIRECTORY")
+def main() -> None:
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument("site", type=Path, help="directory containing the built site")
+    site = parser.parse_args().site
 
     ET.register_namespace("atom", ATOM)
-    site = Path(sys.argv[1])
     root_channel = ET.parse(site / "index.xml").getroot().find("channel")
+    if root_channel is None:
+        parser.exit(1, f"No RSS channel in {site / 'index.xml'}\n")
+
     for taxonomy in ("authors", "tags"):
         directory = site / taxonomy
         if directory.is_dir():
             write_index(directory, root_channel)
+
+
+if __name__ == "__main__":
+    main()
