@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authors on Zerodha Tech Blog</title><link>https://zerodha.tech/authors/</link><description>Recent content in Authors on Zerodha Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Nov 2026 12:00:00 +0530</lastBuildDate><atom:link href="https://zerodha.tech/authors/index.xml" rel="self" type="application/rss+xml"/><item><title>Sarat</title><link>https://zerodha.tech/authors/sarat/</link><pubDate>Thu, 19 Nov 2026 12:00:00 +0530</pubDate><guid>https://zerodha.tech/authors/sarat/</guid><description/></item><item><title>Knadh</title><link>https://zerodha.tech/authors/knadh/</link><pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate><guid>https://zerodha.tech/authors/knadh/</guid><description/></item><item><title>Karan</title><link>https://zerodha.tech/authors/karan/</link><pubDate>Wed, 14 Feb 2024 00:00:00 +0530</pubDate><guid>https://zerodha.tech/authors/karan/</guid><description/></item><item><title>Ajinasokan</title><link>https://zerodha.tech/authors/ajinasokan/</link><pubDate>Mon, 17 Jan 2022 16:00:00 +0530</pubDate><guid>https://zerodha.tech/authors/ajinasokan/</guid><description/></item><item><title>Satya10x</title><link>https://zerodha.tech/authors/satya10x/</link><pubDate>Thu, 22 Apr 2021 00:00:00 +0530</pubDate><guid>https://zerodha.tech/authors/satya10x/</guid><description/></item><item><title>Rhnvrm</title><link>https://zerodha.tech/authors/rhnvrm/</link><pubDate>Tue, 24 Nov 2020 17:35:00 +0530</pubDate><guid>https://zerodha.tech/authors/rhnvrm/</guid><description/></item></channel></rss>
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Authors on Zerodha Tech Blog</title>
+    <link>https://zerodha.tech/authors/</link>
+    <description>Recent content in Authors on Zerodha Tech Blog</description>
+    <generator>Zola</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Nov 2026 12:00:00 +0530</lastBuildDate>
+    <atom:link href="https://zerodha.tech/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sarat</title>
+      <link>https://zerodha.tech/authors/sarat/</link>
+      <pubDate>Thu, 19 Nov 2026 12:00:00 +0530</pubDate>
+      <guid>https://zerodha.tech/authors/sarat/</guid>
+      <description />
+    </item>
+    <item>
+      <title>Knadh</title>
+      <link>https://zerodha.tech/authors/knadh/</link>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://zerodha.tech/authors/knadh/</guid>
+      <description />
+    </item>
+    <item>
+      <title>Karan</title>
+      <link>https://zerodha.tech/authors/karan/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0530</pubDate>
+      <guid>https://zerodha.tech/authors/karan/</guid>
+      <description />
+    </item>
+    <item>
+      <title>Ajinasokan</title>
+      <link>https://zerodha.tech/authors/ajinasokan/</link>
+      <pubDate>Mon, 17 Jan 2022 16:00:00 +0530</pubDate>
+      <guid>https://zerodha.tech/authors/ajinasokan/</guid>
+      <description />
+    </item>
+    <item>
+      <title>Satya10x</title>
+      <link>https://zerodha.tech/authors/satya10x/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0530</pubDate>
+      <guid>https://zerodha.tech/authors/satya10x/</guid>
+      <description />
+    </item>
+    <item>
+      <title>Rhnvrm</title>
+      <link>https://zerodha.tech/authors/rhnvrm/</link>
+      <pubDate>Tue, 24 Nov 2020 17:35:00 +0530</pubDate>
+      <guid>https://zerodha.tech/authors/rhnvrm/</guid>
+      <description />
+    </item>
+  </channel>
+</rss>

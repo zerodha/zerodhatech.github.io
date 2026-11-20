@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Karan on Zerodha Tech Blog</title><link>https://zerodha.tech/authors/karan/</link><description>Recent content in Karan on Zerodha Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 14 Feb 2024 00:00:00 +0530</lastBuildDate><atom:link href="https://zerodha.tech/authors/karan/index.xml" rel="self" type="application/rss+xml"/><item><title>1.5+ million PDFs in 25 minutes</title><link>https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/</link><pubDate>Wed, 14 Feb 2024 00:00:00 +0530</pubDate><guid>https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/</guid><description>&lt;!-- ![banner](/static/images/cnotes_banner.png) --&gt;&#10;&lt;p&gt;At Zerodha, many million users login and use our financial platforms every day. Over the recent months, on an average day, 1.5+ million users have been executing stock and derivative transactions. On a volatile day, this number could easily double. After a trading session concludes and all the number-crunching, tallying, and “backoffice” operations are completed—with file dumps received from stock exchanges and other market infrastructure institutions—stock brokers e-mail a digitally signed PDF report called the contract note to every user who transacted on that particular day. This PDF report offers a comprehensive breakdown of each trade, detailing the total cost associated with each transaction. Its layout, contents, delivery time, and all other aspects are bound by regulations.&lt;/p&gt;</description></item><item><title>Logging at Zerodha</title><link>https://zerodha.tech/blog/logging-at-zerodha/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0530</pubDate><guid>https://zerodha.tech/blog/logging-at-zerodha/</guid><description>&lt;!-- ![banner](/static/images/lojjing_banner.jpg) --&gt;&#10;&lt;p&gt;At Zerodha, we run a multitude of internal and public-facing services that generate copious amounts of logs. While developers use these logs to debug or troubleshoot incidents, some services also emit logs that must be persisted for prolonged periods to comply with numerous regulatory requirements. In this post, I will delve into our experiences with the &lt;a href="https://www.elastic.co/what-is/elk-stack"&gt;ELK stack&lt;/a&gt;, why it didn&amp;rsquo;t fit our needs and our migration to &lt;a href="https://clickhouse.com/"&gt;ClickHouse&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Infrastructure monitoring with Prometheus at Zerodha</title><link>https://zerodha.tech/blog/infra-monitoring-at-zerodha/</link><pubDate>Mon, 27 Apr 2020 00:00:00 +0530</pubDate><guid>https://zerodha.tech/blog/infra-monitoring-at-zerodha/</guid><description>&lt;p&gt;On any given day, we handle around 15% of daily retail trading volume across all stock exchanges in India. Billions of requests generated in the process are handled by a suite of systems we have built in-house. Also, we are very particular on self-hosting as many dependencies as possible, everything from CRMs to large databases, Kafka clusters, mail servers etc.&lt;/p&gt;&#10;&lt;p&gt;To aid these primary systems, there are a large number of ancillary workloads that run, covering everything from real-time trades, document processing, KYC, and account opening, legal and compliance, complex, large scale P&amp;amp;L and number crunching, and a wide range of backoffice workloads. The systems are spread across a hybrid setup; physical racks across two different data centres (where exchange leased lines terminate) and AWS. All of this means that we have a lot of dynamic workloads and dissimilar systems and environments, bare metal to Kubernetes clusters, to be monitored independently.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+        <title>Karan on Zerodha Tech Blog</title>
+        <link>https://zerodha.tech/authors/karan/</link>
+        
+        <description>Recent content on Zerodha Tech Blog</description>
+        <generator>Zola</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 14 Feb 2024 00:00:00 +0530</lastBuildDate>
+        <atom:link href="https://zerodha.tech/authors/karan/index.xml" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>1.5+ million PDFs in 25 minutes</title>
+            <link>https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/</link>
+            <pubDate>Wed, 14 Feb 2024 00:00:00 +0530</pubDate>
+            <guid>https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/</guid>
+            <description xml:base="https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/">&lt;!-- ![banner](/static/images/cnotes_banner.png) --&gt;
+&lt;p&gt;At Zerodha, many million users login and use our financial platforms every day. Over the recent months, on an average day, 1.5+ million users have been executing stock and derivative transactions. On a volatile day, this number could easily double. After a trading session concludes and all the number-crunching, tallying, and “backoffice” operations are completed—with file dumps received from stock exchanges and other market infrastructure institutions—stock brokers e-mail a digitally signed PDF report called the contract note to every user who transacted on that particular day. This PDF report offers a comprehensive breakdown of each trade, detailing the total cost associated with each transaction. Its layout, contents, delivery time, and all other aspects are bound by regulations.&lt;/p&gt;</description>
+        </item>
+        
+        <item>
+            <title>Logging at Zerodha</title>
+            <link>https://zerodha.tech/blog/logging-at-zerodha/</link>
+            <pubDate>Thu, 23 Mar 2023 00:00:00 +0530</pubDate>
+            <guid>https://zerodha.tech/blog/logging-at-zerodha/</guid>
+            <description xml:base="https://zerodha.tech/blog/logging-at-zerodha/">&lt;!-- ![banner](/static/images/lojjing_banner.jpg) --&gt;
+&lt;p&gt;At Zerodha, we run a multitude of internal and public-facing services that generate copious amounts of logs. While developers use these logs to debug or troubleshoot incidents, some services also emit logs that must be persisted for prolonged periods to comply with numerous regulatory requirements. In this post, I will delve into our experiences with the &lt;a href=&quot;https://www.elastic.co/what-is/elk-stack&quot;&gt;ELK stack&lt;/a&gt;, why it didn’t fit our needs and our migration to &lt;a href=&quot;https://clickhouse.com/&quot;&gt;ClickHouse&lt;/a&gt;.&lt;/p&gt;</description>
+        </item>
+        
+        <item>
+            <title>Infrastructure monitoring with Prometheus at Zerodha</title>
+            <link>https://zerodha.tech/blog/infra-monitoring-at-zerodha/</link>
+            <pubDate>Mon, 27 Apr 2020 00:00:00 +0530</pubDate>
+            <guid>https://zerodha.tech/blog/infra-monitoring-at-zerodha/</guid>
+            <description xml:base="https://zerodha.tech/blog/infra-monitoring-at-zerodha/">&lt;p&gt;On any given day, we handle around 15% of daily retail trading volume across all stock exchanges in India. Billions of requests generated in the process are handled by a suite of systems we have built in-house. Also, we are very particular on self-hosting as many dependencies as possible, everything from CRMs to large databases, Kafka clusters, mail servers etc.&lt;/p&gt;
+&lt;p&gt;To aid these primary systems, there are a large number of ancillary workloads that run, covering everything from real-time trades, document processing, KYC, and account opening, legal and compliance, complex, large scale P&amp;amp;L and number crunching, and a wide range of backoffice workloads. The systems are spread across a hybrid setup; physical racks across two different data centres (where exchange leased lines terminate) and AWS. All of this means that we have a lot of dynamic workloads and dissimilar systems and environments, bare metal to Kubernetes clusters, to be monitored independently.&lt;/p&gt;</description>
+        </item>
+        
+        
+    </channel>
+</rss>

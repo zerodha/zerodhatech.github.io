@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flutter on Zerodha Tech Blog</title><link>https://zerodha.tech/tags/flutter/</link><description>Recent content in Flutter on Zerodha Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 17 Jan 2022 16:00:00 +0530</lastBuildDate><atom:link href="https://zerodha.tech/tags/flutter/index.xml" rel="self" type="application/rss+xml"/><item><title>From Native to React Native to Flutter</title><link>https://zerodha.tech/blog/from-native-to-react-native-to-flutter/</link><pubDate>Mon, 17 Jan 2022 16:00:00 +0530</pubDate><guid>https://zerodha.tech/blog/from-native-to-react-native-to-flutter/</guid><description>&lt;p&gt;At Zerodha, the first mobile version our flagship trading platform &lt;a href="https://zerodha.com/products/kite"&gt;Kite&lt;/a&gt; was written as a native Android app in 2015. After building a cross-platform version in React Native in 2017, we finally settled for a full rewrite in Flutter in 2018, a choice that has paid off really well for us. There were several factors and trade-offs that prompted these rewrites.&lt;/p&gt;&#10;&lt;p&gt;This post covers our journey and experiences with each of the frameworks, and why we finally bet on Flutter even when it was bleeding edge alpha technology. It also illustrates the thought process and our first-principle based approach that enables just two mobile developers to build and maintain multiple financial apps used by millions of people.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+        <title>Flutter on Zerodha Tech Blog</title>
+        <link>https://zerodha.tech/tags/flutter/</link>
+        
+        <description>Recent content on Zerodha Tech Blog</description>
+        <generator>Zola</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 17 Jan 2022 16:00:00 +0530</lastBuildDate>
+        <atom:link href="https://zerodha.tech/tags/flutter/index.xml" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>From Native to React Native to Flutter</title>
+            <link>https://zerodha.tech/blog/from-native-to-react-native-to-flutter/</link>
+            <pubDate>Mon, 17 Jan 2022 16:00:00 +0530</pubDate>
+            <guid>https://zerodha.tech/blog/from-native-to-react-native-to-flutter/</guid>
+            <description xml:base="https://zerodha.tech/blog/from-native-to-react-native-to-flutter/">&lt;p&gt;At Zerodha, the first mobile version our flagship trading platform &lt;a href=&quot;https://zerodha.com/products/kite&quot;&gt;Kite&lt;/a&gt; was written as a native Android app in 2015. After building a cross-platform version in React Native in 2017, we finally settled for a full rewrite in Flutter in 2018, a choice that has paid off really well for us. There were several factors and trade-offs that prompted these rewrites.&lt;/p&gt;
+&lt;p&gt;This post covers our journey and experiences with each of the frameworks, and why we finally bet on Flutter even when it was bleeding edge alpha technology. It also illustrates the thought process and our first-principle based approach that enables just two mobile developers to build and maintain multiple financial apps used by millions of people.&lt;/p&gt;</description>
+        </item>
+        
+        
+    </channel>
+</rss>

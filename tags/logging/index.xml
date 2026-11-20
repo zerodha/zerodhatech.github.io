@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Logging on Zerodha Tech Blog</title><link>https://zerodha.tech/tags/logging/</link><description>Recent content in Logging on Zerodha Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0530</lastBuildDate><atom:link href="https://zerodha.tech/tags/logging/index.xml" rel="self" type="application/rss+xml"/><item><title>Logging at Zerodha</title><link>https://zerodha.tech/blog/logging-at-zerodha/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0530</pubDate><guid>https://zerodha.tech/blog/logging-at-zerodha/</guid><description>&lt;!-- ![banner](/static/images/lojjing_banner.jpg) --&gt;&#10;&lt;p&gt;At Zerodha, we run a multitude of internal and public-facing services that generate copious amounts of logs. While developers use these logs to debug or troubleshoot incidents, some services also emit logs that must be persisted for prolonged periods to comply with numerous regulatory requirements. In this post, I will delve into our experiences with the &lt;a href="https://www.elastic.co/what-is/elk-stack"&gt;ELK stack&lt;/a&gt;, why it didn&amp;rsquo;t fit our needs and our migration to &lt;a href="https://clickhouse.com/"&gt;ClickHouse&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+        <title>Logging on Zerodha Tech Blog</title>
+        <link>https://zerodha.tech/tags/logging/</link>
+        
+        <description>Recent content on Zerodha Tech Blog</description>
+        <generator>Zola</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0530</lastBuildDate>
+        <atom:link href="https://zerodha.tech/tags/logging/index.xml" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>Logging at Zerodha</title>
+            <link>https://zerodha.tech/blog/logging-at-zerodha/</link>
+            <pubDate>Thu, 23 Mar 2023 00:00:00 +0530</pubDate>
+            <guid>https://zerodha.tech/blog/logging-at-zerodha/</guid>
+            <description xml:base="https://zerodha.tech/blog/logging-at-zerodha/">&lt;!-- ![banner](/static/images/lojjing_banner.jpg) --&gt;
+&lt;p&gt;At Zerodha, we run a multitude of internal and public-facing services that generate copious amounts of logs. While developers use these logs to debug or troubleshoot incidents, some services also emit logs that must be persisted for prolonged periods to comply with numerous regulatory requirements. In this post, I will delve into our experiences with the &lt;a href=&quot;https://www.elastic.co/what-is/elk-stack&quot;&gt;ELK stack&lt;/a&gt;, why it didn’t fit our needs and our migration to &lt;a href=&quot;https://clickhouse.com/&quot;&gt;ClickHouse&lt;/a&gt;.&lt;/p&gt;</description>
+        </item>
+        
+        
+    </channel>
+</rss>
