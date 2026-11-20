@@ -1,16 +1,21 @@
----
-title: "Scaling with common sense"
-description: "A disorderly assortment of common sense ideas for scaling applicaions that we follow at Zerodha. TLDR: Simple scales. Scale application before infra. Keep networking and IO minimal."
-date: "2020-06-14T14:00:00+05:30"
-author: knadh
-authors: ["knadh"]
-tags: ["philosophy", "scaling"]
-image: "/static/images/grafana-store.png"
----
++++
+title = "Scaling with common sense"
+description = "A disorderly assortment of common sense ideas for scaling applicaions that we follow at Zerodha. TLDR: Simple scales. Scale application before infra. Keep networking and IO minimal."
+date = 2020-06-14T14:00:00+05:30
+
+[taxonomies]
+authors = ["knadh"]
+tags = ["philosophy", "scaling"]
+
+[extra]
+image = "/static/images/grafana-store.png"
++++
 
 "Scaling" is not a specific technique but an entire spectrum that stretches all the way from "Google scale" to the K8s cluster [Karan](/authors/karan) runs on a Raspberry Pi plugged into a 12V shaver outlet in his bathroom to encrypt his DNS queries for peak privacy, while he asks Alexa to dim the lights and play his favorite non-mainstream indie music.
 
 It is a collection of practices unique and intimate to every organisation, and is the product of an infinite number of variables; the numerous domain-specific problems, the structure of the organisation, the nature of the people involved and their biases, countless engineering decisions and trade-offs, technical debt and history, ad infinitum.
+
+<!-- more -->
 
 That said, there are several, mostly trivial, common sense techniques and rules of thumb that help pluck the low-hanging fruits of typical scaling problems. This is specifically in the context of running software systems that serve concurrent user traffic and demand. I have been getting a number of *"how do I scale my service?"* queries lately, and hence, this assortment of conceptual and technical notes from practice and production at Zerodha, in no particular order. These should be consumed with a healthy and rational awareness of context and trade-offs.
 
@@ -27,7 +32,7 @@ Scaling starts bottom-up with good code and good software. One moves on to scali
 ## 3. Eat healthy and exercise daily.
 … is the non-tech equivalent of "premature optimisation is bad". Everyone has heard it, appreciates it, but finds it difficult to practise. In the beginning, focus on writing good-enough software. Then refactor and improve as time progresses. Trying to build for "web scale" on day one can turn out to be painful as the careful premature optimisations get thrown out of the window as the business and user requirements change unpredictably. Also, not every piece of all software has to be low latency and high throughput to begin with. On the other end of the spectrum is being lazy ignoring common sense principles leaving them for later.
 
-## 4. KISS, don't be afraid, and boring > cool.
+## 4. KISS, don't be afraid, and boring > cool. {#4-kiss-dont-be-afraid-and-boring--cool}
 "Keep it Stupid Simple" is a paradoxical adage. It is conceptually so simple that it creates the irrational fear that complexity implies sophistication and simplicity implies primitiveness. The fear of missing out on "cool" and advanced technologies.
 
 It is absolutely fine to write a couple bash scripts to rsync files to a remote server to get something up and running. It does not have to be containerised and deployed on a K8s cluster on day one. If an application can be kept up and running forever in this manner with no additional overhead, why not?
@@ -55,14 +60,14 @@ Speaking of RDBMS, "my database is slow" can almost always be attributed to poor
 
 It is surprising how many RDBMS bottlenecks can be attributed to carelessness, not excluding 1) not using composite indexes, or not writing queries with fields in the proper order to align with composites; 2) using text values instead of enums; 3) Abusing `LIKE` queries. Easy fixes.
 
-## 8. Don't use an RDBMS. What?
+## 8. Don't use an RDBMS. What? {#8-dont-use-an-rdbms-what}
 While RDBMS are great, barring the dramatic effect of the title, as said earlier, they are almost always the cause of bottlenecks in a typical database backed application than the application code itself. The fewer the queries that an application makes to a database, the faster it gets.
 
 It is notoriously hard to make WordPress handle traffic spikes as it issues dozens of queries to the database on every single page load. It probably has to because it is a generic CMS. Most business applications are unlike that. They are purpose-built and can afford to remodel queries and plan data better to reduce the number of roundtrips to the database on hotpaths, like a user clicking on a button and waiting for a result. 
 
 Every individual query is a network round trip to the database that involves sending the query to the database, the database planning and executing the query, and sending the data back over the network. If it is possible to combine multiple queries into a single query (nest, join, or using [CTEs](https://www.postgresqltutorial.com/postgresql-cte/)), it almost always gives a significant performance boost. Similarly, for insertions, updations, and deletions, if it's not easy to combine queries, they can probably be batched and committed in one shot, avoiding multiple network round trips.
 
-## 9. Networking/IO is really hard. Network as little as possible.
+## 9. Networking/IO is really hard. Network as little as possible. {#9-networkingio-is-really-hard-network-as-little-as-possible}
 In a complex software system, internal networking is also a manifestation of dependencies and the organisational structure. There must be a mathematical model somewhere that describes the ridiculous ways in which systems fail with every addition of a networked dependency.
 
 Networking makes software problems worse by piling on complexities of bandwidth and congestion, routing, load balancing, service discovery, packet drops, timeouts and retries, port and descriptor exhaustions, kernel configuration, operational overheads, data serialisation and API woes, and an infinite number of other problems that nobody can ever foresee. There are of course platforms that promise to magically abstract all of this away, but there is always a cost to pay. Who watches the watchmen?
@@ -71,7 +76,7 @@ Given that these complexities are applicable when just two networked services ta
 
 The common sense approach would be to have as few services and networked dependencies as possible. Have as few networked interactions, especially synchronous API calls, and roundtrips on application hotpaths as possible. It is far more productive to focus on scaling application and data than to waste time on avoidable networking complexities.
 
-## 9.1. Connections are hard. Connect little, pool much.
+## 9.1. Connections are hard. Connect little, pool much. {#91-connections-are-hard-connect-little-pool-much}
 Redis is so good that on a single connection, it can serve tens of thousands of requests serially, almost giving the illusion of concurrency while actually being single threaded. A network connection's capacity is only as good as the upstream's latency (time required for a single request), throughput (number of requests processed in a given window), and concurrency (number of requests that can be processed simultaneously).
 
 Imagine a database with 10 concurrent workers that can each process one query per second. It does not matter if an application opens 100 or a 1000 connections to the database. Only 10 connections will actually be used, and only 10 queries will be processed in a second. The rest of the connections are just unnecessary resource hogs. This is a common mistake, setting large connection limits for networked systems like databases in hopes of better throughput. Always pool.
@@ -82,14 +87,14 @@ As request volumes grow, connection pools start becoming visibly latency sensiti
 
 Imagine this happening in a microservice mesh of dozens of services. One wouldn't even know where to start crying, let alone start debugging. Sophisticated observation and tracing systems help, but they also require maintenance and scaling. Who watches the watchmen?
 
-## 9.2. Latency is THE metric.
+## 9.2. Latency is THE metric. {#92-latency-is-the-metric}
 "One request per second per connection" is a nice rule of thumb for visualising capacity and designing services and networks as illustrated in the previous sections. The key here is the consistency of latency. As long as it's guaranteed that a request will always take one second and not two, it is possible to have build capacity for scale. If it is unpredictable, sometimes two seconds, and sometimes five seconds, the service is scale-dead on arrival.
 
 Now, this is a hard problem where much of the engineering effort should be focused. This is the one metric where it may actually make sense to engineer top down. If one wants to handle 1000 requests a second, that is, 1ms latency on one request, engineer things behind that request to get it to 1ms. Or, scale horizontally by having 10 copies of the service each which has a 10ms latency, at increased complexity and expenses. It is a trade-off afterall.
 
 Is it possible to guarantee consistent latency? It is difficult, but barring network latency, at least for certain types of database lookups (which coincidentally is 97.42%* of all service responses in the world), it is possible to get consistent O(1) and O(N) lookups offered by systems like Redis. Complex RDBMS lookups can be turned into into O(1) lookups in Redis with common-sense caching, and this can go a really long way.
 
-## 9.3. The Internet is the Wild Wild West.
+## 9.3. The Internet is the Wild Wild West. {#93-the-internet-is-the-wild-wild-west}
 Imagine a well built, highly optimised, low latency service with high throughput that handles hundred thousand requests a second. One million concurrent users start sending requests to it from wildly varying 3G, 4G, and broadband networks over HTTP connections. The service will instantly respond to an incoming request on a connection, but the connection to the user over the internet is unpredictable. It may take 50ms or several seconds to write a response. For this period, the connection is held hostage by the user's poor network and it is happening with a million connections concurrently. This is an important factor that is easily missed.
 
 A typical solution here is to deploy load balancer proxies (HAProxy, Nginx etc., or services like AWS ALB) setups for doing the dirty work of juggling a huge number of end user connections, maintaining a finite pool of keep-alive connections in the backend to the upstream service.
@@ -103,16 +108,16 @@ That an active investment platform generally only has to display data for the pa
 
 Really though, how often does the data a user looks at on an application, change? Chances are, not very often, unlike stock prices that tick every second, for example. Even caching for a few seconds can make a big difference. Nothing beats caching in RAM, but not everything can be cached in RAM. What can be, the heaviest queries, or the most frequent responses, probably should be. If possible, cache forever, as long as invalidating the cache does not become overly complex. Generally, it's possible to cache all GET requests until a corresponding POST or PUT request on that resource internally invalidates the cache.
 
-### 10.1. Dumb caching is best caching.
+### 10.1. Dumb caching is best caching. {#101-dumb-caching-is-best-caching}
 When a request looks up data in a cache and dumps it directly in the response, that's a dumb cache. The caching logic has no understanding of the semantics or structure of the data stored and just does bytes-out. Dumb caches are nice as the application logic need not concern with parsing or constructing data, which in turn may become its own bottleneck. While this may not be feasible everywhere, it is a nice way to keep things simple.
 
 
-### 10.2. Some application state may not be bad.
+### 10.2. Some application state may not be bad. {#102-some-application-state-may-not-be-bad}
 That services should be to be stateless is a sensible gospel. That does not mean that an application can't have significant ephemeral in-memory cache.
 
 Imagine a database table with 100K rows of data that rarely changes. A service queries one value from this table to fulfill incoming requests. What if the service, on boot, read the entire 100K rows from the database and put them in an in-memory map. Now the requests can do an in-memory map lookup, several orders of magnitude faster, with no dependency on the database. This is an ephemeral state that can be thrown away. On the rare occasion when the database changes, simply restarting the application can replenish the cache.
 
-### 10.3. HTTP APIs can be E-Tagged (304) too.
+### 10.3. HTTP APIs can be E-Tagged (304) too. {#103-http-apis-can-be-e-tagged-304-too}
 That this is not widely is surprising to me. Client-side HTTP caching (JS, PNG, CSS …) is what underpins the large scale scaling of content delivery and bandwidth savings on the WWW. The browser caches a file, stores a hash, the E-Tag, and checks with the server if the file has changed by sending the E-Tag. If it hasn't, the server responds with 304 header with no actual data instructing the browser to use the cached version. Imagine how much slower WWW would be without this. Also, the days when browsers went bonkers when Ajax requests were E-tagged are long gone.
 
 This works beautifully for HTTP APIs too, and we know that 97.42%* all APIs in the world are HTTP/JSON. `GET /orders` returns a JSON response. User refreshes the page, and if the response hasn't changed, why send the response all over again?

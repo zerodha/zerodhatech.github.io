@@ -1,16 +1,21 @@
----
-title: "From Native to React Native to Flutter"
-description: "Our journey and experiences with native, React Native, and Flutter and why we finally bet on Flutter for building critical financial apps in 2018 even when it was alpha."
-date: "2022-01-17T16:00:00+05:30"
-author: ajinasokan
-authors: ["ajinasokan"]
-tags: ["flutter"]
-image: "/static/images/native-reactnative-flutter.png"
----
++++
+title = "From Native to React Native to Flutter"
+description = "Our journey and experiences with native, React Native, and Flutter and why we finally bet on Flutter for building critical financial apps in 2018 even when it was alpha."
+date = 2022-01-17T16:00:00+05:30
+
+[taxonomies]
+authors = ["ajinasokan"]
+tags = ["flutter"]
+
+[extra]
+image = "/static/images/native-reactnative-flutter.png"
++++
 
 At Zerodha, the first mobile version our flagship trading platform [Kite](https://zerodha.com/products/kite) was written as a native Android app in 2015. After building a cross-platform version in React Native in 2017, we finally settled for a full rewrite in Flutter in 2018, a choice that has paid off really well for us. There were several factors and trade-offs that prompted these rewrites.
 
 This post covers our journey and experiences with each of the frameworks, and why we finally bet on Flutter even when it was bleeding edge alpha technology. It also illustrates the thought process and our first-principle based approach that enables just two mobile developers to build and maintain multiple financial apps used by millions of people.
+
+<!-- more -->
 
 ## Native Android, not so native iOS.
 
@@ -28,7 +33,7 @@ I joined the team in early 2017 and around this time, we began our experiments w
 
 Since our iOS app was lagging behind, we decided to rewrite Kite in React Native for iOS first and eventually replace the native Android app which had started to gain traction. After 5 months of development, we released Kite for iOS written in React Native in mid 2017. We were quite surprised by the considerably less development time compared to the native Android app. While it was a port of the Android app, we added a bunch of UI improvements with iOS specific elements. Soon after though, React Native started showing its fair share of issues.
 
-## React Native - the not so fun part
+## React Native - the not so fun part {#react-native---the-not-so-fun-part}
 
 Let's start with JavaScript. Besides the well known language quirks, we were also frustrated by the amount of chaos brought by the massive number of Node module dependencies React Native had. Every now and then something would break out of the blue and the only solution would be to nuke the entire node_modules cache and to re-install them. How or why something broke was often a mystery. Every time we did this, macOS Spotlight, a system-wide search service, would start indexing the hundreds of thousands of files in the node_modules folder. This indexing issue ([yarn#6453](https://github.com/yarnpkg/yarn/issues/6453), [npm#15346](https://github.com/npm/npm/issues/15346)) is still the responsibility of the user to manually fix every time.
 

@@ -1,16 +1,21 @@
----
-title: "Working with PostgreSQL"
-description: "Our experience running large multi-terabyte PostgreSQL DBs in production with hundreds of billions of rows with minimal resources."
-date: "2021-04-22T00:00:00+05:30"
-author: satya10x
-authors: ["satya10x"]
-tags: ["databases"]
-image: "/static/images/postgres.png"
----
++++
+title = "Working with PostgreSQL"
+description = "Our experience running large multi-terabyte PostgreSQL DBs in production with hundreds of billions of rows with minimal resources."
+date = 2021-04-22T00:00:00+05:30
+
+[taxonomies]
+authors = ["satya10x"]
+tags = ["databases"]
+
+[extra]
+image = "/static/images/postgres.png"
++++
 
 This post is in the context of the large, data heavy PostgreSQL instances that store historical transactional data and reports, the databases that power [Console](https://zerodha.com/products/console) and its large scale number crunching and reporting. It talks about how we self-host, tune, and manage all our DB instances on bare EC2 instances. For high availability and backups, we use simple failover replicas and for backups, AWS disk snapshots.
 
 The Console DBs store hundreds of billions of rows of different kinds of financial and transactional data, currently close to 20 TB, across four sharded nodes. Data such as daily trades, P&L, and ledger entries across our user base. While most of these rows are immutable, millions of rows are deleted and garbage collected regularly as a part of financial reconciliations.
+
+<!-- more -->
 
 The largest of our DBs act like warehouses into which tens of millions of new rows are inserted every day. For these DBs, 99% of the writes happen at night, when our daily “EOD” (End Of Day) processes reconcile large data dumps from stock exchanges. That after live trading hours and on holidays, user activity drops to practically nil, is a silver lining for us.
 

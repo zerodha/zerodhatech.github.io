@@ -1,14 +1,20 @@
----
-title: "The remoteness of remote work"
-date: 2024-03-28
-description: "Reflections on COVID-induced remote work at Zerodha. Big failures, small wins."
-tags: [philosophy]
-image: /static/images/remote-work.png
-banner: "yes"
-authors: ["knadh"]
----
++++
+title = "The remoteness of remote work"
+date = 2024-03-28
+description = "Reflections on COVID-induced remote work at Zerodha. Big failures, small wins."
+
+[taxonomies]
+tags = ["philosophy"]
+authors = ["knadh"]
+
+[extra]
+image = "/static/images/remote-work.png"
+banner = true
++++
 
 **TL;DR** Like numerous other orgs, we transitioned (actually, flipped overnight) to being fully remote during the first COVID pandemic lockdown in 2020. It worked out great in the first year, started losing its sheen in the second year, and became detrimental to creativity and collaboration by the third year. It failed for us in the most critical areas. We then made the collective decision to switch to a "hybrid" mode, where about 10% of us involved in creative and decision-making endeavours now come to the office three days a week while 90% of us continue to be fully remote.
+
+<!-- more -->
 
 The hard lesson we learnt is that effective, long term remote work requires specific skill sets and DNA to pull off.
 

@@ -1,0 +1,33 @@
+<div class="posts">
+    {% for post in paginator.pages %}
+    <div class="post blurb">
+        <div class="post-header">
+            <h3 class="title">
+                <a href="{{ post.permalink }}">{{ post.title }}{% if post.draft %}<sup class="draft-label">DRAFT</sup>{% endif %}</a>
+            </h3>
+        </div>
+        <div class="description">
+            {{ post.description | default(value=post.content | striptags | truncate(length=120, end="...")) }}
+        </div>
+        <div class="meta">
+            {{<byline page={post} compact={true} />}}
+            <p class="date"><time datetime="{{ post.date }}">{{ post.date | date(format="%d %b %Y") }}</time></p>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% if paginator.number_pagers > 1 %}
+    <ul class="pagination">
+        <li class="page-item page-prev">
+            {% if paginator.previous %}
+            <a href="{{ paginator.previous }}" class="page-link" aria-label="Previous">← Prev page</a>
+            {% endif %}
+        </li>
+        <li class="page-item page-next">
+            {% if paginator.next %}
+            <a href="{{ paginator.next }}" class="page-link" aria-label="Next">Next page →</a>
+            {% endif %}
+        </li>
+    </ul>
+    {% endif %}
+</div>

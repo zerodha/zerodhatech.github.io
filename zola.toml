@@ -1,0 +1,26 @@
+base_url = "https://zerodha.tech"
+title = "Zerodha Tech Blog"
+description = "Technology blog of India's largest stock broker"
+default_language = "en-us"
+generate_feeds = true
+feed_filenames = ["index.xml"]
+
+taxonomies = [
+    { name = "authors", paginate_by = 50, feed = true },
+    { name = "tags", paginate_by = 50, feed = true },
+]
+
+[markdown]
+external_links_external = false
+smart_punctuation = true
+
+[markdown.highlighting]
+theme = "solarized-dark"
+
+[extra]
+menu = [
+    { name = "Home", path = "/" },
+    { name = "Blog", path = "/blog/" },
+    { name = "Projects", path = "/projects/" },
+    { name = "Stack", path = "/stack/" },
+]

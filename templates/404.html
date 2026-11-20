@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block hero %}
+<h1 class="post-header">Page not found</h1>
+{% endblock hero %}
+
+{% block content %}
+<div class="container wrap">
+    <p><a href="{{ get_url(path="/blog/") }}">Browse the blog</a></p>
+</div>
+{% endblock content %}

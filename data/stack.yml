@@ -108,7 +108,7 @@
 
 - category: DevOps & CI/CD
   name: Salt Stack
-  url: https://www.saltstack.com/
+  url: https://docs.saltproject.io/
 
 - category: DevOps & CI/CD
   name: GLPI

@@ -1,17 +1,23 @@
----
-title: "Distributed, high-performance blob storage on SQLite"
-description: "How we built Blobasaur, a sharded, distributed, lightweight blob storage server to solve our high-throughput blob read/write usecase."
-date: "2026-11-19T12:00:00+05:30"
-authors: ["sarat"]
-tags: ["rust", "databases"]
-image: "/static/images/blobasaur-og.png"
----
++++
+title = "Distributed, high-performance blob storage on SQLite"
+description = "How we built Blobasaur, a sharded, distributed, lightweight blob storage server to solve our high-throughput blob read/write usecase."
+date = 2026-11-19T12:00:00+05:30
+
+[taxonomies]
+authors = ["sarat"]
+tags = ["rust", "databases"]
+
+[extra]
+image = "/static/images/blobasaur-og.png"
++++
 
 **TLDR;** We built Blobasaur, a sharded, distributed, lightweight blob storage server on top of SQLite to solve our high-throughput blob read/write usecase. JSON blobs varying from a few KBs to MBs are now written and read thousands of times per second on commodity hardware while maintaining single-digit millisecond latency.
 
 -------------
 
 On [Kite](https://zerodha.com/products/kite), our trading platform with ~20 million customers, users are able to customize their investment and trading screens heavily. They save multi-chart layouts, financial indicator templates, vector drawings, and various kinds of arbitrary UI preferences. In addition, we offer a Terminal mode that allows users to design their own workspaces by dragging, dropping, and customizing widgets. Under the hood, our backend services store these user preferences and metadata as opaque blobs (mostly JSON) ranging from a few kilobytes to several megabytes.
+
+<!-- more -->
 
 Many years ago, we stored such blobs in CouchDB, which turned out to be ill-suited for the kind of throughput we were starting to see. We then moved to SSDB ([ssdb](https://github.com/ideawu/ssdb)), a C++ disk-backed store that speaks the Redis protocol. This made it very easy to integrate as well. SSDB solved our immediate performance problems and ran reliably in production for several years.
 
@@ -185,7 +191,7 @@ After running dual-writes for a month with zero discrepancies, we turned off SSD
 
 ## What we learned along the way
 
-### Deleting rows doesn't shrink SQLite files
+### Deleting rows doesn't shrink SQLite files {#deleting-rows-doesnt-shrink-sqlite-files}
 
 Early on, we noticed disk usage only grew, even after millions of keys expired or were deleted. By default, SQLite keeps freed pages on an internal freelist for future writes rather than returning space to the OS.
 

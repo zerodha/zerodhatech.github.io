@@ -1,0 +1,15 @@
+{% component stack() %}
+{% set stack = load_data(path="data/stack.yml") %}
+<section class="container oss">
+    {% for category in [item.category for item in stack] | unique %}
+    <h3>{{ category }}</h3>
+    <div class="oss-row">
+        {% for item in [item for item in stack if item.category == category] %}
+        <div class="item">
+            <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>
+{% endcomponent stack %}

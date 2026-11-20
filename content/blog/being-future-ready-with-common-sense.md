@@ -1,15 +1,20 @@
----
-title: "Scaling with common sense #2: Being future ready."
-description: "An assortment of common sense ideas and practices that we follow at Zerodha for being future ready with our software, systems, and our organisation."
-date: "2021-07-28T15:30:00+05:30"
-author: knadh
-authors: ["knadh"]
-tags: ["philosophy", "scaling", "dev-culture", "tech-team"]
-image: "/static/images/being-future-ready.png"
----
++++
+title = "Scaling with common sense #2: Being future ready."
+description = "An assortment of common sense ideas and practices that we follow at Zerodha for being future ready with our software, systems, and our organisation."
+date = 2021-07-28T15:30:00+05:30
+
+[taxonomies]
+authors = ["knadh"]
+tags = ["philosophy", "scaling", "dev-culture", "tech-team"]
+
+[extra]
+image = "/static/images/being-future-ready.png"
++++
 
 
 Over the last year, owing to the unexpected rally in capital markets, Zerodha's customer base has more than tripled, significantly increasing the number of concurrent users on our platforms along with the traffic and load they generate on numerous systems in the background. For context, in January 2020, we were handling 2+ million retail trades daily. In April 2020, it had risen to 7+ million. Today, it goes up to 12+ million. Our user base is now at 6+ million users, up from 2+ million last year. 
+
+<!-- more -->
 
 We never foresaw that our client base that grew slowly and predictably over ten years would triple in less than a year. Not that we ever attempted to do so either. However, when it did happen, we were able to adapt our software, infrastructure, and organisation with only a nominal impact on our stack and only a negligible increase in technology and infrastructure costs. This includes transitioning 1000+ of our employees to full time remote work pretty much overnight owing to the Covid lockdowns in 2020. Meanwhile, our tech team that was 30 members strong last year now stands at 31.
 
@@ -51,15 +56,15 @@ It is a common misconception that internal APIs and architectures can be easily 
 ## 4. Unexpected wins from common sense design: Kite Connect.
 Common sense software design, architecture, and separation of services can yield unexpected benefits far beyond performance wins. My favorite example at Zerodha is [Kite Connect](https://kite.trade), our HTTP/JSON API platform that allows building full fledged trading and investment platforms over our infrastructure.
 
-### 4.1. The idea of Kite.
+### 4.1. The idea of Kite. {#41-the-idea-of-kite}
 All through 2013 and 2014 in the early days of our tech team, we were busy digitising things inside the organisation, mostly writing Python scripts to automate mundane manual processes. Building a trading platform was not even a thought. Sometime in 2014, our OMS (Order Management System) vendor came out with a white label web based trading platform that we could offer to our users. Web based trading platforms were a tiny niche and Windows-only desktop trading platforms dominated the industry. When I saw it first hand, I was shocked by what passed for a web application. If I remember correctly, its standout feature was that IE6 was no longer a requirement ... in 2014. We abruptly decided that we needed to build a usable web based trading platform. A pivotal, unplanned move that would eventually transform Zerodha into a full fledged technology firm.
 
-### 4.2. Kite needs clean APIs.
+### 4.2. Kite needs clean APIs. {#42-kite-needs-clean-apis}
 There were only about four or five of us in the tech team at that point, and none of us had any prior experience building a trading platform let alone any familiarity with capital markets or finance. Thankfully, the OMS vendor had a set of SOAP-like HTTP/XML APIs on top of the OMS engine. This is what would power the buy and sell functions of the trading platform. I would spend the next several weeks trying to understand the highly inconsistent route and naming conventions in the poorly documented API, wrapping the calls one by one into HTTP/JSON calls with consistent field names in a Python web server. It made sense to write this middleware to hide vendor weirdness behind a consistent API that we would be comfortable working with. Of course, it would then take months of back and forth with the vendor to actually get the upstream APIs to be in a usable state, followed by years of follow ups for incremental improvements.
 
 This new API spec was easy to use, understand, and was documented enough for [Vivek](https://vivekr.dev) to start integrating it into the Angular web frontend he had started building based on my UI "design". We were winging it. The name "Kite" implied something simple and light weight to operate, something that could reach metaphorical heights.
 
-### 4.3. Serendipity.
+### 4.3. Serendipity. {#43-serendipity}
 
 Around the same time, we had started realising that good quality end user software had to exist in the industry for the ecosystem to grow, whether or not we built it. While we were seeing numerous innovative end user applications launch by the day in India, capital markets was seeing none of it thanks to thick red tapes and the extremely high entry barrier owing to the legacy of a century old industry and status quo in general. For example, up until 2017, a user had to print, sign, and courier a ~40 page form to open an account with a brokerage as online account opening was not permitted by regulations. Who would want to experiment in an industry like that! It was (and still is) extremely complex to start a brokerage firm in India and the only way to invite innovation would have been to help technologists cut through the red tape and build on top of existing brokerage firms. 
 
@@ -67,7 +72,7 @@ Coincidentally, it occurred to us that the APIs for Kite were generic and clear 
 
 This wild, spontaneous side project very quickly bore fruits when [smallcase](https://smallcase.com) approached us with a proposal to build a thematic investment platform. We gave them Kite Connect API keys, help with regulatory approvals, and seed funding from the modest profits we were making. Our users who had painstakingly opened accounts with us to invest and trade could now login to smallcase with a single click. We would handle the legalities, compliance, financial processes, and of course the underlying technology and infrastructure, and smallcase could focus on building their platform.
 
-### 4.4. Rainmatter.
+### 4.4. Rainmatter. {#44-rainmatter}
 
 This kickstarted [Rainmatter](https://rainmatter.com), our fintech investment fund, and the Kite Connect APIs became a "Brokerage as a Platform" (*BaaP*) offering to companies that wanted to build bespoke financial platforms at a time where user onboarding still required signing and couriering 40+ pages. Given this state of the industry, investing time and effort, let alone envisioning an API platform complete with a developer portal may not have made sense. But, Kite Connect was not planned, it was a fortuitous side effect of good API design.
 
@@ -94,7 +99,7 @@ Software complexity and timeline estimation is often hindered by the countless s
 ## 7. Slow down to speed up.
 Technical debt is inevitable. The older the debt, the harder it is to get rid of it. In organisations that develop and iterate software rapidly to meet feature goals and deadlines, there is little time to pause, refactor, do things the right way, paving the way to technical debt. That one missed feature in a quarter (yes, as absurd as it sounds, we know of organisations that have X "features" per quarter as a goal) could mean losing competitive advantage, right? This is a myth. Organisations often overestimate the importance of the features they continuously ship (and underestimate the importance of features they don't ship). In fact, not constantly adding "features" and changing software plays an important role in its prospects of being future ready. That improving the quality and performance of existing software in itself is an important implicit "feature" is a fact lost on many. We regularly delay shipping new features to slow down and clean up technical debt. Unfortunately, in many organisations, such technical decisions are often not in the hands of developers (cries in [Section 8](#8-the-tyranny-of-non-technical-tech-leaders)).
 
-### 7.1. Don't fix what is not broken, but fix what might soon break.
+### 7.1. Don't fix what is not broken, but fix what might soon break. {#71-dont-fix-what-is-not-broken-but-fix-what-might-soon-break}
 The first version of Kite, our trading platform, was written in Python. When it was launched in 2015, there were barely a thousand concurrent users on it. Today, there are way more than a million at any given moment. Version 2, a significant refactor, was launched in 2016, and version 3, a complete rewrite, was launched in 2017. Between these versions, we exhausted possible avenues of performance optimization in Python and rewrote the whole backend in Go. The Angular frontend which became a pain to maintain very quickly was scrapped and rewritten in Vue. The Kite mobile applications that were originally written in native code (became a multi-codebase maintenance headache), then React Native (became a performance headache), were scrapped for a third time and replaced with a rewrite in Flutter. These decisions have worked out amazingly well for us.
 
 Another instance is ticker, the component that streams tens of millions of real time market data packets every second to end users. It has been refactored and rewritten at least five times in the last six years as we got better at writing Go and as we started sensing impending performance bottlenecks. In addition, its internal streaming technology has changed from a custom TCP protocol to ZeroMQ to Nanomsg/Mango to NATS finally, which is rock solid and highly scalable. The refactored Go Kite web application backend that went live in 2017 got replaced last month with a version rewritten from scratch to be consistent with our current Go idioms and patterns. This rewrite which we did as a side project over many months, has ~50% fewer lines of Go and SQL code, has visible performance improvements, and is far simpler to read and understand, which also plays an important role in security. For Kite, we maintain 40ms roundtrip latency on the client side over a good internet connection as the baseline, and any time this starts fluctuating, we look at avenues to refactor. Such baselines can be indicators of looming bottlenecks.
@@ -106,13 +111,13 @@ Our user onboarding portal has been scrapped and rebuilt multiple times over its
 When we detect code smell or impending performance problems in our software, we sit down and assess its criticality, dependencies, risk, future readiness, and more importantly, our own technical competence and confidence to decide how, if, and when to refactor or rewrite. This requires regular self-reflection and reality checks to avoid slipping into territories of delusion. These decisions are taken entirely at the discretion of the tech team and do not involve non-technical teams. The refactors are generally done by two to four developers who are the principal developers of respective projects. Of the dozens of big, carefully weighed refactors and rewrites, every single one has been more than worth it for us, not just in terms of technical, performance, and operational benefits, but cost.
 
 
-### 7.2. Freeze new stuff to improve old stuff.
+### 7.2. Freeze new stuff to improve old stuff. {#72-freeze-new-stuff-to-improve-old-stuff}
 For existing software to be rewritten or refactored, many new developments may have to be paused, which businesses are generally paranoid of, because: "new" features. At Zerodha, we are okay to delay a new feature by a few weeks or even months to clean up technical debt and make room to meaningfully assimilate it. To be doubly sure, sometimes we test new features and make partial blue-green deployments of changes over many months, even features that may give us a perceived competitive advantage. Changes dictated by compliance and regulations are an exception to this though.
 
 Funnily, such planned short term delays for maintaining the sanctity of software have enabled us to iterate and ship new features at a much faster rate than our industry counterparts. And in most cases, with every refactor, the need for another refactor, and the potential for technical debt, reduces considerably. Paradoxically, with calculated slowdowns, we have gained speed in unexpected ways.
 
 
-### 7.3. Technical debt is a reality of life.
+### 7.3. Technical debt is a reality of life. {#73-technical-debt-is-a-reality-of-life}
 All of this sounds great in hindsight. Things could've gone wrong spectacularly too. However, irrespective of the outcome that is a matter of odds, there is little doubt that technical debt needs to be addressed proactively because:
 
 - That cleaner software has higher odds at being future ready than poorly built software is a fact.
@@ -123,7 +128,7 @@ All of this sounds great in hindsight. Things could've gone wrong spectacularly 
 No business goals, vision, strategy, or competitive advantage changes the fact that technical debt is inevitable and that it needs to be handled.
 
 
-### 7.4. Fear.
+### 7.4. Fear. {#74-fear}
 Then why is it that many organisations rarely pause to clear technical debt? Why are developers afraid of suspending new development to periodically clean up their existing systems? Is refactoring and improving existing software not "new" development? From interactions with organisations of all shapes and sizes, I have come to the realisation that a key reason is fear, and not that of technical risk.
 
 Often, technical leaders are afraid of change as they are obliged to justify even the minutest technical changes to non-technical management that holds the strings. *"We are going to stop all new features on the trading platform for two months to rewrite a component for a 10ms latency improvement because the traffic pattern indicates that the request throughput might deteriorate in the near future"* is not something that will go down well with non-technical management in most organisations. Extrapolate this to whole industries, it creates a vicious cycle of technical leaders with eroding confidence to take calculated decisions to scrap and rewrite poor software. Software development becomes muddled with business development under the supervision of non-technical leaders making technical decisions. A great shame.
@@ -178,7 +183,7 @@ Thus, the cost and ownership of technology are significant factors that affect t
 
 On that note, if I had a Rupee for every time I spoke to a fledgling startup struggling to pay growing monthly SaaS bills, struggling to institute changes after being locked into proprietary SaaS, that would be enough Rupees to have a nice dosa+vada+coffee meal in South Bengaluru. On the other extreme are large, legacy, cash-rich organisations that are so dependent on external vendors for everything that their attempt to be "tech-first" is a steep uphill battle, like Karan's inability to drive a car uphill, where his definition of a hill is any incline that is greater than 5 degrees.
 
-## 13. The spider's web of IT vendors.
+## 13. The spider's web of IT vendors. {#13-the-spiders-web-of-it-vendors}
 We once spoke to a big "digital" bank in India that had several hundred developers on their office floor, where none of the developers ever wrote any code. Their job was to liaise with the bank's IT vendors, raising, tracking, and executing endless requirement tickets. Here, the commissioning of a single CRUD API that recorded two fields in a database would take months of endless conference calls and committees. Then, there was an industry counterpart who had several dozen IT vendors building and servicing systems for them. I wish these were fictional organisations, but shudder by the realisation that there are countless such "tech first" organisations with abysmal in-house technical capacity, all stuck in a spider's web of IT vendors, unable to move, change, or innovate, or even update their static website or an e-mail template fast enough, let alone be future ready. Many such organisations do manage to crawl into the future albeit by burning huge amounts of cash and wasting time and effort servicing mammoth technical debt, while ironically posturing increased "IT spend" as a measure of technological advancement. All it takes is one big SaaS or IT vendor lock-in to skyrocket expenses perpetually.
 
 These organisations could always start using more FOSS and give technical decision-making powers to hands-on technical people allowing them to build in-house tech teams and capacity gradually. But, we already know why it rarely happens ([Section 8](#8-the-tyranny-of-non-technical-tech-leaders)). If IT spend was the right metric to gauge the quality of technology, banking applications and government portals would have been shining examples of good software, but they are not, globally.
@@ -192,7 +197,7 @@ Speaking of undefined events, remember the global fiasco of 2020 when crude oil 
 
 One cannot help but be pragmatic about downtime in systems. The better a system's engineering, the better the environment in which the people who maintain the system are in, the better its odds of minimizing breakage and recovering from catastrophes.
 
-## 15. So … ?
+## 15. So … ? {#15-so--}
 These meandering, tangential anecdotes attempt to illustrate how we develop software at Zerodha, and how common sense principles have enabled us from the very beginning to transition into a future that we never envisioned. These principles have enabled us to build complex software on top of precarious, legacy institutional infrastructure, and changed the course of the organisation for the better, despite wave after wave of highly volatile and unexpected shifts.
 
 Our work at Zerodha has afforded me first hand experiences and visibility into a number of organisations that reaffirm my simple conviction that in software development, common sense and pragmatism trump any one-size-fits-all methodologies or frameworks. Thinking about it, it applies to many things in life.

@@ -1,16 +1,21 @@
----
-title: "Infrastructure monitoring with Prometheus at Zerodha"
-description: "How we developed a hybrid multi-DC and cloud monitoring stack with Prometheus, Grafana, and Victoria metrics for monitoring system, app and service, and also business metrics."
-date: "2020-04-27T00:00:00+05:30"
-author: karan
-authors: ["karan"]
-tags: ["devops", "monitoring"]
-image: "/static/images/grafana-store.png"
----
++++
+title = "Infrastructure monitoring with Prometheus at Zerodha"
+description = "How we developed a hybrid multi-DC and cloud monitoring stack with Prometheus, Grafana, and Victoria metrics for monitoring system, app and service, and also business metrics."
+date = 2020-04-27T00:00:00+05:30
+
+[taxonomies]
+authors = ["karan"]
+tags = ["devops", "monitoring"]
+
+[extra]
+image = "/static/images/grafana-store.png"
++++
 
 On any given day, we handle around 15% of daily retail trading volume across all stock exchanges in India. Billions of requests generated in the process are handled by a suite of systems we have built in-house. Also, we are very particular on self-hosting as many dependencies as possible, everything from CRMs to large databases, Kafka clusters, mail servers etc.
 
 To aid these primary systems, there are a large number of ancillary workloads that run, covering everything from real-time trades, document processing, KYC, and account opening, legal and compliance, complex, large scale P&L and number crunching, and a wide range of backoffice workloads. The systems are spread across a hybrid setup; physical racks across two different data centres (where exchange leased lines terminate) and AWS. All of this means that we have a lot of dynamic workloads and dissimilar systems and environments, bare metal to Kubernetes clusters, to be monitored independently.
+
+<!-- more -->
 
 ![Monitoring at Zerodha](/static/images/monitoring-arch.png)
 

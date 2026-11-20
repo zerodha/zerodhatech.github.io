@@ -1,14 +1,19 @@
----
-title: "User disengagement"
-description: "User disengagement is the product and business development philosophy we follow at Zerodha, the anti-thesis of user \"engagement\"."
-date: "2022-05-06"
-author: knadh
-authors: ["knadh"]
-tags: ["philosophy", "dev-culture", "tech-team"]
-image: "/static/images/user-disengagement.png"
----
++++
+title = "User disengagement"
+description = "User disengagement is the product and business development philosophy we follow at Zerodha, the anti-thesis of user \"engagement\"."
+date = 2022-05-06
+
+[taxonomies]
+authors = ["knadh"]
+tags = ["philosophy", "dev-culture", "tech-team"]
+
+[extra]
+image = "/static/images/user-disengagement.png"
++++
 
 Over time, I have come to realise that the term user *"engagement"* in software, more often than not, is a thinly veiled proxy for user *entrapment*, whether intentional on the part of software designers or not. The trend of shallow user numbers and "engagement" metrics taking centre stage in business valuations has created perverse incentives at a massive scale for software to indulge in unethical practices of "engaging" users at any cost, with no respect for the limited and fast eroding levels of cognitive resources. Speaking of cognitive resources and attention, a significant amount is lost daily to the juggling of apps all attempting to steal as much attention as possible. How much attention can a human meaningfully divide between an ever increasing pool of software, all racing to the bottom in their attempts to build a "captive audience"?
+
+<!-- more -->
 
 The idea of user "engagement" on its own may not be inherently unethical, but it often tends to seep into this realm, where software is specifically designed to regularly, forcibly, and artificially attract user attention for increasing "engagement", even when the said software's utility is completely out of the user's mindspace. This is common in the form of "gamification", shallow feature releases aimed at creating illusions of improvement, deluge of promotional and product update notifications and e-mails, manufactured red-dot cues on the UI that feign urgency, "exciting offers" that are "personalised" … My mobile network provider's app that I occasionally use to track and pay phone bills wants to offer me a "personalised experience" by tracking my actions outside of the app. Not to mention, it also regularly attempts to push random "exciting offers". It is only slightly less annoying than the widespread, poorly timed, "SUBSCRIBE TO OUR NEWSLETTER" popups that plague already ad-ridden websites.
 
@@ -73,7 +78,7 @@ Some examples of direct, but meaningful disengagement:
 - Instant account closure. If a user wants to close their account and stop using our software for whatever reason, they can do so online instantly, including completing all the required legal formalities. Those who have jumped through painful hoops to cancel online subscriptions can appreciate this. I certainly do.
 
 
-## Don't do unto others …
+## Don't do unto others … {#dont-do-unto-others-}
 That brings us to the ancient adage and the second tenet of the user disengagement philosophy, *"don't do unto others, what you don't want done unto you."*. Alas, if humans were biologically wired for this, the world would be a utopia right now.
 
 A food delivery app that sends half a dozen notifications a day at odd hours pushing users to buy food, or a ride hailing app that randomly asks "want to go somewhere today?" (wut). These are probably backed by extensive data mining and A/B testing and may be driving "conversions". The goal here is maximisation of certain numbers, not utility for the end user. I always wonder if the decision makers who employ these tactics themselves like being subjected to incessant notifications. Do they have notifications enabled on their own apps? Do the decision makers who decide to invade and monetize privacy like their own privacy being invaded? Do they like jumping through hoops to cancel a subscription? Do they like marketing popups and ads plastered all across their screens? I would like to think that the majority do not, and that it is either cognitive dissonance or hypocrisy, both fuelled by the relentless chasing of numbers. To my horror, I recently heard from a student at a premier business school in India that such "engagement" dark patterns are taught to them as product management strategies.

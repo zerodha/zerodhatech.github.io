@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block hero %}
+<h1 class="post-header">{{ taxonomy.name | title }}</h1>
+{% endblock hero %}
+
+{% block content %}
+<div class="container wrap">
+    <h1>{{ taxonomy.name | title }}</h1>
+    <ul>
+        {% for term in terms | sort(attribute="name") | reverse | sort(attribute="page_count") | reverse %}
+        <li><a href="{{ term.permalink }}">{{ term.name }}<sup>{{ term.page_count }}</sup></a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

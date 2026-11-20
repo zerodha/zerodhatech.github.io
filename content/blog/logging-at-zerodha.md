@@ -1,19 +1,24 @@
----
-title: "Logging at Zerodha"
-description: "Our migration story from ELK to using Clickhouse and Vector for our logging pipeline"
-date: "2023-03-23T00:00:00+05:30"
-author: karan
-authors: ["karan"]
-tags: ["devops", "logging"]
-image: "/static/images/lojjing_banner.jpg"
-banner: "yes"
----
++++
+title = "Logging at Zerodha"
+description = "Our migration story from ELK to using Clickhouse and Vector for our logging pipeline"
+date = 2023-03-23T00:00:00+05:30
+
+[taxonomies]
+authors = ["karan"]
+tags = ["devops", "logging"]
+
+[extra]
+image = "/static/images/lojjing_banner.jpg"
+banner = true
++++
 
 <!-- ![banner](/static/images/lojjing_banner.jpg) -->
 
 At Zerodha, we run a multitude of internal and public-facing services that generate copious amounts of logs. While developers use these logs to debug or troubleshoot incidents, some services also emit logs that must be persisted for prolonged periods to comply with numerous regulatory requirements. In this post, I will delve into our experiences with the [ELK stack](https://www.elastic.co/what-is/elk-stack), why it didn't fit our needs and our migration to [ClickHouse](https://clickhouse.com/).
 
-## Why ELK wasn’t the right fit for us
+<!-- more -->
+
+## Why ELK wasn’t the right fit for us {#why-elk-wasnt-the-right-fit-for-us}
 
 In 2018, we adopted the ELK stack as our de facto stack for storing application logs. Using [Filebeat](https://www.elastic.co/beats/filebeat), we shipped logs from EC2 instances to a central [Logstash](https://www.elastic.co/logstash/) server. Logstash served as the aggregation layer, where we applied multiple filters to add metadata, scrub sensitive data, parse the logs, and dump them into various indices in [Elasticsearch](https://www.elastic.co/elasticsearch/). [Kibana](https://www.elastic.co/kibana/) was the default query layer for writing queries and fetching results. However, as our traffic volumes and user base increased significantly post-2020, our ELK stack began to struggle with the rising load.
 
@@ -53,11 +58,11 @@ Up until 2021, we dealt with the scaling of ELK issues by throwing more hardware
 
 Here's a rundown of what we found:
 
-### Grafana Loki - first impressions
+### Grafana Loki - first impressions {#grafana-loki---first-impressions}
 
 Back in late 2019, we took a look at [Grafana Loki 0.4.](https://community.grafana.com/t/loki-0-4-0-querying-metrics-from-logs/22998) At the time, it was a relatively new project with limited storage options and a complicated microservice-oriented deployment setup. We ultimately decided against it due to the complexity of self-hosting it. But we kept an eye on it, hoping things would improve in the future.
 
-### Loki's evolution and performance testing
+### Loki's evolution and performance testing {#lokis-evolution-and-performance-testing}
 
 Fast forward to 2021, and Loki had come a long way. [Version 2.4](https://grafana.com/blog/2021/11/10/loki-2.4-is-easier-to-run-with-a-new-simplified-deployment-model/) had simplified its deployment setup and addressed many past pain points. We were excited to see its new features, such as out-of-order writes in the index and BoltDB-based index storage for the filesystem. However, when we benchmarked its performance by importing a month's worth of logs from our busiest application, Kite, the results were disappointing. Query times were painfully slow, and most queries timed out. Additionally, we found that Loki lacked good RBAC support in its open-source version.
 
@@ -85,7 +90,7 @@ Loj is essentially a mix of 3 different components for our logging pipeline:
 
 Clickhouse, a column-oriented DBMS, is well suited for OLAP workloads. Logging workloads share similar attributes with OLAP workloads, such as being read-heavy, having large batches of inserts but rare mutations, and containing mostly immutable data.
 
-### Clickhouse's compression codecs:
+### Clickhouse's compression codecs: {#clickhouses-compression-codecs}
 
 Clickhouse supports various compression codecs out of the box, including LZ4, Brotili, and ZSTD, at the block level. These codecs can reduce the amount of data that needs to be read from the disk, enhancing performance. Additionally, Clickhouse supports dictionary compression, which is useful for columns with low cardinalities.
 
