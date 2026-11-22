@@ -156,14 +156,14 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;932&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;935&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
                     &lt;p&gt;Lightweight, single-binary log analytics interface for ClickHouse, focused on high-performance querying and visualization&lt;/p&gt;
                     &lt;div class=&quot;project-meta&quot;&gt;
                         &lt;span aria-label=&quot;License&quot;&gt;GNU Affero General Public License v3.0&lt;/span&gt;
-                        &lt;span&gt;Last updated on November 15, 2026&lt;/span&gt;
+                        &lt;span&gt;Last updated on November 20, 2026&lt;/span&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;logo&quot;&gt;
@@ -175,11 +175,80 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
             
             &lt;li class=&quot;item&quot;&gt;
                 &lt;div class=&quot;description&quot;&gt;
+                    &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/bureaucatorg/bureaucat&quot;&gt;bureaucat&lt;/a&gt;&lt;/h3&gt;
+                    &lt;p class=&quot;stars&quot;&gt;
+                        &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
+                        &lt;span aria-label=&quot;Stars&quot;&gt;
+                            &lt;span&gt;★ &lt;small&gt;87&lt;/small&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                        &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;🔥️📝️⏰ Open-source Jira, Linear, Monday, ClickUp, Plane alternative. BureauCat is a modern AI native project management platform to manage tasks, sprints, docs, and triage.&lt;/p&gt;
+                    &lt;div class=&quot;project-meta&quot;&gt;
+                        &lt;span aria-label=&quot;License&quot;&gt;GNU Affero General Public License v3.0&lt;/span&gt;
+                        &lt;span&gt;Last updated on November 18, 2026&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;logo&quot;&gt;
+                    
+                    &lt;a href=&quot;https://github.com/bureaucatorg/bureaucat&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/bureaucat.svg&quot; alt=&quot;bureaucat logo&quot;&gt;&lt;/a&gt;
+                    
+                &lt;/div&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&quot;item&quot;&gt;
+                &lt;div class=&quot;description&quot;&gt;
+                    &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/shridarpatil/whatomate&quot;&gt;whatomate&lt;/a&gt;&lt;/h3&gt;
+                    &lt;p class=&quot;stars&quot;&gt;
+                        &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
+                        &lt;span aria-label=&quot;Stars&quot;&gt;
+                            &lt;span&gt;★ &lt;small&gt;1780&lt;/small&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                        &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;Whatomate is an open-source WhatsApp integration&lt;/p&gt;
+                    &lt;div class=&quot;project-meta&quot;&gt;
+                        &lt;span aria-label=&quot;License&quot;&gt;GNU Affero General Public License v3.0&lt;/span&gt;
+                        &lt;span&gt;Last updated on November 18, 2026&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;logo&quot;&gt;
+                    
+                    &lt;a href=&quot;https://github.com/shridarpatil/whatomate&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/whatomate.svg&quot; alt=&quot;whatomate logo&quot;&gt;&lt;/a&gt;
+                    
+                &lt;/div&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&quot;item&quot;&gt;
+                &lt;div class=&quot;description&quot;&gt;
+                    &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/devaryakjha/oore.build&quot;&gt;oore.build&lt;/a&gt;&lt;/h3&gt;
+                    &lt;p class=&quot;stars&quot;&gt;
+                        &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
+                        &lt;span aria-label=&quot;Stars&quot;&gt;
+                            &lt;span&gt;★ &lt;small&gt;30&lt;/small&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                        &lt;span aria-label=&quot;Language&quot;&gt;Rust&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;Self-hosted, Flutter-first mobile CI and internal app distribution platform.&lt;/p&gt;
+                    &lt;div class=&quot;project-meta&quot;&gt;
+                        &lt;span aria-label=&quot;License&quot;&gt;MIT License&lt;/span&gt;
+                        &lt;span&gt;Last updated on November 18, 2026&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;logo&quot;&gt;
+                    
+                    &lt;a href=&quot;https://github.com/devaryakjha/oore.build&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/oore.svg&quot; alt=&quot;oore.build logo&quot;&gt;&lt;/a&gt;
+                    
+                &lt;/div&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&quot;item&quot;&gt;
+                &lt;div class=&quot;description&quot;&gt;
                     &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/knadh/listmonk&quot;&gt;listmonk&lt;/a&gt;&lt;/h3&gt;
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;24303&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;24410&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -202,7 +271,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;3154&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;3191&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -221,34 +290,11 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
             
             &lt;li class=&quot;item&quot;&gt;
                 &lt;div class=&quot;description&quot;&gt;
-                    &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/devaryakjha/oore.build&quot;&gt;oore.build&lt;/a&gt;&lt;/h3&gt;
-                    &lt;p class=&quot;stars&quot;&gt;
-                        &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
-                        &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;30&lt;/small&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span aria-label=&quot;Language&quot;&gt;Rust&lt;/span&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;Self-hosted, Flutter-first mobile CI and internal app distribution platform.&lt;/p&gt;
-                    &lt;div class=&quot;project-meta&quot;&gt;
-                        &lt;span aria-label=&quot;License&quot;&gt;MIT License&lt;/span&gt;
-                        &lt;span&gt;Last updated on November 14, 2026&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;logo&quot;&gt;
-                    
-                    &lt;a href=&quot;https://github.com/devaryakjha/oore.build&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/oore.svg&quot; alt=&quot;oore.build logo&quot;&gt;&lt;/a&gt;
-                    
-                &lt;/div&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;item&quot;&gt;
-                &lt;div class=&quot;description&quot;&gt;
                     &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/cvhariharan/flowctl&quot;&gt;flowctl&lt;/a&gt;&lt;/h3&gt;
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;349&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;352&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -261,52 +307,6 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                 &lt;div class=&quot;logo&quot;&gt;
                     
                     &lt;a href=&quot;https://github.com/cvhariharan/flowctl&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/flowctl.svg&quot; alt=&quot;flowctl logo&quot;&gt;&lt;/a&gt;
-                    
-                &lt;/div&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;item&quot;&gt;
-                &lt;div class=&quot;description&quot;&gt;
-                    &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/bureaucatorg/bureaucat&quot;&gt;bureaucat&lt;/a&gt;&lt;/h3&gt;
-                    &lt;p class=&quot;stars&quot;&gt;
-                        &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
-                        &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;71&lt;/small&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;🔥️📝️⏰ Open-source Jira, Linear, Monday, ClickUp, Plane alternative. BureauCat is a modern AI native project management platform to manage tasks, sprints, docs, and triage.&lt;/p&gt;
-                    &lt;div class=&quot;project-meta&quot;&gt;
-                        &lt;span aria-label=&quot;License&quot;&gt;GNU Affero General Public License v3.0&lt;/span&gt;
-                        &lt;span&gt;Last updated on November 13, 2026&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;logo&quot;&gt;
-                    
-                    &lt;a href=&quot;https://github.com/bureaucatorg/bureaucat&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/bureaucat.svg&quot; alt=&quot;bureaucat logo&quot;&gt;&lt;/a&gt;
-                    
-                &lt;/div&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;item&quot;&gt;
-                &lt;div class=&quot;description&quot;&gt;
-                    &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/shridarpatil/whatomate&quot;&gt;whatomate&lt;/a&gt;&lt;/h3&gt;
-                    &lt;p class=&quot;stars&quot;&gt;
-                        &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
-                        &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;1770&lt;/small&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;Whatomate is an open-source WhatsApp integration&lt;/p&gt;
-                    &lt;div class=&quot;project-meta&quot;&gt;
-                        &lt;span aria-label=&quot;License&quot;&gt;GNU Affero General Public License v3.0&lt;/span&gt;
-                        &lt;span&gt;Last updated on November 13, 2026&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;logo&quot;&gt;
-                    
-                    &lt;a href=&quot;https://github.com/shridarpatil/whatomate&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/whatomate.svg&quot; alt=&quot;whatomate logo&quot;&gt;&lt;/a&gt;
                     
                 &lt;/div&gt;
             &lt;/li&gt;
@@ -386,7 +386,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;139&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;142&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -416,14 +416,14 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;70&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;73&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Rust&lt;/span&gt;
                     &lt;/p&gt;
                     &lt;p&gt;High performance and minimalist SMTP server&lt;/p&gt;
                     &lt;div class=&quot;project-meta&quot;&gt;
                         &lt;span aria-label=&quot;License&quot;&gt;GNU Affero General Public License v3.0&lt;/span&gt;
-                        &lt;span&gt;Last updated on November 6, 2026&lt;/span&gt;
+                        &lt;span&gt;Last updated on November 20, 2026&lt;/span&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;logo&quot;&gt;
@@ -435,11 +435,34 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
             
             &lt;li class=&quot;item&quot;&gt;
                 &lt;div class=&quot;description&quot;&gt;
+                    &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/iamd3vil/blobasaur&quot;&gt;blobasaur&lt;/a&gt;&lt;/h3&gt;
+                    &lt;p class=&quot;stars&quot;&gt;
+                        &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
+                        &lt;span aria-label=&quot;Stars&quot;&gt;
+                            &lt;span&gt;★ &lt;small&gt;296&lt;/small&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                        &lt;span aria-label=&quot;Language&quot;&gt;Rust&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;A Blob store based on SQLite compatible with Redis protocol&lt;/p&gt;
+                    &lt;div class=&quot;project-meta&quot;&gt;
+                        &lt;span aria-label=&quot;License&quot;&gt;GNU Affero General Public License v3.0&lt;/span&gt;
+                        &lt;span&gt;Last updated on November 20, 2026&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;logo&quot;&gt;
+                    
+                    &lt;a href=&quot;https://github.com/iamd3vil/blobasaur&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/blobasaur.svg&quot; alt=&quot;blobasaur logo&quot;&gt;&lt;/a&gt;
+                    
+                &lt;/div&gt;
+            &lt;/li&gt;
+            
+            &lt;li class=&quot;item&quot;&gt;
+                &lt;div class=&quot;description&quot;&gt;
                     &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/warp-tech/terraform-provider-warpgate&quot;&gt;terraform-provider-warpgate&lt;/a&gt;&lt;/h3&gt;
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;35&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;37&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -460,7 +483,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;1287&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;1290&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -494,29 +517,6 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;logo&quot;&gt;
-                    
-                &lt;/div&gt;
-            &lt;/li&gt;
-            
-            &lt;li class=&quot;item&quot;&gt;
-                &lt;div class=&quot;description&quot;&gt;
-                    &lt;h3 class=&quot;name&quot;&gt;&lt;a href=&quot;https://github.com/iamd3vil/blobasaur&quot;&gt;blobasaur&lt;/a&gt;&lt;/h3&gt;
-                    &lt;p class=&quot;stars&quot;&gt;
-                        &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
-                        &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;65&lt;/small&gt;&lt;/span&gt;
-                        &lt;/span&gt;
-                        &lt;span aria-label=&quot;Language&quot;&gt;Rust&lt;/span&gt;
-                    &lt;/p&gt;
-                    &lt;p&gt;A Blob store based on SQLite compatible with Redis protocol&lt;/p&gt;
-                    &lt;div class=&quot;project-meta&quot;&gt;
-                        &lt;span aria-label=&quot;License&quot;&gt;GNU Affero General Public License v3.0&lt;/span&gt;
-                        &lt;span&gt;Last updated on October 21, 2026&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;logo&quot;&gt;
-                    
-                    &lt;a href=&quot;https://github.com/iamd3vil/blobasaur&quot;&gt;&lt;img src=&quot;https://zerodha.tech/static/images/projects/blobasaur.svg&quot; alt=&quot;blobasaur logo&quot;&gt;&lt;/a&gt;
                     
                 &lt;/div&gt;
             &lt;/li&gt;
@@ -590,7 +590,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;553&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;554&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -681,7 +681,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;1187&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;1189&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -723,7 +723,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;116&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;117&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;TypeScript&lt;/span&gt;
                     &lt;/p&gt;
@@ -1216,7 +1216,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;21&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;22&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Python&lt;/span&gt;
                     &lt;/p&gt;
@@ -1286,14 +1286,14 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;4242&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;4243&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
                     &lt;p&gt;Simple, extremely lightweight, extensible, configuration management library for Go. Supports JSON, TOML, YAML, env, command line, file, S3 etc. Alternative to viper.&lt;/p&gt;
                     &lt;div class=&quot;project-meta&quot;&gt;
                         &lt;span aria-label=&quot;License&quot;&gt;MIT License&lt;/span&gt;
-                        &lt;span&gt;Last updated on November 14, 2026&lt;/span&gt;
+                        &lt;span&gt;Last updated on November 19, 2026&lt;/span&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;logo&quot;&gt;
@@ -1330,7 +1330,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;70&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;69&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Dart&lt;/span&gt;
                     &lt;/p&gt;
@@ -1351,7 +1351,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;212&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;214&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -1477,7 +1477,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;470&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;471&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -1565,7 +1565,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;42&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;43&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Python&lt;/span&gt;
                     &lt;/p&gt;
@@ -1586,7 +1586,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;96&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;97&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -1880,7 +1880,7 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
                     &lt;p class=&quot;stars&quot;&gt;
                         &lt;img class=&quot;github&quot; width=&quot;16&quot; src=&quot;https://zerodha.tech/static/images/github.svg&quot; alt=&quot;GitHub stars&quot;&gt;
                         &lt;span aria-label=&quot;Stars&quot;&gt;
-                            &lt;span&gt;★ &lt;small&gt;57&lt;/small&gt;&lt;/span&gt;
+                            &lt;span&gt;★ &lt;small&gt;58&lt;/small&gt;&lt;/span&gt;
                         &lt;/span&gt;
                         &lt;span aria-label=&quot;Language&quot;&gt;Go&lt;/span&gt;
                     &lt;/p&gt;
@@ -1957,20 +1957,6 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
             
                 
                 
-                    
-                
-            
-        
-            
-                
-                
-                    
-                
-            
-        
-            
-                
-                
             
         
             
@@ -2025,6 +2011,27 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
             
                 
                 
+                    
+                
+            
+        
+            
+                
+                
+                    
+                
+            
+        
+            
+                
+                
+                    
+                
+            
+        
+            
+                
+                
             
         
             
@@ -2043,13 +2050,6 @@ and embedded inside Go plugins.&lt;/p&gt;</description>
         
             
                 
-                
-            
-        
-            
-                
-                
-                    
                 
             
         
