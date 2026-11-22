@@ -3,7 +3,7 @@
   github_uri: vividvilla/lil
   language: Go
   name: lil
-  stars: 57
+  stars: 58
   topics: []
   updated_at: '2020-04-24T05:52:18Z'
   url: https://github.com/vividvilla/lil
@@ -132,7 +132,7 @@
   language: Python
   license: MIT License
   name: pdf_text_overlay
-  stars: 42
+  stars: 43
   topics: []
   updated_at: '2025-05-09T05:51:31Z'
   url: https://github.com/zerodhatech/pdf_text_overlay
@@ -144,7 +144,7 @@
   license: GNU Affero General Public License v3.0
   logo: listmonk.svg
   name: listmonk
-  stars: 24303
+  stars: 24410
   topics:
   - campaign
   - campaign-management
@@ -184,7 +184,7 @@
   language: Go
   license: MIT License
   name: koanf
-  stars: 4242
+  stars: 4243
   topics:
   - config
   - config-loader
@@ -199,7 +199,7 @@
   - toml
   - viper
   - yaml
-  updated_at: '2026-11-14T03:51:21Z'
+  updated_at: '2026-11-19T16:02:38Z'
   url: https://github.com/knadh/koanf
 - category: utils
   description: Simple command-line utility to convert CSV, TSV and Excel files into
@@ -208,7 +208,7 @@
   language: Go
   license: MIT License
   name: csvtotable
-  stars: 1187
+  stars: 1189
   topics:
   - cli
   - data-visualization
@@ -277,7 +277,7 @@
   language: Dart
   license: MIT License
   name: flutter_curl
-  stars: 70
+  stars: 69
   topics:
   - curl
   - flutter
@@ -293,7 +293,7 @@
   language: Go
   license: MIT License
   name: otpgateway
-  stars: 553
+  stars: 554
   topics:
   - email-verification
   - mobile-number-verification
@@ -355,7 +355,7 @@
   license: MIT License
   logo: dungbeetle.svg
   name: dungbeetle
-  stars: 1287
+  stars: 1290
   topics:
   - broker-backend
   - database
@@ -387,7 +387,7 @@
   language: Go
   license: Other
   name: simples3
-  stars: 212
+  stars: 214
   topics:
   - aws
   - aws-s3
@@ -450,7 +450,7 @@
   language: Python
   license: MIT License
   name: rms-consolidated-scrips-status
-  stars: 21
+  stars: 22
   topics: []
   updated_at: '2020-07-22T10:44:16Z'
   url: https://github.com/zerodhatech/rms-consolidated-scrips-status
@@ -547,7 +547,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: linkpage.svg
   name: linkpage
-  stars: 139
+  stars: 142
   topics: []
   updated_at: '2026-08-10T14:26:06Z'
   url: https://github.com/rhnvrm/linkpage
@@ -558,7 +558,7 @@
   language: Go
   license: MIT License
   name: fastglue
-  stars: 96
+  stars: 97
   topics:
   - fastglue
   - fasthttp
@@ -665,7 +665,7 @@
   license: BSD 2-Clause "Simplified" License
   logo: tasqueue.svg
   name: Tasqueue
-  stars: 470
+  stars: 471
   topics:
   - background-jobs
   - distributed-systems
@@ -798,7 +798,7 @@
   license: GNU Affero General Public License v3.0
   logo: libredesk.svg
   name: libredesk
-  stars: 3154
+  stars: 3191
   topics:
   - ai-agent
   - chat-widget
@@ -828,12 +828,18 @@
   license: GNU Affero General Public License v3.0
   logo: logchef.svg
   name: logchef
-  stars: 932
+  stars: 935
   topics:
   - clickhouse
+  - kibana-alternative
   - log-analytics
   - logging
-  updated_at: '2026-11-15T05:24:20Z'
+  - mcp
+  - observability
+  - opentelemetry
+  - self-hosted
+  - victorialogs
+  updated_at: '2026-11-20T14:29:01Z'
   url: https://github.com/mr-karan/logchef
 - category: apps
   description: An open source self-service workflow execution platform
@@ -842,7 +848,7 @@
   license: Apache License 2.0
   logo: flowctl.svg
   name: flowctl
-  stars: 349
+  stars: 352
   topics:
   - automation
   - devops
@@ -876,7 +882,7 @@
   github_uri: warp-tech/terraform-provider-warpgate
   language: Go
   name: terraform-provider-warpgate
-  stars: 35
+  stars: 37
   topics: []
   updated_at: '2026-11-05T18:13:01Z'
   url: https://github.com/warp-tech/terraform-provider-warpgate
@@ -900,14 +906,14 @@
   license: GNU Affero General Public License v3.0
   logo: hedwig.svg
   name: hedwig
-  stars: 70
+  stars: 73
   topics:
   - mail-server
   - rust
   - rust-smtp
   - smtp
   - smtp-server
-  updated_at: '2026-11-06T13:08:13Z'
+  updated_at: '2026-11-20T16:50:10Z'
   url: https://github.com/iamd3vil/hedwig
 - category: libs
   description: A Flutter plugin for Android device performance classification.
@@ -930,9 +936,9 @@
   license: GNU Affero General Public License v3.0
   logo: blobasaur.svg
   name: blobasaur
-  stars: 65
+  stars: 296
   topics: []
-  updated_at: '2026-10-21T06:12:46Z'
+  updated_at: '2026-11-20T07:28:20Z'
   url: https://github.com/iamd3vil/blobasaur
 - category: apps
   description: Whatomate is an open-source WhatsApp integration
@@ -941,7 +947,7 @@
   license: GNU Affero General Public License v3.0
   logo: whatomate.svg
   name: whatomate
-  stars: 1770
+  stars: 1780
   topics:
   - whatsapp
   - whatsapp-api
@@ -951,7 +957,7 @@
   - whatsapp-chat
   - whatsapp-voice-call
   - whatsapp-voip
-  updated_at: '2026-11-13T05:56:13Z'
+  updated_at: '2026-11-18T09:12:14Z'
   url: https://github.com/shridarpatil/whatomate
 - category: apps
   description: Proctored Exams for Frappe Framework
@@ -980,7 +986,7 @@
   - dart
   - flutter
   - rust
-  updated_at: '2026-11-14T05:59:51Z'
+  updated_at: '2026-11-18T03:55:15Z'
   url: https://github.com/devaryakjha/oore.build
 - category: utils
   description: "Agentic code reviewer for GitHub PRs and GitLab MRs. Multi-step reasoning\
@@ -990,7 +996,7 @@
   language: TypeScript
   license: MIT License
   name: hodor
-  stars: 116
+  stars: 117
   topics:
   - agent
   - ai
@@ -1054,7 +1060,7 @@
   license: GNU Affero General Public License v3.0
   logo: bureaucat.svg
   name: bureaucat
-  stars: 71
+  stars: 87
   topics:
   - approval-workflow
   - boards
@@ -1070,7 +1076,7 @@
   - task-manager
   - task-manager-app
   - todo
-  updated_at: '2026-11-13T08:53:30Z'
+  updated_at: '2026-11-18T11:59:47Z'
   url: https://github.com/bureaucatorg/bureaucat
 - category: apps
   description: Identity aware reverse proxy
